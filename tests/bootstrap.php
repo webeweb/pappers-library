@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the library-template package.
+ * This file is part of the pappers-library package.
  *
  * (c) 2021 WEBEWEB
  *

@@ -1,13 +1,13 @@
-library-template
-================
+pappers-library
+===============
 
-[![Build Status](https://img.shields.io/github/workflow/status/webeweb/library-template/build?style=flat-square)](https://github.com/webeweb/library-template/actions)
-[![Coverage Status](https://img.shields.io/coveralls/github/webeweb/library-template/master.svg?style=flat-square)](https://coveralls.io/github/webeweb/library-template?branch=master)
-[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/quality/g/webeweb/library-template/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/webeweb/library-template/?branch=master)
-[![Latest Stable Version](https://img.shields.io/packagist/v/webeweb/library-template.svg?style=flat-square)](https://packagist.org/packages/webeweb/library-template)
-[![Latest Unstable Version](https://img.shields.io/packagist/vpre/webeweb/library-template.svg?style=flat-square)](https://packagist.org/packages/webeweb/library-template)
-[![License](https://img.shields.io/packagist/l/webeweb/library-template.svg?style=flat-square)](https://packagist.org/packages/webeweb/library-template)
-[![composer.lock](https://img.shields.io/badge/.lock-uncommited-important.svg?style=flat-square)](https://packagist.org/packages/webeweb/library-template)
+[![Build Status](https://img.shields.io/github/workflow/status/webeweb/pappers-library/build?style=flat-square)](https://github.com/webeweb/pappers-library/actions)
+[![Coverage Status](https://img.shields.io/coveralls/github/webeweb/pappers-library/master.svg?style=flat-square)](https://coveralls.io/github/webeweb/pappers-library?branch=master)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/quality/g/webeweb/pappers-library/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/webeweb/pappers-library/?branch=master)
+[![Latest Stable Version](https://img.shields.io/packagist/v/webeweb/pappers-library.svg?style=flat-square)](https://packagist.org/packages/webeweb/pappers-library)
+[![Latest Unstable Version](https://img.shields.io/packagist/vpre/webeweb/pappers-library.svg?style=flat-square)](https://packagist.org/packages/webeweb/pappers-library)
+[![License](https://img.shields.io/packagist/l/webeweb/pappers-library.svg?style=flat-square)](https://packagist.org/packages/webeweb/pappers-library)
+[![composer.lock](https://img.shields.io/badge/.lock-uncommited-important.svg?style=flat-square)](https://packagist.org/packages/webeweb/pappers-library)
 
 > IMPORTANT NOTICE: This package is still under development. Any changes will be
 > done without prior notice to consumers of this package. Of course this code
@@ -18,7 +18,7 @@ If you like this package, pay me a beer (or a coffee)
 
 ## Compatibility
 
-[![PHP](https://img.shields.io/packagist/php-v/webeweb/library-template.svg?style=flat-square)](http://php.net)
+[![PHP](https://img.shields.io/packagist/php-v/webeweb/pappers-library.svg?style=flat-square)](http://php.net)
 
 ## Installation
 
@@ -26,7 +26,7 @@ Open a command console, enter your project directory and execute the following
 command to download the latest stable version of this package:
 
 ```bash
-$ composer require webeweb/library-template
+$ composer require webeweb/pappers-library
 ```
 
 This command requires you to have Composer installed globally, as explained in
@@ -44,8 +44,8 @@ Open a command console and execute the following commands to download the latest
 stable version of this package:
 
 ```bash
-$ git clone https://github.com/webeweb/library-template.git
-$ cd library-template
+$ git clone https://github.com/webeweb/pappers-library.git
+$ cd pappers-library
 $ composer install
 ```
 
@@ -57,7 +57,7 @@ $ vendor/bin/phpunit
 
 ## License
 
-`library-template` is released under the MIT License. See the bundled [LICENSE](LICENSE)
+`pappers-library` is released under the MIT License. See the bundled [LICENSE](LICENSE)
 file for details.
 
 ## Donate
