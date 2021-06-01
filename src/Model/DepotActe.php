@@ -49,7 +49,7 @@ class DepotActe {
      * Add an acte.
      *
      * @param Acte $acte The acte.
-     * @return DepotActe Returns this dépôt.
+     * @return DepotActe Returns this dépôt acte.
      */
     public function addActe(Acte $acte): DepotActe {
         $this->actes[] = $acte;
@@ -69,7 +69,7 @@ class DepotActe {
      * Set the actes.
      *
      * @param Acte[] $actes The actes.
-     * @return DepotActe Returns this dépôt.
+     * @return DepotActe Returns this dépôt acte.
      */
     protected function setActes(array $actes): DepotActe {
         $this->actes = $actes;
