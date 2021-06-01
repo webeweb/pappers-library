@@ -12,7 +12,7 @@
 namespace WBW\Library\Pappers\Model\Attribute;
 
 /**
- * String Décision trait.
+ * String décision trait.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Model\Attribute

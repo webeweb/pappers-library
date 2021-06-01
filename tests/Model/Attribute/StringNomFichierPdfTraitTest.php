@@ -15,7 +15,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestStringNomFichierPdfTrait;
 
 /**
- * String Nom fichier PDF trait test.
+ * String nom fichier PDF trait test.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Model\Attribute

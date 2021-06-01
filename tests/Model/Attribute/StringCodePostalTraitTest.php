@@ -15,7 +15,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestStringCodePostalTrait;
 
 /**
- * String Code postal trait test.
+ * String code postal trait test.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Model\Attribute

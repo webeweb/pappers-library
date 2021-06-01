@@ -12,7 +12,7 @@
 namespace WBW\Library\Pappers\Model\Attribute;
 
 /**
- * String Nom fichier PDF trait.
+ * String nom fichier PDF trait.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Model\Attribute

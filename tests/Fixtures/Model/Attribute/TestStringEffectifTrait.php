@@ -14,7 +14,7 @@ namespace WBW\Library\Pappers\Tests\Fixtures\Model\Attribute;
 use WBW\Library\Pappers\Model\Attribute\StringEffectifTrait;
 
 /**
- * Test string Effectif trait.
+ * Test string effectif trait.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute

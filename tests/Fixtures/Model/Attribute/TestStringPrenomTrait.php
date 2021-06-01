@@ -14,7 +14,7 @@ namespace WBW\Library\Pappers\Tests\Fixtures\Model\Attribute;
 use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
 
 /**
- * Test string Prénom trait.
+ * Test string prénom trait.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute

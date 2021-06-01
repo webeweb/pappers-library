@@ -14,7 +14,7 @@ namespace WBW\Library\Pappers\Tests\Fixtures\Model\Attribute;
 use WBW\Library\Pappers\Model\Attribute\StringTokenTrait;
 
 /**
- * Test string Token trait.
+ * Test string token trait.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute

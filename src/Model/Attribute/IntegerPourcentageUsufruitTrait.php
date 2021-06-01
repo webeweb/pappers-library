@@ -12,7 +12,7 @@
 namespace WBW\Library\Pappers\Model\Attribute;
 
 /**
- * Integer Pourcentage usufruit.
+ * Integer pourcentage usufruit.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Model\Attribute

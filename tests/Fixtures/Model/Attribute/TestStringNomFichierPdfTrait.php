@@ -14,7 +14,7 @@ namespace WBW\Library\Pappers\Tests\Fixtures\Model\Attribute;
 use WBW\Library\Pappers\Model\Attribute\StringNomFichierPdfTrait;
 
 /**
- * Test string Nom fichier PDF trait.
+ * Test string nom fichier PDF trait.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute

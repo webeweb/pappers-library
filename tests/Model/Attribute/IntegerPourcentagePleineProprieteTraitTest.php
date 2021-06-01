@@ -15,7 +15,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestIntegerPourcentagePleineProprieteTrait;
 
 /**
- * Integer Pourcentage pleine propriété trait test.
+ * Integer pourcentage pleine propriété trait test.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Model\Attribute

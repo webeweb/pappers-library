@@ -15,7 +15,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestStringDateDepotFormateTrait;
 
 /**
- * String Date dépôt formaté trait test.
+ * String date dépôt formaté trait test.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Model\Attribute

@@ -44,4 +44,5 @@ trait BooleanDisponibleTrait {
     public function setDisponible(?bool $disponible): self {
         $this->disponible = $disponible;
         return $this;
-    }}
+    }
+}

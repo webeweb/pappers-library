@@ -15,7 +15,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestBooleanDisponibleTrait;
 
 /**
- * Boolean Disponible trait test.
+ * Boolean disponible trait test.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Model\Attribute

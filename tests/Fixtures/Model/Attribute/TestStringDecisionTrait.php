@@ -14,7 +14,7 @@ namespace WBW\Library\Pappers\Tests\Fixtures\Model\Attribute;
 use WBW\Library\Pappers\Model\Attribute\StringDecisionTrait;
 
 /**
- * Test string Décision trait.
+ * Test string décision trait.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute

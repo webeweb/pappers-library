@@ -14,7 +14,7 @@ namespace WBW\Library\Pappers\Tests\Fixtures\Model\Attribute;
 use WBW\Library\Pappers\Model\Attribute\IntegerPourcentageNueProprieteTrait;
 
 /**
- * Test integer Pourcentage nue propriété trait.
+ * Test integer pourcentage nue propriété trait.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute

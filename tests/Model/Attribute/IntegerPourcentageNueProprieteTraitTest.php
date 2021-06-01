@@ -15,7 +15,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestIntegerPourcentageNueProprieteTrait;
 
 /**
- * Integer Pourcentage nue propriété trait test.
+ * Integer pourcentage nue propriété trait test.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Model\Attribute

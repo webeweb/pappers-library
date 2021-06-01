@@ -15,7 +15,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestIntegerPourcentageUsufruitTrait;
 
 /**
- * Integer Pourcentage usufruit trait test.
+ * Integer pourcentage usufruit trait test.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Model\Attribute

@@ -14,7 +14,7 @@ namespace WBW\Library\Pappers\Tests\Fixtures\Model\Attribute;
 use WBW\Library\Pappers\Model\Attribute\IntegerPourcentageUsufruitTrait;
 
 /**
- * Test integer Pourcentage usufruit trait.
+ * Test integer pourcentage usufruit trait.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute
