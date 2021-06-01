@@ -14,6 +14,7 @@ namespace WBW\Library\Pappers\Model;
 use WBW\Library\Core\Model\Attribute\StringTypeTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerCapitalTrait;
 use WBW\Library\Pappers\Model\Attribute\StringAdresseTrait;
+use WBW\Library\Pappers\Model\Attribute\StringDenominationTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPersonneMoraleTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
@@ -28,6 +29,7 @@ class PublicationBodacc {
 
     use IntegerCapitalTrait;
     use StringAdresseTrait;
+    use StringDenominationTrait;
     use StringNomTrait;
     use StringPersonneMoraleTrait;
     use StringPrenomTrait;
@@ -67,13 +69,6 @@ class PublicationBodacc {
      * @var string|null
      */
     private $dateDebutActivite;
-
-    /**
-     * Dénomination.
-     *
-     * @var string|null
-     */
-    private $denomination;
 
     /**
      * Nom entreprise.
@@ -153,15 +148,6 @@ class PublicationBodacc {
      */
     public function getDateDebutActivite(): ?string {
         return $this->dateDebutActivite;
-    }
-
-    /**
-     * Get the dénomination.
-     *
-     * @return string|null Returns the dénomination.
-     */
-    public function getDenomination(): ?string {
-        return $this->denomination;
     }
 
     /**
@@ -252,17 +238,6 @@ class PublicationBodacc {
      */
     public function setDateDebutActivite(?string $dateDebutActivite): PublicationBodacc {
         $this->dateDebutActivite = $dateDebutActivite;
-        return $this;
-    }
-
-    /**
-     * Set the dénomination.
-     *
-     * @param string|null $denomination The dénomination.
-     * @return PublicationBodacc Returns this publication BODACC.
-     */
-    public function setDenomination(?string $denomination): PublicationBodacc {
-        $this->denomination = $denomination;
         return $this;
     }
 

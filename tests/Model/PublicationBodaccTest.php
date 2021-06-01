@@ -88,19 +88,6 @@ class PublicationBodaccTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDenomination() method.
-     *
-     * @return void
-     */
-    public function testSetDenomination(): void {
-
-        $obj = new PublicationBodacc();
-
-        $obj->setDenomination("denomination");
-        $this->assertEquals("denomination", $obj->getDenomination());
-    }
-
-    /**
      * Tests the setNomEntreprise() method.
      *
      * @return void
@@ -163,6 +150,7 @@ class PublicationBodaccTest extends AbstractTestCase {
 
         $this->assertNull($obj->getAdresse());
         $this->assertNull($obj->getCapital());
+        $this->assertNull($obj->getDenomination());
         $this->assertNull($obj->getNom());
         $this->assertNull($obj->getPersonneMorale());
         $this->assertNull($obj->getPrenom());
@@ -173,7 +161,6 @@ class PublicationBodaccTest extends AbstractTestCase {
         $this->assertNull($obj->getBodacc());
         $this->assertNull($obj->getDate());
         $this->assertNull($obj->getDateDebutActivite());
-        $this->assertNull($obj->getDenomination());
         $this->assertNull($obj->getNomEntreprise());
         $this->assertNull($obj->getNumeroAnnonce());
         $this->assertNull($obj->getNumeroParution());
