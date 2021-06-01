@@ -22,6 +22,7 @@ use WBW\Library\Pappers\Model\Attribute\StringDateClotureExerciceTrait;
 class Finance {
 
     use StringDateClotureExerciceTrait;
+
     /**
      * Année.
      *
@@ -35,7 +36,6 @@ class Finance {
      * @var int|null
      */
     private $chiffreAffaires;
-
 
     /**
      * Durée exercice.
@@ -82,7 +82,6 @@ class Finance {
     public function getChiffreAffaires(): ?int {
         return $this->chiffreAffaires;
     }
-
 
     /**
      * Get the durée exercice.

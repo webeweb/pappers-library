@@ -54,7 +54,6 @@ class PublicationBodacc {
      */
     private $bodacc;
 
-
     /**
      * Date.
      *
