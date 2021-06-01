@@ -1,0 +1,97 @@
+<?php
+
+/*
+ * This file is part of the pappers-library package.
+ *
+ * (c) 2021 WEBEWEB
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace WBW\Library\Pappers\Tests\Model;
+
+use WBW\Library\Pappers\Model\Compte;
+use WBW\Library\Pappers\Tests\AbstractTestCase;
+
+/**
+ * Compte test.
+ *
+ * @author webeweb <https://github.com/webeweb/>
+ * @package WBW\Library\Pappers\Tests\Model
+ */
+class CompteTest extends AbstractTestCase {
+
+    /**
+     * Tests the setAnneeCloture() method.
+     *
+     * @return void
+     */
+    public function testSetAnneeCloture(): void {
+
+        $obj = new Compte();
+
+        $obj->setAnneeCloture(1);
+        $this->assertEquals(1, $obj->getAnneeCloture());
+    }
+
+    /**
+     * Tests the setConfidentialite() method.
+     *
+     * @return void
+     */
+    public function testSetConfidentialite(): void {
+
+        $obj = new Compte();
+
+        $obj->setConfidentialite(true);
+        $this->assertTrue($obj->getConfidentialite());
+    }
+
+    /**
+     * Tests the setConfidentialiteCompteResultat() method.
+     *
+     * @return void
+     */
+    public function testSetConfidentialiteCompteResultat(): void {
+
+        $obj = new Compte();
+
+        $obj->setConfidentialiteCompteResultat(true);
+        $this->assertTrue($obj->getConfidentialiteCompteResultat());
+    }
+
+    /**
+     * Tests the setDateCloture() method.
+     *
+     * @return void
+     */
+    public function testSetDateCloture(): void {
+
+        $obj = new Compte();
+
+        $obj->setDateCloture("dateCloture");
+        $this->assertEquals("dateCloture", $obj->getDateCloture());
+    }
+
+    /**
+     * Tests the set() method.
+     *
+     * @return void
+     */
+    public function test__construct(): void {
+
+        $obj = new Compte();
+
+        $this->assertNull($obj->getDateDepot());
+        $this->assertNull($obj->getDateDepotFormate());
+        $this->assertNull($obj->getDisponible());
+        $this->assertNull($obj->getNomFichierPdf());
+        $this->assertNull($obj->getToken());
+
+        $this->assertNull($obj->getAnneeCloture());
+        $this->assertNull($obj->getConfidentialite());
+        $this->assertNull($obj->getConfidentialite());
+        $this->assertNull($obj->getDateCloture());
+    }
+}
