@@ -15,6 +15,7 @@ use WBW\Library\Core\Model\Attribute\StringTypeTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerCapitalTrait;
 use WBW\Library\Pappers\Model\Attribute\StringAdresseTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDenominationTrait;
+use WBW\Library\Pappers\Model\Attribute\StringNomEntrepriseTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPersonneMoraleTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
@@ -30,6 +31,7 @@ class PublicationBodacc {
     use IntegerCapitalTrait;
     use StringAdresseTrait;
     use StringDenominationTrait;
+    use StringNomEntrepriseTrait;
     use StringNomTrait;
     use StringPersonneMoraleTrait;
     use StringPrenomTrait;
@@ -69,13 +71,6 @@ class PublicationBodacc {
      * @var string|null
      */
     private $dateDebutActivite;
-
-    /**
-     * Nom entreprise.
-     *
-     * @var string|null
-     */
-    private $nomEntreprise;
 
     /**
      * Numéro annonce.
@@ -148,15 +143,6 @@ class PublicationBodacc {
      */
     public function getDateDebutActivite(): ?string {
         return $this->dateDebutActivite;
-    }
-
-    /**
-     * Get the nom entreprise.
-     *
-     * @return string|null Returns the nom entreprise.
-     */
-    public function getNomEntreprise(): ?string {
-        return $this->nomEntreprise;
     }
 
     /**
@@ -238,17 +224,6 @@ class PublicationBodacc {
      */
     public function setDateDebutActivite(?string $dateDebutActivite): PublicationBodacc {
         $this->dateDebutActivite = $dateDebutActivite;
-        return $this;
-    }
-
-    /**
-     * Set the nom entreprise.
-     *
-     * @param string|null $nomEntreprise The nom entreprise.
-     * @return PublicationBodacc Returns this publication BODACC.
-     */
-    public function setNomEntreprise(?string $nomEntreprise): PublicationBodacc {
-        $this->nomEntreprise = $nomEntreprise;
         return $this;
     }
 
