@@ -12,6 +12,7 @@
 namespace WBW\Library\Pappers\Model;
 
 use WBW\Library\Core\Model\Attribute\StringTypeTrait;
+use WBW\Library\Pappers\Model\Attribute\IntegerCapitalTrait;
 use WBW\Library\Pappers\Model\Attribute\StringAdresseTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPersonneMoraleTrait;
@@ -25,6 +26,7 @@ use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
  */
 class PublicationBodacc {
 
+    use IntegerCapitalTrait;
     use StringAdresseTrait;
     use StringNomTrait;
     use StringPersonneMoraleTrait;
@@ -52,12 +54,6 @@ class PublicationBodacc {
      */
     private $bodacc;
 
-    /**
-     * Capital.
-     *
-     * @var int|null
-     */
-    private $capital;
 
     /**
      * Date.
@@ -140,15 +136,6 @@ class PublicationBodacc {
      */
     public function getBodacc(): ?string {
         return $this->bodacc;
-    }
-
-    /**
-     * Get the capital.
-     *
-     * @return int|null Returns the capital.
-     */
-    public function getCapital(): ?int {
-        return $this->capital;
     }
 
     /**
@@ -244,17 +231,6 @@ class PublicationBodacc {
      */
     public function setBodacc(?string $bodacc): PublicationBodacc {
         $this->bodacc = $bodacc;
-        return $this;
-    }
-
-    /**
-     * Set the capital.
-     *
-     * @param int|null $capital The capital.
-     * @return PublicationBodacc Returns this publication BODACC.
-     */
-    public function setCapital(?int $capital): PublicationBodacc {
-        $this->capital = $capital;
         return $this;
     }
 

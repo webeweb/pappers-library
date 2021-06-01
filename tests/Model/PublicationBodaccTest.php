@@ -62,19 +62,6 @@ class PublicationBodaccTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCapital() method.
-     *
-     * @return void
-     */
-    public function testSetCapital(): void {
-
-        $obj = new PublicationBodacc();
-
-        $obj->setCapital(1);
-        $this->assertEquals(1, $obj->getCapital());
-    }
-
-    /**
      * Tests the setDate() method.
      *
      * @return void
@@ -175,6 +162,7 @@ class PublicationBodaccTest extends AbstractTestCase {
         $obj = new PublicationBodacc();
 
         $this->assertNull($obj->getAdresse());
+        $this->assertNull($obj->getCapital());
         $this->assertNull($obj->getNom());
         $this->assertNull($obj->getPersonneMorale());
         $this->assertNull($obj->getPrenom());
@@ -183,7 +171,6 @@ class PublicationBodaccTest extends AbstractTestCase {
         $this->assertNull($obj->getActivite());
         $this->assertNull($obj->getAdministration());
         $this->assertNull($obj->getBodacc());
-        $this->assertNull($obj->getCapital());
         $this->assertNull($obj->getDate());
         $this->assertNull($obj->getDateDebutActivite());
         $this->assertNull($obj->getDenomination());
