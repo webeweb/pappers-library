@@ -12,6 +12,7 @@
 namespace WBW\Library\Pappers\Model;
 
 use WBW\Library\Core\Model\Attribute\StringTypeTrait;
+use WBW\Library\Pappers\Model\Attribute\StringAdresseTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPersonneMoraleTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
@@ -24,6 +25,7 @@ use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
  */
 class PublicationBodacc {
 
+    use StringAdresseTrait;
     use StringNomTrait;
     use StringPersonneMoraleTrait;
     use StringPrenomTrait;
@@ -42,13 +44,6 @@ class PublicationBodacc {
      * @var string|null
      */
     private $administration;
-
-    /**
-     * Adresse.
-     *
-     * @var string|null
-     */
-    private $adresse;
 
     /**
      * BODACC.
@@ -106,7 +101,6 @@ class PublicationBodacc {
      */
     private $numeroParution;
 
-
     /**
      * RCS.
      *
@@ -137,15 +131,6 @@ class PublicationBodacc {
      */
     public function getAdministration(): ?string {
         return $this->administration;
-    }
-
-    /**
-     * Get the adresse.
-     *
-     * @return string|null Returns the adresse.
-     */
-    public function getAdresse(): ?string {
-        return $this->adresse;
     }
 
     /**
@@ -248,17 +233,6 @@ class PublicationBodacc {
      */
     public function setAdministration(?string $administration): PublicationBodacc {
         $this->administration = $administration;
-        return $this;
-    }
-
-    /**
-     * Set the adresse.
-     *
-     * @param string|null $adresse The adresse.
-     * @return PublicationBodacc Returns this publication BODACC.
-     */
-    public function setAdresse(?string $adresse): PublicationBodacc {
-        $this->adresse = $adresse;
         return $this;
     }
 

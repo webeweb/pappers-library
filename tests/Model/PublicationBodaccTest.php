@@ -49,19 +49,6 @@ class PublicationBodaccTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setAdresse() method.
-     *
-     * @return void
-     */
-    public function testSetAdresse(): void {
-
-        $obj = new PublicationBodacc();
-
-        $obj->setAdresse("adresse");
-        $this->assertEquals("adresse", $obj->getAdresse());
-    }
-
-    /**
      * Tests the setBodacc() method.
      *
      * @return void
@@ -187,6 +174,7 @@ class PublicationBodaccTest extends AbstractTestCase {
 
         $obj = new PublicationBodacc();
 
+        $this->assertNull($obj->getAdresse());
         $this->assertNull($obj->getNom());
         $this->assertNull($obj->getPersonneMorale());
         $this->assertNull($obj->getPrenom());
@@ -194,7 +182,6 @@ class PublicationBodaccTest extends AbstractTestCase {
 
         $this->assertNull($obj->getActivite());
         $this->assertNull($obj->getAdministration());
-        $this->assertNull($obj->getAdresse());
         $this->assertNull($obj->getBodacc());
         $this->assertNull($obj->getCapital());
         $this->assertNull($obj->getDate());
