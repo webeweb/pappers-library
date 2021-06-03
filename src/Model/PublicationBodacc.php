@@ -12,13 +12,7 @@
 namespace WBW\Library\Pappers\Model;
 
 use WBW\Library\Core\Model\Attribute\StringTypeTrait;
-use WBW\Library\Pappers\Model\Attribute\IntegerCapitalTrait;
-use WBW\Library\Pappers\Model\Attribute\StringAdresseTrait;
-use WBW\Library\Pappers\Model\Attribute\StringDenominationTrait;
-use WBW\Library\Pappers\Model\Attribute\StringNomEntrepriseTrait;
-use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPersonneMoraleTrait;
-use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
 
 /**
  * Publication BODACC.
@@ -28,28 +22,7 @@ use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
  */
 class PublicationBodacc {
 
-    use IntegerCapitalTrait;
-    use StringAdresseTrait;
-    use StringDenominationTrait;
-    use StringNomEntrepriseTrait;
-    use StringNomTrait;
-    use StringPersonneMoraleTrait;
-    use StringPrenomTrait;
     use StringTypeTrait;
-
-    /**
-     * Activité.
-     *
-     * @var string|null
-     */
-    private $activite;
-
-    /**
-     * Administration.
-     *
-     * @var string|null
-     */
-    private $administration;
 
     /**
      * BODACC.
@@ -66,13 +39,6 @@ class PublicationBodacc {
     private $date;
 
     /**
-     * Date début activité.
-     *
-     * @var string|null
-     */
-    private $dateDebutActivite;
-
-    /**
      * Numéro annonce.
      *
      * @var string|null
@@ -87,35 +53,10 @@ class PublicationBodacc {
     private $numeroParution;
 
     /**
-     * RCS.
-     *
-     * @var string|null
-     */
-    private $rcs;
-
-    /**
      * Constructor.
      */
     public function __construct() {
         // NOTHING TO DO
-    }
-
-    /**
-     * Get the activité.
-     *
-     * @return string|null Returns the activité.
-     */
-    public function getActivite(): ?string {
-        return $this->activite;
-    }
-
-    /**
-     * Get the administration.
-     *
-     * @return string|null Returns the administration.
-     */
-    public function getAdministration(): ?string {
-        return $this->administration;
     }
 
     /**
@@ -137,15 +78,6 @@ class PublicationBodacc {
     }
 
     /**
-     * Get the date début activité.
-     *
-     * @return string|null Returns the date début activité.
-     */
-    public function getDateDebutActivite(): ?string {
-        return $this->dateDebutActivite;
-    }
-
-    /**
      * Get the numéro annonce.
      *
      * @return string|null Returns the numéro annonce.
@@ -161,37 +93,6 @@ class PublicationBodacc {
      */
     public function getNumeroParution(): ?string {
         return $this->numeroParution;
-    }
-
-    /**
-     * Get the RCS.
-     *
-     * @return string|null Returns the RCS.
-     */
-    public function getRcs(): ?string {
-        return $this->rcs;
-    }
-
-    /**
-     * Set the activité.
-     *
-     * @param string|null $activite The activité.
-     * @return PublicationBodacc Returns this publication BODACC.
-     */
-    public function setActivite(?string $activite): PublicationBodacc {
-        $this->activite = $activite;
-        return $this;
-    }
-
-    /**
-     * Set the administration.
-     *
-     * @param string|null $administration The administration.
-     * @return PublicationBodacc Returns this publication BODACC.
-     */
-    public function setAdministration(?string $administration): PublicationBodacc {
-        $this->administration = $administration;
-        return $this;
     }
 
     /**
@@ -217,17 +118,6 @@ class PublicationBodacc {
     }
 
     /**
-     * Set the date début activité.
-     *
-     * @param string|null $dateDebutActivite The date aébut activité.
-     * @return PublicationBodacc Returns this publication BODACC.
-     */
-    public function setDateDebutActivite(?string $dateDebutActivite): PublicationBodacc {
-        $this->dateDebutActivite = $dateDebutActivite;
-        return $this;
-    }
-
-    /**
      * Set the numéro annonce.
      *
      * @param string|null $numeroAnnonce The numéro annonce.
@@ -246,17 +136,6 @@ class PublicationBodacc {
      */
     public function setNumeroParution(?string $numeroParution): PublicationBodacc {
         $this->numeroParution = $numeroParution;
-        return $this;
-    }
-
-    /**
-     * Set the RCS.
-     *
-     * @param string|null $rcs The RCS.
-     * @return PublicationBodacc Returns this publication BODACC.
-     */
-    public function setRcs(?string $rcs): PublicationBodacc {
-        $this->rcs = $rcs;
         return $this;
     }
 }
