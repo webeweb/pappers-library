@@ -11,13 +11,13 @@
 
 namespace WBW\Library\Pappers\Model;
 
+use WBW\Library\Pappers\Model\Attribute\BooleanPersonneMoraleTrait;
 use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne1Trait;
 use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne2Trait;
 use WBW\Library\Pappers\Model\Attribute\StringCodePostalTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateNaissanceFormateTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNationaliteTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
-use WBW\Library\Pappers\Model\Attribute\StringPersonneMoraleTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringVilleTrait;
 
@@ -29,13 +29,13 @@ use WBW\Library\Pappers\Model\Attribute\StringVilleTrait;
  */
 class Representant {
 
+    use BooleanPersonneMoraleTrait;
     use StringAdresseLigne1Trait;
     use StringAdresseLigne2Trait;
     use StringCodePostalTrait;
     use StringDateNaissanceFormateTrait;
     use StringNationaliteTrait;
     use StringNomTrait;
-    use StringPersonneMoraleTrait;
     use StringPrenomTrait;
     use StringVilleTrait;
 

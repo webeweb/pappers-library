@@ -23,32 +23,6 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class PublicationBodaccTest extends AbstractTestCase {
 
     /**
-     * Tests the setActivite() method.
-     *
-     * @return void
-     */
-    public function testSetActivite(): void {
-
-        $obj = new PublicationBodacc();
-
-        $obj->setActivite("activite");
-        $this->assertEquals("activite", $obj->getActivite());
-    }
-
-    /**
-     * Tests the set() method.
-     *
-     * @return void
-     */
-    public function testSetAdministration(): void {
-
-        $obj = new PublicationBodacc();
-
-        $obj->setAdministration("administration");
-        $this->assertEquals("administration", $obj->getAdministration());
-    }
-
-    /**
      * Tests the setBodacc() method.
      *
      * @return void
@@ -72,19 +46,6 @@ class PublicationBodaccTest extends AbstractTestCase {
 
         $obj->setDate("date");
         $this->assertEquals("date", $obj->getDate());
-    }
-
-    /**
-     * Tests the setDateDebutActivite() method.
-     *
-     * @return void
-     */
-    public function testSetDateDebutActivite(): void {
-
-        $obj = new PublicationBodacc();
-
-        $obj->setDateDebutActivite("dateDebutActivite");
-        $this->assertEquals("dateDebutActivite", $obj->getDateDebutActivite());
     }
 
     /**
@@ -114,19 +75,6 @@ class PublicationBodaccTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setRcs() method.
-     *
-     * @return void
-     */
-    public function testSetRcs(): void {
-
-        $obj = new PublicationBodacc();
-
-        $obj->setRcs("rcs");
-        $this->assertEquals("rcs", $obj->getRcs());
-    }
-
-    /**
      * Tests the __construct() method.
      *
      * @return void
@@ -135,22 +83,11 @@ class PublicationBodaccTest extends AbstractTestCase {
 
         $obj = new PublicationBodacc();
 
-        $this->assertNull($obj->getAdresse());
-        $this->assertNull($obj->getCapital());
-        $this->assertNull($obj->getDenomination());
-        $this->assertNull($obj->getNom());
-        $this->assertNull($obj->getNomEntreprise());
-        $this->assertNull($obj->getPersonneMorale());
-        $this->assertNull($obj->getPrenom());
         $this->assertNull($obj->getType());
 
-        $this->assertNull($obj->getActivite());
-        $this->assertNull($obj->getAdministration());
         $this->assertNull($obj->getBodacc());
         $this->assertNull($obj->getDate());
-        $this->assertNull($obj->getDateDebutActivite());
         $this->assertNull($obj->getNumeroAnnonce());
         $this->assertNull($obj->getNumeroParution());
-        $this->assertNull($obj->getRcs());
     }
 }

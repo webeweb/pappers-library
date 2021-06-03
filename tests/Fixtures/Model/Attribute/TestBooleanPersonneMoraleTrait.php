@@ -11,15 +11,15 @@
 
 namespace WBW\Library\Pappers\Tests\Fixtures\Model\Attribute;
 
-use WBW\Library\Pappers\Model\Attribute\StringPersonneMoraleTrait;
+use WBW\Library\Pappers\Model\Attribute\BooleanPersonneMoraleTrait;
 
 /**
- * Test string personne morale trait.
+ * Test boolean personne morale trait.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute
  */
-class TestStringPersonneMoraleTrait {
+class TestBooleanPersonneMoraleTrait {
 
-    use StringPersonneMoraleTrait;
+    use BooleanPersonneMoraleTrait;
 }

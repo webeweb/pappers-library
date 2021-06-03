@@ -12,15 +12,15 @@
 namespace WBW\Library\Pappers\Tests\Model\Attribute;
 
 use WBW\Library\Pappers\Tests\AbstractTestCase;
-use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestStringPersonneMoraleTrait;
+use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestBooleanPersonneMoraleTrait;
 
 /**
- * String personne morale trait test.
+ * Boolean personne morale trait test.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Model\Attribute
  */
-class StringPersonneMoraleTraitTest extends AbstractTestCase {
+class BooleanPersonneMoraleTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setPersonneMorale() method().
@@ -29,9 +29,9 @@ class StringPersonneMoraleTraitTest extends AbstractTestCase {
      */
     public function testSetPersonneMorale(): void {
 
-        $obj = new TestStringPersonneMoraleTrait();
+        $obj = new TestBooleanPersonneMoraleTrait();
 
-        $obj->setPersonneMorale("personneMorale");
-        $this->assertEquals("personneMorale", $obj->getPersonneMorale());
+        $obj->setPersonneMorale(true);
+        $this->assertTrue($obj->getPersonneMorale());
     }
 }

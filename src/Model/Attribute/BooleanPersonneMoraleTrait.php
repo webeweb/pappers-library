@@ -12,36 +12,36 @@
 namespace WBW\Library\Pappers\Model\Attribute;
 
 /**
- * String personne morale trait.
+ * Boolean personne morale trait.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Model\Attribute
  */
-trait StringPersonneMoraleTrait {
+trait BooleanPersonneMoraleTrait {
 
     /**
      * Personne morale.
      *
-     * @var string|null
+     * @var bool|null
      */
     private $personneMorale;
 
     /**
      * Get the personne morale.
      *
-     * @return string|null Returns the personne morale.
+     * @return bool|null Returns the personne morale.
      */
-    public function getPersonneMorale(): ?string {
+    public function getPersonneMorale(): ?bool {
         return $this->personneMorale;
     }
 
     /**
      * Set the personne morale.
      *
-     * @param string|null $personneMorale The personne morale.
+     * @param bool|null $personneMorale The personne morale.
      * @return self Returns this instance.
      */
-    public function setPersonneMorale(?string $personneMorale): self {
+    public function setPersonneMorale(?bool $personneMorale): self {
         $this->personneMorale = $personneMorale;
         return $this;
     }
