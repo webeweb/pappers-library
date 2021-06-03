@@ -21,4 +21,10 @@ use WBW\Library\Pappers\Response\AbstractResponse;
  */
 class TestResponse extends AbstractResponse {
 
+    /**
+     * Constructor.
+     */
+    public function __construct() {
+        parent::__construct();
+    }
 }

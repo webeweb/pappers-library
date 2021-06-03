@@ -27,7 +27,7 @@ abstract class AbstractResponse {
     /**
      * Constructor.
      */
-    public function __construct() {
+    protected function __construct() {
         // NOTHING TO DO
     }
 }
