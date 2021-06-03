@@ -12,7 +12,6 @@
 namespace WBW\Library\Pappers\Model;
 
 use WBW\Library\Core\Model\Attribute\StringTypeTrait;
-use WBW\Library\Pappers\Model\Attribute\StringPersonneMoraleTrait;
 
 /**
  * Publication BODACC.
