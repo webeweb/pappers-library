@@ -20,4 +20,17 @@ namespace WBW\Library\Pappers\Request;
  */
 abstract class AbstractRequest {
 
+    /**
+     * Constructor.
+     */
+    public function __construct() {
+        // NOTHING TO DO
+    }
+
+    /**
+     * Get the resources path.
+     *
+     * @return string Returns the resources path.
+     */
+    abstract public function getResourcesPath(): string;
 }
