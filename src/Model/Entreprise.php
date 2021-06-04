@@ -26,6 +26,7 @@ use WBW\Library\Pappers\Model\Attribute\StringNomEntrepriseTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringSirenTrait;
+use WBW\Library\Pappers\Model\Attribute\StringStatutRcsTrait;
 use WBW\Library\Pappers\Model\Attribute\StringTrancheEffectifTrait;
 
 /**
@@ -51,6 +52,7 @@ class Entreprise {
     use StringNomTrait;
     use StringPrenomTrait;
     use StringSirenTrait;
+    use StringStatutRcsTrait;
     use StringTrancheEffectifTrait;
 
     /**
@@ -375,12 +377,6 @@ class Entreprise {
      */
     private $sirenFormate;
 
-    /**
-     * Statut R.C.S.
-     *
-     * @var string|null
-     */
-    private $statutRcs;
 
     /**
      * Constructor.
@@ -900,15 +896,6 @@ class Entreprise {
     }
 
     /**
-     * Get the statut R.C.S.
-     *
-     * @return string|null Returns the statut R.C.S.
-     */
-    public function getStatutRcs(): ?string {
-        return $this->statutRcs;
-    }
-
-    /**
      * Set the associé unique.
      *
      * @param bool|null $associeUnique The associé unique.
@@ -1411,17 +1398,6 @@ class Entreprise {
      */
     public function setSirenFormate(?string $sirenFormate): Entreprise {
         $this->sirenFormate = $sirenFormate;
-        return $this;
-    }
-
-    /**
-     * Set the statut R.C.S.
-     *
-     * @param string|null $statutRcs The statut R.C.S.
-     * @return Entreprise Returns this entreprise.
-     */
-    public function setStatutRcs(?string $statutRcs): Entreprise {
-        $this->statutRcs = $statutRcs;
         return $this;
     }
 }

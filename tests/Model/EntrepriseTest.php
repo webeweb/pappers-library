@@ -664,19 +664,6 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setStatutRcs() method.
-     *
-     * @return void
-     */
-    public function testSetStatutRcs(): void {
-
-        $obj = new Entreprise();
-
-        $obj->setStatutRcs("statutRcs");
-        $this->assertEquals("statutRcs", $obj->getStatutRcs());
-    }
-
-    /**
      * Tests the __construct() method.
      *
      * @return void
@@ -700,6 +687,7 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getPrenom());
         $this->assertEquals([], $obj->getPublicationsBodacc());
         $this->assertNull($obj->getSiren());
+        $this->assertNull($obj->getStatutRcs());
         $this->assertNull($obj->getTrancheEffectif());
 
         $this->assertNull($obj->getAssocieUnique());
@@ -747,6 +735,5 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getSiege());
         $this->assertNull($obj->getSigle());
         $this->assertNull($obj->getSirenFormate());
-        $this->assertNull($obj->getStatutRcs());
     }
 }
