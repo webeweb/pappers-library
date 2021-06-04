@@ -12,6 +12,7 @@
 namespace WBW\Library\Pappers\Model;
 
 use WBW\Library\Pappers\Model\Attribute\ArrayPublicationsBodaccTrait;
+use WBW\Library\Pappers\Model\Attribute\BooleanEntrepriseCesseeTrait;
 use WBW\Library\Pappers\Model\Attribute\BooleanPersonneMoraleTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerAnneeEffectifTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerCapitalTrait;
@@ -39,6 +40,7 @@ use WBW\Library\Pappers\Model\Attribute\StringTrancheEffectifTrait;
 class Entreprise {
 
     use ArrayPublicationsBodaccTrait;
+    use BooleanEntrepriseCesseeTrait;
     use BooleanPersonneMoraleTrait;
     use IntegerAnneeEffectifTrait;
     use IntegerCapitalTrait;
@@ -238,13 +240,6 @@ class Entreprise {
      * @var bool|null
      */
     private $economieSocialeSolidaire;
-
-    /**
-     * Entreprise cessée.
-     *
-     * @var bool|null
-     */
-    private $entrepriseCessee;
 
     /**
      * Entreprise employeuse.
@@ -710,15 +705,6 @@ class Entreprise {
     }
 
     /**
-     * Get the entreprise cessée.
-     *
-     * @return bool|null Returns the entreprise cessée.
-     */
-    public function getEntrepriseCessee(): ?bool {
-        return $this->entrepriseCessee;
-    }
-
-    /**
      * Get the entreprise employeuse.
      *
      * @return bool|null Returns the entreprise employeuse.
@@ -1163,17 +1149,6 @@ class Entreprise {
      */
     public function setEconomieSocialeSolidaire(?bool $economieSocialeSolidaire): Entreprise {
         $this->economieSocialeSolidaire = $economieSocialeSolidaire;
-        return $this;
-    }
-
-    /**
-     * Set the entreprise cessée.
-     *
-     * @param bool|null $entrepriseCessee The entreprise cessée.
-     * @return Entreprise Returns this entreprise.
-     */
-    public function setEntrepriseCessee(?bool $entrepriseCessee): Entreprise {
-        $this->entrepriseCessee = $entrepriseCessee;
         return $this;
     }
 

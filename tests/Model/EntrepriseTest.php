@@ -450,19 +450,6 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setEntrepriseCessee() method.
-     *
-     * @return void
-     */
-    public function testSetEntrepriseCessee(): void {
-
-        $obj = new Entreprise();
-
-        $obj->setEntrepriseCessee(true);
-        $this->assertTrue($obj->getEntrepriseCessee());
-    }
-
-    /**
      * Tests the setEntrepriseEmployeuse() method.
      *
      * @return void
@@ -667,6 +654,7 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getEffectif());
         $this->assertNull($obj->getEffectifMax());
         $this->assertNull($obj->getEffectifMin());
+        $this->assertNull($obj->getEntrepriseCessee());
         $this->assertNull($obj->getGreffe());
         $this->assertNull($obj->getNom());
         $this->assertNull($obj->getNomEntreprise());
@@ -703,7 +691,6 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getDomaineActivite());
         $this->assertNull($obj->getDureePersonneMorale());
         $this->assertNull($obj->getEconomieSocialeSolidaire());
-        $this->assertNull($obj->getEntrepriseCessee());
         $this->assertNull($obj->getEntrepriseEmployeuse());
         $this->assertEquals([], $obj->getEtablissements());
         $this->assertNull($obj->getExtraitImmatriculation());
