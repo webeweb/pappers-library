@@ -24,6 +24,7 @@ use WBW\Library\Pappers\Model\Attribute\StringEffectifTrait;
 use WBW\Library\Pappers\Model\Attribute\StringGreffeTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomEntrepriseTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
+use WBW\Library\Pappers\Model\Attribute\StringObjetSocialTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringSirenTrait;
 use WBW\Library\Pappers\Model\Attribute\StringStatutRcsTrait;
@@ -50,6 +51,7 @@ class Entreprise {
     use StringGreffeTrait;
     use StringNomEntrepriseTrait;
     use StringNomTrait;
+    use StringObjetSocialTrait;
     use StringPrenomTrait;
     use StringSirenTrait;
     use StringStatutRcsTrait;
@@ -301,13 +303,6 @@ class Entreprise {
     private $numeroTvaIntracommunautaire;
 
     /**
-     * Objet social.
-     *
-     * @var string|null
-     */
-    private $objetSocial;
-
-    /**
      * Procédure collective en cours.
      *
      * @var bool|null
@@ -376,7 +371,6 @@ class Entreprise {
      * @var string|null
      */
     private $sirenFormate;
-
 
     /**
      * Constructor.
@@ -794,15 +788,6 @@ class Entreprise {
      */
     public function getNumeroTvaIntracommunautaire(): ?string {
         return $this->numeroTvaIntracommunautaire;
-    }
-
-    /**
-     * Get the objet social.
-     *
-     * @return string|null Returns the objet social.
-     */
-    public function getObjetSocial(): ?string {
-        return $this->objetSocial;
     }
 
     /**
@@ -1277,17 +1262,6 @@ class Entreprise {
      */
     public function setNumeroTvaIntracommunautaire(?string $numeroTvaIntracommunautaire): Entreprise {
         $this->numeroTvaIntracommunautaire = $numeroTvaIntracommunautaire;
-        return $this;
-    }
-
-    /**
-     * Set the objet social.
-     *
-     * @param string|null $objetSocial The objet social.
-     * @return Entreprise Returns this entreprise.
-     */
-    public function setObjetSocial(?string $objetSocial): Entreprise {
-        $this->objetSocial = $objetSocial;
         return $this;
     }
 

@@ -544,19 +544,6 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setObjetSocial() method.
-     *
-     * @return void
-     */
-    public function testSetObjetSocial(): void {
-
-        $obj = new Entreprise();
-
-        $obj->setObjetSocial("objetSocial");
-        $this->assertEquals("objetSocial", $obj->getObjetSocial());
-    }
-
-    /**
      * Tests the setProcedureCollectiveEnCours() method.
      *
      * @return void
@@ -683,6 +670,7 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getGreffe());
         $this->assertNull($obj->getNom());
         $this->assertNull($obj->getNomEntreprise());
+        $this->assertNull($obj->getObjetSocial());
         $this->assertNull($obj->getPersonneMorale());
         $this->assertNull($obj->getPrenom());
         $this->assertEquals([], $obj->getPublicationsBodacc());
@@ -724,7 +712,6 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getLibelleCodeNaf());
         $this->assertNull($obj->getNumeroRcs());
         $this->assertNull($obj->getNumeroTvaIntracommunautaire());
-        $this->assertNull($obj->getObjetSocial());
         $this->assertEquals([], $obj->getProceduresCollectives());
         $this->assertNull($obj->getProcedureCollectiveEnCours());
         $this->assertNull($obj->getProcedureCollectiveExiste());
