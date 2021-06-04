@@ -38,5 +38,4 @@ class ArrayPublicationsBodaccTraitTest extends AbstractTestCase {
         $obj->addPublicationBodacc($publicationBodacc);
         $this->assertSame($publicationBodacc, $obj->getPublicationsBodacc()[0]);
     }
-
 }

@@ -36,6 +36,7 @@ abstract class AbstractRechercheResponse extends AbstractResponse {
     protected function __construct() {
         parent::__construct();
     }
+
     /**
      * Get the total.
      *

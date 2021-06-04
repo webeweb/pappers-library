@@ -75,5 +75,4 @@ class DepotActe {
         $this->actes = $actes;
         return $this;
     }
-
 }
