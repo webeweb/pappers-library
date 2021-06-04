@@ -23,19 +23,6 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class EtablissementTest extends AbstractTestCase {
 
     /**
-     * Tests the setCodeNaf() method.
-     *
-     * @return void
-     */
-    public function testSetCodeNaf(): void {
-
-        $obj = new Etablissement();
-
-        $obj->setCodeNaf("codeNaf");
-        $this->assertEquals("codeNaf", $obj->getCodeNaf());
-    }
-
-    /**
      * Tests the setComplementAdresse() method.
      *
      * @return void
@@ -203,6 +190,7 @@ class EtablissementTest extends AbstractTestCase {
         $this->assertNull($obj->getAdresseLigne1());
         $this->assertNull($obj->getAdresseLigne2());
         $this->assertNull($obj->getAnneeEffectif());
+        $this->assertNull($obj->getCodeNaf());
         $this->assertNull($obj->getCodePostal());
         $this->assertNull($obj->getEffectif());
         $this->assertNull($obj->getEffectifMax());
@@ -213,7 +201,6 @@ class EtablissementTest extends AbstractTestCase {
         $this->assertNull($obj->getTrancheEffectif());
         $this->assertNull($obj->getVille());
 
-        $this->assertNull($obj->getCodeNaf());
         $this->assertNull($obj->getComplementAdresse());
         $this->assertNull($obj->getDateCreation());
         $this->assertNull($obj->getEtablissementCesse());

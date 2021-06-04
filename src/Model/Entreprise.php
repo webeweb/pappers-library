@@ -17,6 +17,7 @@ use WBW\Library\Pappers\Model\Attribute\IntegerAnneeEffectifTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerCapitalTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerEffectifMaxTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerEffectifMinTrait;
+use WBW\Library\Pappers\Model\Attribute\StringCodeNafTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateClotureExerciceTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDenominationTrait;
 use WBW\Library\Pappers\Model\Attribute\StringEffectifTrait;
@@ -41,6 +42,7 @@ class Entreprise {
     use IntegerCapitalTrait;
     use IntegerEffectifMaxTrait;
     use IntegerEffectifMinTrait;
+    use StringCodeNafTrait;
     use StringDateClotureExerciceTrait;
     use StringDenominationTrait;
     use StringEffectifTrait;
@@ -85,13 +87,6 @@ class Entreprise {
      * @var string|null
      */
     private $categorieJuridique;
-
-    /**
-     * Code NAF.
-     *
-     * @var string|null
-     */
-    private $codeNaf;
 
     /**
      * Comptes.
@@ -536,15 +531,6 @@ class Entreprise {
     }
 
     /**
-     * Get the code NAF.
-     *
-     * @return string|null Returns the code NAF.
-     */
-    public function getCodeNaf(): ?string {
-        return $this->codeNaf;
-    }
-
-    /**
      * Get the comptes.
      *
      * @return Compte[] Returns the comptes.
@@ -974,17 +960,6 @@ class Entreprise {
      */
     public function setCategorieJuridique(?string $categorieJuridique): Entreprise {
         $this->categorieJuridique = $categorieJuridique;
-        return $this;
-    }
-
-    /**
-     * Set the code NAF.
-     *
-     * @param string|null $codeNaf The code NAF.
-     * @return Entreprise Returns this entreprise.
-     */
-    public function setCodeNaf(?string $codeNaf): Entreprise {
-        $this->codeNaf = $codeNaf;
         return $this;
     }
 

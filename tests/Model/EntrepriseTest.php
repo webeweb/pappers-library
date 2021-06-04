@@ -213,19 +213,6 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCodeNaf() method.
-     *
-     * @return void
-     */
-    public function testSetCodeNaf(): void {
-
-        $obj = new Entreprise();
-
-        $obj->setCodeNaf("codeNaf");
-        $this->assertEquals("codeNaf", $obj->getCodeNaf());
-    }
-
-    /**
      * Tests the setDateCessation() method.
      *
      * @return void
@@ -700,6 +687,7 @@ class EntrepriseTest extends AbstractTestCase {
 
         $this->assertNull($obj->getAnneeEffectif());
         $this->assertNull($obj->getCapital());
+        $this->assertNull($obj->getCodeNaf());
         $this->assertNull($obj->getDateClotureExercice());
         $this->assertNull($obj->getDenomination());
         $this->assertNull($obj->getEffectif());
@@ -718,7 +706,6 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertEquals([], $obj->getBeneficiairesEffectifs());
         $this->assertNull($obj->getCapitalFormate());
         $this->assertNull($obj->getCategorieJuridique());
-        $this->assertNull($obj->getCodeNaf());
         $this->assertEquals([], $obj->getComptes());
         $this->assertEquals([], $obj->getConventionCollectives());
         $this->assertNull($obj->getDateCessation());

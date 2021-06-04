@@ -16,6 +16,7 @@ use WBW\Library\Pappers\Model\Attribute\IntegerEffectifMaxTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerEffectifMinTrait;
 use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne1Trait;
 use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne2Trait;
+use WBW\Library\Pappers\Model\Attribute\StringCodeNafTrait;
 use WBW\Library\Pappers\Model\Attribute\StringCodePostalTrait;
 use WBW\Library\Pappers\Model\Attribute\StringEffectifTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNicTrait;
@@ -37,6 +38,7 @@ class Etablissement {
     use IntegerEffectifMinTrait;
     use StringAdresseLigne1Trait;
     use StringAdresseLigne2Trait;
+    use StringCodeNafTrait;
     use StringCodePostalTrait;
     use StringEffectifTrait;
     use StringNicTrait;
@@ -44,13 +46,6 @@ class Etablissement {
     use StringSiretTrait;
     use StringTrancheEffectifTrait;
     use StringVilleTrait;
-
-    /**
-     * Code NAF.
-     *
-     * @var string|null
-     */
-    private $codeNaf;
 
     /**
      * Complément adresse.
@@ -141,15 +136,6 @@ class Etablissement {
      */
     public function __construct() {
         // NOTHING TO DO
-    }
-
-    /**
-     * Get the code NAF.
-     *
-     * @return string|null Returns the code NAF.
-     */
-    public function getCodeNaf(): ?string {
-        return $this->codeNaf;
     }
 
     /**
@@ -258,17 +244,6 @@ class Etablissement {
      */
     public function getTypeVoie(): ?string {
         return $this->typeVoie;
-    }
-
-    /**
-     * Set the code NAF.
-     *
-     * @param string|null $codeNaf The code NAF.
-     * @return Etablissement Returns this établissement.
-     */
-    public function setCodeNaf(?string $codeNaf): Etablissement {
-        $this->codeNaf = $codeNaf;
-        return $this;
     }
 
     /**
