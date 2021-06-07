@@ -18,6 +18,7 @@ use WBW\Library\Pappers\Model\Attribute\IntegerAnneeEffectifTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerCapitalTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerEffectifMaxTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerEffectifMinTrait;
+use WBW\Library\Pappers\Model\Attribute\StringCategorieJuridiqueTrait;
 use WBW\Library\Pappers\Model\Attribute\StringCodeNafTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateClotureExerciceTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDenominationTrait;
@@ -46,6 +47,7 @@ class Entreprise {
     use IntegerCapitalTrait;
     use IntegerEffectifMaxTrait;
     use IntegerEffectifMinTrait;
+    use StringCategorieJuridiqueTrait;
     use StringCodeNafTrait;
     use StringDateClotureExerciceTrait;
     use StringDenominationTrait;
@@ -86,13 +88,6 @@ class Entreprise {
      * @var string|null
      */
     private $capitalFormate;
-
-    /**
-     * Catégorie juridique.
-     *
-     * @var string|null
-     */
-    private $categorieJuridique;
 
     /**
      * Comptes.
@@ -507,15 +502,6 @@ class Entreprise {
     }
 
     /**
-     * Get the catégorie juridique.
-     *
-     * @return string|null Returns the catégorie juridique.
-     */
-    public function getCategorieJuridique(): ?string {
-        return $this->categorieJuridique;
-    }
-
-    /**
      * Get the comptes.
      *
      * @return Compte[] Returns the comptes.
@@ -907,17 +893,6 @@ class Entreprise {
      */
     public function setCapitalFormate(?string $capitalFormate): Entreprise {
         $this->capitalFormate = $capitalFormate;
-        return $this;
-    }
-
-    /**
-     * Set the catégorie juridique.
-     *
-     * @param string|null $categorieJuridique The catégorie juridique.
-     * @return Entreprise Returns this entreprise.
-     */
-    public function setCategorieJuridique(?string $categorieJuridique): Entreprise {
-        $this->categorieJuridique = $categorieJuridique;
         return $this;
     }
 

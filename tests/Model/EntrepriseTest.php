@@ -200,19 +200,6 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCategorieJuridique() method.
-     *
-     * @return void
-     */
-    public function testSetCategorieJuridique(): void {
-
-        $obj = new Entreprise();
-
-        $obj->setCategorieJuridique("categorieJuridique");
-        $this->assertEquals("categorieJuridique", $obj->getCategorieJuridique());
-    }
-
-    /**
      * Tests the setDateCessation() method.
      *
      * @return void
@@ -648,6 +635,7 @@ class EntrepriseTest extends AbstractTestCase {
 
         $this->assertNull($obj->getAnneeEffectif());
         $this->assertNull($obj->getCapital());
+        $this->assertNull($obj->getCategorieJuridique());
         $this->assertNull($obj->getCodeNaf());
         $this->assertNull($obj->getDateClotureExercice());
         $this->assertNull($obj->getDenomination());
@@ -669,7 +657,6 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getAssocieUnique());
         $this->assertEquals([], $obj->getBeneficiairesEffectifs());
         $this->assertNull($obj->getCapitalFormate());
-        $this->assertNull($obj->getCategorieJuridique());
         $this->assertEquals([], $obj->getComptes());
         $this->assertEquals([], $obj->getConventionCollectives());
         $this->assertNull($obj->getDateCessation());
