@@ -27,7 +27,7 @@ class APIv1ProviderTest extends AbstractTestCase {
      *
      * @return void
      */
-    public function testGetEndpointVersion():void {
+    public function testGetEndpointVersion(): void {
 
         $obj = new APIv1Provider();
 
