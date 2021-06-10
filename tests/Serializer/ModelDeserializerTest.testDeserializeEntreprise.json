@@ -1,0 +1,302 @@
+{
+    "siren": "443061841",
+    "siren_formate": "443 061 841",
+    "nom_entreprise": "GOOGLE FRANCE",
+    "personne_morale": true,
+    "denomination": "GOOGLE FRANCE",
+    "nom": null,
+    "prenom": null,
+    "sexe": null,
+    "code_naf": "70.10Z",
+    "libelle_code_naf": "Activités des sièges sociaux",
+    "domaine_activite": "Activités des sièges sociaux ; conseil de gestion",
+    "conventions_collectives": [
+        {
+            "nom": "Convention collective nationale applicable au personnel des bureaux d'études techniques des cabinets d'ingénieurs-conseils et des sociétés de conseils(BET SYNTEC)",
+            "idcc": 1486,
+            "confirmee": true
+        }
+    ],
+    "date_creation": "2002-05-16",
+    "date_creation_formate": "16/05/2002",
+    "entreprise_cessee": false,
+    "date_cessation": "2002-05-16",
+    "entreprise_employeuse": true,
+    "categorie_juridique": "5499",
+    "forme_juridique": "Société à responsabilité limitée (SARL)",
+    "effectif": "Entre 500 et 999 salariés",
+    "effectif_min": 500,
+    "effectif_max": 999,
+    "tranche_effectif": "41",
+    "annee_effectif": 2017,
+    "dernier_traitement": "2020-07-09",
+    "siege": {
+        "siret": "44306184100047",
+        "siret_formate": "443 061 841 00047",
+        "nic": "00047",
+        "code_postal": "75009",
+        "ville": "PARIS 9",
+        "latitude": 48.876947,
+        "longitude": 2.329981,
+        "etablissement_cesse": true,
+        "siege": true,
+        "etablissement_employeur": true,
+        "effectif": "Entre 500 et 999 salariés",
+        "effectif_min": 500,
+        "effectif_max": 999,
+        "tranche_effectif": "41",
+        "annee_effectif": 2017,
+        "code_naf": "70.10Z",
+        "libelle_code_naf": "Activités des sièges sociaux",
+        "date_de_creation": "2011-05-12T22:00:00.000Z",
+        "numero_voie": 8,
+        "indice_repetition": null,
+        "type_voie": "RUE",
+        "libelle_voie": "DE LONDRES",
+        "complement_adresse": null,
+        "adresse_ligne_1": "8 RUE DE LONDRES",
+        "adresse_ligne_2": null
+    },
+    "diffusable": true,
+    "sigle": null,
+    "objet_social": "Fourniture de services et/ou conseils relatifs aux logiciels au réseau internet aux réseaux télématiques ou en ligne notamment L'intermediation en matière de vente de publicité en ligne la promotion sous toutes ses formes de la publicité en ligne la promotion directe de produits et services et la mise en oeuvre de centres de traitement de l'information",
+    "capital": 464884017,
+    "capital_formate": "464 884 017,00 €",
+    "capital_actuel_si_variable": null,
+    "devise_capital": "Euros",
+    "numero_rcs": "464884017 R.C.S. Paris",
+    "date_cloture_exercice": null,
+    "date_cloture_exercice_exceptionnelle": null,
+    "date_cloture_exercice_exceptionnelle_formate": null,
+    "prochaine_date_cloture_exercice": null,
+    "prochaine_date_cloture_exercice_formate": null,
+    "economie_sociale_solidaire": true,
+    "duree_personne_morale": null,
+    "derniere_mise_a_jour_sirene": "2020-08-13",
+    "derniere_mise_a_jour_rcs": "2020-06-25",
+    "statut_rcs": "Inscrit",
+    "greffe": "Paris",
+    "date_immatriculation_rcs": null,
+    "date_premiere_immatriculation_rcs": null,
+    "date_radiation_rcs": null,
+    "numero_tva_intracommunautaire": "FR64443061841",
+    "associe_unique": true,
+    "etablissements": [
+        {
+            "siret": "44306184100047",
+            "siret_formate": "443 061 841 00047",
+            "nic": "00047",
+            "code_postal": "75009",
+            "ville": "PARIS 9",
+            "latitude": 48.876947,
+            "longitude": 2.329981,
+            "etablissement_cesse": true,
+            "siege": true,
+            "etablissement_employeur": true,
+            "effectif": "Entre 500 et 999 salariés",
+            "effectif_min": 500,
+            "effectif_max": 999,
+            "tranche_effectif": "41",
+            "annee_effectif": 2017,
+            "code_naf": "70.10Z",
+            "libelle_code_naf": "Activités des sièges sociaux",
+            "date_de_creation": "2011-05-12T22:00:00.000Z",
+            "numero_voie": 8,
+            "indice_repetition": null,
+            "type_voie": "RUE",
+            "libelle_voie": "DE LONDRES",
+            "complement_adresse": null,
+            "adresse_ligne_1": "8 RUE DE LONDRES",
+            "adresse_ligne_2": null
+        }
+    ],
+    "finances": [
+        {
+            "annee": 2018,
+            "date_de_cloture_exercice": "2018-12-31",
+            "duree_exercice": 12,
+            "chiffre_affaires": 411016329,
+            "resultat": 29327087,
+            "effectif": 723
+        }
+    ],
+    "representants": [
+        {
+            "qualite": "Gérant",
+            "personne_morale": false,
+            "date_prise_de_poste": "2017-08-03",
+            "nom": "Yi",
+            "prenom": "Kenneth H.",
+            "nom_complet": "Kenneth H. Yi",
+            "date_de_naissance": "1970-01-06",
+            "date_de_naissance_formate": "06/01/1970",
+            "age": 50,
+            "nationalite": "Américaine (Etats Unis)",
+            "ville_de_naissance": "Séoul",
+            "pays_de_naissance": "COREE DU SUD",
+            "adresse_ligne_1": "1600 Amphitheatre Parkway Mountain View CA 94043",
+            "adresse_ligne_2": null,
+            "adresse_ligne_3": null,
+            "code_postal": null,
+            "ville": null,
+            "pays": "Etats-Unis"
+        }
+    ],
+    "beneficiaires_effectifs": [
+        {
+            "date_greffe": "2019-08-24",
+            "nom": "string",
+            "nom_usage": "string",
+            "prenom": "string",
+            "pseudonyme": "string",
+            "date_de_naissance_formatee": "string",
+            "nationalite": "string",
+            "pourcentage_parts": 0,
+            "pourcentage_parts_directes": 0,
+            "pourcentage_parts_indirectes": 0,
+            "pourcentage_parts_vocation_titulaire": 0,
+            "details_parts_directes": {
+                "pourcentage_pleine_propriete": 0,
+                "pourcentage_nue_propriete": 0
+            },
+            "details_parts_indirectes": {
+                "pourcentage_en_indivision": 0,
+                "pourcentage_en_personne_morale": 0,
+                "details_en_indivision": {
+                    "pourcentage_pleine_propriete": 0,
+                    "pourcentage_nue_propriete": 0
+                },
+                "details_en_personne_morale": {
+                    "pourcentage_pleine_propriete": 0,
+                    "pourcentage_nue_propriete": 0
+                }
+            },
+            "details_parts_vocation_titulaire": {
+                "pourcentage_directes": 0,
+                "pourcentage_indirectes": 0,
+                "details_directes": {
+                    "pourcentage_pleine_propriete": 0,
+                    "pourcentage_nue_propriete": 0
+                },
+                "details_indirectes": {
+                    "pourcentage_en_indivision": 0,
+                    "pourcentage_en_personne_morale": 0,
+                    "details_en_indivision": {
+                        "pourcentage_pleine_propriete": 0,
+                        "pourcentage_nue_propriete": 0
+                    },
+                    "details_en_personne_morale": {
+                        "pourcentage_pleine_propriete": 0,
+                        "pourcentage_nue_propriete": 0
+                    }
+                }
+            },
+            "pourcentage_votes": 0,
+            "pourcentage_votes_directs": 0,
+            "pourcentage_votes_indirect": 0,
+            "details_votes_directs": {
+                "pourcentage_pleine_propriete": 0,
+                "pourcentage_nue_propriete": 0,
+                "pourcentage_usufruit": 0
+            },
+            "details_votes_indirects": {
+                "pourcentage_en_indivision": 0,
+                "pourcentage_en_personne_morale": 0,
+                "details_en_indivision": {
+                    "pourcentage_pleine_propriete": 0,
+                    "pourcentage_nue_propriete": 0,
+                    "pourcentage_usufruit": 0
+                },
+                "details_en_personne_morale": {
+                    "pourcentage_pleine_propriete": 0,
+                    "pourcentage_nue_propriete": 0,
+                    "pourcentage_usufruit": 0
+                }
+            },
+            "details_societe_de_gestion": {
+                "nom": "string",
+                "siren": "string",
+                "greffe": "string",
+                "adresse": "string",
+                "code_postal": "string",
+                "ville": "string"
+            },
+            "detention_pouvoir_decision_ag": true,
+            "detention_pouvoir_nom_membre_conseil_administration": true,
+            "detention_autres_moyens_controle": true,
+            "beneficiaire_representant_legal": true,
+            "representant_legal_placement_sans_gestion_delegation": true
+        }
+    ],
+    "depots_actes": [
+        {
+            "date_depot": "2020-04-07",
+            "date_depot_formate": "07/04/2020",
+            "disponible": true,
+            "nom_fichier_pdf": "GOOGLE FRANCE - Actes du 07-04-2020.pdf",
+            "token": "QTQ0MzA2MTg0MTIwMjAwNDA3RMOpY2lzaW9uKHMpIGRlIGwnYXNzb2Npw6kgdW5pcXVl",
+            "actes": [
+                {
+                    "type": "Décision(s) de l'associé unique",
+                    "decision": "Augmentation du capital social",
+                    "date_acte": "2020-03-04",
+                    "date_acte_formate": "04/03/2020"
+                }
+            ]
+        }
+    ],
+    "comptes": [
+        {
+            "date_depot": "2020-07-16",
+            "date_depot_formate": "16/07/2020",
+            "date_cloture": "2019-12-31",
+            "annee_cloture": 2019,
+            "confidentialite": true,
+            "confidentialite_compte_de_resultat": true,
+            "disponible": true,
+            "nom_fichier_pdf": "GOOGLE FRANCE - Comptes 2019.pdf",
+            "token": "QzQ0MzA2MTg0MTIwMjAwNzE2"
+        }
+    ],
+    "publications_bodacc": [
+        {
+            "numero_parution": "20200075",
+            "date": "2020-04-16T00:00:00.000Z",
+            "numero_annonce": "670",
+            "bodacc": "B",
+            "type": "Modification"
+        }
+    ],
+    "procedures_collectives": [
+        {
+            "type": "Redressement judiciaire",
+            "date_debut": "2020-04-16T00:00:00.000Z",
+            "date_fin": "2020-08-27T00:00:00.000Z",
+            "publications_bodacc": [
+                {
+                    "numero_parution": "20200075",
+                    "date": "2020-04-16T00:00:00.000Z",
+                    "numero_annonce": "670",
+                    "bodacc": "B",
+                    "type": "Modification"
+                }
+            ]
+        }
+    ],
+    "procedure_collective_existe": true,
+    "procedure_collective_en_cours": true,
+    "derniers_statuts": {
+        "date_depot": "2020-04-07",
+        "date_depot_formate": "07/04/2020",
+        "disponible": true,
+        "nom_fichier_pdf": "GOOGLE FRANCE - Actes du 07-04-2020.pdf",
+        "token": "QTQ0MzA2MTg0MTIwMjAwNDA3RMOpY2lzaW9uKHMpIGRlIGwnYXNzb2Npw6kgdW5pcXVl",
+        "type": "Statuts mis à jour",
+        "decision": null,
+        "date_acte": "2020-03-04",
+        "date_acte_formate": "04/03/2020"
+    },
+    "extrait_immatriculation": {
+        "token": "SzQ0MzA2MTg0MQ"
+    }
+}
