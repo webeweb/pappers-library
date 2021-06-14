@@ -17,7 +17,7 @@ namespace WBW\Library\Pappers\Request;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Request
  */
-class RecherchePublicationsRequest extends AbstractRequest {
+class RecherchePublicationsRequest extends AbstractRechercheRequest {
 
     /**
      * Resources path.
