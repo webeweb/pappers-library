@@ -18,6 +18,7 @@ use WBW\Library\Core\Model\Attribute\IntegerPageTrait;
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Response
+ * @abstract
  */
 abstract class AbstractRechercheResponse extends AbstractResponse {
 
