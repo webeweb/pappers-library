@@ -12,6 +12,7 @@
 namespace WBW\Library\Pappers\Model;
 
 use WBW\Library\Pappers\Model\Attribute\IntegerChiffreAffairesTrait;
+use WBW\Library\Pappers\Model\Attribute\IntegerResultatTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateClotureExerciceTrait;
 
 /**
@@ -23,6 +24,7 @@ use WBW\Library\Pappers\Model\Attribute\StringDateClotureExerciceTrait;
 class Finance {
 
     use IntegerChiffreAffairesTrait;
+    use IntegerResultatTrait;
     use StringDateClotureExerciceTrait;
 
     /**
@@ -45,13 +47,6 @@ class Finance {
      * @var int|null
      */
     private $effectif;
-
-    /**
-     * Résultat.
-     *
-     * @var int|null
-     */
-    private $resultat;
 
     /**
      * Constructor.
@@ -88,15 +83,6 @@ class Finance {
     }
 
     /**
-     * Get the résultat.
-     *
-     * @return int|null Returns the résultat.
-     */
-    public function getResultat(): ?int {
-        return $this->resultat;
-    }
-
-    /**
      * Set the année.
      *
      * @param int|null $annee The année.
@@ -126,17 +112,6 @@ class Finance {
      */
     public function setEffectif(?int $effectif): Finance {
         $this->effectif = $effectif;
-        return $this;
-    }
-
-    /**
-     * Set the résultat.
-     *
-     * @param int|null $resultat The résultat.
-     * @return Finance Returns this finance.
-     */
-    public function setResultat(?int $resultat): Finance {
-        $this->resultat = $resultat;
         return $this;
     }
 }
