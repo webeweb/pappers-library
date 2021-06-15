@@ -16,8 +16,10 @@ use WBW\Library\Pappers\Model\Attribute\BooleanEntrepriseCesseeTrait;
 use WBW\Library\Pappers\Model\Attribute\BooleanPersonneMoraleTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerAnneeEffectifTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerCapitalTrait;
+use WBW\Library\Pappers\Model\Attribute\IntegerChiffreAffairesTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerEffectifMaxTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerEffectifMinTrait;
+use WBW\Library\Pappers\Model\Attribute\IntegerResultatTrait;
 use WBW\Library\Pappers\Model\Attribute\StringCategorieJuridiqueTrait;
 use WBW\Library\Pappers\Model\Attribute\StringCodeNafTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateClotureExerciceTrait;
@@ -45,8 +47,10 @@ class Entreprise {
     use BooleanPersonneMoraleTrait;
     use IntegerAnneeEffectifTrait;
     use IntegerCapitalTrait;
+    use IntegerChiffreAffairesTrait;
     use IntegerEffectifMaxTrait;
     use IntegerEffectifMinTrait;
+    use IntegerResultatTrait;
     use StringCategorieJuridiqueTrait;
     use StringCodeNafTrait;
     use StringDateClotureExerciceTrait;
@@ -60,6 +64,13 @@ class Entreprise {
     use StringSirenTrait;
     use StringStatutRcsTrait;
     use StringTrancheEffectifTrait;
+
+    /**
+     * Année finances.
+     *
+     * @var string|null
+     */
+    private $anneeFinances;
 
     /**
      * Associé unique.
@@ -237,6 +248,13 @@ class Entreprise {
     private $economieSocialeSolidaire;
 
     /**
+     * Effectifs finances.
+     *
+     * @var int|null
+     */
+    private $effectifsFinances;
+
+    /**
      * Entreprise employeuse.
      *
      * @var bool|null
@@ -363,6 +381,13 @@ class Entreprise {
     private $sirenFormate;
 
     /**
+     * Villes.
+     *
+     * @var string[]
+     */
+    private $villes;
+
+    /**
      * Constructor.
      */
     public function __construct() {
@@ -375,6 +400,7 @@ class Entreprise {
         $this->setProceduresCollectives([]);
         $this->setPublicationsBodacc([]);
         $this->setRepresentants([]);
+        $this->setVilles([]);
     }
 
     /**
@@ -463,6 +489,15 @@ class Entreprise {
     public function addRepresentant(Representant $representant): Entreprise {
         $this->representants[] = $representant;
         return $this;
+    }
+
+    /**
+     * Get the année finances.
+     *
+     * @return string|null Returns the année finances.
+     */
+    public function getAnneeFinances(): ?string {
+        return $this->anneeFinances;
     }
 
     /**
@@ -691,6 +726,15 @@ class Entreprise {
     }
 
     /**
+     * Get the effectifs finances.
+     *
+     * @return int|null Returns the effectifs finances.
+     */
+    public function getEffectifsFinances(): ?int {
+        return $this->effectifsFinances;
+    }
+
+    /**
      * Get the entreprise employeuse.
      *
      * @return bool|null Returns the entreprise employeuse.
@@ -850,6 +894,26 @@ class Entreprise {
      */
     public function getSirenFormate(): ?string {
         return $this->sirenFormate;
+    }
+
+    /**
+     * Get the villes.
+     *
+     * @return string[] Returns the villes.
+     */
+    public function getVilles(): array {
+        return $this->villes;
+    }
+
+    /**
+     * Set the année finances.
+     *
+     * @param string|null $anneeFinances The année finances.
+     * @return Entreprise Returns this entreprise.
+     */
+    public function setAnneeFinances(?string $anneeFinances): Entreprise {
+        $this->anneeFinances = $anneeFinances;
+        return $this;
     }
 
     /**
@@ -1128,6 +1192,17 @@ class Entreprise {
     }
 
     /**
+     * Set the effectifs finances.
+     *
+     * @param int|null $effectifsFinances The effectifs finances.
+     * @return Entreprise Returns this entreprise.
+     */
+    public function setEffectifsFinances(?int $effectifsFinances): Entreprise {
+        $this->effectifsFinances = $effectifsFinances;
+        return $this;
+    }
+
+    /**
      * Set the entreprise employeuse.
      *
      * @param bool|null $entrepriseEmployeuse The entreprise employeuse.
@@ -1322,6 +1397,17 @@ class Entreprise {
      */
     public function setSirenFormate(?string $sirenFormate): Entreprise {
         $this->sirenFormate = $sirenFormate;
+        return $this;
+    }
+
+    /**
+     * Set the villes.
+     *
+     * @param string[] $villes The villes.
+     * @return Entreprise Returns this entreprise.
+     */
+    public function setVilles(array $villes): Entreprise {
+        $this->villes = $villes;
         return $this;
     }
 }

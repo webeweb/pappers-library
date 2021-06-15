@@ -637,6 +637,7 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getCapital());
         $this->assertNull($obj->getCategorieJuridique());
         $this->assertNull($obj->getCodeNaf());
+        $this->assertNull($obj->getChiffreAffaires());
         $this->assertNull($obj->getDateClotureExercice());
         $this->assertNull($obj->getDenomination());
         $this->assertNull($obj->getEffectif());
@@ -650,10 +651,12 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getPersonneMorale());
         $this->assertNull($obj->getPrenom());
         $this->assertEquals([], $obj->getPublicationsBodacc());
+        $this->assertNull($obj->getResultat());
         $this->assertNull($obj->getSiren());
         $this->assertNull($obj->getStatutRcs());
         $this->assertNull($obj->getTrancheEffectif());
 
+        $this->assertNull($obj->getAnneeFinances());
         $this->assertNull($obj->getAssocieUnique());
         $this->assertEquals([], $obj->getBeneficiairesEffectifs());
         $this->assertNull($obj->getCapitalFormate());
@@ -678,6 +681,7 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getDomaineActivite());
         $this->assertNull($obj->getDureePersonneMorale());
         $this->assertNull($obj->getEconomieSocialeSolidaire());
+        $this->assertNull($obj->getEffectifsFinances());
         $this->assertNull($obj->getEntrepriseEmployeuse());
         $this->assertEquals([], $obj->getEtablissements());
         $this->assertNull($obj->getExtraitImmatriculation());
@@ -696,5 +700,6 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getSiege());
         $this->assertNull($obj->getSigle());
         $this->assertNull($obj->getSirenFormate());
+        $this->assertEquals([], $obj->getVilles());
     }
 }
