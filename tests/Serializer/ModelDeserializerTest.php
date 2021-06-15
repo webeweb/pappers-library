@@ -35,9 +35,9 @@ class ModelDeserializerTest extends AbstractTestCase {
     protected function setUp(): void {
         parent::setUp();
 
-        $contents = file_get_contents(__DIR__ . "/ModelDeserializerTest.testDeserializeEntreprise.json");
+        $data = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeEntreprise.json");
 
-        $this->json = json_decode($contents, true);
+        $this->json = json_decode($data, true);
     }
 
     /**
