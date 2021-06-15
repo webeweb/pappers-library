@@ -367,6 +367,8 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
      */
     public function test__construct(): void {
 
+        $this->assertEquals("d-m-Y", TestRechercheRequest::DATE_FORMAT);
+
         $obj = new TestRechercheRequest();
 
         $this->assertNull($obj->getEntrepriseCessee());

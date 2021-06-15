@@ -39,6 +39,13 @@ abstract class AbstractRechercheRequest extends AbstractRequest {
     use StringStatutRcsTrait;
 
     /**
+     * Date format.
+     *
+     * @var string
+     */
+    const DATE_FORMAT = "d-m-Y";
+
+    /**
      * Age dirigeant max.
      *
      * @var int|null
