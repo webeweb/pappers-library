@@ -45,19 +45,28 @@ class SuggestionsRequest extends AbstractRequest {
     private $longueur;
 
     /**
-     * {@inheritDoc}
-     */
-    public function getResourcesPath(): string {
-        return self::RESOURCES_PATH;
-    }
-
-    /**
      * Get the cibles.
      *
      * @return string|null Returns the cibles.
      */
     public function getCibles(): ?string {
         return $this->cibles;
+    }
+
+    /**
+     * Get the longueur.
+     *
+     * @return int|null Returns the longueur.
+     */
+    public function getLongueur(): ?int {
+        return $this->longueur;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getResourcesPath(): string {
+        return self::RESOURCES_PATH;
     }
 
     /**
@@ -69,15 +78,6 @@ class SuggestionsRequest extends AbstractRequest {
     public function setCibles(?string $cibles): SuggestionsRequest {
         $this->cibles = $cibles;
         return $this;
-    }
-
-    /**
-     * Get the longueur.
-     *
-     * @return int|null Returns the longueur.
-     */
-    public function getLongueur(): ?int {
-        return $this->longueur;
     }
 
     /**
