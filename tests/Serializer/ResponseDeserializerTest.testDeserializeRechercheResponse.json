@@ -1,0 +1,109 @@
+{
+    "resultats": [
+        {
+            "siren": "443061841",
+            "siren_formate": "443 061 841",
+            "nom_entreprise": "GOOGLE FRANCE",
+            "personne_morale": true,
+            "denomination": "GOOGLE FRANCE",
+            "nom": null,
+            "prenom": null,
+            "sexe": null,
+            "code_naf": "70.10Z",
+            "libelle_code_naf": "Activités des sièges sociaux",
+            "domaine_activite": "Activités des sièges sociaux ; conseil de gestion",
+            "conventions_collectives": [
+                {
+                    "nom": "Convention collective nationale applicable au personnel des bureaux d'études techniques des cabinets d'ingénieurs-conseils et des sociétés de conseils(BET SYNTEC)",
+                    "idcc": 1486,
+                    "confirmee": true
+                }
+            ],
+            "date_creation": "2002-05-16",
+            "date_creation_formate": "16/05/2002",
+            "entreprise_cessee": false,
+            "date_cessation": "2002-05-16",
+            "entreprise_employeuse": true,
+            "categorie_juridique": "5499",
+            "forme_juridique": "Société à responsabilité limitée (SARL)",
+            "effectif": "Entre 500 et 999 salariés",
+            "effectif_min": 500,
+            "effectif_max": 999,
+            "tranche_effectif": "41",
+            "annee_effectif": 2017,
+            "dernier_traitement": "2020-07-09",
+            "siege": {
+                "siret": "44306184100047",
+                "siret_formate": "443 061 841 00047",
+                "nic": "00047",
+                "numero_voie": 8,
+                "indice_repetition": null,
+                "type_voie": "RUE",
+                "libelle_voie": "DE LONDRES",
+                "complement_adresse": null,
+                "adresse_ligne_1": "8 RUE DE LONDRES",
+                "adresse_ligne_2": null,
+                "code_postal": "75009",
+                "ville": "PARIS 9",
+                "latitude": 48.876947,
+                "longitude": 2.329981
+            },
+            "villes": [
+                "MONTPELLIER"
+            ],
+            "chiffre_affaires": 411016329,
+            "resultat": 29327087,
+            "effectifs_finances": 723,
+            "annee_finances": "2018",
+            "dirigeants": [
+                {
+                    "qualite": "Gérant",
+                    "personne_morale": false,
+                    "date_prise_de_poste": "2017-08-03",
+                    "nom": "Yi",
+                    "prenom": "Kenneth H.",
+                    "nom_complet": "Kenneth H. Yi",
+                    "date_de_naissance": "1970-01-06",
+                    "date_de_naissance_formate": "06/01/1970",
+                    "age": 50,
+                    "nationalite": "Américaine (Etats Unis)",
+                    "ville_de_naissance": "Séoul",
+                    "pays_de_naissance": "COREE DU SUD",
+                    "adresse_ligne_1": "1600 Amphitheatre Parkway Mountain View CA 94043",
+                    "adresse_ligne_2": null,
+                    "adresse_ligne_3": null,
+                    "code_postal": null,
+                    "ville": null,
+                    "pays": "Etats-Unis"
+                }
+            ],
+            "documents": [
+                {
+                    "type": "acte",
+                    "date_depot": "2020-08-04T00:00:00.000Z",
+                    "titres": "2017-08-03T00:00:00.000Z",
+                    "mentions": [
+                        "string"
+                    ]
+                }
+            ],
+            "publications": [
+                {
+                    "type": "acte",
+                    "date": "2020-08-04T00:00:00.000Z",
+                    "contenu": "string",
+                    "mentions": [
+                        "string"
+                    ]
+                }
+            ],
+            "nb_dirigeants_total": 0,
+            "nb_documents_avec_mentions": 0,
+            "nb_documents_total": 0,
+            "nb_publications_avec_mentions": 0,
+            "nb_publications_total": 0
+        }
+    ],
+    "total": 100,
+    "page": 1
+}
