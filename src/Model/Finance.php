@@ -11,6 +11,7 @@
 
 namespace WBW\Library\Pappers\Model;
 
+use WBW\Library\Pappers\Model\Attribute\IntegerChiffreAffairesTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateClotureExerciceTrait;
 
 /**
@@ -21,6 +22,7 @@ use WBW\Library\Pappers\Model\Attribute\StringDateClotureExerciceTrait;
  */
 class Finance {
 
+    use IntegerChiffreAffairesTrait;
     use StringDateClotureExerciceTrait;
 
     /**
@@ -29,13 +31,6 @@ class Finance {
      * @var int|null
      */
     private $annee;
-
-    /**
-     * Chiffre affaires.
-     *
-     * @var int|null
-     */
-    private $chiffreAffaires;
 
     /**
      * Durée exercice.
@@ -75,15 +70,6 @@ class Finance {
     }
 
     /**
-     * Get the chiffre affaires.
-     *
-     * @return int|null Returns the chiffre affaires.
-     */
-    public function getChiffreAffaires(): ?int {
-        return $this->chiffreAffaires;
-    }
-
-    /**
      * Get the durée exercice.
      *
      * @return int|null Returns the durée exercice.
@@ -118,17 +104,6 @@ class Finance {
      */
     public function setAnnee(?int $annee): Finance {
         $this->annee = $annee;
-        return $this;
-    }
-
-    /**
-     * Set the chiffre affaires.
-     *
-     * @param int|null $chiffreAffaires The chiffre affiares.
-     * @return Finance Returns this finance.
-     */
-    public function setChiffreAffaires(?int $chiffreAffaires): Finance {
-        $this->chiffreAffaires = $chiffreAffaires;
         return $this;
     }
 

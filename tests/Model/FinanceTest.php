@@ -36,19 +36,6 @@ class FinanceTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setChiffreAffaires() method.
-     *
-     * @return void
-     */
-    public function testSetChiffreAffaires(): void {
-
-        $obj = new Finance();
-
-        $obj->setChiffreAffaires(1);
-        $this->assertEquals(1, $obj->getChiffreAffaires());
-    }
-
-    /**
      * Tests the setDureeExercice() method.
      *
      * @return void
@@ -96,10 +83,10 @@ class FinanceTest extends AbstractTestCase {
 
         $obj = new Finance();
 
+        $this->assertNull($obj->getChiffreAffaires());
         $this->assertNull($obj->getDateClotureExercice());
 
         $this->assertNull($obj->getAnnee());
-        $this->assertNull($obj->getChiffreAffaires());
         $this->assertNull($obj->getDureeExercice());
         $this->assertNull($obj->getEffectif());
         $this->assertNull($obj->getResultat());
