@@ -9,25 +9,17 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\Pappers\Response;
+namespace WBW\Library\Pappers\Tests\Fixtures\Model\Attribute;
 
 use WBW\Library\Pappers\Model\Attribute\EntrepriseEntrepriseTrait;
-use WBW\Library\Pappers\Model\Entreprise;
 
 /**
- * Entreprise response.
+ * Test entreprise entreprise trait.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\Pappers\Response
+ * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute
  */
-class EntrepriseResponse extends AbstractResponse {
+class TestEntrepriseEntrepriseTrait {
 
     use EntrepriseEntrepriseTrait;
-
-    /**
-     * Constructor.
-     */
-    public function __construct() {
-        parent::__construct();
-    }
 }

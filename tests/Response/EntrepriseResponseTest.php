@@ -12,7 +12,6 @@
 namespace WBW\Library\Pappers\Tests\Response;
 
 use PHPUnit\Framework\TestCase;
-use WBW\Library\Pappers\Model\Entreprise;
 use WBW\Library\Pappers\Response\EntrepriseResponse;
 
 /**
@@ -22,22 +21,6 @@ use WBW\Library\Pappers\Response\EntrepriseResponse;
  * @package WBW\Library\Pappers\Tests\Response
  */
 class EntrepriseResponseTest extends TestCase {
-
-    /**
-     * Tests the setEntreprise() method.
-     *
-     * @return void
-     */
-    public function testSetEntreprise(): void {
-
-        // Set an Entreprise mock.
-        $entreprise = new Entreprise();
-
-        $obj = new EntrepriseResponse();
-
-        $obj->setEntreprise($entreprise);
-        $this->assertSame($entreprise, $obj->getEntreprise());
-    }
 
     /**
      * Tests the __construct() method.
