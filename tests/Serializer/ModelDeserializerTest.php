@@ -13,6 +13,7 @@ namespace WBW\Library\Pappers\Tests\Serializer;
 
 use WBW\Library\Pappers\Serializer\ModelDeserializer;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
+use WBW\Library\Pappers\Tests\Fixtures\Serializer\TestModelDeserializer;
 
 /**
  * Model deserializer test.
@@ -35,7 +36,7 @@ class ModelDeserializerTest extends AbstractTestCase {
     protected function setUp(): void {
         parent::setUp();
 
-        $data = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeEntreprise.json");
+        $data = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeEntrepriseResponse.json");
 
         $this->json = json_decode($data, true);
     }
@@ -47,7 +48,7 @@ class ModelDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeActe(): void {
 
-        $res = ModelDeserializer::deserializeActe($this->json["depots_actes"][0]["actes"][0]);
+        $res = TestModelDeserializer::deserializeActe($this->json["depots_actes"][0]["actes"][0]);
 
         $this->assertEquals("Décision(s) de l'associé unique", $res->getType());
         $this->assertEquals("Augmentation du capital social", $res->getDecision());
@@ -62,7 +63,7 @@ class ModelDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeBeneficiaireEffectif(): void {
 
-        $res = ModelDeserializer::deserializeBeneficiaireEffectif($this->json["beneficiaires_effectifs"][0]);
+        $res = TestModelDeserializer::deserializeBeneficiaireEffectif($this->json["beneficiaires_effectifs"][0]);
 
         $this->assertEquals("2019-08-24", $res->getDateGreffe());
         $this->assertEquals("string", $res->getNom());
@@ -98,7 +99,7 @@ class ModelDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeCompte(): void {
 
-        $res = ModelDeserializer::deserializeCompte($this->json["comptes"][0]);
+        $res = TestModelDeserializer::deserializeCompte($this->json["comptes"][0]);
 
         $this->assertEquals("2020-07-16", $res->getDateDepot());
         $this->assertEquals("16/07/2020", $res->getDateDepotFormate());
@@ -118,7 +119,7 @@ class ModelDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeConventionCollective(): void {
 
-        $res = ModelDeserializer::deserializeConventionCollective($this->json["conventions_collectives"][0]);
+        $res = TestModelDeserializer::deserializeConventionCollective($this->json["conventions_collectives"][0]);
 
         $this->assertEquals("Convention collective nationale applicable au personnel des bureaux d'études techniques des cabinets d'ingénieurs-conseils et des sociétés de conseils(BET SYNTEC)", $res->getNom());
         $this->assertEquals(1486, $res->getIdcc());
@@ -132,7 +133,7 @@ class ModelDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeDepotActe(): void {
 
-        $res = ModelDeserializer::deserializeDepotActe($this->json["depots_actes"][0]);
+        $res = TestModelDeserializer::deserializeDepotActe($this->json["depots_actes"][0]);
 
         $this->assertEquals("2020-04-07", $res->getDateDepot());
         $this->assertEquals("07/04/2020", $res->getDateDepotFormate());
@@ -149,7 +150,7 @@ class ModelDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeDetailsDirects(): void {
 
-        $res = ModelDeserializer::deserializeDetailsDirects($this->json["beneficiaires_effectifs"][0]["details_votes_directs"]);
+        $res = TestModelDeserializer::deserializeDetailsDirects($this->json["beneficiaires_effectifs"][0]["details_votes_directs"]);
 
         $this->assertEquals(0, $res->getPourcentagePleinePropriete());
         $this->assertEquals(0, $res->getPourcentageNuePropriete());
@@ -163,7 +164,7 @@ class ModelDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeDetailsIndirects(): void {
 
-        $res = ModelDeserializer::deserializeDetailsIndirects($this->json["beneficiaires_effectifs"][0]["details_votes_indirects"]);
+        $res = TestModelDeserializer::deserializeDetailsIndirects($this->json["beneficiaires_effectifs"][0]["details_votes_indirects"]);
 
         $this->assertEquals(0, $res->getPourcentageIndivision());
         $this->assertEquals(0, $res->getPourcentagePersonneMorale());
@@ -178,7 +179,7 @@ class ModelDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeDetailsIndivision(): void {
 
-        $res = ModelDeserializer::deserializeDetailsIndivision($this->json["beneficiaires_effectifs"][0]["details_votes_indirects"]["details_en_indivision"]);
+        $res = TestModelDeserializer::deserializeDetailsIndivision($this->json["beneficiaires_effectifs"][0]["details_votes_indirects"]["details_en_indivision"]);
 
         $this->assertEquals(0, $res->getPourcentagePleinePropriete());
         $this->assertEquals(0, $res->getPourcentageNuePropriete());
@@ -192,7 +193,7 @@ class ModelDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeDetailsPartsVocationTitulaire(): void {
 
-        $res = ModelDeserializer::deserializeDetailsPartsVocationTitulaire($this->json["beneficiaires_effectifs"][0]["details_parts_vocation_titulaire"]);
+        $res = TestModelDeserializer::deserializeDetailsPartsVocationTitulaire($this->json["beneficiaires_effectifs"][0]["details_parts_vocation_titulaire"]);
 
         $this->assertEquals(0, $res->getPourcentageDirectes());
         $this->assertEquals(0, $res->getPourcentageIndirectes());
@@ -207,7 +208,7 @@ class ModelDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeDetailsPersonneMorale(): void {
 
-        $res = ModelDeserializer::deserializeDetailsPersonneMorale($this->json["beneficiaires_effectifs"][0]["details_votes_indirects"]["details_en_personne_morale"]);
+        $res = TestModelDeserializer::deserializeDetailsPersonneMorale($this->json["beneficiaires_effectifs"][0]["details_votes_indirects"]["details_en_personne_morale"]);
 
         $this->assertEquals(0, $res->getPourcentagePleinePropriete());
         $this->assertEquals(0, $res->getPourcentageNuePropriete());
@@ -221,7 +222,7 @@ class ModelDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeDetailsSocieteGestion(): void {
 
-        $res = ModelDeserializer::deserializeDetailsSocieteGestion($this->json["beneficiaires_effectifs"][0]["details_societe_de_gestion"]);
+        $res = TestModelDeserializer::deserializeDetailsSocieteGestion($this->json["beneficiaires_effectifs"][0]["details_societe_de_gestion"]);
 
         $this->assertEquals("string", $res->getNom());
         $this->assertEquals("string", $res->getSiren());
@@ -308,7 +309,7 @@ class ModelDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeEtablissement(): void {
 
-        $res = ModelDeserializer::deserializeEtablissement($this->json["siege"]);
+        $res = TestModelDeserializer::deserializeEtablissement($this->json["siege"]);
 
         $this->assertEquals("44306184100047", $res->getSiret());
         $this->assertEquals("443 061 841 00047", $res->getSiretFormate());
@@ -344,7 +345,7 @@ class ModelDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeExtraitImmatriculation(): void {
 
-        $res = ModelDeserializer::deserializeExtraitImmatriculation($this->json["extrait_immatriculation"]);
+        $res = TestModelDeserializer::deserializeExtraitImmatriculation($this->json["extrait_immatriculation"]);
 
         $this->assertEquals("SzQ0MzA2MTg0MQ", $res->getToken());
     }
@@ -356,7 +357,7 @@ class ModelDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeFinance(): void {
 
-        $res = ModelDeserializer::deserializeFinance($this->json["finances"][0]);
+        $res = TestModelDeserializer::deserializeFinance($this->json["finances"][0]);
 
         $this->assertEquals(2018, $res->getAnnee());
         $this->assertEquals("2018-12-31", $res->getDateClotureExercice());
@@ -373,7 +374,7 @@ class ModelDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeProcedureCollective(): void {
 
-        $res = ModelDeserializer::deserializeProcedureCollective($this->json["procedures_collectives"][0]);
+        $res = TestModelDeserializer::deserializeProcedureCollective($this->json["procedures_collectives"][0]);
 
         $this->assertEquals("Redressement judiciaire", $res->getType());
         $this->assertEquals("2020-04-16T00:00:00.000Z", $res->getDateDebut());
@@ -388,7 +389,7 @@ class ModelDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializePublicationBodacc(): void {
 
-        $res = ModelDeserializer::deserializePublicationBodacc($this->json["publications_bodacc"][0]);
+        $res = TestModelDeserializer::deserializePublicationBodacc($this->json["publications_bodacc"][0]);
 
         $this->assertEquals("20200075", $res->getNumeroParution());
         $this->assertEquals("2020-04-16T00:00:00.000Z", $res->getDate());
@@ -433,7 +434,7 @@ class ModelDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeStatuts(): void {
 
-        $res = ModelDeserializer::deserializeStatuts($this->json["derniers_statuts"]);
+        $res = TestModelDeserializer::deserializeStatuts($this->json["derniers_statuts"]);
 
         $this->assertEquals("2020-04-07", $res->getDateDepot());
         $this->assertEquals("07/04/2020", $res->getDateDepotFormate());

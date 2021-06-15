@@ -46,7 +46,7 @@ class ModelDeserializer {
      * @param array $data The data.
      * @return Acte Returns the acte.
      */
-    public static function deserializeActe(array $data): Acte {
+    protected static function deserializeActe(array $data): Acte {
 
         $model = new Acte();
         $model->setType(ArrayHelper::get($data, "type"));
@@ -63,7 +63,7 @@ class ModelDeserializer {
      * @param array $data The data.
      * @return BeneficiaireEffectif Returns the bénéficiaire effectif.
      */
-    public static function deserializeBeneficiaireEffectif(array $data): BeneficiaireEffectif {
+    protected static function deserializeBeneficiaireEffectif(array $data): BeneficiaireEffectif {
 
         $model = new BeneficiaireEffectif();
         $model->setDateGreffe(ArrayHelper::get($data, "date_greffe"));
@@ -101,7 +101,7 @@ class ModelDeserializer {
      * @param array $data The data.
      * @return Compte Returns the compte.
      */
-    public static function deserializeCompte(array $data): Compte {
+    protected static function deserializeCompte(array $data): Compte {
 
         $model = new Compte();
         $model->setDateDepot(ArrayHelper::get($data, "date_depot"));
@@ -123,7 +123,7 @@ class ModelDeserializer {
      * @param array $data The data.
      * @return ConventionCollective Returns the convention collective.
      */
-    public static function deserializeConventionCollective(array $data): ConventionCollective {
+    protected static function deserializeConventionCollective(array $data): ConventionCollective {
 
         $model = new ConventionCollective();
         $model->setNom(ArrayHelper::get($data, "nom"));
@@ -137,9 +137,9 @@ class ModelDeserializer {
      * Deserializes a dépôt acte.
      *
      * @param array $data The data.
-     * @return DepotActe Returns the dépot acte.
+     * @return DepotActe Returns the dépôt acte.
      */
-    public static function deserializeDepotActe(array $data): DepotActe {
+    protected static function deserializeDepotActe(array $data): DepotActe {
 
         $model = new DepotActe();
         $model->setDateDepot(ArrayHelper::get($data, "date_depot"));
@@ -161,7 +161,7 @@ class ModelDeserializer {
      * @param array $data The data.
      * @return DetailsDirects Returns the détails directs.
      */
-    public static function deserializeDetailsDirects(array $data): DetailsDirects {
+    protected static function deserializeDetailsDirects(array $data): DetailsDirects {
 
         $model = new DetailsDirects();
         $model->setPourcentagePleinePropriete(ArrayHelper::get($data, "pourcentage_pleine_propriete"));
@@ -177,7 +177,7 @@ class ModelDeserializer {
      * @param array $data The data.
      * @return DetailsIndirects Returns this détails indirects.
      */
-    public static function deserializeDetailsIndirects(array $data): DetailsIndirects {
+    protected static function deserializeDetailsIndirects(array $data): DetailsIndirects {
 
         $model = new DetailsIndirects();
         $model->setPourcentageIndivision(ArrayHelper::get($data, "pourcentage_en_indivision"));
@@ -194,7 +194,7 @@ class ModelDeserializer {
      * @param array $data The data.
      * @return DetailsIndivision Returns the détails indivision.
      */
-    public static function deserializeDetailsIndivision(array $data): DetailsIndivision {
+    protected static function deserializeDetailsIndivision(array $data): DetailsIndivision {
 
         $model = new DetailsIndivision();
         $model->setPourcentagePleinePropriete(ArrayHelper::get($data, "pourcentage_pleine_propriete"));
@@ -210,7 +210,7 @@ class ModelDeserializer {
      * @param array $data The data.
      * @return DetailsPartsVocationTitulaire Returns the détails parts vocation titulaire.
      */
-    public static function deserializeDetailsPartsVocationTitulaire(array $data): DetailsPartsVocationTitulaire {
+    protected static function deserializeDetailsPartsVocationTitulaire(array $data): DetailsPartsVocationTitulaire {
 
         $model = new DetailsPartsVocationTitulaire();
         $model->setPourcentageDirectes(ArrayHelper::get($data, "pourcentage_directes"));
@@ -227,7 +227,7 @@ class ModelDeserializer {
      * @param array $data The data.
      * @return DetailsPersonneMorale Returns the détails personne morale.
      */
-    public static function deserializeDetailsPersonneMorale(array $data): DetailsPersonneMorale {
+    protected static function deserializeDetailsPersonneMorale(array $data): DetailsPersonneMorale {
 
         $model = new DetailsPersonneMorale();
         $model->setPourcentagePleinePropriete(ArrayHelper::get($data, "pourcentage_pleine_propriete"));
@@ -243,7 +243,7 @@ class ModelDeserializer {
      * @param array $data The data.
      * @return DetailsSocieteGestion Returns the détails société gestion.
      */
-    public static function deserializeDetailsSocieteGestion(array $data): DetailsSocieteGestion {
+    protected static function deserializeDetailsSocieteGestion(array $data): DetailsSocieteGestion {
 
         $model = new DetailsSocieteGestion();
         $model->setNom(ArrayHelper::get($data, "nom"));
@@ -357,6 +357,13 @@ class ModelDeserializer {
         $model->setDerniersStatuts(static::deserializeStatuts(ArrayHelper::get($data, "derniers_statuts", [])));
         $model->setExtraitImmatriculation(static::deserializeExtraitImmatriculation(ArrayHelper::get($data, "extrait_immatriculation", [])));
 
+        // Optional
+        $model->setVilles(ArrayHelper::get($data, "villes", []));
+        $model->setChiffreAffaires(ArrayHelper::get($data, "chiffre_affaires"));
+        $model->setResultat(ArrayHelper::get($data, "resultat"));
+        $model->setEffectifsFinances(ArrayHelper::get($data, "effectifs_finances"));
+        $model->setAnneeFinances(ArrayHelper::get($data, "annee_finances"));
+
         return $model;
     }
 
@@ -366,7 +373,7 @@ class ModelDeserializer {
      * @param array $data The data.
      * @return Etablissement Returns the établissement.
      */
-    public static function deserializeEtablissement(array $data): Etablissement {
+    protected static function deserializeEtablissement(array $data): Etablissement {
 
         $model = new Etablissement();
         $model->setSiret(ArrayHelper::get($data, "siret"));
@@ -404,7 +411,7 @@ class ModelDeserializer {
      * @param array $data The data.
      * @return ExtraitImmatriculation Returns the extrait immatriculation.
      */
-    public static function deserializeExtraitImmatriculation(array $data): ExtraitImmatriculation {
+    protected static function deserializeExtraitImmatriculation(array $data): ExtraitImmatriculation {
 
         $model = new ExtraitImmatriculation();
         $model->setToken(ArrayHelper::get($data, "token"));
@@ -418,7 +425,7 @@ class ModelDeserializer {
      * @param array $data The data.
      * @return Finance Returns the finance.
      */
-    public static function deserializeFinance(array $data): Finance {
+    protected static function deserializeFinance(array $data): Finance {
 
         $model = new Finance();
         $model->setAnnee(ArrayHelper::get($data, "annee"));
@@ -437,7 +444,7 @@ class ModelDeserializer {
      * @param array $data The data.
      * @return ProcedureCollective Returns the procédure collective.
      */
-    public static function deserializeProcedureCollective(array $data): ProcedureCollective {
+    protected static function deserializeProcedureCollective(array $data): ProcedureCollective {
 
         $model = new ProcedureCollective();
         $model->setType(ArrayHelper::get($data, "type"));
@@ -457,7 +464,7 @@ class ModelDeserializer {
      * @param array $data The data.
      * @return PublicationBodacc Returns the publication BODACC.
      */
-    public static function deserializePublicationBodacc(array $data): PublicationBodacc {
+    protected static function deserializePublicationBodacc(array $data): PublicationBodacc {
 
         $model = new PublicationBodacc();
         $model->setNumeroParution(ArrayHelper::get($data, "numero_parution"));
@@ -497,6 +504,10 @@ class ModelDeserializer {
         $model->setVille(ArrayHelper::get($data, "ville"));
         $model->setPays(ArrayHelper::get($data, "pays"));
 
+        foreach (ArrayHelper::get($data, "entreprises", []) as $current) {
+            $model->addEntreprise(static::deserializeEntreprise($current));
+        }
+
         return $model;
     }
 
@@ -506,7 +517,7 @@ class ModelDeserializer {
      * @param array $data The data.
      * @return Statuts Returns the statuts.
      */
-    public static function deserializeStatuts(array $data): Statuts {
+    protected static function deserializeStatuts(array $data): Statuts {
 
         $model = new Statuts();
         $model->setDateDepot(ArrayHelper::get($data, "date_depot"));
