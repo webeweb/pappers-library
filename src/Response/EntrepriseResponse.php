@@ -12,7 +12,6 @@
 namespace WBW\Library\Pappers\Response;
 
 use WBW\Library\Pappers\Model\Attribute\EntrepriseEntrepriseTrait;
-use WBW\Library\Pappers\Model\Entreprise;
 
 /**
  * Entreprise response.
