@@ -57,6 +57,18 @@ class ModelDeserializerTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the deserializeActe() method.
+     *
+     * @return void
+     */
+    public function testDeserializeActeWithoutData(): void {
+
+        $res = TestModelDeserializer::deserializeActe([]);
+
+        $this->assertNull($res);
+    }
+
+    /**
      * Tests the deserializeBeneficiaireEffectif() method.
      *
      * @return void
@@ -93,6 +105,18 @@ class ModelDeserializerTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the deserializeBeneficiaireEffectif() method.
+     *
+     * @return void
+     */
+    public function testDeserializeBeneficiaireEffectifWithoutData(): void {
+
+        $res = TestModelDeserializer::deserializeBeneficiaireEffectif([]);
+
+        $this->assertNull($res);
+    }
+
+    /**
      * Tests the deserializeCompte() method.
      *
      * @return void
@@ -113,6 +137,18 @@ class ModelDeserializerTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the deserializeCompte() method.
+     *
+     * @return void
+     */
+    public function testDeserializeCompteWithoutData(): void {
+
+        $res = TestModelDeserializer::deserializeCompte([]);
+
+        $this->assertNull($res);
+    }
+
+    /**
      * Tests the deserializeConventionCollective() method.
      *
      * @return void
@@ -124,6 +160,18 @@ class ModelDeserializerTest extends AbstractTestCase {
         $this->assertEquals("Convention collective nationale applicable au personnel des bureaux d'études techniques des cabinets d'ingénieurs-conseils et des sociétés de conseils(BET SYNTEC)", $res->getNom());
         $this->assertEquals(1486, $res->getIdcc());
         $this->assertTrue($res->getConfirmee());
+    }
+
+    /**
+     * Tests the deserializeConventionCollective() method.
+     *
+     * @return void
+     */
+    public function testDeserializeConventionCollectiveWithoutData(): void {
+
+        $res = TestModelDeserializer::deserializeConventionCollective([]);
+
+        $this->assertNull($res);
     }
 
     /**
@@ -144,6 +192,18 @@ class ModelDeserializerTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the deserializeDepotActe() method.
+     *
+     * @return void
+     */
+    public function testDeserializeDepotActeWithoutData(): void {
+
+        $res = TestModelDeserializer::deserializeDepotActe([]);
+
+        $this->assertNull($res);
+    }
+
+    /**
      * Tests the deserializeDetailsDirects() method.
      *
      * @return void
@@ -155,6 +215,18 @@ class ModelDeserializerTest extends AbstractTestCase {
         $this->assertEquals(0, $res->getPourcentagePleinePropriete());
         $this->assertEquals(0, $res->getPourcentageNuePropriete());
         $this->assertEquals(0, $res->getPourcentageUsufruit());
+    }
+
+    /**
+     * Tests the deserializeDetailsDirects() method.
+     *
+     * @return void
+     */
+    public function testDeserializeDetailsDirectsWithoutData(): void {
+
+        $res = TestModelDeserializer::deserializeDetailsDirects([]);
+
+        $this->assertNull($res);
     }
 
     /**
@@ -173,6 +245,18 @@ class ModelDeserializerTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the deserializeDetailsIndirects() method.
+     *
+     * @return void
+     */
+    public function testDeserializeDetailsIndirectsWithoutData(): void {
+
+        $res = TestModelDeserializer::deserializeDetailsIndirects([]);
+
+        $this->assertNull($res);
+    }
+
+    /**
      * Tests the deserializeDetailsIndivision() method.
      *
      * @return void
@@ -184,6 +268,18 @@ class ModelDeserializerTest extends AbstractTestCase {
         $this->assertEquals(0, $res->getPourcentagePleinePropriete());
         $this->assertEquals(0, $res->getPourcentageNuePropriete());
         $this->assertEquals(0, $res->getPourcentageUsufruit());
+    }
+
+    /**
+     * Tests the deserializeDetailsIndivision() method.
+     *
+     * @return void
+     */
+    public function testDeserializeDetailsIndivisionWithoutData(): void {
+
+        $res = TestModelDeserializer::deserializeDetailsIndivision([]);
+
+        $this->assertNull($res);
     }
 
     /**
@@ -202,6 +298,18 @@ class ModelDeserializerTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the deserializeDetailsPartsVocationTitulaire() method.
+     *
+     * @return void
+     */
+    public function testDeserializeDetailsPartsVocationTitulaireWithoutData(): void {
+
+        $res = TestModelDeserializer::deserializeDetailsPartsVocationTitulaire([]);
+
+        $this->assertNull($res);
+    }
+
+    /**
      * Tests the deserializeDetailsPersonneMorale() method.
      *
      * @return void
@@ -213,6 +321,18 @@ class ModelDeserializerTest extends AbstractTestCase {
         $this->assertEquals(0, $res->getPourcentagePleinePropriete());
         $this->assertEquals(0, $res->getPourcentageNuePropriete());
         $this->assertEquals(0, $res->getPourcentageUsufruit());
+    }
+
+    /**
+     * Tests the deserializeDetailsPersonneMorale() method.
+     *
+     * @return void
+     */
+    public function testDeserializeDetailsPersonneMoraleWithoutData(): void {
+
+        $res = TestModelDeserializer::deserializeDetailsPersonneMorale([]);
+
+        $this->assertNull($res);
     }
 
     /**
@@ -230,6 +350,18 @@ class ModelDeserializerTest extends AbstractTestCase {
         $this->assertEquals("string", $res->getAdresse());
         $this->assertEquals("string", $res->getCodePostal());
         $this->assertEquals("string", $res->getVille());
+    }
+
+    /**
+     * Tests the deserializeDetailsSocieteGestion() method.
+     *
+     * @return void
+     */
+    public function testDeserializeDetailsSocieteGestionWithoutData(): void {
+
+        $res = TestModelDeserializer::deserializeDetailsSocieteGestion([]);
+
+        $this->assertNull($res);
     }
 
     /**
@@ -339,6 +471,18 @@ class ModelDeserializerTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the deserializeEtablissement() method.
+     *
+     * @return void
+     */
+    public function testDeserializeEtablissementWithoutData(): void {
+
+        $res = TestModelDeserializer::deserializeEtablissement([]);
+
+        $this->assertNull($res);
+    }
+
+    /**
      * Tests the deserializeExtraitImmatriculation() method.
      *
      * @return void
@@ -348,6 +492,18 @@ class ModelDeserializerTest extends AbstractTestCase {
         $res = TestModelDeserializer::deserializeExtraitImmatriculation($this->json["extrait_immatriculation"]);
 
         $this->assertEquals("SzQ0MzA2MTg0MQ", $res->getToken());
+    }
+
+    /**
+     * Tests the deserializeExtraitImmatriculation() method.
+     *
+     * @return void
+     */
+    public function testDeserializeExtraitImmatriculationWithoutData(): void {
+
+        $res = TestModelDeserializer::deserializeExtraitImmatriculation([]);
+
+        $this->assertNull($res);
     }
 
     /**
@@ -368,6 +524,18 @@ class ModelDeserializerTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the deserializeFinance() method.
+     *
+     * @return void
+     */
+    public function testDeserializeFinanceWithoutData(): void {
+
+        $res = TestModelDeserializer::deserializeFinance([]);
+
+        $this->assertNull($res);
+    }
+
+    /**
      * Tests the deserializeProcedureCollective() method.
      *
      * @return void
@@ -380,6 +548,18 @@ class ModelDeserializerTest extends AbstractTestCase {
         $this->assertEquals("2020-04-16T00:00:00.000Z", $res->getDateDebut());
         $this->assertEquals("2020-08-27T00:00:00.000Z", $res->getDateFin());
         $this->assertCount(1, $res->getPublicationsBodacc());
+    }
+
+    /**
+     * Tests the deserializeProcedureCollective() method.
+     *
+     * @return void
+     */
+    public function testDeserializeProcedureCollectiveWithoutData(): void {
+
+        $res = TestModelDeserializer::deserializeProcedureCollective([]);
+
+        $this->assertNull($res);
     }
 
     /**
@@ -396,6 +576,29 @@ class ModelDeserializerTest extends AbstractTestCase {
         $this->assertEquals("670", $res->getNumeroAnnonce());
         $this->assertEquals("B", $res->getBodacc());
         $this->assertEquals("Modification", $res->getType());
+        $this->assertNull($res->getRcs());
+        $this->assertNull($res->getNomEntreprise());
+        $this->assertNull($res->getPersonneMorale());
+        $this->assertNull($res->getDenomination());
+        $this->assertNull($res->getNom());
+        $this->assertNull($res->getPrenom());
+        $this->assertNull($res->getAdministration());
+        $this->assertNull($res->getAdresse());
+        $this->assertNull($res->getCapital());
+        $this->assertNull($res->getActivite());
+        $this->assertNull($res->getDateDebutActivite());
+    }
+
+    /**
+     * Tests the deserializePublicationBodacc() method.
+     *
+     * @return void
+     */
+    public function testDeserializePublicationBodaccWithoutData(): void {
+
+        $res = TestModelDeserializer::deserializePublicationBodacc([]);
+
+        $this->assertNull($res);
     }
 
     /**
@@ -445,5 +648,17 @@ class ModelDeserializerTest extends AbstractTestCase {
         $this->assertNull($res->getDecision());
         $this->assertEquals("2020-03-04", $res->getDateActe());
         $this->assertEquals("04/03/2020", $res->getDateActeFormate());
+    }
+
+    /**
+     * Tests the deserializeStatuts() method.
+     *
+     * @return void
+     */
+    public function testDeserializeStatutsWithoutData(): void {
+
+        $res = TestModelDeserializer::deserializeStatuts([]);
+
+        $this->assertNull($res);
     }
 }

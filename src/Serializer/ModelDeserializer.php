@@ -23,6 +23,7 @@ use WBW\Library\Pappers\Model\DetailsIndivision;
 use WBW\Library\Pappers\Model\DetailsPartsVocationTitulaire;
 use WBW\Library\Pappers\Model\DetailsPersonneMorale;
 use WBW\Library\Pappers\Model\DetailsSocieteGestion;
+use WBW\Library\Pappers\Model\Document;
 use WBW\Library\Pappers\Model\Entreprise;
 use WBW\Library\Pappers\Model\Etablissement;
 use WBW\Library\Pappers\Model\ExtraitImmatriculation;
@@ -44,9 +45,13 @@ class ModelDeserializer {
      * Deserializes an acte.
      *
      * @param array $data The data.
-     * @return Acte Returns the acte.
+     * @return Acte|null Returns the acte.
      */
-    protected static function deserializeActe(array $data): Acte {
+    protected static function deserializeActe(array $data): ?Acte {
+
+        if (0 === count($data)) {
+            return null;
+        }
 
         $model = new Acte();
         $model->setType(ArrayHelper::get($data, "type"));
@@ -61,9 +66,13 @@ class ModelDeserializer {
      * Deserializes a bénéficiaire effectif.
      *
      * @param array $data The data.
-     * @return BeneficiaireEffectif Returns the bénéficiaire effectif.
+     * @return BeneficiaireEffectif|null Returns the bénéficiaire effectif.
      */
-    protected static function deserializeBeneficiaireEffectif(array $data): BeneficiaireEffectif {
+    protected static function deserializeBeneficiaireEffectif(array $data): ?BeneficiaireEffectif {
+
+        if (0 === count($data)) {
+            return null;
+        }
 
         $model = new BeneficiaireEffectif();
         $model->setDateGreffe(ArrayHelper::get($data, "date_greffe"));
@@ -99,9 +108,13 @@ class ModelDeserializer {
      * Deserializes a compte.
      *
      * @param array $data The data.
-     * @return Compte Returns the compte.
+     * @return Compte|null Returns the compte.
      */
-    protected static function deserializeCompte(array $data): Compte {
+    protected static function deserializeCompte(array $data): ?Compte {
+
+        if (0 === count($data)) {
+            return null;
+        }
 
         $model = new Compte();
         $model->setDateDepot(ArrayHelper::get($data, "date_depot"));
@@ -121,9 +134,13 @@ class ModelDeserializer {
      * Deserializes a convention collective.
      *
      * @param array $data The data.
-     * @return ConventionCollective Returns the convention collective.
+     * @return ConventionCollective|null Returns the convention collective.
      */
-    protected static function deserializeConventionCollective(array $data): ConventionCollective {
+    protected static function deserializeConventionCollective(array $data): ?ConventionCollective {
+
+        if (0 === count($data)) {
+            return null;
+        }
 
         $model = new ConventionCollective();
         $model->setNom(ArrayHelper::get($data, "nom"));
@@ -137,9 +154,13 @@ class ModelDeserializer {
      * Deserializes a dépôt acte.
      *
      * @param array $data The data.
-     * @return DepotActe Returns the dépôt acte.
+     * @return DepotActe|null Returns the dépôt acte.
      */
-    protected static function deserializeDepotActe(array $data): DepotActe {
+    protected static function deserializeDepotActe(array $data): ?DepotActe {
+
+        if (0 === count($data)) {
+            return null;
+        }
 
         $model = new DepotActe();
         $model->setDateDepot(ArrayHelper::get($data, "date_depot"));
@@ -159,9 +180,13 @@ class ModelDeserializer {
      * Deserializes a détails directs.
      *
      * @param array $data The data.
-     * @return DetailsDirects Returns the détails directs.
+     * @return DetailsDirects|null Returns the détails directs.
      */
-    protected static function deserializeDetailsDirects(array $data): DetailsDirects {
+    protected static function deserializeDetailsDirects(array $data): ?DetailsDirects {
+
+        if (0 === count($data)) {
+            return null;
+        }
 
         $model = new DetailsDirects();
         $model->setPourcentagePleinePropriete(ArrayHelper::get($data, "pourcentage_pleine_propriete"));
@@ -175,9 +200,13 @@ class ModelDeserializer {
      * Deserializes a détails indirects.
      *
      * @param array $data The data.
-     * @return DetailsIndirects Returns this détails indirects.
+     * @return DetailsIndirects|null Returns this détails indirects.
      */
-    protected static function deserializeDetailsIndirects(array $data): DetailsIndirects {
+    protected static function deserializeDetailsIndirects(array $data): ?DetailsIndirects {
+
+        if (0 === count($data)) {
+            return null;
+        }
 
         $model = new DetailsIndirects();
         $model->setPourcentageIndivision(ArrayHelper::get($data, "pourcentage_en_indivision"));
@@ -192,9 +221,13 @@ class ModelDeserializer {
      * Deserializes a détails indivision.
      *
      * @param array $data The data.
-     * @return DetailsIndivision Returns the détails indivision.
+     * @return DetailsIndivision|null Returns the détails indivision.
      */
-    protected static function deserializeDetailsIndivision(array $data): DetailsIndivision {
+    protected static function deserializeDetailsIndivision(array $data): ?DetailsIndivision {
+
+        if (0 === count($data)) {
+            return null;
+        }
 
         $model = new DetailsIndivision();
         $model->setPourcentagePleinePropriete(ArrayHelper::get($data, "pourcentage_pleine_propriete"));
@@ -208,9 +241,13 @@ class ModelDeserializer {
      * Deserializes a détails parts vocation titulaire.
      *
      * @param array $data The data.
-     * @return DetailsPartsVocationTitulaire Returns the détails parts vocation titulaire.
+     * @return DetailsPartsVocationTitulaire|null Returns the détails parts vocation titulaire.
      */
-    protected static function deserializeDetailsPartsVocationTitulaire(array $data): DetailsPartsVocationTitulaire {
+    protected static function deserializeDetailsPartsVocationTitulaire(array $data): ?DetailsPartsVocationTitulaire {
+
+        if (0 === count($data)) {
+            return null;
+        }
 
         $model = new DetailsPartsVocationTitulaire();
         $model->setPourcentageDirectes(ArrayHelper::get($data, "pourcentage_directes"));
@@ -225,9 +262,13 @@ class ModelDeserializer {
      * Deserializes a détails personne morale.
      *
      * @param array $data The data.
-     * @return DetailsPersonneMorale Returns the détails personne morale.
+     * @return DetailsPersonneMorale|null Returns the détails personne morale.
      */
-    protected static function deserializeDetailsPersonneMorale(array $data): DetailsPersonneMorale {
+    protected static function deserializeDetailsPersonneMorale(array $data): ?DetailsPersonneMorale {
+
+        if (0 === count($data)) {
+            return null;
+        }
 
         $model = new DetailsPersonneMorale();
         $model->setPourcentagePleinePropriete(ArrayHelper::get($data, "pourcentage_pleine_propriete"));
@@ -241,9 +282,13 @@ class ModelDeserializer {
      * Deserializes a détails société gestion.
      *
      * @param array $data The data.
-     * @return DetailsSocieteGestion Returns the détails société gestion.
+     * @return DetailsSocieteGestion|null Returns the détails société gestion.
      */
-    protected static function deserializeDetailsSocieteGestion(array $data): DetailsSocieteGestion {
+    protected static function deserializeDetailsSocieteGestion(array $data): ?DetailsSocieteGestion {
+
+        if (0 === count($data)) {
+            return null;
+        }
 
         $model = new DetailsSocieteGestion();
         $model->setNom(ArrayHelper::get($data, "nom"));
@@ -252,6 +297,24 @@ class ModelDeserializer {
         $model->setAdresse(ArrayHelper::get($data, "adresse"));
         $model->setCodePostal(ArrayHelper::get($data, "code_postal"));
         $model->setVille(ArrayHelper::get($data, "ville"));
+
+        return $model;
+    }
+
+    /**
+     * Deserializes a document.
+     *
+     * @param array $data The data.
+     * @return Document Returns the document.
+     */
+    protected static function deserializeDocument(array $data): Document {
+
+        $model = new Document();
+        $model->setType(ArrayHelper::get($data, "type"));
+        $model->setDateDepot(ArrayHelper::get($data, "date_depot"));
+        $model->setTitres(ArrayHelper::get($data, "titres"));
+        $model->setMentions(ArrayHelper::get($data, "mentions", []));
+        $model->setEntreprise(static::deserializeEntreprise(ArrayHelper::get($data, "entreprise", [])));
 
         return $model;
     }
@@ -364,6 +427,24 @@ class ModelDeserializer {
         $model->setEffectifsFinances(ArrayHelper::get($data, "effectifs_finances"));
         $model->setAnneeFinances(ArrayHelper::get($data, "annee_finances"));
 
+        foreach (ArrayHelper::get($data, "dirigeants", []) as $current) {
+            $model->addRepresentant(static::deserializeRepresentant($current));
+        }
+
+        foreach (ArrayHelper::get($data, "documents", []) as $current) {
+
+        }
+
+        foreach (ArrayHelper::get($data, "publications", []) as $current) {
+
+        }
+
+        $model->setNbDirigeantsTotal(ArrayHelper::get($data, "nb_dirigeants_total"));
+        $model->setNbDocumentsAvecMentions(ArrayHelper::get($data, "nb_documents_avec_mentions"));
+        $model->setNbDocumentsTotal(ArrayHelper::get($data, "nb_documents_total"));
+        $model->setNbPublicationsAvecMentions(ArrayHelper::get($data, "nb_publications_avec_mentions"));
+        $model->setNbPublicationsTotal(ArrayHelper::get($data, "nb_publications_total"));
+
         return $model;
     }
 
@@ -371,9 +452,13 @@ class ModelDeserializer {
      * Deserialize an établissement.
      *
      * @param array $data The data.
-     * @return Etablissement Returns the établissement.
+     * @return Etablissement|null Returns the établissement.
      */
-    protected static function deserializeEtablissement(array $data): Etablissement {
+    protected static function deserializeEtablissement(array $data): ?Etablissement {
+
+        if (0 === count($data)) {
+            return null;
+        }
 
         $model = new Etablissement();
         $model->setSiret(ArrayHelper::get($data, "siret"));
@@ -409,9 +494,13 @@ class ModelDeserializer {
      * Deserializes an extrait immatriculation.
      *
      * @param array $data The data.
-     * @return ExtraitImmatriculation Returns the extrait immatriculation.
+     * @return ExtraitImmatriculation|null Returns the extrait immatriculation.
      */
-    protected static function deserializeExtraitImmatriculation(array $data): ExtraitImmatriculation {
+    protected static function deserializeExtraitImmatriculation(array $data): ?ExtraitImmatriculation {
+
+        if (0 === count($data)) {
+            return null;
+        }
 
         $model = new ExtraitImmatriculation();
         $model->setToken(ArrayHelper::get($data, "token"));
@@ -423,9 +512,13 @@ class ModelDeserializer {
      * Deserialize a finance.
      *
      * @param array $data The data.
-     * @return Finance Returns the finance.
+     * @return Finance|null Returns the finance.
      */
-    protected static function deserializeFinance(array $data): Finance {
+    protected static function deserializeFinance(array $data): ?Finance {
+
+        if (0 === count($data)) {
+            return null;
+        }
 
         $model = new Finance();
         $model->setAnnee(ArrayHelper::get($data, "annee"));
@@ -442,9 +535,13 @@ class ModelDeserializer {
      * Deserializes a procédure collective.
      *
      * @param array $data The data.
-     * @return ProcedureCollective Returns the procédure collective.
+     * @return ProcedureCollective|null Returns the procédure collective.
      */
-    protected static function deserializeProcedureCollective(array $data): ProcedureCollective {
+    protected static function deserializeProcedureCollective(array $data): ?ProcedureCollective {
+
+        if (0 === count($data)) {
+            return null;
+        }
 
         $model = new ProcedureCollective();
         $model->setType(ArrayHelper::get($data, "type"));
@@ -462,9 +559,13 @@ class ModelDeserializer {
      * Deserializes a publication BODACC.
      *
      * @param array $data The data.
-     * @return PublicationBodacc Returns the publication BODACC.
+     * @return PublicationBodacc|null Returns the publication BODACC.
      */
-    protected static function deserializePublicationBodacc(array $data): PublicationBodacc {
+    protected static function deserializePublicationBodacc(array $data): ?PublicationBodacc {
+
+        if (0 === count($data)) {
+            return null;
+        }
 
         $model = new PublicationBodacc();
         $model->setNumeroParution(ArrayHelper::get($data, "numero_parution"));
@@ -472,6 +573,17 @@ class ModelDeserializer {
         $model->setNumeroAnnonce(ArrayHelper::get($data, "numero_annonce"));
         $model->setBodacc(ArrayHelper::get($data, "bodacc"));
         $model->setType(ArrayHelper::get($data, "type"));
+        $model->setRcs(ArrayHelper::get($data, "rcs"));
+        $model->setNomEntreprise(ArrayHelper::get($data, "nom_entreprise"));
+        $model->setPersonneMorale(ArrayHelper::get($data, "personne_morale"));
+        $model->setDenomination(ArrayHelper::get($data, "denomination"));
+        $model->setNom(ArrayHelper::get($data, "nom"));
+        $model->setPrenom(ArrayHelper::get($data, "prenom"));
+        $model->setAdministration(ArrayHelper::get($data, "administration"));
+        $model->setAdresse(ArrayHelper::get($data, "adresse"));
+        $model->setCapital(ArrayHelper::get($data, "capital"));
+        $model->setActivite(ArrayHelper::get($data, "activite"));
+        $model->setDateDebutActivite(ArrayHelper::get($data, "date_debut_activite"));
 
         return $model;
     }
@@ -508,6 +620,8 @@ class ModelDeserializer {
             $model->addEntreprise(static::deserializeEntreprise($current));
         }
 
+        $model->setNbEntreprisesTotal(ArrayHelper::get($data, "nb_entreprises_total"));
+
         return $model;
     }
 
@@ -515,9 +629,13 @@ class ModelDeserializer {
      * Deserializes a statuts.
      *
      * @param array $data The data.
-     * @return Statuts Returns the statuts.
+     * @return Statuts|null Returns the statuts.
      */
-    protected static function deserializeStatuts(array $data): Statuts {
+    protected static function deserializeStatuts(array $data): ?Statuts {
+
+        if (0 === count($data)) {
+            return null;
+        }
 
         $model = new Statuts();
         $model->setDateDepot(ArrayHelper::get($data, "date_depot"));
