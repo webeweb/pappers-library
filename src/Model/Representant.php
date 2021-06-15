@@ -68,6 +68,20 @@ class Representant {
     private $datePrisePoste;
 
     /**
+     * Entreprises
+     *
+     * @var Entreprise[]
+     */
+    private $entreprises;
+
+    /**
+     * Nb entreprises total.
+     *
+     * @var int|null
+     */
+    private $nbEntreprisesTotal;
+
+    /**
      * Nom complet.
      *
      * @var string|null
@@ -106,7 +120,18 @@ class Representant {
      * Constructor.
      */
     public function __construct() {
-        // NOTHING TO DO
+        $this->setEntreprises([]);
+    }
+
+    /**
+     * Add an entreprise.
+     *
+     * @param Entreprise $entreprise The entreprise.
+     * @return Representant Returns this représentant.
+     */
+    public function addEntreprise(Entreprise $entreprise): Representant {
+        $this->entreprises[] = $entreprise;
+        return $this;
     }
 
     /**
@@ -143,6 +168,24 @@ class Representant {
      */
     public function getDatePrisePoste(): ?string {
         return $this->datePrisePoste;
+    }
+
+    /**
+     * Get the entreprises.
+     *
+     * @return Entreprise[] Returns the entreprises.
+     */
+    public function getEntreprises(): array {
+        return $this->entreprises;
+    }
+
+    /**
+     * Get the nb entreprises total.
+     *
+     * @return int|null Returns the nb entreprises total.
+     */
+    public function getNbEntreprisesTotal(): ?int {
+        return $this->nbEntreprisesTotal;
     }
 
     /**
@@ -231,6 +274,28 @@ class Representant {
      */
     public function setDatePrisePoste(?string $datePrisePoste): Representant {
         $this->datePrisePoste = $datePrisePoste;
+        return $this;
+    }
+
+    /**
+     * Set the entreprises.
+     *
+     * @param Entreprise[] $entreprises The entreprises.
+     * @return Representant Returns this représentant.
+     */
+    protected function setEntreprises(array $entreprises): Representant {
+        $this->entreprises = $entreprises;
+        return $this;
+    }
+
+    /**
+     * Set the nb entreprises total.
+     *
+     * @param int|null $nbEntreprisesTotal The nb entreprises total.
+     * @return Representant Returns this représentant.
+     */
+    public function setNbEntreprisesTotal(?int $nbEntreprisesTotal): Representant {
+        $this->nbEntreprisesTotal = $nbEntreprisesTotal;
         return $this;
     }
 

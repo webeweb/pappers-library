@@ -11,6 +11,7 @@
 
 namespace WBW\Library\Pappers\Tests\Model;
 
+use WBW\Library\Pappers\Model\Entreprise;
 use WBW\Library\Pappers\Model\Representant;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
 
@@ -21,6 +22,22 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
  * @package WBW\Library\Pappers\Tests\Model
  */
 class RepresentantTest extends AbstractTestCase {
+
+    /**
+     * Tests the addEntreprise() method.
+     *
+     * @return void
+     */
+    public function testAddEntreprise(): void {
+
+        // Set a Entreprise mock.
+        $entreprise = new Entreprise();
+
+        $obj = new Representant();
+
+        $obj->addEntreprise($entreprise);
+        $this->assertSame($entreprise, $obj->getEntreprises()[0]);
+    }
 
     /**
      * Tests the setAdresseLigne3() method.
@@ -72,6 +89,19 @@ class RepresentantTest extends AbstractTestCase {
 
         $obj->setDatePrisePoste("datePrisePoste");
         $this->assertEquals("datePrisePoste", $obj->getDatePrisePoste());
+    }
+
+    /**
+     * Tests the setNbEntreprisesTotal() method.
+     *
+     * @return void
+     */
+    public function testSetNbEntreprisesTotal(): void {
+
+        $obj = new Representant();
+
+        $obj->setNbEntreprisesTotal(1);
+        $this->assertEquals(1, $obj->getNbEntreprisesTotal());
     }
 
     /**
@@ -158,14 +188,16 @@ class RepresentantTest extends AbstractTestCase {
         $this->assertNull($obj->getPrenom());
         $this->assertNull($obj->getVille());
 
-        $this->assertNull($obj->getQualite());
-        $this->assertNull($obj->getDatePrisePoste());
-        $this->assertNull($obj->getNomComplet());
-        $this->assertNull($obj->getDateNaissance());
-        $this->assertNull($obj->getAge());
-        $this->assertNull($obj->getVilleNaissance());
-        $this->assertNull($obj->getPaysNaissance());
         $this->assertNull($obj->getAdresseLigne3());
+        $this->assertNull($obj->getAge());
+        $this->assertNull($obj->getDateNaissance());
+        $this->assertNull($obj->getDatePrisePoste());
+        $this->assertEquals([], $obj->getEntreprises());
+        $this->assertNull($obj->getNbEntreprisesTotal());
+        $this->assertNull($obj->getNomComplet());
+        $this->assertNull($obj->getQualite());
         $this->assertNull($obj->getPays());
+        $this->assertNull($obj->getPaysNaissance());
+        $this->assertNull($obj->getVilleNaissance());
     }
 }
