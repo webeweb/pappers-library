@@ -492,6 +492,71 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the setNbDirigeantsTotal() method.
+     *
+     * @return void
+     */
+    public function testSetNbDirigeantsTotal(): void {
+
+        $obj = new Entreprise();
+
+        $obj->setNbDirigeantsTotal(1);
+        $this->assertEquals(1, $obj->getNbDirigeantsTotal());
+    }
+
+    /**
+     * Tests the setNbDocumentsAvecMentions() method.
+     *
+     * @return void
+     */
+    public function testSetNbDocumentsAvecMentions(): void {
+
+        $obj = new Entreprise();
+
+        $obj->setNbDocumentsAvecMentions(1);
+        $this->assertEquals(1, $obj->getNbDocumentsAvecMentions());
+    }
+
+    /**
+     * Tests the setNbDocumentsTotal() method.
+     *
+     * @return void
+     */
+    public function testSetNbDocumentsTotal(): void {
+
+        $obj = new Entreprise();
+
+        $obj->setNbDocumentsTotal(1);
+        $this->assertEquals(1, $obj->getNbDocumentsTotal());
+    }
+
+    /**
+     * Tests the setNbPublicationsAvecMentions() method.
+     *
+     * @return void
+     */
+    public function testSetNbPublicationsAvecMentions(): void {
+
+        $obj = new Entreprise();
+
+        $obj->setNbPublicationsAvecMentions(1);
+        $this->assertEquals(1, $obj->getNbPublicationsAvecMentions());
+    }
+
+    /**
+     * Tests the setNbPublicationsTotal() method.
+     *
+     * @return void
+     */
+    public function testSetNbPublicationsTotal(): void {
+
+        $obj = new Entreprise();
+
+        $obj->setNbPublicationsTotal(1);
+        $this->assertEquals(1, $obj->getNbPublicationsTotal());
+    }
+
+    /**
      * Tests the setNumeroRcs() method.
      *
      * @return void
@@ -688,6 +753,11 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertEquals([], $obj->getFinances());
         $this->assertNull($obj->getFormeJuridique());
         $this->assertNull($obj->getLibelleCodeNaf());
+        $this->assertNull($obj->getNbDirigeantsTotal());
+        $this->assertNull($obj->getNbDocumentsAvecMentions());
+        $this->assertNull($obj->getNbDocumentsTotal());
+        $this->assertNull($obj->getNbPublicationsAvecMentions());
+        $this->assertNull($obj->getNbPublicationsTotal());
         $this->assertNull($obj->getNumeroRcs());
         $this->assertNull($obj->getNumeroTvaIntracommunautaire());
         $this->assertEquals([], $obj->getProceduresCollectives());

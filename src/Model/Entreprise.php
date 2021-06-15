@@ -297,6 +297,41 @@ class Entreprise {
     private $libelleCodeNaf;
 
     /**
+     * Nb dirigeants total.
+     *
+     * @var int|null
+     */
+    private $nbDirigeantsTotal;
+
+    /**
+     * Nb documents avec mentions.
+     *
+     * @var int|null
+     */
+    private $nbDocumentsAvecMentions;
+
+    /**
+     * Nb documents total.
+     *
+     * @var int|null
+     */
+    private $nbDocumentsTotal;
+
+    /**
+     * Nb publications avec mentions.
+     *
+     * @var int|null
+     */
+    private $nbPublicationsAvecMentions;
+
+    /**
+     * Nb publications total.
+     *
+     * @var int|null
+     */
+    private $nbPublicationsTotal;
+
+    /**
      * Numéro R.C.S.
      *
      * @var string|null
@@ -789,6 +824,51 @@ class Entreprise {
     }
 
     /**
+     * Get the nb dirigeants total.
+     *
+     * @return int|null Returns the nb dirigeants total.
+     */
+    public function getNbDirigeantsTotal(): ?int {
+        return $this->nbDirigeantsTotal;
+    }
+
+    /**
+     * Get the nb documents avec mentions.
+     *
+     * @return int|null Returns the nb documents avec mentions.
+     */
+    public function getNbDocumentsAvecMentions(): ?int {
+        return $this->nbDocumentsAvecMentions;
+    }
+
+    /**
+     * Get the nb documents total.
+     *
+     * @return int|null Returns the nb documents total.
+     */
+    public function getNbDocumentsTotal(): ?int {
+        return $this->nbDocumentsTotal;
+    }
+
+    /**
+     * Get the nb publications avec mentions.
+     *
+     * @return int|null Returns the nb publications avec mentions.
+     */
+    public function getNbPublicationsAvecMentions(): ?int {
+        return $this->nbPublicationsAvecMentions;
+    }
+
+    /**
+     * Get the nb publications total.
+     *
+     * @return int|null Returns the nb publications total.
+     */
+    public function getNbPublicationsTotal(): ?int {
+        return $this->nbPublicationsTotal;
+    }
+
+    /**
      * Get the numéro R.C.S.
      *
      * @return string|null Returns the numéro R.C.S.
@@ -1265,6 +1345,61 @@ class Entreprise {
      */
     public function setLibelleCodeNaf(?string $libelleCodeNaf): Entreprise {
         $this->libelleCodeNaf = $libelleCodeNaf;
+        return $this;
+    }
+
+    /**
+     * Set the nb dirigeants total.
+     *
+     * @param int|null $nbDirigeantsTotal The nb dirigeants total.
+     * @return Entreprise Returns this entreprise.
+     */
+    public function setNbDirigeantsTotal(?int $nbDirigeantsTotal): Entreprise {
+        $this->nbDirigeantsTotal = $nbDirigeantsTotal;
+        return $this;
+    }
+
+    /**
+     * Set the nb documents avec mentions.
+     *
+     * @param int|null $nbDocumentsAvecMentions The nb documents avec mentions.
+     * @return Entreprise Returns this entreprise.
+     */
+    public function setNbDocumentsAvecMentions(?int $nbDocumentsAvecMentions): Entreprise {
+        $this->nbDocumentsAvecMentions = $nbDocumentsAvecMentions;
+        return $this;
+    }
+
+    /**
+     * Set the nb documents total.
+     *
+     * @param int|null $nbDocumentsTotal The nb documents total.
+     * @return Entreprise Returns this entreprise.
+     */
+    public function setNbDocumentsTotal(?int $nbDocumentsTotal): Entreprise {
+        $this->nbDocumentsTotal = $nbDocumentsTotal;
+        return $this;
+    }
+
+    /**
+     * Set the nb publications avec mentions.
+     *
+     * @param int|null $nbPublicationsAvecMentions The nb publications avec mentions.
+     * @return Entreprise Returns this entreprise.
+     */
+    public function setNbPublicationsAvecMentions(?int $nbPublicationsAvecMentions): Entreprise {
+        $this->nbPublicationsAvecMentions = $nbPublicationsAvecMentions;
+        return $this;
+    }
+
+    /**
+     * Set the nb publications total.
+     *
+     * @param int|null $nbPublicationsTotal The nb publications total.
+     * @return Entreprise Returns this entreprise.
+     */
+    public function setNbPublicationsTotal(?int $nbPublicationsTotal): Entreprise {
+        $this->nbPublicationsTotal = $nbPublicationsTotal;
         return $this;
     }
 
