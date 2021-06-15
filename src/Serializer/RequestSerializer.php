@@ -110,7 +110,7 @@ class RequestSerializer {
 
         ArrayHelper::set($result, "siren", $request->getSiren(), [null]);
         ArrayHelper::set($result, "siret", $request->getSiret(), [null]);
-        ArrayHelper::set($result, "format_publications_bodacc", $request->getFormatPublicationsBodacc(), [null]);
+        ArrayHelper::set($result, "format_publications_bodacc", $request->getFormatPublicationsBodacc(), [null, "objet"]);
 
         return $result;
     }
