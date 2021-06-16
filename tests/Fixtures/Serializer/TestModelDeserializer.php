@@ -76,42 +76,42 @@ class TestModelDeserializer extends ModelDeserializer {
     /**
      * {@inheritDoc}
      */
-    public static function deserializeDetailsDirects(array $data): ?DetailsDirects {
+    public static function deserializeDetailsDirects(?array $data): ?DetailsDirects {
         return parent::deserializeDetailsDirects($data);
     }
 
     /**
      * {@inheritDoc}
      */
-    public static function deserializeDetailsIndirects(array $data): ?DetailsIndirects {
+    public static function deserializeDetailsIndirects(?array $data): ?DetailsIndirects {
         return parent::deserializeDetailsIndirects($data);
     }
 
     /**
      * {@inheritDoc}
      */
-    public static function deserializeDetailsIndivision(array $data): ?DetailsIndivision {
+    public static function deserializeDetailsIndivision(?array $data): ?DetailsIndivision {
         return parent::deserializeDetailsIndivision($data);
     }
 
     /**
      * {@inheritDoc}
      */
-    public static function deserializeDetailsPartsVocationTitulaire(array $data): ?DetailsPartsVocationTitulaire {
+    public static function deserializeDetailsPartsVocationTitulaire(?array $data): ?DetailsPartsVocationTitulaire {
         return parent::deserializeDetailsPartsVocationTitulaire($data);
     }
 
     /**
      * {@inheritDoc}
      */
-    public static function deserializeDetailsPersonneMorale(array $data): ?DetailsPersonneMorale {
+    public static function deserializeDetailsPersonneMorale(?array $data): ?DetailsPersonneMorale {
         return parent::deserializeDetailsPersonneMorale($data);
     }
 
     /**
      * {@inheritDoc}
      */
-    public static function deserializeDetailsSocieteGestion(array $data): ?DetailsSocieteGestion {
+    public static function deserializeDetailsSocieteGestion(?array $data): ?DetailsSocieteGestion {
         return parent::deserializeDetailsSocieteGestion($data);
     }
 

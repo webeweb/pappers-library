@@ -179,10 +179,10 @@ class ModelDeserializer {
     /**
      * Deserializes a détails directs.
      *
-     * @param array $data The data.
+     * @param array|null $data The data.
      * @return DetailsDirects|null Returns the détails directs.
      */
-    protected static function deserializeDetailsDirects(array $data): ?DetailsDirects {
+    protected static function deserializeDetailsDirects(?array $data): ?DetailsDirects {
 
         if (0 === count($data)) {
             return null;
@@ -199,10 +199,10 @@ class ModelDeserializer {
     /**
      * Deserializes a détails indirects.
      *
-     * @param array $data The data.
+     * @param array|null $data The data.
      * @return DetailsIndirects|null Returns this détails indirects.
      */
-    protected static function deserializeDetailsIndirects(array $data): ?DetailsIndirects {
+    protected static function deserializeDetailsIndirects(?array $data): ?DetailsIndirects {
 
         if (0 === count($data)) {
             return null;
@@ -220,10 +220,10 @@ class ModelDeserializer {
     /**
      * Deserializes a détails indivision.
      *
-     * @param array $data The data.
+     * @param array|null $data The data.
      * @return DetailsIndivision|null Returns the détails indivision.
      */
-    protected static function deserializeDetailsIndivision(array $data): ?DetailsIndivision {
+    protected static function deserializeDetailsIndivision(?array $data): ?DetailsIndivision {
 
         if (0 === count($data)) {
             return null;
@@ -240,10 +240,10 @@ class ModelDeserializer {
     /**
      * Deserializes a détails parts vocation titulaire.
      *
-     * @param array $data The data.
+     * @param array|null $data The data.
      * @return DetailsPartsVocationTitulaire|null Returns the détails parts vocation titulaire.
      */
-    protected static function deserializeDetailsPartsVocationTitulaire(array $data): ?DetailsPartsVocationTitulaire {
+    protected static function deserializeDetailsPartsVocationTitulaire(?array $data): ?DetailsPartsVocationTitulaire {
 
         if (0 === count($data)) {
             return null;
@@ -261,10 +261,10 @@ class ModelDeserializer {
     /**
      * Deserializes a détails personne morale.
      *
-     * @param array $data The data.
+     * @param array|null $data The data.
      * @return DetailsPersonneMorale|null Returns the détails personne morale.
      */
-    protected static function deserializeDetailsPersonneMorale(array $data): ?DetailsPersonneMorale {
+    protected static function deserializeDetailsPersonneMorale(?array $data): ?DetailsPersonneMorale {
 
         if (0 === count($data)) {
             return null;
@@ -281,10 +281,10 @@ class ModelDeserializer {
     /**
      * Deserializes a détails société gestion.
      *
-     * @param array $data The data.
+     * @param array|null $data The data.
      * @return DetailsSocieteGestion|null Returns the détails société gestion.
      */
-    protected static function deserializeDetailsSocieteGestion(array $data): ?DetailsSocieteGestion {
+    protected static function deserializeDetailsSocieteGestion(?array $data): ?DetailsSocieteGestion {
 
         if (0 === count($data)) {
             return null;
@@ -328,6 +328,7 @@ class ModelDeserializer {
     public static function deserializeEntreprise(array $data): Entreprise {
 
         $model = new Entreprise();
+        $model->setMention(ArrayHelper::get($data, "mention"));
         $model->setSiren(ArrayHelper::get($data, "siren"));
         $model->setSirenFormate(ArrayHelper::get($data, "siren_formate"));
         $model->setNomEntreprise(ArrayHelper::get($data, "nom_entreprise"));
@@ -597,6 +598,7 @@ class ModelDeserializer {
     public static function deserializeRepresentant(array $data): Representant {
 
         $model = new Representant();
+        $model->setMention(ArrayHelper::get($data, "mention"));
         $model->setQualite(ArrayHelper::get($data, "qualite"));
         $model->setPersonneMorale(ArrayHelper::get($data, "personne_morale"));
         $model->setDatePrisePoste(ArrayHelper::get($data, "date_prise_de_poste"));

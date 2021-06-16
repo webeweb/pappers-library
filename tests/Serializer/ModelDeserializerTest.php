@@ -373,6 +373,7 @@ class ModelDeserializerTest extends AbstractTestCase {
 
         $res = ModelDeserializer::deserializeEntreprise($this->json);
 
+        $this->assertNull($res->getMention());
         $this->assertEquals("443061841", $res->getSiren());
         $this->assertEquals("443 061 841", $res->getSirenFormate());
         $this->assertEquals("GOOGLE FRANCE", $res->getNomEntreprise());
@@ -610,6 +611,7 @@ class ModelDeserializerTest extends AbstractTestCase {
 
         $res = ModelDeserializer::deserializeRepresentant($this->json["representants"][0]);
 
+        $this->assertNull($res->getMention());
         $this->assertEquals("Gérant", $res->getQualite());
         $this->assertFalse($res->getPersonneMorale());
         $this->assertEquals("2017-08-03", $res->getDatePrisePoste());
