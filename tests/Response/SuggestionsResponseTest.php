@@ -31,13 +31,13 @@ class SuggestionsResponseTest extends AbstractTestCase {
      */
     public function testAddResultatDenomination(): void {
 
-        // Set a Résultat mock.
-        $resultat = new Entreprise();
+        // Set an Entreprise mock.
+        $arg = new Entreprise();
 
         $obj = new SuggestionsResponse();
 
-        $obj->addResultatDenomination($resultat);
-        $this->assertSame($resultat, $obj->getResultatsDenomination()[0]);
+        $obj->addResultatDenomination($arg);
+        $this->assertSame($arg, $obj->getResultatsDenomination()[0]);
     }
 
     /**

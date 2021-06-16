@@ -30,13 +30,13 @@ class RechercheResponseTest extends TestCase {
      */
     public function testAddResultat(): void {
 
-        // Set a Résultat mock.
-        $resultat = new Entreprise();
+        // Set an Entreprise mock.
+        $arg = new Entreprise();
 
         $obj = new RechercheResponse();
 
-        $obj->addResultat($resultat);
-        $this->assertSame($resultat, $obj->getResultats()[0]);
+        $obj->addResultat($arg);
+        $this->assertSame($arg, $obj->getResultats()[0]);
     }
 
     /**

@@ -30,13 +30,13 @@ class RechercheDirigeantsResponseTest extends AbstractTestCase {
      */
     public function testAddResultat(): void {
 
-        // Set a Résultat mock.
-        $resultat = new Representant();
+        // Set a Représentant mock.
+        $arg = new Representant();
 
         $obj = new RechercheDirigeantsResponse();
 
-        $obj->addResultat($resultat);
-        $this->assertSame($resultat, $obj->getResultats()[0]);
+        $obj->addResultat($arg);
+        $this->assertSame($arg, $obj->getResultats()[0]);
     }
 
     /**
