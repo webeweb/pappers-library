@@ -229,6 +229,13 @@ class Entreprise {
     private $diffusable;
 
     /**
+     * Documents.
+     *
+     * @var Document[]
+     */
+    private $documents;
+
+    /**
      * Domaine activité.
      *
      * @var string|null
@@ -432,6 +439,7 @@ class Entreprise {
         $this->setComptes([]);
         $this->setConventionCollectives([]);
         $this->setDepotsActes([]);
+        $this->setDocuments([]);
         $this->setEtablissements([]);
         $this->setFinances([]);
         $this->setProceduresCollectives([]);
@@ -481,6 +489,17 @@ class Entreprise {
      */
     public function addDepotActe(DepotActe $depotActe): Entreprise {
         $this->depotsActes[] = $depotActe;
+        return $this;
+    }
+
+    /**
+     * Add a document.
+     *
+     * @param Document $document The document.
+     * @return Entreprise Returns this entreprise.
+     */
+    public function addDocument(Document $document): Entreprise {
+        $this->documents[] = $document;
         return $this;
     }
 
@@ -733,6 +752,15 @@ class Entreprise {
      */
     public function getDiffusable(): ?bool {
         return $this->diffusable;
+    }
+
+    /**
+     * Get the document.
+     *
+     * @return Document[] Returns the documents.
+     */
+    public function getDocuments(): array {
+        return $this->documents;
     }
 
     /**
@@ -1237,6 +1265,17 @@ class Entreprise {
      */
     public function setDiffusable(?bool $diffusable): Entreprise {
         $this->diffusable = $diffusable;
+        return $this;
+    }
+
+    /**
+     * Set the documents.
+     *
+     * @param Document[] $documents The documents.
+     * @return Entreprise Returns this entreprise.
+     */
+    protected function setDocuments(array $documents): Entreprise {
+        $this->documents = $documents;
         return $this;
     }
 

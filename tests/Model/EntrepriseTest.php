@@ -15,6 +15,7 @@ use WBW\Library\Pappers\Model\BeneficiaireEffectif;
 use WBW\Library\Pappers\Model\Compte;
 use WBW\Library\Pappers\Model\ConventionCollective;
 use WBW\Library\Pappers\Model\DepotActe;
+use WBW\Library\Pappers\Model\Document;
 use WBW\Library\Pappers\Model\Entreprise;
 use WBW\Library\Pappers\Model\Etablissement;
 use WBW\Library\Pappers\Model\ExtraitImmatriculation;
@@ -94,6 +95,22 @@ class EntrepriseTest extends AbstractTestCase {
 
         $obj->addDepotActe($depotActe);
         $this->assertSame($depotActe, $obj->getDepotsActes()[0]);
+    }
+
+    /**
+     * Tests the addDocument() method.
+     *
+     * @return void
+     */
+    public function testAddDocument(): void {
+
+        // Set a Document mock.
+        $compte = new Document();
+
+        $obj = new Entreprise();
+
+        $obj->addDocument($compte);
+        $this->assertSame($compte, $obj->getDocuments()[0]);
     }
 
     /**
@@ -744,6 +761,7 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getDernierTraitement());
         $this->assertNull($obj->getDeviseCapital());
         $this->assertNull($obj->getDiffusable());
+        $this->assertEquals([], $obj->getDocuments());
         $this->assertNull($obj->getDomaineActivite());
         $this->assertNull($obj->getDureePersonneMorale());
         $this->assertNull($obj->getEconomieSocialeSolidaire());
