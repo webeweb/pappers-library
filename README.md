@@ -57,6 +57,9 @@ Once all required libraries are installed then do:
 $ vendor/bin/phpunit
 ```
 
+> IMPORTANT NOTICE: To test the package with your API key, edit the
+> `tests/AbstractTestCase.php` file to find and replace "YOUR_API_TOKEN".
+
 ## License
 
 `pappers-library` is released under the MIT License. See the bundled [LICENSE](LICENSE)
