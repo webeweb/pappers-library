@@ -11,8 +11,14 @@
 
 namespace WBW\Library\Pappers\Provider;
 
+use Exception;
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
+use InvalidArgumentException;
 use Psr\Log\LoggerInterface;
+use WBW\Library\Core\Exception\ApiException;
 use WBW\Library\Core\Provider\AbstractProvider as BaseProvider;
+use WBW\Library\Pappers\Request\AbstractRequest;
 
 /**
  * Abstract provider.
@@ -55,6 +61,7 @@ abstract class AbstractProvider extends BaseProvider {
      */
     private function buildConfiguration(): array {
         return [
+            "base_uri"    => self::ENDPOINT_PATH . $this->getEndpointVersion() . "/",
             "debug"       => $this->getDebug(),
             "headers"     => [
                 "Accept"     => "application/json",
@@ -62,6 +69,45 @@ abstract class AbstractProvider extends BaseProvider {
             ],
             "synchronous" => true,
         ];
+    }
+
+    /**
+     * Call the API.
+     *
+     * @param AbstractRequest $request The request.
+     * @param array $queryData The query data.
+     * @return string Returns the raw response.
+     * @throws InvalidArgumentException Throws an invalid argument exception if a parameter is missing.
+     * @throws GuzzleException Throws a Guzzle exception if an error occurs.
+     * @throws ApiException Throws an API exception if an error occurs.
+     */
+    protected function callApi(AbstractRequest $request, array $queryData): string {
+
+        if (null === $this->getApiToken()) {
+            throw new InvalidArgumentException('The mandatory parameter "api_token" is missing');
+        }
+
+        try {
+
+            $config = $this->buildConfiguration();
+
+            $client = new Client($config);
+
+            $method  = "GET";
+            $uri     = substr($request->getResourcePath(), 1);
+            $options = [
+                "query" => array_merge(["api_token" => $this->getApiToken()], $queryData),
+            ];
+
+            $this->logInfo(sprintf("Call Pappers API %s %s", $method, $uri), ["config" => $config, "options" => $options]);
+
+            $response = $client->request($method, $uri, $options);
+
+            return $response->getBody()->getContents();
+        } catch (Exception $ex) {
+
+            throw new ApiException("Call Pappers API failed", 500, $ex);
+        }
     }
 
     /**
