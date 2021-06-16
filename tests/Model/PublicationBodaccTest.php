@@ -62,6 +62,19 @@ class PublicationBodaccTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the setContenu() method.
+     *
+     * @return void
+     */
+    public function testSetContenu(): void {
+
+        $obj = new PublicationBodacc();
+
+        $obj->setContenu("contenu");
+        $this->assertEquals("contenu", $obj->getContenu());
+    }
+
+    /**
      * Tests the setDate() method.
      *
      * @return void
@@ -138,6 +151,7 @@ class PublicationBodaccTest extends AbstractTestCase {
         $this->assertNull($obj->getAdresse());
         $this->assertNull($obj->getCapital());
         $this->assertNull($obj->getDenomination());
+        $this->assertNull($obj->getEntreprise());
         $this->assertNull($obj->getNom());
         $this->assertNull($obj->getNomEntreprise());
         $this->assertNull($obj->getPersonneMorale());
@@ -145,6 +159,7 @@ class PublicationBodaccTest extends AbstractTestCase {
 
         $this->assertNull($obj->getActivite());
         $this->assertNull($obj->getBodacc());
+        $this->assertNull($obj->getContenu());
         $this->assertNull($obj->getDate());
         $this->assertNull($obj->getDateDebutActivite());
         $this->assertNull($obj->getNumeroAnnonce());

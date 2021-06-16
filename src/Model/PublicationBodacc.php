@@ -13,6 +13,7 @@ namespace WBW\Library\Pappers\Model;
 
 use WBW\Library\Core\Model\Attribute\StringTypeTrait;
 use WBW\Library\Pappers\Model\Attribute\BooleanPersonneMoraleTrait;
+use WBW\Library\Pappers\Model\Attribute\EntrepriseEntrepriseTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerCapitalTrait;
 use WBW\Library\Pappers\Model\Attribute\StringAdresseTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDenominationTrait;
@@ -29,6 +30,7 @@ use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
 class PublicationBodacc {
 
     use BooleanPersonneMoraleTrait;
+    use EntrepriseEntrepriseTrait;
     use IntegerCapitalTrait;
     use StringAdresseTrait;
     use StringDenominationTrait;
@@ -57,6 +59,13 @@ class PublicationBodacc {
      * @var string|null
      */
     private $bodacc;
+
+    /**
+     * Contenu.
+     *
+     * @var string|null
+     */
+    private $contenu;
 
     /**
      * Date.
@@ -125,6 +134,15 @@ class PublicationBodacc {
      */
     public function getBodacc(): ?string {
         return $this->bodacc;
+    }
+
+    /**
+     * Get the contenu.
+     *
+     * @return string|null Returns the contenu.
+     */
+    public function getContenu(): ?string {
+        return $this->contenu;
     }
 
     /**
@@ -202,6 +220,17 @@ class PublicationBodacc {
      */
     public function setBodacc(?string $bodacc): PublicationBodacc {
         $this->bodacc = $bodacc;
+        return $this;
+    }
+
+    /**
+     * Set the contenu.
+     *
+     * @param string|null $contenu The contenu.
+     * @return PublicationBodacc Returns this publication BODACC.
+     */
+    public function setContenu(?string $contenu): PublicationBodacc {
+        $this->contenu = $contenu;
         return $this;
     }
 
