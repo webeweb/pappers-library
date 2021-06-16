@@ -41,35 +41,35 @@ class TestModelDeserializer extends ModelDeserializer {
     /**
      * {@inheritDoc}
      */
-    public static function deserializeActe(array $data): ?Acte {
+    public static function deserializeActe(?array $data): ?Acte {
         return parent::deserializeActe($data);
     }
 
     /**
      * {@inheritDoc}
      */
-    public static function deserializeBeneficiaireEffectif(array $data): ?BeneficiaireEffectif {
+    public static function deserializeBeneficiaireEffectif(?array $data): ?BeneficiaireEffectif {
         return parent::deserializeBeneficiaireEffectif($data);
     }
 
     /**
      * {@inheritDoc}
      */
-    public static function deserializeCompte(array $data): ?Compte {
+    public static function deserializeCompte(?array $data): ?Compte {
         return parent::deserializeCompte($data);
     }
 
     /**
      * {@inheritDoc}
      */
-    public static function deserializeConventionCollective(array $data): ?ConventionCollective {
+    public static function deserializeConventionCollective(?array $data): ?ConventionCollective {
         return parent::deserializeConventionCollective($data);
     }
 
     /**
      * {@inheritDoc}
      */
-    public static function deserializeDepotActe(array $data): ?DepotActe {
+    public static function deserializeDepotActe(?array $data): ?DepotActe {
         return parent::deserializeDepotActe($data);
     }
 
@@ -118,42 +118,35 @@ class TestModelDeserializer extends ModelDeserializer {
     /**
      * {@inheritDoc}
      */
-    public static function deserializeEtablissement(array $data): ?Etablissement {
+    public static function deserializeEtablissement(?array $data): ?Etablissement {
         return parent::deserializeEtablissement($data);
     }
 
     /**
      * {@inheritDoc}
      */
-    public static function deserializeExtraitImmatriculation(array $data): ?ExtraitImmatriculation {
+    public static function deserializeExtraitImmatriculation(?array $data): ?ExtraitImmatriculation {
         return parent::deserializeExtraitImmatriculation($data);
     }
 
     /**
      * {@inheritDoc}
      */
-    public static function deserializeFinance(array $data): ?Finance {
+    public static function deserializeFinance(?array $data): ?Finance {
         return parent::deserializeFinance($data);
     }
 
     /**
      * {@inheritDoc}
      */
-    public static function deserializeProcedureCollective(array $data): ?ProcedureCollective {
+    public static function deserializeProcedureCollective(?array $data): ?ProcedureCollective {
         return parent::deserializeProcedureCollective($data);
     }
 
     /**
      * {@inheritDoc}
      */
-    public static function deserializePublicationBodacc(array $data): ?PublicationBodacc {
-        return parent::deserializePublicationBodacc($data);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public static function deserializeStatuts(array $data): ?Statuts {
+    public static function deserializeStatuts(?array $data): ?Statuts {
         return parent::deserializeStatuts($data);
     }
 

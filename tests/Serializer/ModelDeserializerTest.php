@@ -574,6 +574,7 @@ class ModelDeserializerTest extends AbstractTestCase {
 
         $this->assertEquals("20200075", $res->getNumeroParution());
         $this->assertEquals("2020-04-16T00:00:00.000Z", $res->getDate());
+        $this->assertNull($res->getContenu());
         $this->assertEquals("670", $res->getNumeroAnnonce());
         $this->assertEquals("B", $res->getBodacc());
         $this->assertEquals("Modification", $res->getType());
@@ -588,6 +589,7 @@ class ModelDeserializerTest extends AbstractTestCase {
         $this->assertNull($res->getCapital());
         $this->assertNull($res->getActivite());
         $this->assertNull($res->getDateDebutActivite());
+        $this->assertNull($res->getEntreprise());
     }
 
     /**
