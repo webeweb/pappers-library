@@ -62,7 +62,7 @@ class SuggestionsRequestTest extends AbstractTestCase {
 
         $this->assertNull($obj->getQ());
 
-        $this->assertEquals(SuggestionsRequest::RESOURCES_PATH, $obj->getResourcesPath());
+        $this->assertEquals(SuggestionsRequest::RESOURCES_PATH, $obj->getResourcePath());
 
         $this->assertNull($obj->getCibles());
         $this->assertNull($obj->getLongueur());

@@ -28,9 +28,9 @@ abstract class AbstractRequest {
     }
 
     /**
-     * Get the resources path.
+     * Get the resource path.
      *
-     * @return string Returns the resources path.
+     * @return string Returns the resource path.
      */
-    abstract public function getResourcesPath(): string;
+    abstract public function getResourcePath(): string;
 }

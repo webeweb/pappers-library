@@ -33,7 +33,7 @@ class DocumentTelechargementRequest extends AbstractRequest {
     /**
      * {@inheritDoc}
      */
-    public function getResourcesPath(): string {
+    public function getResourcePath(): string {
         return self::RESOURCES_PATH;
     }
 }

@@ -34,7 +34,7 @@ class EntrepriseRequestTest extends AbstractTestCase {
 
         $obj = new EntrepriseRequest();
 
-        $this->assertEquals(EntrepriseRequest::RESOURCES_PATH, $obj->getResourcesPath());
+        $this->assertEquals(EntrepriseRequest::RESOURCES_PATH, $obj->getResourcePath());
 
         $this->assertNull($obj->getSiren());
         $this->assertNull($obj->getSiret());

@@ -34,6 +34,6 @@ class RechercheDirigeantsRequestTest extends AbstractTestCase {
 
         $obj = new RechercheDirigeantsRequest();
 
-        $this->assertEquals(RechercheDirigeantsRequest::RESOURCES_PATH, $obj->getResourcesPath());
+        $this->assertEquals(RechercheDirigeantsRequest::RESOURCES_PATH, $obj->getResourcePath());
     }
 }

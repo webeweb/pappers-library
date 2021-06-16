@@ -34,6 +34,6 @@ class RechercheDocumentsRequestTest extends AbstractTestCase {
 
         $obj = new RechercheDocumentsRequest();
 
-        $this->assertEquals(RechercheDocumentsRequest::RESOURCES_PATH, $obj->getResourcesPath());
+        $this->assertEquals(RechercheDocumentsRequest::RESOURCES_PATH, $obj->getResourcePath());
     }
 }

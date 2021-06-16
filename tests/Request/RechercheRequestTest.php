@@ -46,7 +46,7 @@ class RechercheRequestTest extends AbstractTestCase {
 
         $obj = new RechercheRequest();
 
-        $this->assertEquals(RechercheRequest::RESOURCES_PATH, $obj->getResourcesPath());
+        $this->assertEquals(RechercheRequest::RESOURCES_PATH, $obj->getResourcePath());
 
         $this->assertNull($obj->getBases());
     }

@@ -36,6 +36,6 @@ class DocumentTelechargementRequestTest extends AbstractTestCase {
 
         $this->assertNull($obj->getToken());
 
-        $this->assertEquals(DocumentTelechargementRequest::RESOURCES_PATH, $obj->getResourcesPath());
+        $this->assertEquals(DocumentTelechargementRequest::RESOURCES_PATH, $obj->getResourcePath());
     }
 }

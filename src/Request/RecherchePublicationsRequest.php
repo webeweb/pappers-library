@@ -29,7 +29,7 @@ class RecherchePublicationsRequest extends AbstractRechercheRequest {
     /**
      * {@inheritDoc}
      */
-    public function getResourcesPath(): string {
+    public function getResourcePath(): string {
         return self::RESOURCES_PATH;
     }
 }
