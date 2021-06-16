@@ -16,6 +16,7 @@ use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne1Trait;
 use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne2Trait;
 use WBW\Library\Pappers\Model\Attribute\StringCodePostalTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateNaissanceFormateTrait;
+use WBW\Library\Pappers\Model\Attribute\StringMentionTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNationaliteTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
@@ -34,6 +35,7 @@ class Representant {
     use StringAdresseLigne2Trait;
     use StringCodePostalTrait;
     use StringDateNaissanceFormateTrait;
+    use StringMentionTrait;
     use StringNationaliteTrait;
     use StringNomTrait;
     use StringPrenomTrait;

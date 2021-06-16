@@ -26,6 +26,7 @@ use WBW\Library\Pappers\Model\Attribute\StringDateClotureExerciceTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDenominationTrait;
 use WBW\Library\Pappers\Model\Attribute\StringEffectifTrait;
 use WBW\Library\Pappers\Model\Attribute\StringGreffeTrait;
+use WBW\Library\Pappers\Model\Attribute\StringMentionTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomEntrepriseTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringObjetSocialTrait;
@@ -57,6 +58,7 @@ class Entreprise {
     use StringDenominationTrait;
     use StringEffectifTrait;
     use StringGreffeTrait;
+    use StringMentionTrait;
     use StringNomEntrepriseTrait;
     use StringNomTrait;
     use StringObjetSocialTrait;

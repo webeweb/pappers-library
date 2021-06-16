@@ -710,6 +710,7 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getEffectifMin());
         $this->assertNull($obj->getEntrepriseCessee());
         $this->assertNull($obj->getGreffe());
+        $this->assertNull($obj->getMention());
         $this->assertNull($obj->getNom());
         $this->assertNull($obj->getNomEntreprise());
         $this->assertNull($obj->getObjetSocial());

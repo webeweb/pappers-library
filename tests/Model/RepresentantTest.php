@@ -182,6 +182,7 @@ class RepresentantTest extends AbstractTestCase {
         $this->assertNull($obj->getAdresseLigne2());
         $this->assertNull($obj->getCodePostal());
         $this->assertNull($obj->getDateNaissanceFormate());
+        $this->assertNull($obj->getMention());
         $this->assertNull($obj->getNationalite());
         $this->assertNull($obj->getNom());
         $this->assertNull($obj->getPersonneMorale());
