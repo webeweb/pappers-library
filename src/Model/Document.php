@@ -15,6 +15,8 @@ use WBW\Library\Core\Model\Attribute\StringTypeTrait;
 use WBW\Library\Pappers\Model\Attribute\ArrayMentionsTrait;
 use WBW\Library\Pappers\Model\Attribute\EntrepriseEntrepriseTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateDepotTrait;
+use WBW\Library\Pappers\Model\Attribute\StringSirenTrait;
+use WBW\Library\Pappers\Model\Attribute\StringTokenTrait;
 
 /**
  * Document.
@@ -27,12 +29,28 @@ class Document {
     use ArrayMentionsTrait;
     use EntrepriseEntrepriseTrait;
     use StringDateDepotTrait;
+    use StringSirenTrait;
+    use StringTokenTrait;
     use StringTypeTrait;
+
+    /**
+     * Id fichier.
+     *
+     * @var int|null
+     */
+    private $idFichier;
+
+    /**
+     * Num. chrono.
+     *
+     * @var string|null
+     */
+    private $numChrono;
 
     /**
      * Titres.
      *
-     * @var string|null
+     * @var Titre[]
      */
     private $titres;
 
@@ -40,25 +58,76 @@ class Document {
      * Constructor.
      */
     public function __construct() {
-        // NOTHING TO DO
+        $this->setTitres([]);
+    }
+
+    /**
+     * Add a titre.
+     *
+     * @param Titre $titre The titre.
+     * @return Document Returns this document.
+     */
+    public function addTitre(Titre $titre): Document {
+        $this->titres[] = $titre;
+        return $this;
+    }
+
+    /**
+     * Get the id fichier.
+     *
+     * @return int|null Returns the id fichier.
+     */
+    public function getIdFichier(): ?int {
+        return $this->idFichier;
+    }
+
+    /**
+     * Get the num. chrono.
+     *
+     * @return string|null Returns the num. chrono
+     */
+    public function getNumChrono(): ?string {
+        return $this->numChrono;
     }
 
     /**
      * Get the titres.
      *
-     * @return string|null Returns the titres.
+     * @return Titre[] Returns the titres.
      */
-    public function getTitres(): ?string {
+    public function getTitres(): array {
         return $this->titres;
+    }
+
+    /**
+     * Set the id fichier.
+     *
+     * @param int|null $idFichier The id fichier.
+     * @return Document Returns this document.
+     */
+    public function setIdFichier(?int $idFichier): Document {
+        $this->idFichier = $idFichier;
+        return $this;
+    }
+
+    /**
+     * Set the num. chrono.
+     *
+     * @param string|null $numChrono The num. chrono.
+     * @return Document Returns this document.
+     */
+    public function setNumChrono(?string $numChrono): Document {
+        $this->numChrono = $numChrono;
+        return $this;
     }
 
     /**
      * Set the titres.
      *
-     * @param string|null $titres The titres.
+     * @param Titre[] $titres The titres.
      * @return Document Returns this document.
      */
-    public function setTitres(?string $titres): Document {
+    protected function setTitres(array $titres): Document {
         $this->titres = $titres;
         return $this;
     }

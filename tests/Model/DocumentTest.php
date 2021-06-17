@@ -12,6 +12,7 @@
 namespace WBW\Library\Pappers\Tests\Model;
 
 use WBW\Library\Pappers\Model\Document;
+use WBW\Library\Pappers\Model\Titre;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
 
 /**
@@ -23,16 +24,45 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class DocumentTest extends AbstractTestCase {
 
     /**
-     * Tests the setTitres() method.
+     * Tests the addTitre() method.
      *
      * @return void
      */
-    public function testSetTitres(): void {
+    public function testAddTitres(): void {
+
+        // Set a Titre mock.
+        $titre = new Titre();
 
         $obj = new Document();
 
-        $obj->setTitres("titres");
-        $this->assertEquals("titres", $obj->getTitres());
+        $obj->addTitre($titre);
+        $this->assertSame($titre, $obj->getTitres()[0]);
+    }
+
+    /**
+     * Tests the setIdFichier() method.
+     *
+     * @return void
+     */
+    public function testSetIdFichier(): void {
+
+        $obj = new Document();
+
+        $obj->setIdFichier(1);
+        $this->assertEquals(1, $obj->getIdFichier());
+    }
+
+    /**
+     * Tests the setNumChrono() method.
+     *
+     * @return void
+     */
+    public function testSetNumChrono(): void {
+
+        $obj = new Document();
+
+        $obj->setNumChrono("numChrono");
+        $this->assertEquals("numChrono", $obj->getNumChrono());
     }
 
     /**
@@ -47,8 +77,12 @@ class DocumentTest extends AbstractTestCase {
         $this->assertNull($obj->getDateDepot());
         $this->assertNull($obj->getEntreprise());
         $this->assertNull($obj->getMentions());
+        $this->assertNull($obj->getSiren());
+        $this->assertNull($obj->getToken());
         $this->assertNull($obj->getType());
 
-        $this->assertNull($obj->getTitres());
+        $this->assertNull($obj->getIdFichier());
+        $this->assertNull($obj->getNumChrono());
+        $this->assertEquals([], $obj->getTitres());
     }
 }
