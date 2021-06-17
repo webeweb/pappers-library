@@ -32,6 +32,7 @@ use WBW\Library\Pappers\Model\ProcedureCollective;
 use WBW\Library\Pappers\Model\PublicationBodacc;
 use WBW\Library\Pappers\Model\Representant;
 use WBW\Library\Pappers\Model\Statuts;
+use WBW\Library\Pappers\Model\Titre;
 
 /**
  * Model deserializer.
@@ -331,9 +332,17 @@ class ModelDeserializer {
         $model = new Document();
         $model->setType(ArrayHelper::get($data, "type"));
         $model->setDateDepot(ArrayHelper::get($data, "date_depot"));
-        $model->setTitres(ArrayHelper::get($data, "titres"));
+
+        foreach (ArrayHelper::get($data, "titres", []) as $current) {
+            $model->addTitre(static::deserializeTitre($current));
+        }
+
         $model->setMentions(ArrayHelper::get($data, "mentions", []));
         $model->setEntreprise($entreprise);
+        $model->setSiren(ArrayHelper::get($data, "siren"));
+        $model->setNumChrono(ArrayHelper::get($data, "num_chrono"));
+        $model->setIdFichier(ArrayHelper::get($data, "id_fichier"));
+        $model->setToken(ArrayHelper::get($data, "token"));
 
         return $model;
     }
@@ -687,6 +696,25 @@ class ModelDeserializer {
         $model->setDecision(ArrayHelper::get($data, "decision"));
         $model->setDateActe(ArrayHelper::get($data, "date_acte"));
         $model->setDateActeFormate(ArrayHelper::get($data, "date_acte_formate"));
+
+        return $model;
+    }
+
+    /**
+     * Deserializes a titre.
+     *
+     * @param array|null $data The data.
+     * @return Titre|null Returns the convention collective.
+     */
+    protected static function deserializeTitre(?array $data): ?Titre {
+
+        if (0 === count($data)) {
+            return null;
+        }
+
+        $model = new Titre();
+        $model->setType(ArrayHelper::get($data, "type"));
+        $model->setDecision(ArrayHelper::get($data, "decision"));
 
         return $model;
     }
