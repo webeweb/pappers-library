@@ -24,7 +24,7 @@ trait ArrayMentionsTrait {
      *
      * @var string[]|null
      */
-    private $Mentions;
+    private $mentions;
 
     /**
      * Get the mentions.
@@ -32,17 +32,17 @@ trait ArrayMentionsTrait {
      * @return string[]|null Returns the mentions.
      */
     public function getMentions(): ?array {
-        return $this->Mentions;
+        return $this->mentions;
     }
 
     /**
      * Set the mentions.
      *
-     * @param string[]|null $Mentions The mentions.
+     * @param string[]|null $mentions The mentions.
      * @return self Returns this instance.
      */
-    public function setMentions(?array $Mentions): self {
-        $this->Mentions = $Mentions;
+    public function setMentions(?array $mentions): self {
+        $this->mentions = $mentions;
         return $this;
     }
 }
