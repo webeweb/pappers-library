@@ -81,7 +81,7 @@
                 {
                     "type": "acte",
                     "date_depot": "2020-08-04T00:00:00.000Z",
-                    "titres": "2017-08-03T00:00:00.000Z",
+                    "titres": [],
                     "mentions": [
                         "string"
                     ]
