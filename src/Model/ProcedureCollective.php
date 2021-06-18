@@ -20,7 +20,7 @@ use WBW\Library\Pappers\Model\Attribute\ArrayPublicationsBodaccTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Model
  */
-class ProcedureCollective {
+class ProcedureCollective implements ProcedureCollectiveInterface {
 
     use ArrayPublicationsBodaccTrait;
     use StringTypeTrait;
