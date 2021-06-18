@@ -11,6 +11,8 @@
 
 namespace WBW\Library\Pappers\Response;
 
+use Exception;
+
 /**
  * Document téléchargementResponse.
  *
@@ -24,5 +26,22 @@ class DocumentTelechargementResponse extends AbstractResponse {
      */
     public function __construct() {
         parent::__construct();
+    }
+
+    /**
+     * Save as.
+     *
+     * @param string $filename The filename.
+     * @return int Returns the number of bytes written.
+     * @throws Exception Throws an exception if an error occurs.
+     */
+    public function saveAs(string $filename): int {
+
+        $result = file_put_contents($filename, $this->getRawResponse());
+        if (false === $result) {
+            throw new Exception("An I/O error occurs");
+        }
+
+        return $result;
     }
 }
