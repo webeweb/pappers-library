@@ -49,7 +49,6 @@ interface RechercheRequestInterface {
      */
     const BASE_PUBLICATIONS = "publications";
 
-
     /**
      * Type publication "création".
      *

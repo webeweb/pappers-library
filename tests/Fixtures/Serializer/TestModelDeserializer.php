@@ -26,7 +26,6 @@ use WBW\Library\Pappers\Model\Etablissement;
 use WBW\Library\Pappers\Model\ExtraitImmatriculation;
 use WBW\Library\Pappers\Model\Finance;
 use WBW\Library\Pappers\Model\ProcedureCollective;
-use WBW\Library\Pappers\Model\PublicationBodacc;
 use WBW\Library\Pappers\Model\Statuts;
 use WBW\Library\Pappers\Serializer\ModelDeserializer;
 

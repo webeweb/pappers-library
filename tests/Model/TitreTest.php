@@ -12,7 +12,6 @@
 namespace WBW\Library\Pappers\Tests\Model;
 
 use WBW\Library\Pappers\Model\Titre;
-use PHPUnit\Framework\TestCase;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
 
 /**
