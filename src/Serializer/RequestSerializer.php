@@ -42,7 +42,7 @@ class RequestSerializer {
 
         ArrayHelper::set($result, "par_page", $request->getParPage(), [null, 20]);
         ArrayHelper::set($result, "page", $request->getPage(), [null, 1]);
-        ArrayHelper::set($result, "precision", $request->getPrecision(), [null, "standard"]);
+        ArrayHelper::set($result, "precision", $request->getPrecision(), [null, AbstractRechercheRequest::PRECISION_STANDARD]);
         ArrayHelper::set($result, "q", $request->getQ(), [null]);
         ArrayHelper::set($result, "code_naf", $request->getCodeNaf(), [null]);
         ArrayHelper::set($result, "departement", $request->getDepartement(), [null]);
@@ -110,7 +110,7 @@ class RequestSerializer {
 
         ArrayHelper::set($result, "siren", $request->getSiren(), [null]);
         ArrayHelper::set($result, "siret", $request->getSiret(), [null]);
-        ArrayHelper::set($result, "format_publications_bodacc", $request->getFormatPublicationsBodacc(), [null, "objet"]);
+        ArrayHelper::set($result, "format_publications_bodacc", $request->getFormatPublicationsBodacc(), [null, EntrepriseRequest::FORMAT_PUBLICATIONS_BODACC_OBJET]);
 
         return $result;
     }
@@ -155,7 +155,7 @@ class RequestSerializer {
 
         $result = static::serializeAbstractRechercheRequest($request);
 
-        ArrayHelper::set($result, "bases", $request->getBases(), [null, "entreprises"]);
+        ArrayHelper::set($result, "bases", $request->getBases(), [null, RechercheRequest::BASE_ENTREPRISES]);
 
         return $result;
     }
@@ -172,7 +172,7 @@ class RequestSerializer {
 
         ArrayHelper::set($result, "q", $request->getQ(), [null]);
         ArrayHelper::set($result, "longueur", $request->getLongueur(), [null, 10]);
-        ArrayHelper::set($result, "cibles", $request->getCibles(), [null]);
+        ArrayHelper::set($result, "cibles", $request->getCibles(), [null, SuggestionsRequest::CIBLE_NOM_ENTREPRISE]);
 
         return $result;
     }
