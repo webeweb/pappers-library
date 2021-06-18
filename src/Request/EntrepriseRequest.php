@@ -20,7 +20,7 @@ use WBW\Library\Pappers\Model\Attribute\StringSiretTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Request
  */
-class EntrepriseRequest extends AbstractRequest {
+class EntrepriseRequest extends AbstractRequest implements EntrepriseRequestInterface {
 
     use StringSirenTrait;
     use StringSiretTrait;
