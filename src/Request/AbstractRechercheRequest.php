@@ -27,7 +27,7 @@ use WBW\Library\Pappers\Model\Attribute\StringStatutRcsTrait;
  * @package WBW\Library\Pappers\Request
  * @abstract
  */
-abstract class AbstractRechercheRequest extends AbstractRequest {
+abstract class AbstractRechercheRequest extends AbstractRequest implements AbstractRechercheRequestInterface {
 
     use BooleanEntrepriseCesseeTrait;
     use IntegerPageTrait;
