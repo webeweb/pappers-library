@@ -27,7 +27,7 @@ use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Model
  */
-class PublicationBodacc {
+class PublicationBodacc implements PublicationBodaccInterface {
 
     use BooleanPersonneMoraleTrait;
     use EntrepriseEntrepriseTrait;
