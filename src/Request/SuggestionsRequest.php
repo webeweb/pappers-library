@@ -19,7 +19,7 @@ use WBW\Library\Pappers\Model\Attribute\StringQTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Request
  */
-class SuggestionsRequest extends AbstractRequest {
+class SuggestionsRequest extends AbstractRequest implements SuggestionsRequestInterface {
 
     use StringQTrait;
 
