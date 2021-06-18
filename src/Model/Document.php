@@ -24,7 +24,7 @@ use WBW\Library\Pappers\Model\Attribute\StringTokenTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Model
  */
-class Document {
+class Document implements DocumentInterface {
 
     use ArrayMentionsTrait;
     use EntrepriseEntrepriseTrait;
