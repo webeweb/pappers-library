@@ -76,16 +76,19 @@ abstract class AbstractProvider extends BaseProvider {
      *
      * @param AbstractRequest $request The request.
      * @param array $queryData The query data.
+     * @param bool $withoutApiToken Without API token ?
      * @return string Returns the raw response.
      * @throws InvalidArgumentException Throws an invalid argument exception if a parameter is missing.
      * @throws GuzzleException Throws a Guzzle exception if an error occurs.
      * @throws ApiException Throws an API exception if an error occurs.
      */
-    protected function callApi(AbstractRequest $request, array $queryData): string {
+    protected function callApi(AbstractRequest $request, array $queryData, bool $withoutApiToken = false): string {
 
-        if (null === $this->getApiToken()) {
+        if (false === $withoutApiToken && null === $this->getApiToken()) {
             throw new InvalidArgumentException('The mandatory parameter "api_token" is missing');
         }
+
+        $query = false === $withoutApiToken ? ["api_token" => $this->getApiToken()] : [];
 
         try {
 
@@ -96,7 +99,7 @@ abstract class AbstractProvider extends BaseProvider {
             $method  = "GET";
             $uri     = substr($request->getResourcePath(), 1);
             $options = [
-                "query" => array_merge(["api_token" => $this->getApiToken()], $queryData),
+                "query" => array_merge($query, $queryData),
             ];
 
             $this->logInfo(sprintf("Call Pappers API %s %s", $method, $uri), ["config" => $config, "options" => $options]);
