@@ -40,19 +40,6 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setAdresseLigne3() method.
-     *
-     * @return void
-     */
-    public function testSetAdresseLigne3(): void {
-
-        $obj = new Representant();
-
-        $obj->setAdresseLigne3("adresseLigne3");
-        $this->assertEquals("adresseLigne3", $obj->getAdresseLigne3());
-    }
-
-    /**
      * Tests the setAge() method.
      *
      * @return void
@@ -118,32 +105,6 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPays() method.
-     *
-     * @return void
-     */
-    public function testSetPays(): void {
-
-        $obj = new Representant();
-
-        $obj->setPays("nom");
-        $this->assertEquals("nom", $obj->getPays());
-    }
-
-    /**
-     * Tests the setPaysNaissance() method.
-     *
-     * @return void
-     */
-    public function testSetPaysNaissance(): void {
-
-        $obj = new Representant();
-
-        $obj->setPaysNaissance("pays Naissance");
-        $this->assertEquals("pays Naissance", $obj->getPaysNaissance());
-    }
-
-    /**
      * Tests the setQualite() method.
      *
      * @return void
@@ -157,19 +118,6 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setVilleNaissance() method.
-     *
-     * @return void
-     */
-    public function testSetVilleNaissance(): void {
-
-        $obj = new Representant();
-
-        $obj->setVilleNaissance("villeNaissance");
-        $this->assertEquals("villeNaissance", $obj->getVilleNaissance());
-    }
-
-    /**
      * Tests the __construct() method.
      *
      * @return void
@@ -180,16 +128,19 @@ class RepresentantTest extends AbstractTestCase {
 
         $this->assertNull($obj->getAdresseLigne1());
         $this->assertNull($obj->getAdresseLigne2());
+        $this->assertNull($obj->getAdresseLigne3());
         $this->assertNull($obj->getCodePostal());
-        $this->assertNull($obj->getDateNaissanceFormate());
+        $this->assertNull($obj->getDateNaissanceFormatee());
         $this->assertNull($obj->getMention());
         $this->assertNull($obj->getNationalite());
         $this->assertNull($obj->getNom());
+        $this->assertNull($obj->getPays());
+        $this->assertNull($obj->getPaysNaissance());
         $this->assertNull($obj->getPersonneMorale());
         $this->assertNull($obj->getPrenom());
         $this->assertNull($obj->getVille());
+        $this->assertNull($obj->getVilleNaissance());
 
-        $this->assertNull($obj->getAdresseLigne3());
         $this->assertNull($obj->getAge());
         $this->assertNull($obj->getDateNaissance());
         $this->assertNull($obj->getDatePrisePoste());
@@ -197,8 +148,5 @@ class RepresentantTest extends AbstractTestCase {
         $this->assertNull($obj->getNbEntreprisesTotal());
         $this->assertNull($obj->getNomComplet());
         $this->assertNull($obj->getQualite());
-        $this->assertNull($obj->getPays());
-        $this->assertNull($obj->getPaysNaissance());
-        $this->assertNull($obj->getVilleNaissance());
     }
 }

@@ -14,12 +14,16 @@ namespace WBW\Library\Pappers\Model;
 use WBW\Library\Pappers\Model\Attribute\BooleanPersonneMoraleTrait;
 use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne1Trait;
 use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne2Trait;
+use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne3Trait;
 use WBW\Library\Pappers\Model\Attribute\StringCodePostalTrait;
-use WBW\Library\Pappers\Model\Attribute\StringDateNaissanceFormateTrait;
+use WBW\Library\Pappers\Model\Attribute\StringDateNaissanceFormateeTrait;
 use WBW\Library\Pappers\Model\Attribute\StringMentionTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNationaliteTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
+use WBW\Library\Pappers\Model\Attribute\StringPaysNaissanceTrait;
+use WBW\Library\Pappers\Model\Attribute\StringPaysTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
+use WBW\Library\Pappers\Model\Attribute\StringVilleNaissanceTrait;
 use WBW\Library\Pappers\Model\Attribute\StringVilleTrait;
 
 /**
@@ -33,20 +37,17 @@ class Representant {
     use BooleanPersonneMoraleTrait;
     use StringAdresseLigne1Trait;
     use StringAdresseLigne2Trait;
+    use StringAdresseLigne3Trait;
     use StringCodePostalTrait;
-    use StringDateNaissanceFormateTrait;
+    use StringDateNaissanceFormateeTrait;
     use StringMentionTrait;
     use StringNationaliteTrait;
     use StringNomTrait;
+    use StringPaysNaissanceTrait;
+    use StringPaysTrait;
     use StringPrenomTrait;
+    use StringVilleNaissanceTrait;
     use StringVilleTrait;
-
-    /**
-     * Adresse ligne 3.
-     *
-     * @var string|null
-     */
-    private $adresseLigne3;
 
     /**
      * Age.
@@ -91,32 +92,11 @@ class Representant {
     private $nomComplet;
 
     /**
-     * Pays.
-     *
-     * @var string|null
-     */
-    private $pays;
-
-    /**
-     * Pays naissance.
-     *
-     * @var string|null
-     */
-    private $paysNaissance;
-
-    /**
      * Qualité.
      *
      * @var string|null
      */
     private $qualite;
-
-    /**
-     * Ville naissance.
-     *
-     * @var string|null
-     */
-    private $villeNaissance;
 
     /**
      * Constructor.
@@ -134,15 +114,6 @@ class Representant {
     public function addEntreprise(Entreprise $entreprise): Representant {
         $this->entreprises[] = $entreprise;
         return $this;
-    }
-
-    /**
-     * Get the adresse ligne 3.
-     *
-     * @return string|null Returns the adresse ligne 3.
-     */
-    public function getAdresseLigne3(): ?string {
-        return $this->adresseLigne3;
     }
 
     /**
@@ -200,50 +171,12 @@ class Representant {
     }
 
     /**
-     * Get the pays.
-     *
-     * @return string|null Returns the pays.
-     */
-    public function getPays(): ?string {
-        return $this->pays;
-    }
-
-    /**
-     * Get the pays naissance.
-     *
-     * @return string|null Returns the pays naissance.
-     */
-    public function getPaysNaissance(): ?string {
-        return $this->paysNaissance;
-    }
-
-    /**
      * Get the qualité.
      *
      * @return string|null Returns the qualité.
      */
     public function getQualite(): ?string {
         return $this->qualite;
-    }
-
-    /**
-     * Get the ville naissance.
-     *
-     * @return string|null Returns the ville naissance.
-     */
-    public function getVilleNaissance(): ?string {
-        return $this->villeNaissance;
-    }
-
-    /**
-     * Set the adresse ligne 3.
-     *
-     * @param string|null $adresseLigne3 The adresse ligne 3.
-     * @return Representant Returns this représentant.
-     */
-    public function setAdresseLigne3(?string $adresseLigne3): Representant {
-        $this->adresseLigne3 = $adresseLigne3;
-        return $this;
     }
 
     /**
@@ -313,28 +246,6 @@ class Representant {
     }
 
     /**
-     * Set the pays.
-     *
-     * @param string|null $pays The pays.
-     * @return Representant Returns this représentant.
-     */
-    public function setPays(?string $pays): Representant {
-        $this->pays = $pays;
-        return $this;
-    }
-
-    /**
-     * Set the pays naissance.
-     *
-     * @param string|null $paysNaissance The pays naissance.
-     * @return Representant Returns this représentant.
-     */
-    public function setPaysNaissance(?string $paysNaissance): Representant {
-        $this->paysNaissance = $paysNaissance;
-        return $this;
-    }
-
-    /**
      * Set the qualité.
      *
      * @param string|null $qualite The qualité.
@@ -342,17 +253,6 @@ class Representant {
      */
     public function setQualite(?string $qualite): Representant {
         $this->qualite = $qualite;
-        return $this;
-    }
-
-    /**
-     * Set the ville naissance.
-     *
-     * @param string|null $villeNaissance The ville naissance.
-     * @return Representant Returns this représentant.
-     */
-    public function setVilleNaissance(?string $villeNaissance): Representant {
-        $this->villeNaissance = $villeNaissance;
         return $this;
     }
 }
