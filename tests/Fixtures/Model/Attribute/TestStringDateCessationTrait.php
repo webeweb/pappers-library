@@ -11,15 +11,15 @@
 
 namespace WBW\Library\Pappers\Tests\Fixtures\Model\Attribute;
 
-use WBW\Library\Pappers\Model\Attribute\StringDateActeFormateTrait;
+use WBW\Library\Pappers\Model\Attribute\StringDateCessationTrait;
 
 /**
- * Test string date acte formaté trait.
+ * Test string date cessation trait.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute
  */
-class TestStringDateActeFormateTrait {
+class TestStringDateCessationTrait {
 
-    use StringDateActeFormateTrait;
+    use StringDateCessationTrait;
 }

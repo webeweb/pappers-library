@@ -12,37 +12,37 @@
 namespace WBW\Library\Pappers\Model\Attribute;
 
 /**
- * String date acte formaté trait.
+ * String date cessation trait.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Model\Attribute
  */
-trait StringDateActeFormateTrait {
+trait StringDateCessationTrait {
 
     /**
-     * Date acte formaté.
+     * Date cessation.
      *
      * @var string|null
      */
-    private $dateActeFormate;
+    private $dateCessation;
 
     /**
-     * Get the date acte formaté.
+     * Get the date cessation.
      *
-     * @return string|null Returns the date acte formaté.
+     * @return string|null Returns the date cessation.
      */
-    public function getDateActeFormate(): ?string {
-        return $this->dateActeFormate;
+    public function getDateCessation(): ?string {
+        return $this->dateCessation;
     }
 
     /**
-     * Set the date acte formaté.
+     * Set the date cessation.
      *
-     * @param string|null $dateActeFormate The date acte formaté.
+     * @param string|null $dateCessation The date cessation.
      * @return self Returns this instance.
      */
-    public function setDateActeFormate(?string $dateActeFormate): self {
-        $this->dateActeFormate = $dateActeFormate;
+    public function setDateCessation(?string $dateCessation): self {
+        $this->dateCessation = $dateCessation;
         return $this;
     }
 }
