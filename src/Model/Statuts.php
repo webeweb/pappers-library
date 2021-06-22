@@ -13,9 +13,9 @@ namespace WBW\Library\Pappers\Model;
 
 use WBW\Library\Core\Model\Attribute\StringTypeTrait;
 use WBW\Library\Pappers\Model\Attribute\BooleanDisponibleTrait;
-use WBW\Library\Pappers\Model\Attribute\StringDateActeFormateTrait;
+use WBW\Library\Pappers\Model\Attribute\StringDateActeFormateeTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateActeTrait;
-use WBW\Library\Pappers\Model\Attribute\StringDateDepotFormateTrait;
+use WBW\Library\Pappers\Model\Attribute\StringDateDepotFormateeTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateDepotTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDecisionTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomFichierPdfTrait;
@@ -31,9 +31,9 @@ class Statuts {
 
     use BooleanDisponibleTrait;
     use StringDateActeTrait;
-    use StringDateActeFormateTrait;
+    use StringDateActeFormateeTrait;
     use StringDateDepotTrait;
-    use StringDateDepotFormateTrait;
+    use StringDateDepotFormateeTrait;
     use StringDecisionTrait;
     use StringNomFichierPdfTrait;
     use StringTokenTrait;

@@ -32,9 +32,9 @@ class StatutsTest extends AbstractTestCase {
         $obj = new Statuts();
 
         $this->assertNull($obj->getDateActe());
-        $this->assertNull($obj->getDateActeFormate());
+        $this->assertNull($obj->getDateActeFormatee());
         $this->assertNull($obj->getDateDepot());
-        $this->assertNull($obj->getDateDepotFormate());
+        $this->assertNull($obj->getDateDepotFormatee());
         $this->assertNull($obj->getDecision());
         $this->assertNull($obj->getDisponible());
         $this->assertNull($obj->getNomFichierPdf());
