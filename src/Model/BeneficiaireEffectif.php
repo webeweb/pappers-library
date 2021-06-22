@@ -11,10 +11,20 @@
 
 namespace WBW\Library\Pappers\Model;
 
-use WBW\Library\Pappers\Model\Attribute\StringDateNaissanceFormateTrait;
+use WBW\Library\Core\Model\Attribute\StringTypeTrait;
+use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne1Trait;
+use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne2Trait;
+use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne3Trait;
+use WBW\Library\Pappers\Model\Attribute\StringCodePostalTrait;
+use WBW\Library\Pappers\Model\Attribute\StringDateNaissanceFormateeTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNationaliteTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
+use WBW\Library\Pappers\Model\Attribute\StringPaysNaissanceTrait;
+use WBW\Library\Pappers\Model\Attribute\StringPaysTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
+use WBW\Library\Pappers\Model\Attribute\StringPseudonymeTrait;
+use WBW\Library\Pappers\Model\Attribute\StringVilleNaissanceTrait;
+use WBW\Library\Pappers\Model\Attribute\StringVilleTrait;
 
 /**
  * Bénéficiaire effectif.
@@ -24,10 +34,20 @@ use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
  */
 class BeneficiaireEffectif {
 
-    use StringDateNaissanceFormateTrait;
+    use StringAdresseLigne1Trait;
+    use StringAdresseLigne2Trait;
+    use StringAdresseLigne3Trait;
+    use StringCodePostalTrait;
+    use StringDateNaissanceFormateeTrait;
     use StringNationaliteTrait;
-    use StringPrenomTrait;
     use StringNomTrait;
+    use StringPaysNaissanceTrait;
+    use StringPaysTrait;
+    use StringPrenomTrait;
+    use StringPseudonymeTrait;
+    use StringTypeTrait;
+    use StringVilleNaissanceTrait;
+    use StringVilleTrait;
 
     /**
      * Bénéficiaire représentant légal.
@@ -42,6 +62,13 @@ class BeneficiaireEffectif {
      * @var string|null
      */
     private $dateGreffe;
+
+    /**
+     * Date naissance complète formatée.
+     *
+     * @var string|null
+     */
+    private $dateNaissanceCompleteFormatee;
 
     /**
      * Détails parts directes.
@@ -163,13 +190,6 @@ class BeneficiaireEffectif {
     private $pourcentageVotesIndirects;
 
     /**
-     * Pseudonyme.
-     *
-     * @var string|null
-     */
-    private $pseudonyme;
-
-    /**
      * Représentant légal placement sans gestion délégation.
      *
      * @var bool|null
@@ -199,6 +219,15 @@ class BeneficiaireEffectif {
      */
     public function getDateGreffe(): ?string {
         return $this->dateGreffe;
+    }
+
+    /**
+     * Get the date naissance complète formatée.
+     *
+     * @return string|null Returns the date naissance complète formatée.
+     */
+    public function getDateNaissanceCompleteFormatee(): ?string {
+        return $this->dateNaissanceCompleteFormatee;
     }
 
     /**
@@ -355,15 +384,6 @@ class BeneficiaireEffectif {
     }
 
     /**
-     * Get the pseudonyme.
-     *
-     * @return string|null Returns the pseudonyme.
-     */
-    public function getPseudonyme(): ?string {
-        return $this->pseudonyme;
-    }
-
-    /**
      * Get the représentant légal placement sans gestion délégation.
      *
      * @return bool|null Returns the représentant légal placement sans gestion délégation.
@@ -391,6 +411,17 @@ class BeneficiaireEffectif {
      */
     public function setDateGreffe(?string $dateGreffe): BeneficiaireEffectif {
         $this->dateGreffe = $dateGreffe;
+        return $this;
+    }
+
+    /**
+     * Set the date naissance complète formatée.
+     *
+     * @param string|null $dateNaissanceCompleteFormatee The date naissance complète formatée.
+     * @return BeneficiaireEffectif Returns this bénéficiaire effectif.
+     */
+    public function setDateNaissanceCompleteFormatee(?string $dateNaissanceCompleteFormatee): BeneficiaireEffectif {
+        $this->dateNaissanceCompleteFormatee = $dateNaissanceCompleteFormatee;
         return $this;
     }
 
@@ -578,17 +609,6 @@ class BeneficiaireEffectif {
      */
     public function setPourcentageVotesIndirects(?int $pourcentageVotesIndirects): BeneficiaireEffectif {
         $this->pourcentageVotesIndirects = $pourcentageVotesIndirects;
-        return $this;
-    }
-
-    /**
-     * Set the pseudonyme.
-     *
-     * @param string|null $pseudonyme The pseudonyme.
-     * @return BeneficiaireEffectif Returns this bénéficiaire effectif.
-     */
-    public function setPseudonyme(?string $pseudonyme): BeneficiaireEffectif {
-        $this->pseudonyme = $pseudonyme;
         return $this;
     }
 

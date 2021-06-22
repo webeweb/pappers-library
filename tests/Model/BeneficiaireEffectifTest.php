@@ -53,6 +53,19 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the setDateNaissanceCompleteFormatee() method.
+     *
+     * @return void
+     */
+    public function testSetDateNaissanceCompleteFormatee(): void {
+
+        $obj = new BeneficiaireEffectif();
+
+        $obj->setDateNaissanceCompleteFormatee("dateNaissanceCompleteFormatee");
+        $this->assertEquals("dateNaissanceCompleteFormatee", $obj->getDateNaissanceCompleteFormatee());
+    }
+
+    /**
      * Tests the setDetailsPartsDirectes() method.
      *
      * @return void
@@ -292,19 +305,6 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPseudonyme() method.
-     *
-     * @return void
-     */
-    public function testSetPseudonyme(): void {
-
-        $obj = new BeneficiaireEffectif();
-
-        $obj->setPseudonyme("pseudonyme");
-        $this->assertEquals("pseudonyme", $obj->getPseudonyme());
-    }
-
-    /**
      * Tests the setRepresentantLegalPlacementSansGestionDelegation() method.
      *
      * @return void
@@ -326,13 +326,24 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
 
         $obj = new BeneficiaireEffectif();
 
-        $this->assertNull($obj->getDateNaissanceFormate());
+        $this->assertNull($obj->getAdresseLigne1());
+        $this->assertNull($obj->getAdresseLigne2());
+        $this->assertNull($obj->getAdresseLigne3());
+        $this->assertNull($obj->getCodePostal());
+        $this->assertNull($obj->getDateNaissanceFormatee());
         $this->assertNull($obj->getNationalite());
         $this->assertNull($obj->getNom());
+        $this->assertNull($obj->getPays());
+        $this->assertNull($obj->getPaysNaissance());
         $this->assertNull($obj->getPrenom());
+        $this->assertNull($obj->getPseudonyme());
+        $this->assertNull($obj->getType());
+        $this->assertNull($obj->getVille());
+        $this->assertNull($obj->getVilleNaissance());
 
         $this->assertNull($obj->getBeneficiaireRepresentantLegal());
         $this->assertNull($obj->getDateGreffe());
+        $this->assertNull($obj->getDateNaissanceCompleteFormatee());
         $this->assertNull($obj->getDetailsPartsDirectes());
         $this->assertNull($obj->getDetailsPartsIndirectes());
         $this->assertNull($obj->getDetailsPartsVocationTitulaire());
@@ -350,7 +361,6 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
         $this->assertNull($obj->getPourcentageVotes());
         $this->assertNull($obj->getPourcentageVotesDirects());
         $this->assertNull($obj->getPourcentageVotesIndirects());
-        $this->assertNull($obj->getPseudonyme());
         $this->assertNull($obj->getRepresentantLegalPlacementSansGestionDelegation());
     }
 }
