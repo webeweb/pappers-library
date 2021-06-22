@@ -49,6 +49,19 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the setDomiciliation() method.
+     *
+     * @return void
+     */
+    public function testSetDomiciliation(): void {
+
+        $obj = new Etablissement();
+
+        $obj->setDomiciliation("domiciliation");
+        $this->assertEquals("domiciliation", $obj->getDomiciliation());
+    }
+
+    /**
      * Tests the setEtablissementCesse() method.
      *
      * @return void
@@ -192,10 +205,12 @@ class EtablissementTest extends AbstractTestCase {
         $this->assertNull($obj->getAnneeEffectif());
         $this->assertNull($obj->getCodeNaf());
         $this->assertNull($obj->getCodePostal());
+        $this->assertNull($obj->getDateCessation());
         $this->assertNull($obj->getEffectif());
         $this->assertNull($obj->getEffectifMax());
         $this->assertNull($obj->getEffectifMin());
         $this->assertNull($obj->getNic());
+        $this->assertNull($obj->getPays());
         $this->assertNull($obj->getSiret());
         $this->assertNull($obj->getSiretFormate());
         $this->assertNull($obj->getTrancheEffectif());
@@ -203,6 +218,7 @@ class EtablissementTest extends AbstractTestCase {
 
         $this->assertNull($obj->getComplementAdresse());
         $this->assertNull($obj->getDateCreation());
+        $this->assertNull($obj->getDomiciliation());
         $this->assertNull($obj->getEtablissementCesse());
         $this->assertNull($obj->getEtablissementEmployeur());
         $this->assertNull($obj->getIndiceRepetition());

@@ -18,8 +18,10 @@ use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne1Trait;
 use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne2Trait;
 use WBW\Library\Pappers\Model\Attribute\StringCodeNafTrait;
 use WBW\Library\Pappers\Model\Attribute\StringCodePostalTrait;
+use WBW\Library\Pappers\Model\Attribute\StringDateCessationTrait;
 use WBW\Library\Pappers\Model\Attribute\StringEffectifTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNicTrait;
+use WBW\Library\Pappers\Model\Attribute\StringPaysTrait;
 use WBW\Library\Pappers\Model\Attribute\StringSiretFormateTrait;
 use WBW\Library\Pappers\Model\Attribute\StringSiretTrait;
 use WBW\Library\Pappers\Model\Attribute\StringTrancheEffectifTrait;
@@ -40,8 +42,10 @@ class Etablissement {
     use StringAdresseLigne2Trait;
     use StringCodeNafTrait;
     use StringCodePostalTrait;
+    use StringDateCessationTrait;
     use StringEffectifTrait;
     use StringNicTrait;
+    use StringPaysTrait;
     use StringSiretFormateTrait;
     use StringSiretTrait;
     use StringTrancheEffectifTrait;
@@ -60,6 +64,13 @@ class Etablissement {
      * @var string|null
      */
     private $dateCreation;
+
+    /**
+     * Domiciliation.
+     *
+     * @var string|null
+     */
+    private $domiciliation;
 
     /**
      * Etablissement cessé.
@@ -154,6 +165,15 @@ class Etablissement {
      */
     public function getDateCreation(): ?string {
         return $this->dateCreation;
+    }
+
+    /**
+     * Get the domiciliation.
+     *
+     * @return string|null Returns the domiciliation.
+     */
+    public function getDomiciliation(): ?string {
+        return $this->domiciliation;
     }
 
     /**
@@ -265,6 +285,17 @@ class Etablissement {
      */
     public function setDateCreation(?string $dateCreation): Etablissement {
         $this->dateCreation = $dateCreation;
+        return $this;
+    }
+
+    /**
+     * Set the domiciliation.
+     *
+     * @param string|null $domiciliation The domiciliation.
+     * @return Etablissement Returns this établissement.
+     */
+    public function setDomiciliation(?string $domiciliation): Etablissement {
+        $this->domiciliation = $domiciliation;
         return $this;
     }
 
