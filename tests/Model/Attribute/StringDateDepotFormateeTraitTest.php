@@ -12,15 +12,15 @@
 namespace WBW\Library\Pappers\Tests\Model\Attribute;
 
 use WBW\Library\Pappers\Tests\AbstractTestCase;
-use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestStringDateDepotFormateTrait;
+use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestStringDateDepotFormateeTrait;
 
 /**
- * String date dépôt formaté trait test.
+ * String date dépôt formatée trait test.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Model\Attribute
  */
-class StringDateDepotFormateTraitTest extends AbstractTestCase {
+class StringDateDepotFormateeTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setDateDepotFormate() method().
@@ -29,9 +29,9 @@ class StringDateDepotFormateTraitTest extends AbstractTestCase {
      */
     public function testSetDateDepotFormate(): void {
 
-        $obj = new TestStringDateDepotFormateTrait();
+        $obj = new TestStringDateDepotFormateeTrait();
 
-        $obj->setDateDepotFormate("dateDepotFormate");
-        $this->assertEquals("dateDepotFormate", $obj->getDateDepotFormate());
+        $obj->setDateDepotFormatee("dateDepotFormatee");
+        $this->assertEquals("dateDepotFormatee", $obj->getDateDepotFormatee());
     }
 }
