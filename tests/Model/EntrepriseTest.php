@@ -217,16 +217,16 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateCessation() method.
+     * Tests the setDateCessationFormatee() method.
      *
      * @return void
      */
-    public function testSetDateCessation(): void {
+    public function testSetDateCessationFormatee(): void {
 
         $obj = new Entreprise();
 
-        $obj->setDateCessation("dateCessation");
-        $this->assertEquals("dateCessation", $obj->getDateCessation());
+        $obj->setDateCessationFormatee("dateCessationFormatee");
+        $this->assertEquals("dateCessationFormatee", $obj->getDateCessationFormatee());
     }
 
     /**
@@ -389,19 +389,6 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDeviseCapital() method.
-     *
-     * @return void
-     */
-    public function testSetDeviseCapital(): void {
-
-        $obj = new Entreprise();
-
-        $obj->setDeviseCapital("deviseCapital");
-        $this->assertEquals("deviseCapital", $obj->getDeviseCapital());
-    }
-
-    /**
      * Tests the setDiffusable() method.
      *
      * @return void
@@ -480,19 +467,6 @@ class EntrepriseTest extends AbstractTestCase {
 
         $obj->setExtraitImmatriculation($extraitImmatriculation);
         $this->assertSame($extraitImmatriculation, $obj->getExtraitImmatriculation());
-    }
-
-    /**
-     * Tests the setFormeJuridique() method.
-     *
-     * @return void
-     */
-    public function testSetFormeJuridique(): void {
-
-        $obj = new Entreprise();
-
-        $obj->setFormeJuridique("formeJuridique");
-        $this->assertEquals("formeJuridique", $obj->getFormeJuridique());
     }
 
     /**
@@ -652,6 +626,19 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the setRnm() method.
+     *
+     * @return void
+     */
+    public function testSetRnm(): void {
+
+        $obj = new Entreprise();
+
+        $obj->setRnm("rnm");
+        $this->assertEquals("rnm", $obj->getRnm());
+    }
+
+    /**
      * Tests the setSexe() method.
      *
      * @return void
@@ -681,19 +668,6 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setSigle() method.
-     *
-     * @return void
-     */
-    public function testSetSigle(): void {
-
-        $obj = new Entreprise();
-
-        $obj->setSigle("sigle");
-        $this->assertEquals("sigle", $obj->getSigle());
-    }
-
-    /**
      * Tests the setSirenFormate() method.
      *
      * @return void
@@ -720,12 +694,15 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getCategorieJuridique());
         $this->assertNull($obj->getCodeNaf());
         $this->assertNull($obj->getChiffreAffaires());
+        $this->assertNull($obj->getDateCessation());
         $this->assertNull($obj->getDateClotureExercice());
         $this->assertNull($obj->getDenomination());
+        $this->assertNull($obj->getDeviseCapital());
         $this->assertNull($obj->getEffectif());
         $this->assertNull($obj->getEffectifMax());
         $this->assertNull($obj->getEffectifMin());
         $this->assertNull($obj->getEntrepriseCessee());
+        $this->assertNull($obj->getFormeJuridique());
         $this->assertNull($obj->getGreffe());
         $this->assertNull($obj->getMention());
         $this->assertNull($obj->getNom());
@@ -735,6 +712,7 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getPrenom());
         $this->assertEquals([], $obj->getPublicationsBodacc());
         $this->assertNull($obj->getResultat());
+        $this->assertNull($obj->getSigle());
         $this->assertNull($obj->getSiren());
         $this->assertNull($obj->getStatutRcs());
         $this->assertNull($obj->getTrancheEffectif());
@@ -745,7 +723,7 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getCapitalFormate());
         $this->assertEquals([], $obj->getComptes());
         $this->assertEquals([], $obj->getConventionCollectives());
-        $this->assertNull($obj->getDateCessation());
+        $this->assertNull($obj->getDateCessationFormatee());
         $this->assertNull($obj->getDateClotureExceptionnelle());
         $this->assertNull($obj->getDateClotureExerciceExceptionnelle());
         $this->assertNull($obj->getDateClotureExerciceExceptionnelleFormate());
@@ -759,7 +737,6 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getDerniereMiseJourSirene());
         $this->assertNull($obj->getDerniersStatuts());
         $this->assertNull($obj->getDernierTraitement());
-        $this->assertNull($obj->getDeviseCapital());
         $this->assertNull($obj->getDiffusable());
         $this->assertEquals([], $obj->getDocuments());
         $this->assertNull($obj->getDomaineActivite());
@@ -770,7 +747,6 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertEquals([], $obj->getEtablissements());
         $this->assertNull($obj->getExtraitImmatriculation());
         $this->assertEquals([], $obj->getFinances());
-        $this->assertNull($obj->getFormeJuridique());
         $this->assertNull($obj->getLibelleCodeNaf());
         $this->assertNull($obj->getNbDirigeantsTotal());
         $this->assertNull($obj->getNbDocumentsAvecMentions());
@@ -785,9 +761,9 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getProchaineDateClotureExercice());
         $this->assertNull($obj->getProchaineDateClotureExerciceFormate());
         $this->assertEquals([], $obj->getRepresentants());
+        $this->assertNull($obj->getRnm());
         $this->assertNull($obj->getSexe());
         $this->assertNull($obj->getSiege());
-        $this->assertNull($obj->getSigle());
         $this->assertNull($obj->getSirenFormate());
         $this->assertEquals([], $obj->getVilles());
     }

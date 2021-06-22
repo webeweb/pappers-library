@@ -22,15 +22,19 @@ use WBW\Library\Pappers\Model\Attribute\IntegerEffectifMinTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerResultatTrait;
 use WBW\Library\Pappers\Model\Attribute\StringCategorieJuridiqueTrait;
 use WBW\Library\Pappers\Model\Attribute\StringCodeNafTrait;
+use WBW\Library\Pappers\Model\Attribute\StringDateCessationTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateClotureExerciceTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDenominationTrait;
+use WBW\Library\Pappers\Model\Attribute\StringDeviseCapitalTrait;
 use WBW\Library\Pappers\Model\Attribute\StringEffectifTrait;
+use WBW\Library\Pappers\Model\Attribute\StringFormeJuridiqueTrait;
 use WBW\Library\Pappers\Model\Attribute\StringGreffeTrait;
 use WBW\Library\Pappers\Model\Attribute\StringMentionTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomEntrepriseTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringObjetSocialTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
+use WBW\Library\Pappers\Model\Attribute\StringSigleTrait;
 use WBW\Library\Pappers\Model\Attribute\StringSirenTrait;
 use WBW\Library\Pappers\Model\Attribute\StringStatutRcsTrait;
 use WBW\Library\Pappers\Model\Attribute\StringTrancheEffectifTrait;
@@ -54,15 +58,19 @@ class Entreprise {
     use IntegerResultatTrait;
     use StringCategorieJuridiqueTrait;
     use StringCodeNafTrait;
+    use StringDateCessationTrait;
     use StringDateClotureExerciceTrait;
     use StringDenominationTrait;
+    use StringDeviseCapitalTrait;
     use StringEffectifTrait;
+    use StringFormeJuridiqueTrait;
     use StringGreffeTrait;
     use StringMentionTrait;
     use StringNomEntrepriseTrait;
     use StringNomTrait;
     use StringObjetSocialTrait;
     use StringPrenomTrait;
+    use StringSigleTrait;
     use StringSirenTrait;
     use StringStatutRcsTrait;
     use StringTrancheEffectifTrait;
@@ -117,11 +125,11 @@ class Entreprise {
     private $conventionCollectives;
 
     /**
-     * Date cessation.
+     * Date cessation formatée.
      *
      * @var string|null
      */
-    private $dateCessation;
+    private $dateCessationFormatee;
 
     /**
      * Date clôture exceptionnelle.
@@ -215,13 +223,6 @@ class Entreprise {
     private $derniersStatuts;
 
     /**
-     * Devise capital.
-     *
-     * @var string|null
-     */
-    private $deviseCapital;
-
-    /**
      * Diffusable.
      *
      * @var bool|null
@@ -290,13 +291,6 @@ class Entreprise {
      * @var Finance[]
      */
     private $finances;
-
-    /**
-     * Forme juridique.
-     *
-     * @var string|null
-     */
-    private $formeJuridique;
 
     /**
      * Libellé code NAF.
@@ -397,6 +391,13 @@ class Entreprise {
     private $representants;
 
     /**
+     * R.N.M.
+     *
+     * @var string|null
+     */
+    private $rnm;
+
+    /**
      * Sexe.
      *
      * @var string|null
@@ -409,13 +410,6 @@ class Entreprise {
      * @var Etablissement|null
      */
     private $siege;
-
-    /**
-     * Sigle.
-     *
-     * @var string|null
-     */
-    private $sigle;
 
     /**
      * SIREN formaté.
@@ -611,12 +605,12 @@ class Entreprise {
     }
 
     /**
-     * Get the date cessation.
+     * Get the date cessation formatée.
      *
-     * @return string|null Returns the date cessation.
+     * @return string|null Returns the date cessation formatée.
      */
-    public function getDateCessation(): ?string {
-        return $this->dateCessation;
+    public function getDateCessationFormatee(): ?string {
+        return $this->dateCessationFormatee;
     }
 
     /**
@@ -737,15 +731,6 @@ class Entreprise {
     }
 
     /**
-     * Get the devise capital.
-     *
-     * @return string|null Returns the devise capital.
-     */
-    public function getDeviseCapital(): ?string {
-        return $this->deviseCapital;
-    }
-
-    /**
      * Get the diffusable.
      *
      * @return bool|null Returns the diffusable.
@@ -833,15 +818,6 @@ class Entreprise {
      */
     public function getFinances(): array {
         return $this->finances;
-    }
-
-    /**
-     * Get the forme juridique.
-     *
-     * @return string|null Returns the forme juridique.
-     */
-    public function getFormeJuridique(): ?string {
-        return $this->formeJuridique;
     }
 
     /**
@@ -971,6 +947,15 @@ class Entreprise {
     }
 
     /**
+     * Get the R.N.M.
+     *
+     * @return string|null Returns the R.N.M.
+     */
+    public function getRnm(): ?string {
+        return $this->rnm;
+    }
+
+    /**
      * Get the sexe.
      *
      * @return string|null Returns the sexe.
@@ -986,15 +971,6 @@ class Entreprise {
      */
     public function getSiege(): ?Etablissement {
         return $this->siege;
-    }
-
-    /**
-     * Get the sigle.
-     *
-     * @return string|null Returns the sigle.
-     */
-    public function getSigle(): ?string {
-        return $this->sigle;
     }
 
     /**
@@ -1093,13 +1069,13 @@ class Entreprise {
     }
 
     /**
-     * Set the date cessation.
+     * Set the date cessation formatée.
      *
-     * @param string|null $dateCessation The date cessation.
-     * @return Entreprise Returns this entreprise.
+     * @param string|null $dateCessationFormatee The date cessation formatée.
+     * @return Entreprise Returns ths entreprise.
      */
-    public function setDateCessation(?string $dateCessation): Entreprise {
-        $this->dateCessation = $dateCessation;
+    public function setDateCessationFormatee(?string $dateCessationFormatee): Entreprise {
+        $this->dateCessationFormatee = $dateCessationFormatee;
         return $this;
     }
 
@@ -1247,17 +1223,6 @@ class Entreprise {
     }
 
     /**
-     * Set the devise capital.
-     *
-     * @param string|null $deviseCapital The devise capital.
-     * @return Entreprise Returns this entreprise.
-     */
-    public function setDeviseCapital(?string $deviseCapital): Entreprise {
-        $this->deviseCapital = $deviseCapital;
-        return $this;
-    }
-
-    /**
      * Set the diffusable.
      *
      * @param bool|null $diffusable The diffusable.
@@ -1364,17 +1329,6 @@ class Entreprise {
      */
     protected function setFinances(array $finances): Entreprise {
         $this->finances = $finances;
-        return $this;
-    }
-
-    /**
-     * Set the forme juridique.
-     *
-     * @param string|null $formeJuridique The forme juridique.
-     * @return Entreprise Returns this entreprise.
-     */
-    public function setFormeJuridique(?string $formeJuridique): Entreprise {
-        $this->formeJuridique = $formeJuridique;
         return $this;
     }
 
@@ -1533,6 +1487,17 @@ class Entreprise {
     }
 
     /**
+     * Set the R.N.M.
+     *
+     * @param string|null $rnm The R.N.M.
+     * @return Entreprise Returns this entreprise.
+     */
+    public function setRnm(?string $rnm): Entreprise {
+        $this->rnm = $rnm;
+        return $this;
+    }
+
+    /**
      * Set the sexe.
      *
      * @param string|null $sexe The sexe.
@@ -1551,17 +1516,6 @@ class Entreprise {
      */
     public function setSiege(?Etablissement $siege): Entreprise {
         $this->siege = $siege;
-        return $this;
-    }
-
-    /**
-     * Set the sigle.
-     *
-     * @param string|null $sigle The sigle.
-     * @return Entreprise Returns this entreprise.
-     */
-    public function setSigle(?string $sigle): Entreprise {
-        $this->sigle = $sigle;
         return $this;
     }
 
