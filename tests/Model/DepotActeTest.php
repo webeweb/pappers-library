@@ -49,7 +49,7 @@ class DepotActeTest extends AbstractTestCase {
         $obj = new DepotActe();
 
         $this->assertNull($obj->getDateDepot());
-        $this->assertNull($obj->getDateDepotFormate());
+        $this->assertNull($obj->getDateDepotFormatee());
         $this->assertNull($obj->getDisponible());
         $this->assertNull($obj->getNomFichierPdf());
         $this->assertNull($obj->getToken());

@@ -12,7 +12,7 @@
 namespace WBW\Library\Pappers\Model;
 
 use WBW\Library\Pappers\Model\Attribute\BooleanDisponibleTrait;
-use WBW\Library\Pappers\Model\Attribute\StringDateDepotFormateTrait;
+use WBW\Library\Pappers\Model\Attribute\StringDateDepotFormateeTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateDepotTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomFichierPdfTrait;
 use WBW\Library\Pappers\Model\Attribute\StringTokenTrait;
@@ -27,7 +27,7 @@ class DepotActe {
 
     use BooleanDisponibleTrait;
     use StringDateDepotTrait;
-    use StringDateDepotFormateTrait;
+    use StringDateDepotFormateeTrait;
     use StringNomFichierPdfTrait;
     use StringTokenTrait;
 
