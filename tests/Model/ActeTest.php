@@ -32,7 +32,7 @@ class ActeTest extends AbstractTestCase {
         $obj = new Acte();
 
         $this->assertNull($obj->getDateActe());
-        $this->assertNull($obj->getDateActeFormate());
+        $this->assertNull($obj->getDateActeFormatee());
         $this->assertNull($obj->getDecision());
         $this->assertNull($obj->getType());
     }

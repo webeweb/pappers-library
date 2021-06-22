@@ -12,7 +12,7 @@
 namespace WBW\Library\Pappers\Model;
 
 use WBW\Library\Core\Model\Attribute\StringTypeTrait;
-use WBW\Library\Pappers\Model\Attribute\StringDateActeFormateTrait;
+use WBW\Library\Pappers\Model\Attribute\StringDateActeFormateeTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateActeTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDecisionTrait;
 
@@ -25,7 +25,7 @@ use WBW\Library\Pappers\Model\Attribute\StringDecisionTrait;
 class Acte {
 
     use StringDateActeTrait;
-    use StringDateActeFormateTrait;
+    use StringDateActeFormateeTrait;
     use StringDecisionTrait;
     use StringTypeTrait;
 
