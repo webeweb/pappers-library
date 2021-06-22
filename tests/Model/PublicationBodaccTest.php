@@ -151,11 +151,16 @@ class PublicationBodaccTest extends AbstractTestCase {
         $this->assertNull($obj->getAdresse());
         $this->assertNull($obj->getCapital());
         $this->assertNull($obj->getDenomination());
+        $this->assertNull($obj->getDescription());
+        $this->assertNull($obj->getDeviseCapital());
         $this->assertNull($obj->getEntreprise());
+        $this->assertNull($obj->getFormeJuridique());
+        $this->assertNull($obj->getNationalite());
         $this->assertNull($obj->getNom());
         $this->assertNull($obj->getNomEntreprise());
         $this->assertNull($obj->getPersonneMorale());
         $this->assertNull($obj->getPrenom());
+        $this->assertNull($obj->getSigle());
 
         $this->assertNull($obj->getActivite());
         $this->assertNull($obj->getBodacc());

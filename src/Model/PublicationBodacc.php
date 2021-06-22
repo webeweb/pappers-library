@@ -11,15 +11,21 @@
 
 namespace WBW\Library\Pappers\Model;
 
+use WBW\Library\Core\Model\Attribute\StringDescriptionTrait;
 use WBW\Library\Core\Model\Attribute\StringTypeTrait;
 use WBW\Library\Pappers\Model\Attribute\BooleanPersonneMoraleTrait;
 use WBW\Library\Pappers\Model\Attribute\EntrepriseEntrepriseTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerCapitalTrait;
 use WBW\Library\Pappers\Model\Attribute\StringAdresseTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDenominationTrait;
+use WBW\Library\Pappers\Model\Attribute\StringDeviseCapitalTrait;
+use WBW\Library\Pappers\Model\Attribute\StringFormeJuridiqueTrait;
+use WBW\Library\Pappers\Model\Attribute\StringNationaliteTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomEntrepriseTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
+use WBW\Library\Pappers\Model\Attribute\StringPseudonymeTrait;
+use WBW\Library\Pappers\Model\Attribute\StringSigleTrait;
 
 /**
  * Publication BODACC.
@@ -34,9 +40,15 @@ class PublicationBodacc implements PublicationBodaccInterface {
     use IntegerCapitalTrait;
     use StringAdresseTrait;
     use StringDenominationTrait;
+    use StringDescriptionTrait;
+    use StringDeviseCapitalTrait;
+    use StringFormeJuridiqueTrait;
+    use StringNationaliteTrait;
     use StringNomEntrepriseTrait;
     use StringNomTrait;
     use StringPrenomTrait;
+    use StringPseudonymeTrait;
+    use StringSigleTrait;
     use StringTypeTrait;
 
     /**
