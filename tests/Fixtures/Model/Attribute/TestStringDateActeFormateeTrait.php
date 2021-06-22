@@ -11,15 +11,15 @@
 
 namespace WBW\Library\Pappers\Tests\Fixtures\Model\Attribute;
 
-use WBW\Library\Pappers\Model\Attribute\StringDateDepotFormateTrait;
+use WBW\Library\Pappers\Model\Attribute\StringDateActeFormateeTrait;
 
 /**
- * Test string date dépôt formaté trait.
+ * Test string date acte formatée trait.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute
  */
-class TestStringDateDepotFormateTrait {
+class TestStringDateActeFormateeTrait {
 
-    use StringDateDepotFormateTrait;
+    use StringDateActeFormateeTrait;
 }

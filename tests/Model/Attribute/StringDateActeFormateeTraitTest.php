@@ -12,15 +12,15 @@
 namespace WBW\Library\Pappers\Tests\Model\Attribute;
 
 use WBW\Library\Pappers\Tests\AbstractTestCase;
-use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestStringDateActeFormateTrait;
+use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestStringDateActeFormateeTrait;
 
 /**
- * String date acte formaté trait test.
+ * String date acte formatée trait test.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Model\Attribute
  */
-class StringDateActeFormateTraitTest extends AbstractTestCase {
+class StringDateActeFormateeTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setDateActeFormate() method().
@@ -29,9 +29,9 @@ class StringDateActeFormateTraitTest extends AbstractTestCase {
      */
     public function testSetDateActeFormate(): void {
 
-        $obj = new TestStringDateActeFormateTrait();
+        $obj = new TestStringDateActeFormateeTrait();
 
-        $obj->setDateActeFormate("dateActeFormate");
-        $this->assertEquals("dateActeFormate", $obj->getDateActeFormate());
+        $obj->setDateActeFormatee("dateActeFormatee");
+        $this->assertEquals("dateActeFormatee", $obj->getDateActeFormatee());
     }
 }
