@@ -75,6 +75,19 @@ class CompteTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the setTypeComptes() method.
+     *
+     * @return void
+     */
+    public function testSetTypeComptes(): void {
+
+        $obj = new Compte();
+
+        $obj->setTypeComptes("typeComptes");
+        $this->assertEquals("typeComptes", $obj->getTypeComptes());
+    }
+
+    /**
      * Tests the set() method.
      *
      * @return void
@@ -84,7 +97,7 @@ class CompteTest extends AbstractTestCase {
         $obj = new Compte();
 
         $this->assertNull($obj->getDateDepot());
-        $this->assertNull($obj->getDateDepotFormate());
+        $this->assertNull($obj->getDateDepotFormatee());
         $this->assertNull($obj->getDisponible());
         $this->assertNull($obj->getNomFichierPdf());
         $this->assertNull($obj->getToken());
@@ -93,5 +106,6 @@ class CompteTest extends AbstractTestCase {
         $this->assertNull($obj->getConfidentialite());
         $this->assertNull($obj->getConfidentialite());
         $this->assertNull($obj->getDateCloture());
+        $this->assertNull($obj->getTypeComptes());
     }
 }

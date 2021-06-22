@@ -12,7 +12,7 @@
 namespace WBW\Library\Pappers\Model;
 
 use WBW\Library\Pappers\Model\Attribute\BooleanDisponibleTrait;
-use WBW\Library\Pappers\Model\Attribute\StringDateDepotFormateTrait;
+use WBW\Library\Pappers\Model\Attribute\StringDateDepotFormateeTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateDepotTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomFichierPdfTrait;
 use WBW\Library\Pappers\Model\Attribute\StringTokenTrait;
@@ -27,7 +27,7 @@ class Compte {
 
     use BooleanDisponibleTrait;
     use StringDateDepotTrait;
-    use StringDateDepotFormateTrait;
+    use StringDateDepotFormateeTrait;
     use StringNomFichierPdfTrait;
     use StringTokenTrait;
 
@@ -58,6 +58,13 @@ class Compte {
      * @var string|null
      */
     private $dateCloture;
+
+    /**
+     * Type comptes.
+     *
+     * @var string|null
+     */
+    private $typeComptes;
 
     /**
      * Constructor.
@@ -103,6 +110,15 @@ class Compte {
     }
 
     /**
+     * Get the type comptes.
+     *
+     * @return string|null Returns the type comptes.
+     */
+    public function getTypeComptes(): ?string {
+        return $this->typeComptes;
+    }
+
+    /**
      * Set the année clôture.
      *
      * @param int|null $anneeCloture The année clôture.
@@ -143,6 +159,17 @@ class Compte {
      */
     public function setDateCloture(?string $dateCloture): Compte {
         $this->dateCloture = $dateCloture;
+        return $this;
+    }
+
+    /**
+     * Set the type comptes.
+     *
+     * @param string|null $typeComptes The type comptes.
+     * @return Compte Returns this compte.
+     */
+    public function setTypeComptes(?string $typeComptes): Compte {
+        $this->typeComptes = $typeComptes;
         return $this;
     }
 }
