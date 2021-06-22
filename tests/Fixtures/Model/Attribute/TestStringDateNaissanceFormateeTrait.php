@@ -11,15 +11,15 @@
 
 namespace WBW\Library\Pappers\Tests\Fixtures\Model\Attribute;
 
-use WBW\Library\Pappers\Model\Attribute\StringDateNaissanceFormateTrait;
+use WBW\Library\Pappers\Model\Attribute\StringDateNaissanceFormateeTrait;
 
 /**
- * Test string date naissance formaté trait.
+ * Test string date naissance formatée trait.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute
  */
-class TestStringDateNaissanceFormateTrait {
+class TestStringDateNaissanceFormateeTrait {
 
-    use StringDateNaissanceFormateTrait;
+    use StringDateNaissanceFormateeTrait;
 }
