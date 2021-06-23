@@ -222,8 +222,8 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
 
         $obj = new BeneficiaireEffectif();
 
-        $obj->setPourcentageParts(1);
-        $this->assertEquals(1, $obj->getPourcentageParts());
+        $obj->setPourcentageParts(0.1);
+        $this->assertEquals(0.1, $obj->getPourcentageParts());
     }
 
     /**
@@ -235,8 +235,8 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
 
         $obj = new BeneficiaireEffectif();
 
-        $obj->setPourcentagePartsDirectes(1);
-        $this->assertEquals(1, $obj->getPourcentagePartsDirectes());
+        $obj->setPourcentagePartsDirectes(0.1);
+        $this->assertEquals(0.1, $obj->getPourcentagePartsDirectes());
     }
 
     /**
@@ -248,8 +248,8 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
 
         $obj = new BeneficiaireEffectif();
 
-        $obj->setPourcentagePartsIndirectes(1);
-        $this->assertEquals(1, $obj->getPourcentagePartsIndirectes());
+        $obj->setPourcentagePartsIndirectes(0.1);
+        $this->assertEquals(0.1, $obj->getPourcentagePartsIndirectes());
     }
 
     /**
@@ -261,8 +261,8 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
 
         $obj = new BeneficiaireEffectif();
 
-        $obj->setPourcentagePartsVocationTitulaire(1);
-        $this->assertEquals(1, $obj->getPourcentagePartsVocationTitulaire());
+        $obj->setPourcentagePartsVocationTitulaire(0.1);
+        $this->assertEquals(0.1, $obj->getPourcentagePartsVocationTitulaire());
     }
 
     /**
@@ -274,8 +274,8 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
 
         $obj = new BeneficiaireEffectif();
 
-        $obj->setPourcentageVotes(1);
-        $this->assertEquals(1, $obj->getPourcentageVotes());
+        $obj->setPourcentageVotes(0.1);
+        $this->assertEquals(0.1, $obj->getPourcentageVotes());
     }
 
     /**
@@ -287,8 +287,8 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
 
         $obj = new BeneficiaireEffectif();
 
-        $obj->setPourcentageVotesDirects(1);
-        $this->assertEquals(1, $obj->getPourcentageVotesDirects());
+        $obj->setPourcentageVotesDirects(0.1);
+        $this->assertEquals(0.1, $obj->getPourcentageVotesDirects());
     }
 
     /**
@@ -300,8 +300,8 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
 
         $obj = new BeneficiaireEffectif();
 
-        $obj->setPourcentageVotesIndirects(1);
-        $this->assertEquals(1, $obj->getPourcentageVotesIndirects());
+        $obj->setPourcentageVotesIndirects(0.1);
+        $this->assertEquals(0.1, $obj->getPourcentageVotesIndirects());
     }
 
     /**

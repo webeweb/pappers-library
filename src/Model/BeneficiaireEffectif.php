@@ -143,49 +143,49 @@ class BeneficiaireEffectif {
     /**
      * Pourcentages parts.
      *
-     * @var int|null
+     * @var float|null
      */
     private $pourcentageParts;
 
     /**
      * Pourcentages parts directes.
      *
-     * @var int|null
+     * @var float|null
      */
     private $pourcentagePartsDirectes;
 
     /**
      * Pourcentages parts indirectes.
      *
-     * @var int|null
+     * @var float|null
      */
     private $pourcentagePartsIndirectes;
 
     /**
      * Pourcentages parts vocation titulaire.
      *
-     * @var int|null
+     * @var float|null
      */
     private $pourcentagePartsVocationTitulaire;
 
     /**
      * Pourcentage votes.
      *
-     * @var int|null
+     * @var float|null
      */
     private $pourcentageVotes;
 
     /**
      * Pourcentage votes directs.
      *
-     * @var int|null
+     * @var float|null
      */
     private $pourcentageVotesDirects;
 
     /**
      * Pourcentage votes indirects.
      *
-     * @var int|null
+     * @var float|null
      */
     private $pourcentageVotesIndirects;
 
@@ -323,63 +323,63 @@ class BeneficiaireEffectif {
     /**
      * Get the pourcentage parts.
      *
-     * @return int|null Returns the pourcentage parts.
+     * @return float|null Returns the pourcentage parts.
      */
-    public function getPourcentageParts(): ?int {
+    public function getPourcentageParts(): ?float {
         return $this->pourcentageParts;
     }
 
     /**
      * Get the pourcentage parts directes.
      *
-     * @return int|null Returns the pourcentage parts directes.
+     * @return float|null Returns the pourcentage parts directes.
      */
-    public function getPourcentagePartsDirectes(): ?int {
+    public function getPourcentagePartsDirectes(): ?float {
         return $this->pourcentagePartsDirectes;
     }
 
     /**
      * Get the pourcentage parts indirectes.
      *
-     * @return int|null Returns the pourcentage parts indirectes.
+     * @return float|null Returns the pourcentage parts indirectes.
      */
-    public function getPourcentagePartsIndirectes(): ?int {
+    public function getPourcentagePartsIndirectes(): ?float {
         return $this->pourcentagePartsIndirectes;
     }
 
     /**
      * Get the pourcentage parts vocation titulaire.
      *
-     * @return int|null Returns the pourcentage parts vocation titulaire.
+     * @return float|null Returns the pourcentage parts vocation titulaire.
      */
-    public function getPourcentagePartsVocationTitulaire(): ?int {
+    public function getPourcentagePartsVocationTitulaire(): ?float {
         return $this->pourcentagePartsVocationTitulaire;
     }
 
     /**
      * Get the pourcentage votes.
      *
-     * @return int|null Returns the pourcentage votes.
+     * @return float|null Returns the pourcentage votes.
      */
-    public function getPourcentageVotes(): ?int {
+    public function getPourcentageVotes(): ?float {
         return $this->pourcentageVotes;
     }
 
     /**
      * Get the pourcentage votes directs.
      *
-     * @return int|null Returns the pourcentage votes directs.
+     * @return float|null Returns the pourcentage votes directs.
      */
-    public function getPourcentageVotesDirects(): ?int {
+    public function getPourcentageVotesDirects(): ?float {
         return $this->pourcentageVotesDirects;
     }
 
     /**
      * Get the pourcentage votes indirects.
      *
-     * @return int|null Returns the pourcentage votes indirects.
+     * @return float|null Returns the pourcentage votes indirects.
      */
-    public function getPourcentageVotesIndirects(): ?int {
+    public function getPourcentageVotesIndirects(): ?float {
         return $this->pourcentageVotesIndirects;
     }
 
@@ -538,10 +538,10 @@ class BeneficiaireEffectif {
     /**
      * Set the pourcentage parts.
      *
-     * @param int|null $pourcentageParts The pourcentage parts.
+     * @param float|null $pourcentageParts The pourcentage parts.
      * @return BeneficiaireEffectif Returns this bénéficiaire effectif.
      */
-    public function setPourcentageParts(?int $pourcentageParts): BeneficiaireEffectif {
+    public function setPourcentageParts(?float $pourcentageParts): BeneficiaireEffectif {
         $this->pourcentageParts = $pourcentageParts;
         return $this;
     }
@@ -549,10 +549,10 @@ class BeneficiaireEffectif {
     /**
      * Set the pourcentages parts directes.
      *
-     * @param int|null $pourcentagePartsDirectes The pourcentage parts directes.
+     * @param float|null $pourcentagePartsDirectes The pourcentage parts directes.
      * @return BeneficiaireEffectif Returns this bénéficiaire effectif.
      */
-    public function setPourcentagePartsDirectes(?int $pourcentagePartsDirectes): BeneficiaireEffectif {
+    public function setPourcentagePartsDirectes(?float $pourcentagePartsDirectes): BeneficiaireEffectif {
         $this->pourcentagePartsDirectes = $pourcentagePartsDirectes;
         return $this;
     }
@@ -560,10 +560,10 @@ class BeneficiaireEffectif {
     /**
      * Set the pourcentage parts indirectes.
      *
-     * @param int|null $pourcentagePartsIndirectes The pourcentage parts indirectes.
+     * @param float|null $pourcentagePartsIndirectes The pourcentage parts indirectes.
      * @return BeneficiaireEffectif Returns this bénéficiaire effectif.
      */
-    public function setPourcentagePartsIndirectes(?int $pourcentagePartsIndirectes): BeneficiaireEffectif {
+    public function setPourcentagePartsIndirectes(?float $pourcentagePartsIndirectes): BeneficiaireEffectif {
         $this->pourcentagePartsIndirectes = $pourcentagePartsIndirectes;
         return $this;
     }
@@ -571,10 +571,10 @@ class BeneficiaireEffectif {
     /**
      * Set the pourcentage parts vocation titulaire.
      *
-     * @param int|null $pourcentagePartsVocationTitulaire The pourcentage parts vocation titulaire.
+     * @param float|null $pourcentagePartsVocationTitulaire The pourcentage parts vocation titulaire.
      * @return BeneficiaireEffectif Returns this bénéficiaire effectif.
      */
-    public function setPourcentagePartsVocationTitulaire(?int $pourcentagePartsVocationTitulaire): BeneficiaireEffectif {
+    public function setPourcentagePartsVocationTitulaire(?float $pourcentagePartsVocationTitulaire): BeneficiaireEffectif {
         $this->pourcentagePartsVocationTitulaire = $pourcentagePartsVocationTitulaire;
         return $this;
     }
@@ -582,10 +582,10 @@ class BeneficiaireEffectif {
     /**
      * Set the pourcentage votes.
      *
-     * @param int|null $pourcentageVotes The pourcentage votes.
+     * @param float|null $pourcentageVotes The pourcentage votes.
      * @return BeneficiaireEffectif Returns this bénéficiaire effectif.
      */
-    public function setPourcentageVotes(?int $pourcentageVotes): BeneficiaireEffectif {
+    public function setPourcentageVotes(?float $pourcentageVotes): BeneficiaireEffectif {
         $this->pourcentageVotes = $pourcentageVotes;
         return $this;
     }
@@ -593,10 +593,10 @@ class BeneficiaireEffectif {
     /**
      * Set the pourcentage votes directs.
      *
-     * @param int|null $pourcentageVotesDirects Set the pourcentage votes directs.
+     * @param float|null $pourcentageVotesDirects Set the pourcentage votes directs.
      * @return BeneficiaireEffectif Returns this bénéficiaire effectif.
      */
-    public function setPourcentageVotesDirects(?int $pourcentageVotesDirects): BeneficiaireEffectif {
+    public function setPourcentageVotesDirects(?float $pourcentageVotesDirects): BeneficiaireEffectif {
         $this->pourcentageVotesDirects = $pourcentageVotesDirects;
         return $this;
     }
@@ -604,10 +604,10 @@ class BeneficiaireEffectif {
     /**
      * Set the pourcentage votes indirects.
      *
-     * @param int|null $pourcentageVotesIndirects The pourcentage votes indirects.
+     * @param float|null $pourcentageVotesIndirects The pourcentage votes indirects.
      * @return BeneficiaireEffectif Returns this bénéficiaire effectif.
      */
-    public function setPourcentageVotesIndirects(?int $pourcentageVotesIndirects): BeneficiaireEffectif {
+    public function setPourcentageVotesIndirects(?float $pourcentageVotesIndirects): BeneficiaireEffectif {
         $this->pourcentageVotesIndirects = $pourcentageVotesIndirects;
         return $this;
     }
