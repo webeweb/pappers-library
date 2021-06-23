@@ -1,12 +1,18 @@
 {
     "resultats": [
         {
-            "type": "acte",
-            "date_depot": "2020-08-04T00:00:00.000Z",
-            "titres": [],
-            "mentions": [
-                "string"
+            "titres": [
+                {
+                    "decision": "Nomination de co-gérant",
+                    "type": "Procès-verbal d'assemblée générale ordinaire"
+                }
             ],
+            "siren": "443061841",
+            "num_chrono": "42541",
+            "date_depot": "2003-07-02",
+            "id_fichier": null,
+            "type": "acte",
+            "mentions": [],
             "entreprise": {
                 "siren": "443061841",
                 "siren_formate": "443 061 841",
@@ -16,29 +22,6 @@
                 "nom": null,
                 "prenom": null,
                 "sexe": null,
-                "code_naf": "70.10Z",
-                "libelle_code_naf": "Activités des sièges sociaux",
-                "domaine_activite": "Activités des sièges sociaux ; conseil de gestion",
-                "conventions_collectives": [
-                    {
-                        "nom": "Convention collective nationale applicable au personnel des bureaux d'études techniques des cabinets d'ingénieurs-conseils et des sociétés de conseils(BET SYNTEC)",
-                        "idcc": 1486,
-                        "confirmee": true
-                    }
-                ],
-                "date_creation": "2002-05-16",
-                "date_creation_formate": "16/05/2002",
-                "entreprise_cessee": false,
-                "date_cessation": "2002-05-16",
-                "entreprise_employeuse": true,
-                "categorie_juridique": "5499",
-                "forme_juridique": "Société à responsabilité limitée (SARL)",
-                "effectif": "Entre 500 et 999 salariés",
-                "effectif_min": 500,
-                "effectif_max": 999,
-                "tranche_effectif": "41",
-                "annee_effectif": 2017,
-                "dernier_traitement": "2020-07-09",
                 "siege": {
                     "siret": "44306184100047",
                     "siret_formate": "443 061 841 00047",
@@ -52,19 +35,737 @@
                     "adresse_ligne_2": null,
                     "code_postal": "75009",
                     "ville": "PARIS 9",
-                    "latitude": 48.876947,
-                    "longitude": 2.329981
+                    "latitude": null,
+                    "longitude": null
                 },
                 "villes": [
-                    "MONTPELLIER"
+                    "PARIS 9",
+                    "MEYLAN",
+                    "RENNES",
+                    "NANCY",
+                    "MONTPELLIER",
+                    "SAINT-ETIENNE"
                 ],
-                "chiffre_affaires": 411016329,
-                "resultat": 29327087,
-                "effectifs_finances": 723,
-                "annee_finances": "2018"
-            }
+                "code_naf": "70.10Z",
+                "libelle_code_naf": "Activités des sièges sociaux",
+                "domaine_activite": "Activités des sièges sociaux ; conseil de gestion",
+                "conventions_collectives": [
+                    {
+                        "nom": "Convention collective nationale applicable au personnel des bureaux d'études techniques, des cabinets d'ingénieurs-conseils et des sociétés de conseils(BET, SYNTEC)",
+                        "idcc": "1486",
+                        "confirmee": true
+                    }
+                ],
+                "date_creation": "2002-05-16",
+                "date_creation_formate": "16/05/2002",
+                "entreprise_employeuse": 1,
+                "entreprise_cessee": 0,
+                "date_cessation": null,
+                "categorie_juridique": "5498",
+                "forme_juridique": "EURL, entreprise unipersonnelle à responsabilité limitée",
+                "tranche_effectif": "41",
+                "effectif": "Entre 500 et 999 salariés",
+                "effectif_min": 500,
+                "effectif_max": 999,
+                "annee_effectif": 2018,
+                "capital": 1000000,
+                "chiffre_affaires": 483033598,
+                "resultat": -539868050,
+                "effectifs_finances": 859,
+                "annee_finances": 2019
+            },
+            "token": "QTQ0MzA2MTg0MTIwMDMwNzAyNDF8UHJvY8Oocy12ZXJiYWwgZCdhc3NlbWJsw6llIGfDqW7DqXJhbGUgb3JkaW5haXJlfA"
+        },
+        {
+            "titres": [
+                {
+                    "decision": "Changement(s) de gérant(s)",
+                    "type": "Décision(s) de l'associé unique"
+                }
+            ],
+            "siren": "443061841",
+            "num_chrono": "81802",
+            "date_depot": "2012-09-07",
+            "id_fichier": null,
+            "type": "acte",
+            "mentions": [],
+            "entreprise": {
+                "siren": "443061841",
+                "siren_formate": "443 061 841",
+                "nom_entreprise": "GOOGLE FRANCE",
+                "personne_morale": true,
+                "denomination": "GOOGLE FRANCE",
+                "nom": null,
+                "prenom": null,
+                "sexe": null,
+                "siege": {
+                    "siret": "44306184100047",
+                    "siret_formate": "443 061 841 00047",
+                    "nic": "00047",
+                    "numero_voie": 8,
+                    "indice_repetition": null,
+                    "type_voie": "RUE",
+                    "libelle_voie": "DE LONDRES",
+                    "complement_adresse": null,
+                    "adresse_ligne_1": "8 RUE DE LONDRES",
+                    "adresse_ligne_2": null,
+                    "code_postal": "75009",
+                    "ville": "PARIS 9",
+                    "latitude": null,
+                    "longitude": null
+                },
+                "villes": [
+                    "PARIS 9",
+                    "MEYLAN",
+                    "RENNES",
+                    "NANCY",
+                    "MONTPELLIER",
+                    "SAINT-ETIENNE"
+                ],
+                "code_naf": "70.10Z",
+                "libelle_code_naf": "Activités des sièges sociaux",
+                "domaine_activite": "Activités des sièges sociaux ; conseil de gestion",
+                "conventions_collectives": [
+                    {
+                        "nom": "Convention collective nationale applicable au personnel des bureaux d'études techniques, des cabinets d'ingénieurs-conseils et des sociétés de conseils(BET, SYNTEC)",
+                        "idcc": "1486",
+                        "confirmee": true
+                    }
+                ],
+                "date_creation": "2002-05-16",
+                "date_creation_formate": "16/05/2002",
+                "entreprise_employeuse": 1,
+                "entreprise_cessee": 0,
+                "date_cessation": null,
+                "categorie_juridique": "5498",
+                "forme_juridique": "EURL, entreprise unipersonnelle à responsabilité limitée",
+                "tranche_effectif": "41",
+                "effectif": "Entre 500 et 999 salariés",
+                "effectif_min": 500,
+                "effectif_max": 999,
+                "annee_effectif": 2018,
+                "capital": 1000000,
+                "chiffre_affaires": 483033598,
+                "resultat": -539868050,
+                "effectifs_finances": 859,
+                "annee_finances": 2019
+            },
+            "token": "QTQ0MzA2MTg0MTIwMTIwOTA3MnxEw6ljaXNpb24ocykgZGUgbCdhc3NvY2nDqSB1bmlxdWV8"
+        },
+        {
+            "titres": [
+                {
+                    "decision": "Modification(s) statutaire(s)",
+                    "type": "Décision(s) de l'associé unique"
+                },
+                {
+                    "decision": null,
+                    "type": "Statuts mis à jour"
+                },
+                {
+                    "decision": "Transfert du siège social ancien siège : 38 ave de l'Opéra 75002 Paris",
+                    "type": "Décision(s) de l'associé unique"
+                }
+            ],
+            "siren": "443061841",
+            "num_chrono": "5861",
+            "date_depot": "2013-01-18",
+            "id_fichier": null,
+            "type": "acte",
+            "mentions": [],
+            "entreprise": {
+                "siren": "443061841",
+                "siren_formate": "443 061 841",
+                "nom_entreprise": "GOOGLE FRANCE",
+                "personne_morale": true,
+                "denomination": "GOOGLE FRANCE",
+                "nom": null,
+                "prenom": null,
+                "sexe": null,
+                "siege": {
+                    "siret": "44306184100047",
+                    "siret_formate": "443 061 841 00047",
+                    "nic": "00047",
+                    "numero_voie": 8,
+                    "indice_repetition": null,
+                    "type_voie": "RUE",
+                    "libelle_voie": "DE LONDRES",
+                    "complement_adresse": null,
+                    "adresse_ligne_1": "8 RUE DE LONDRES",
+                    "adresse_ligne_2": null,
+                    "code_postal": "75009",
+                    "ville": "PARIS 9",
+                    "latitude": null,
+                    "longitude": null
+                },
+                "villes": [
+                    "PARIS 9",
+                    "MEYLAN",
+                    "RENNES",
+                    "NANCY",
+                    "MONTPELLIER",
+                    "SAINT-ETIENNE"
+                ],
+                "code_naf": "70.10Z",
+                "libelle_code_naf": "Activités des sièges sociaux",
+                "domaine_activite": "Activités des sièges sociaux ; conseil de gestion",
+                "conventions_collectives": [
+                    {
+                        "nom": "Convention collective nationale applicable au personnel des bureaux d'études techniques, des cabinets d'ingénieurs-conseils et des sociétés de conseils(BET, SYNTEC)",
+                        "idcc": "1486",
+                        "confirmee": true
+                    }
+                ],
+                "date_creation": "2002-05-16",
+                "date_creation_formate": "16/05/2002",
+                "entreprise_employeuse": 1,
+                "entreprise_cessee": 0,
+                "date_cessation": null,
+                "categorie_juridique": "5498",
+                "forme_juridique": "EURL, entreprise unipersonnelle à responsabilité limitée",
+                "tranche_effectif": "41",
+                "effectif": "Entre 500 et 999 salariés",
+                "effectif_min": 500,
+                "effectif_max": 999,
+                "annee_effectif": 2018,
+                "capital": 1000000,
+                "chiffre_affaires": 483033598,
+                "resultat": -539868050,
+                "effectifs_finances": 859,
+                "annee_finances": 2019
+            },
+            "token": "QTQ0MzA2MTg0MTIwMTMwMTE4NjF8RMOpY2lzaW9uKHMpIGRlIGwnYXNzb2Npw6kgdW5pcXVlfA"
+        },
+        {
+            "titres": [],
+            "siren": "443061841",
+            "num_chrono": "80718",
+            "date_depot": "2017-08-03",
+            "id_fichier": null,
+            "type": "acte",
+            "mentions": [],
+            "entreprise": {
+                "siren": "443061841",
+                "siren_formate": "443 061 841",
+                "nom_entreprise": "GOOGLE FRANCE",
+                "personne_morale": true,
+                "denomination": "GOOGLE FRANCE",
+                "nom": null,
+                "prenom": null,
+                "sexe": null,
+                "siege": {
+                    "siret": "44306184100047",
+                    "siret_formate": "443 061 841 00047",
+                    "nic": "00047",
+                    "numero_voie": 8,
+                    "indice_repetition": null,
+                    "type_voie": "RUE",
+                    "libelle_voie": "DE LONDRES",
+                    "complement_adresse": null,
+                    "adresse_ligne_1": "8 RUE DE LONDRES",
+                    "adresse_ligne_2": null,
+                    "code_postal": "75009",
+                    "ville": "PARIS 9",
+                    "latitude": null,
+                    "longitude": null
+                },
+                "villes": [
+                    "PARIS 9",
+                    "MEYLAN",
+                    "RENNES",
+                    "NANCY",
+                    "MONTPELLIER",
+                    "SAINT-ETIENNE"
+                ],
+                "code_naf": "70.10Z",
+                "libelle_code_naf": "Activités des sièges sociaux",
+                "domaine_activite": "Activités des sièges sociaux ; conseil de gestion",
+                "conventions_collectives": [
+                    {
+                        "nom": "Convention collective nationale applicable au personnel des bureaux d'études techniques, des cabinets d'ingénieurs-conseils et des sociétés de conseils(BET, SYNTEC)",
+                        "idcc": "1486",
+                        "confirmee": true
+                    }
+                ],
+                "date_creation": "2002-05-16",
+                "date_creation_formate": "16/05/2002",
+                "entreprise_employeuse": 1,
+                "entreprise_cessee": 0,
+                "date_cessation": null,
+                "categorie_juridique": "5498",
+                "forme_juridique": "EURL, entreprise unipersonnelle à responsabilité limitée",
+                "tranche_effectif": "41",
+                "effectif": "Entre 500 et 999 salariés",
+                "effectif_min": 500,
+                "effectif_max": 999,
+                "annee_effectif": 2018,
+                "capital": 1000000,
+                "chiffre_affaires": 483033598,
+                "resultat": -539868050,
+                "effectifs_finances": 859,
+                "annee_finances": 2019
+            },
+            "token": "QTQ0MzA2MTg0MTIwMTcwODAzMTh8fA"
+        },
+        {
+            "titres": [
+                {
+                    "decision": "Nomination de co-gérant",
+                    "type": "Décision(s) de l'associé unique"
+                },
+                {
+                    "decision": "Nomination(s) d'administrateur(s)",
+                    "type": "Décision(s) de l'associé unique"
+                },
+                {
+                    "decision": "Divers",
+                    "type": "Statuts mis à jour"
+                }
+            ],
+            "siren": "443061841",
+            "num_chrono": "31173",
+            "date_depot": "2005-05-24",
+            "id_fichier": null,
+            "type": "acte",
+            "mentions": [],
+            "entreprise": {
+                "siren": "443061841",
+                "siren_formate": "443 061 841",
+                "nom_entreprise": "GOOGLE FRANCE",
+                "personne_morale": true,
+                "denomination": "GOOGLE FRANCE",
+                "nom": null,
+                "prenom": null,
+                "sexe": null,
+                "siege": {
+                    "siret": "44306184100047",
+                    "siret_formate": "443 061 841 00047",
+                    "nic": "00047",
+                    "numero_voie": 8,
+                    "indice_repetition": null,
+                    "type_voie": "RUE",
+                    "libelle_voie": "DE LONDRES",
+                    "complement_adresse": null,
+                    "adresse_ligne_1": "8 RUE DE LONDRES",
+                    "adresse_ligne_2": null,
+                    "code_postal": "75009",
+                    "ville": "PARIS 9",
+                    "latitude": null,
+                    "longitude": null
+                },
+                "villes": [
+                    "PARIS 9",
+                    "MEYLAN",
+                    "RENNES",
+                    "NANCY",
+                    "MONTPELLIER",
+                    "SAINT-ETIENNE"
+                ],
+                "code_naf": "70.10Z",
+                "libelle_code_naf": "Activités des sièges sociaux",
+                "domaine_activite": "Activités des sièges sociaux ; conseil de gestion",
+                "conventions_collectives": [
+                    {
+                        "nom": "Convention collective nationale applicable au personnel des bureaux d'études techniques, des cabinets d'ingénieurs-conseils et des sociétés de conseils(BET, SYNTEC)",
+                        "idcc": "1486",
+                        "confirmee": true
+                    }
+                ],
+                "date_creation": "2002-05-16",
+                "date_creation_formate": "16/05/2002",
+                "entreprise_employeuse": 1,
+                "entreprise_cessee": 0,
+                "date_cessation": null,
+                "categorie_juridique": "5498",
+                "forme_juridique": "EURL, entreprise unipersonnelle à responsabilité limitée",
+                "tranche_effectif": "41",
+                "effectif": "Entre 500 et 999 salariés",
+                "effectif_min": 500,
+                "effectif_max": 999,
+                "annee_effectif": 2018,
+                "capital": 1000000,
+                "chiffre_affaires": 483033598,
+                "resultat": -539868050,
+                "effectifs_finances": 859,
+                "annee_finances": 2019
+            },
+            "token": "QTQ0MzA2MTg0MTIwMDUwNTI0NzN8RMOpY2lzaW9uKHMpIGRlIGwnYXNzb2Npw6kgdW5pcXVlfA"
+        },
+        {
+            "titres": [],
+            "siren": "443061841",
+            "num_chrono": "34",
+            "date_depot": "2021-01-04",
+            "id_fichier": 230853665,
+            "type": "acte",
+            "mentions": [],
+            "entreprise": {
+                "siren": "443061841",
+                "siren_formate": "443 061 841",
+                "nom_entreprise": "GOOGLE FRANCE",
+                "personne_morale": true,
+                "denomination": "GOOGLE FRANCE",
+                "nom": null,
+                "prenom": null,
+                "sexe": null,
+                "siege": {
+                    "siret": "44306184100047",
+                    "siret_formate": "443 061 841 00047",
+                    "nic": "00047",
+                    "numero_voie": 8,
+                    "indice_repetition": null,
+                    "type_voie": "RUE",
+                    "libelle_voie": "DE LONDRES",
+                    "complement_adresse": null,
+                    "adresse_ligne_1": "8 RUE DE LONDRES",
+                    "adresse_ligne_2": null,
+                    "code_postal": "75009",
+                    "ville": "PARIS 9",
+                    "latitude": null,
+                    "longitude": null
+                },
+                "villes": [
+                    "PARIS 9",
+                    "MEYLAN",
+                    "RENNES",
+                    "NANCY",
+                    "MONTPELLIER",
+                    "SAINT-ETIENNE"
+                ],
+                "code_naf": "70.10Z",
+                "libelle_code_naf": "Activités des sièges sociaux",
+                "domaine_activite": "Activités des sièges sociaux ; conseil de gestion",
+                "conventions_collectives": [
+                    {
+                        "nom": "Convention collective nationale applicable au personnel des bureaux d'études techniques, des cabinets d'ingénieurs-conseils et des sociétés de conseils(BET, SYNTEC)",
+                        "idcc": "1486",
+                        "confirmee": true
+                    }
+                ],
+                "date_creation": "2002-05-16",
+                "date_creation_formate": "16/05/2002",
+                "entreprise_employeuse": 1,
+                "entreprise_cessee": 0,
+                "date_cessation": null,
+                "categorie_juridique": "5498",
+                "forme_juridique": "EURL, entreprise unipersonnelle à responsabilité limitée",
+                "tranche_effectif": "41",
+                "effectif": "Entre 500 et 999 salariés",
+                "effectif_min": 500,
+                "effectif_max": 999,
+                "annee_effectif": 2018,
+                "capital": 1000000,
+                "chiffre_affaires": 483033598,
+                "resultat": -539868050,
+                "effectifs_finances": 859,
+                "annee_finances": 2019
+            },
+            "token": "QTQ0MzA2MTg0MTIwMjEwMTA0MzR8fDIzMDg1MzY2NQ"
+        },
+        {
+            "titres": [
+                {
+                    "decision": null,
+                    "type": "Statuts mis à jour"
+                },
+                {
+                    "decision": "Transfert du siège social 54 56 AV HOCHE 75008 PARIS",
+                    "type": "Décision(s) de l'associé unique"
+                }
+            ],
+            "siren": "443061841",
+            "num_chrono": "28266",
+            "date_depot": "2006-03-23",
+            "id_fichier": null,
+            "type": "acte",
+            "mentions": [],
+            "entreprise": {
+                "siren": "443061841",
+                "siren_formate": "443 061 841",
+                "nom_entreprise": "GOOGLE FRANCE",
+                "personne_morale": true,
+                "denomination": "GOOGLE FRANCE",
+                "nom": null,
+                "prenom": null,
+                "sexe": null,
+                "siege": {
+                    "siret": "44306184100047",
+                    "siret_formate": "443 061 841 00047",
+                    "nic": "00047",
+                    "numero_voie": 8,
+                    "indice_repetition": null,
+                    "type_voie": "RUE",
+                    "libelle_voie": "DE LONDRES",
+                    "complement_adresse": null,
+                    "adresse_ligne_1": "8 RUE DE LONDRES",
+                    "adresse_ligne_2": null,
+                    "code_postal": "75009",
+                    "ville": "PARIS 9",
+                    "latitude": null,
+                    "longitude": null
+                },
+                "villes": [
+                    "PARIS 9",
+                    "MEYLAN",
+                    "RENNES",
+                    "NANCY",
+                    "MONTPELLIER",
+                    "SAINT-ETIENNE"
+                ],
+                "code_naf": "70.10Z",
+                "libelle_code_naf": "Activités des sièges sociaux",
+                "domaine_activite": "Activités des sièges sociaux ; conseil de gestion",
+                "conventions_collectives": [
+                    {
+                        "nom": "Convention collective nationale applicable au personnel des bureaux d'études techniques, des cabinets d'ingénieurs-conseils et des sociétés de conseils(BET, SYNTEC)",
+                        "idcc": "1486",
+                        "confirmee": true
+                    }
+                ],
+                "date_creation": "2002-05-16",
+                "date_creation_formate": "16/05/2002",
+                "entreprise_employeuse": 1,
+                "entreprise_cessee": 0,
+                "date_cessation": null,
+                "categorie_juridique": "5498",
+                "forme_juridique": "EURL, entreprise unipersonnelle à responsabilité limitée",
+                "tranche_effectif": "41",
+                "effectif": "Entre 500 et 999 salariés",
+                "effectif_min": 500,
+                "effectif_max": 999,
+                "annee_effectif": 2018,
+                "capital": 1000000,
+                "chiffre_affaires": 483033598,
+                "resultat": -539868050,
+                "effectifs_finances": 859,
+                "annee_finances": 2019
+            },
+            "token": "QTQ0MzA2MTg0MTIwMDYwMzIzNjZ8U3RhdHV0cyBtaXMgw6Agam91cnw"
+        },
+        {
+            "titres": [
+                {
+                    "decision": "Démission de co-gérant",
+                    "type": "Décision(s) de l'associé unique"
+                }
+            ],
+            "siren": "443061841",
+            "num_chrono": "76908",
+            "date_depot": "2010-09-07",
+            "id_fichier": null,
+            "type": "acte",
+            "mentions": [],
+            "entreprise": {
+                "siren": "443061841",
+                "siren_formate": "443 061 841",
+                "nom_entreprise": "GOOGLE FRANCE",
+                "personne_morale": true,
+                "denomination": "GOOGLE FRANCE",
+                "nom": null,
+                "prenom": null,
+                "sexe": null,
+                "siege": {
+                    "siret": "44306184100047",
+                    "siret_formate": "443 061 841 00047",
+                    "nic": "00047",
+                    "numero_voie": 8,
+                    "indice_repetition": null,
+                    "type_voie": "RUE",
+                    "libelle_voie": "DE LONDRES",
+                    "complement_adresse": null,
+                    "adresse_ligne_1": "8 RUE DE LONDRES",
+                    "adresse_ligne_2": null,
+                    "code_postal": "75009",
+                    "ville": "PARIS 9",
+                    "latitude": null,
+                    "longitude": null
+                },
+                "villes": [
+                    "PARIS 9",
+                    "MEYLAN",
+                    "RENNES",
+                    "NANCY",
+                    "MONTPELLIER",
+                    "SAINT-ETIENNE"
+                ],
+                "code_naf": "70.10Z",
+                "libelle_code_naf": "Activités des sièges sociaux",
+                "domaine_activite": "Activités des sièges sociaux ; conseil de gestion",
+                "conventions_collectives": [
+                    {
+                        "nom": "Convention collective nationale applicable au personnel des bureaux d'études techniques, des cabinets d'ingénieurs-conseils et des sociétés de conseils(BET, SYNTEC)",
+                        "idcc": "1486",
+                        "confirmee": true
+                    }
+                ],
+                "date_creation": "2002-05-16",
+                "date_creation_formate": "16/05/2002",
+                "entreprise_employeuse": 1,
+                "entreprise_cessee": 0,
+                "date_cessation": null,
+                "categorie_juridique": "5498",
+                "forme_juridique": "EURL, entreprise unipersonnelle à responsabilité limitée",
+                "tranche_effectif": "41",
+                "effectif": "Entre 500 et 999 salariés",
+                "effectif_min": 500,
+                "effectif_max": 999,
+                "annee_effectif": 2018,
+                "capital": 1000000,
+                "chiffre_affaires": 483033598,
+                "resultat": -539868050,
+                "effectifs_finances": 859,
+                "annee_finances": 2019
+            },
+            "token": "QTQ0MzA2MTg0MTIwMTAwOTA3OHxEw6ljaXNpb24ocykgZGUgbCdhc3NvY2nDqSB1bmlxdWV8"
+        },
+        {
+            "titres": [
+                {
+                    "decision": "Nomination de commissaire aux comptes titulaire et suppléant",
+                    "type": "Procès-verbal"
+                }
+            ],
+            "siren": "443061841",
+            "num_chrono": "72420",
+            "date_depot": "2006-08-28",
+            "id_fichier": null,
+            "type": "acte",
+            "mentions": [],
+            "entreprise": {
+                "siren": "443061841",
+                "siren_formate": "443 061 841",
+                "nom_entreprise": "GOOGLE FRANCE",
+                "personne_morale": true,
+                "denomination": "GOOGLE FRANCE",
+                "nom": null,
+                "prenom": null,
+                "sexe": null,
+                "siege": {
+                    "siret": "44306184100047",
+                    "siret_formate": "443 061 841 00047",
+                    "nic": "00047",
+                    "numero_voie": 8,
+                    "indice_repetition": null,
+                    "type_voie": "RUE",
+                    "libelle_voie": "DE LONDRES",
+                    "complement_adresse": null,
+                    "adresse_ligne_1": "8 RUE DE LONDRES",
+                    "adresse_ligne_2": null,
+                    "code_postal": "75009",
+                    "ville": "PARIS 9",
+                    "latitude": null,
+                    "longitude": null
+                },
+                "villes": [
+                    "PARIS 9",
+                    "MEYLAN",
+                    "RENNES",
+                    "NANCY",
+                    "MONTPELLIER",
+                    "SAINT-ETIENNE"
+                ],
+                "code_naf": "70.10Z",
+                "libelle_code_naf": "Activités des sièges sociaux",
+                "domaine_activite": "Activités des sièges sociaux ; conseil de gestion",
+                "conventions_collectives": [
+                    {
+                        "nom": "Convention collective nationale applicable au personnel des bureaux d'études techniques, des cabinets d'ingénieurs-conseils et des sociétés de conseils(BET, SYNTEC)",
+                        "idcc": "1486",
+                        "confirmee": true
+                    }
+                ],
+                "date_creation": "2002-05-16",
+                "date_creation_formate": "16/05/2002",
+                "entreprise_employeuse": 1,
+                "entreprise_cessee": 0,
+                "date_cessation": null,
+                "categorie_juridique": "5498",
+                "forme_juridique": "EURL, entreprise unipersonnelle à responsabilité limitée",
+                "tranche_effectif": "41",
+                "effectif": "Entre 500 et 999 salariés",
+                "effectif_min": 500,
+                "effectif_max": 999,
+                "annee_effectif": 2018,
+                "capital": 1000000,
+                "chiffre_affaires": 483033598,
+                "resultat": -539868050,
+                "effectifs_finances": 859,
+                "annee_finances": 2019
+            },
+            "token": "QTQ0MzA2MTg0MTIwMDYwODI4MjB8UHJvY8Oocy12ZXJiYWx8"
+        },
+        {
+            "titres": [],
+            "siren": "443061841",
+            "num_chrono": "87293",
+            "date_depot": "2018-08-23",
+            "id_fichier": null,
+            "type": "acte",
+            "mentions": [],
+            "entreprise": {
+                "siren": "443061841",
+                "siren_formate": "443 061 841",
+                "nom_entreprise": "GOOGLE FRANCE",
+                "personne_morale": true,
+                "denomination": "GOOGLE FRANCE",
+                "nom": null,
+                "prenom": null,
+                "sexe": null,
+                "siege": {
+                    "siret": "44306184100047",
+                    "siret_formate": "443 061 841 00047",
+                    "nic": "00047",
+                    "numero_voie": 8,
+                    "indice_repetition": null,
+                    "type_voie": "RUE",
+                    "libelle_voie": "DE LONDRES",
+                    "complement_adresse": null,
+                    "adresse_ligne_1": "8 RUE DE LONDRES",
+                    "adresse_ligne_2": null,
+                    "code_postal": "75009",
+                    "ville": "PARIS 9",
+                    "latitude": null,
+                    "longitude": null
+                },
+                "villes": [
+                    "PARIS 9",
+                    "MEYLAN",
+                    "RENNES",
+                    "NANCY",
+                    "MONTPELLIER",
+                    "SAINT-ETIENNE"
+                ],
+                "code_naf": "70.10Z",
+                "libelle_code_naf": "Activités des sièges sociaux",
+                "domaine_activite": "Activités des sièges sociaux ; conseil de gestion",
+                "conventions_collectives": [
+                    {
+                        "nom": "Convention collective nationale applicable au personnel des bureaux d'études techniques, des cabinets d'ingénieurs-conseils et des sociétés de conseils(BET, SYNTEC)",
+                        "idcc": "1486",
+                        "confirmee": true
+                    }
+                ],
+                "date_creation": "2002-05-16",
+                "date_creation_formate": "16/05/2002",
+                "entreprise_employeuse": 1,
+                "entreprise_cessee": 0,
+                "date_cessation": null,
+                "categorie_juridique": "5498",
+                "forme_juridique": "EURL, entreprise unipersonnelle à responsabilité limitée",
+                "tranche_effectif": "41",
+                "effectif": "Entre 500 et 999 salariés",
+                "effectif_min": 500,
+                "effectif_max": 999,
+                "annee_effectif": 2018,
+                "capital": 1000000,
+                "chiffre_affaires": 483033598,
+                "resultat": -539868050,
+                "effectifs_finances": 859,
+                "annee_finances": 2019
+            },
+            "token": "QTQ0MzA2MTg0MTIwMTgwODIzOTN8fA"
         }
     ],
-    "total": 100,
-    "page": 1
+    "page": 1,
+    "total": 51
 }

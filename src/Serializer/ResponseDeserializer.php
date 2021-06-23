@@ -98,7 +98,7 @@ class ResponseDeserializer {
             return $model;
         }
 
-        $model->setEntreprise(ModelDeserializer::deserializeEntreprise($decodedResponse));
+        $model->setEntreprise(JsonDeserializer::deserializeEntreprise($decodedResponse));
 
         return $model;
     }
@@ -119,7 +119,7 @@ class ResponseDeserializer {
         }
 
         foreach (ArrayHelper::get($decodedResponse, "resultats", []) as $current) {
-            $model->addResultat(ModelDeserializer::deserializeRepresentant($current));
+            $model->addResultat(JsonDeserializer::deserializeRepresentant($current));
         }
 
         return $model;
@@ -141,7 +141,7 @@ class ResponseDeserializer {
         }
 
         foreach (ArrayHelper::get($decodedResponse, "resultats", []) as $current) {
-            $model->addResultat(ModelDeserializer::deserializeDocument($current));
+            $model->addResultat(JsonDeserializer::deserializeDocument($current));
         }
 
         return $model;
@@ -163,7 +163,7 @@ class ResponseDeserializer {
         }
 
         foreach (ArrayHelper::get($decodedResponse, "resultats", []) as $current) {
-            $model->addResultat(ModelDeserializer::deserializePublicationBodacc($current));
+            $model->addResultat(JsonDeserializer::deserializePublicationBodacc($current));
         }
 
         return $model;
@@ -190,7 +190,7 @@ class ResponseDeserializer {
         }
 
         foreach (ArrayHelper::get($decodedResponse, $key, []) as $current) {
-            $model->addResultat(ModelDeserializer::deserializeEntreprise($current));
+            $model->addResultat(JsonDeserializer::deserializeEntreprise($current));
         }
 
         return $model;
@@ -212,27 +212,27 @@ class ResponseDeserializer {
         }
 
         foreach (ArrayHelper::get($decodedResponse, "resultats_nom_entreprise", []) as $current) {
-            $model->addResultatNomEntreprise(ModelDeserializer::deserializeEntreprise($current));
+            $model->addResultatNomEntreprise(JsonDeserializer::deserializeEntreprise($current));
         }
 
         foreach (ArrayHelper::get($decodedResponse, "resultats_denomination", []) as $current) {
-            $model->addResultatDenomination(ModelDeserializer::deserializeEntreprise($current));
+            $model->addResultatDenomination(JsonDeserializer::deserializeEntreprise($current));
         }
 
         foreach (ArrayHelper::get($decodedResponse, "resultats_nom_complet", []) as $current) {
-            $model->addResultatNomComplet(ModelDeserializer::deserializeEntreprise($current));
+            $model->addResultatNomComplet(JsonDeserializer::deserializeEntreprise($current));
         }
 
         foreach (ArrayHelper::get($decodedResponse, "resultats_representant", []) as $current) {
-            $model->addResultatRepresentant(ModelDeserializer::deserializeRepresentant($current));
+            $model->addResultatRepresentant(JsonDeserializer::deserializeRepresentant($current));
         }
 
         foreach (ArrayHelper::get($decodedResponse, "resultats_siren", []) as $current) {
-            $model->addResultatSiren(ModelDeserializer::deserializeEntreprise($current));
+            $model->addResultatSiren(JsonDeserializer::deserializeEntreprise($current));
         }
 
         foreach (ArrayHelper::get($decodedResponse, "resultats_siret", []) as $current) {
-            $model->addResultatSiret(ModelDeserializer::deserializeEntreprise($current));
+            $model->addResultatSiret(JsonDeserializer::deserializeEntreprise($current));
         }
 
         return $model;
