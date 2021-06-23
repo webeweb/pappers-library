@@ -178,6 +178,19 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the setAnneeFinances() method.
+     *
+     * @return void
+     */
+    public function testSetAnneeFinances(): void {
+
+        $obj = new Entreprise();
+
+        $obj->setAnneeFinances("anneeFinances");
+        $this->assertEquals("anneeFinances", $obj->getAnneeFinances());
+    }
+
+    /**
      * Tests the setAssocieUnique() method.
      *
      * @return void
@@ -441,6 +454,19 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the setEffectifsFinances() method.
+     *
+     * @return void
+     */
+    public function testSetEffectifsFinances(): void {
+
+        $obj = new Entreprise();
+
+        $obj->setEffectifsFinances(1);
+        $this->assertEquals(1, $obj->getEffectifsFinances());
+    }
+
+    /**
      * Tests the setEntrepriseEmployeuse() method.
      *
      * @return void
@@ -480,6 +506,19 @@ class EntrepriseTest extends AbstractTestCase {
 
         $obj->setLibelleCodeNaf("libelleCodeNaf");
         $this->assertEquals("libelleCodeNaf", $obj->getLibelleCodeNaf());
+    }
+
+    /**
+     * Tests the setNbBeneficiairesTotal() method.
+     *
+     * @return void
+     */
+    public function testSetNbBeneficiairesTotal(): void {
+
+        $obj = new Entreprise();
+
+        $obj->setNbBeneficiairesTotal(1);
+        $this->assertEquals(1, $obj->getNbBeneficiairesTotal());
     }
 
     /**
@@ -748,6 +787,7 @@ class EntrepriseTest extends AbstractTestCase {
         $this->assertNull($obj->getExtraitImmatriculation());
         $this->assertEquals([], $obj->getFinances());
         $this->assertNull($obj->getLibelleCodeNaf());
+        $this->assertNull($obj->getNbBeneficiairesTotal());
         $this->assertNull($obj->getNbDirigeantsTotal());
         $this->assertNull($obj->getNbDocumentsAvecMentions());
         $this->assertNull($obj->getNbDocumentsTotal());

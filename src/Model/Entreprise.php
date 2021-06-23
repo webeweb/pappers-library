@@ -300,6 +300,13 @@ class Entreprise {
     private $libelleCodeNaf;
 
     /**
+     * Nb bénéficiaires total.
+     *
+     * @var int|null
+     */
+    private $nbBeneficiairesTotal;
+
+    /**
      * Nb dirigeants total.
      *
      * @var int|null
@@ -803,9 +810,9 @@ class Entreprise {
     }
 
     /**
-     * Get theextrait immatriculation.
+     * Get the extrait immatriculation.
      *
-     * @return ExtraitImmatriculation|null Returns the immatriculation.
+     * @return ExtraitImmatriculation|null Returns the extrait immatriculation.
      */
     public function getExtraitImmatriculation(): ?ExtraitImmatriculation {
         return $this->extraitImmatriculation;
@@ -827,6 +834,15 @@ class Entreprise {
      */
     public function getLibelleCodeNaf(): ?string {
         return $this->libelleCodeNaf;
+    }
+
+    /**
+     * Get the nb bénéficiaires total.
+     *
+     * @return int|null Returns the nb bénéficiaires total.
+     */
+    public function getNbBeneficiairesTotal(): ?int {
+        return $this->nbBeneficiairesTotal;
     }
 
     /**
@@ -1340,6 +1356,17 @@ class Entreprise {
      */
     public function setLibelleCodeNaf(?string $libelleCodeNaf): Entreprise {
         $this->libelleCodeNaf = $libelleCodeNaf;
+        return $this;
+    }
+
+    /**
+     * Set the nb bénéficiaires total.
+     *
+     * @param int|null $nbBeneficiairesTotal The nb bénéficiaires total.
+     * @return Entreprise Returns this entreprise.
+     */
+    public function setNbBeneficiairesTotal(?int $nbBeneficiairesTotal): Entreprise {
+        $this->nbBeneficiairesTotal = $nbBeneficiairesTotal;
         return $this;
     }
 
