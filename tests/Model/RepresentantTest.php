@@ -40,6 +40,19 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the setActuel() method.
+     *
+     * @return void
+     */
+    public function testSetActuel(): void {
+
+        $obj = new Representant();
+
+        $obj->setActuel(true);
+        $this->assertTrue($obj->getActuel());
+    }
+
+    /**
      * Tests the setAge() method.
      *
      * @return void
@@ -131,6 +144,8 @@ class RepresentantTest extends AbstractTestCase {
         $this->assertNull($obj->getAdresseLigne3());
         $this->assertNull($obj->getCodePostal());
         $this->assertNull($obj->getDateNaissanceFormatee());
+        $this->assertNull($obj->getDenomination());
+        $this->assertNull($obj->getFormeJuridique());
         $this->assertNull($obj->getMention());
         $this->assertNull($obj->getNationalite());
         $this->assertNull($obj->getNom());
@@ -138,9 +153,11 @@ class RepresentantTest extends AbstractTestCase {
         $this->assertNull($obj->getPaysNaissance());
         $this->assertNull($obj->getPersonneMorale());
         $this->assertNull($obj->getPrenom());
+        $this->assertNull($obj->getSiren());
         $this->assertNull($obj->getVille());
         $this->assertNull($obj->getVilleNaissance());
 
+        $this->assertNull($obj->getActuel());
         $this->assertNull($obj->getAge());
         $this->assertNull($obj->getDateNaissance());
         $this->assertNull($obj->getDatePrisePoste());

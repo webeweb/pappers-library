@@ -17,12 +17,15 @@ use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne2Trait;
 use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne3Trait;
 use WBW\Library\Pappers\Model\Attribute\StringCodePostalTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateNaissanceFormateeTrait;
+use WBW\Library\Pappers\Model\Attribute\StringDenominationTrait;
+use WBW\Library\Pappers\Model\Attribute\StringFormeJuridiqueTrait;
 use WBW\Library\Pappers\Model\Attribute\StringMentionTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNationaliteTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPaysNaissanceTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPaysTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
+use WBW\Library\Pappers\Model\Attribute\StringSirenTrait;
 use WBW\Library\Pappers\Model\Attribute\StringVilleNaissanceTrait;
 use WBW\Library\Pappers\Model\Attribute\StringVilleTrait;
 
@@ -40,14 +43,27 @@ class Representant {
     use StringAdresseLigne3Trait;
     use StringCodePostalTrait;
     use StringDateNaissanceFormateeTrait;
+    use StringDenominationTrait;
+    use StringFormeJuridiqueTrait;
     use StringMentionTrait;
+
+    // A supprimer
+
     use StringNationaliteTrait;
     use StringNomTrait;
     use StringPaysNaissanceTrait;
     use StringPaysTrait;
     use StringPrenomTrait;
+    use StringSirenTrait;
     use StringVilleNaissanceTrait;
     use StringVilleTrait;
+
+    /**
+     * Actuel.
+     *
+     * @var bool|null
+     */
+    private $actuel;
 
     /**
      * Age.
@@ -117,6 +133,15 @@ class Representant {
     }
 
     /**
+     * Get the actuel.
+     *
+     * @return bool|null Returns the actuel.
+     */
+    public function getActuel(): ?bool {
+        return $this->actuel;
+    }
+
+    /**
      * Get the age.
      *
      * @return int|null Returns the age.
@@ -177,6 +202,17 @@ class Representant {
      */
     public function getQualite(): ?string {
         return $this->qualite;
+    }
+
+    /**
+     * Set the actuel.
+     *
+     * @param bool|null $actuel The actuel.
+     * @return Representant Returns this représentant.
+     */
+    public function setActuel(?bool $actuel): Representant {
+        $this->actuel = $actuel;
+        return $this;
     }
 
     /**
