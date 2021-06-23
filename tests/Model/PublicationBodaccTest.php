@@ -49,6 +49,19 @@ class PublicationBodaccTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the setAnnonceRectificative() method.
+     *
+     * @return void
+     */
+    public function testSetAnnonceRectificative(): void {
+
+        $obj = new PublicationBodacc();
+
+        $obj->setAnnonceRectificative(true);
+        $this->assertTrue($obj->getAnnonceRectificative());
+    }
+
+    /**
      * Tests the setBodacc() method.
      *
      * @return void
@@ -98,6 +111,19 @@ class PublicationBodaccTest extends AbstractTestCase {
 
         $obj->setDateDebutActivite("dateDebutActivite");
         $this->assertEquals("dateDebutActivite", $obj->getDateDebutActivite());
+    }
+
+    /**
+     * Tests the setNomCommercial() method.
+     *
+     * @return void
+     */
+    public function testSetNomCommercial(): void {
+
+        $obj = new PublicationBodacc();
+
+        $obj->setNomCommercial("nomCommercial");
+        $this->assertEquals("nomCommercial", $obj->getNomCommercial());
     }
 
     /**
@@ -161,12 +187,15 @@ class PublicationBodaccTest extends AbstractTestCase {
         $this->assertNull($obj->getPersonneMorale());
         $this->assertNull($obj->getPrenom());
         $this->assertNull($obj->getSigle());
+        $this->assertNull($obj->getSiren());
 
         $this->assertNull($obj->getActivite());
+        $this->assertNull($obj->getAnnonceRectificative());
         $this->assertNull($obj->getBodacc());
         $this->assertNull($obj->getContenu());
         $this->assertNull($obj->getDate());
         $this->assertNull($obj->getDateDebutActivite());
+        $this->assertNull($obj->getNomCommercial());
         $this->assertNull($obj->getNumeroAnnonce());
         $this->assertNull($obj->getNumeroParution());
         $this->assertNull($obj->getRcs());

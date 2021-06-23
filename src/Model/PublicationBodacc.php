@@ -26,6 +26,7 @@ use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPseudonymeTrait;
 use WBW\Library\Pappers\Model\Attribute\StringSigleTrait;
+use WBW\Library\Pappers\Model\Attribute\StringSirenTrait;
 
 /**
  * Publication BODACC.
@@ -49,6 +50,7 @@ class PublicationBodacc implements PublicationBodaccInterface {
     use StringPrenomTrait;
     use StringPseudonymeTrait;
     use StringSigleTrait;
+    use StringSirenTrait;
     use StringTypeTrait;
 
     /**
@@ -64,6 +66,13 @@ class PublicationBodacc implements PublicationBodaccInterface {
      * @var string|null
      */
     private $administration;
+
+    /**
+     * Annonce rectificative.
+     *
+     * @var bool|null
+     */
+    private $annonceRectificative;
 
     /**
      * BODACC.
@@ -92,6 +101,13 @@ class PublicationBodacc implements PublicationBodaccInterface {
      * @var string|null
      */
     private $dateDebutActivite;
+
+    /**
+     * Nom commercial.
+     *
+     * @var string|null
+     */
+    private $nomCommercial;
 
     /**
      * Numéro annonce.
@@ -140,6 +156,15 @@ class PublicationBodacc implements PublicationBodaccInterface {
     }
 
     /**
+     * Get the annonce rectificative.
+     *
+     * @return bool|null Returns the annonce rectificative.
+     */
+    public function getAnnonceRectificative(): ?bool {
+        return $this->annonceRectificative;
+    }
+
+    /**
      * Get the BODACC.
      *
      * @return string|null Returns the BODACC.
@@ -173,6 +198,15 @@ class PublicationBodacc implements PublicationBodaccInterface {
      */
     public function getDateDebutActivite(): ?string {
         return $this->dateDebutActivite;
+    }
+
+    /**
+     * Get the nom commercial.
+     *
+     * @return string|null Returns the nom commercial.
+     */
+    public function getNomCommercial(): ?string {
+        return $this->nomCommercial;
     }
 
     /**
@@ -225,6 +259,17 @@ class PublicationBodacc implements PublicationBodaccInterface {
     }
 
     /**
+     * Set the annonce rectificative.
+     *
+     * @param bool|null $annonceRectificative The annonce rectificative.
+     * @return PublicationBodacc Returns this publication BODACC.
+     */
+    public function setAnnonceRectificative(?bool $annonceRectificative): PublicationBodacc {
+        $this->annonceRectificative = $annonceRectificative;
+        return $this;
+    }
+
+    /**
      * Set the BODACC.
      *
      * @param string|null $bodacc The BODACC.
@@ -265,6 +310,17 @@ class PublicationBodacc implements PublicationBodaccInterface {
      */
     public function setDateDebutActivite(?string $dateDebutActivite): PublicationBodacc {
         $this->dateDebutActivite = $dateDebutActivite;
+        return $this;
+    }
+
+    /**
+     * Set the nom commercial.
+     *
+     * @param string|null $nomCommercial The nom commercial.
+     * @return PublicationBodacc Returns this publication BODACC.
+     */
+    public function setNomCommercial(?string $nomCommercial): PublicationBodacc {
+        $this->nomCommercial = $nomCommercial;
         return $this;
     }
 
