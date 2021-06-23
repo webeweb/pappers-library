@@ -35,12 +35,12 @@ use WBW\Library\Pappers\Model\Statuts;
 use WBW\Library\Pappers\Model\Titre;
 
 /**
- * Model deserializer.
+ * JSON deserializer.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Serializer
  */
-class ModelDeserializer {
+class JsonDeserializer {
 
     /**
      * Deserializes an acte.
@@ -58,7 +58,7 @@ class ModelDeserializer {
         $model->setType(ArrayHelper::get($data, "type"));
         $model->setDecision(ArrayHelper::get($data, "decision"));
         $model->setDateActe(ArrayHelper::get($data, "date_acte"));
-        $model->setDateActeFormate(ArrayHelper::get($data, "date_acte_formate"));
+        $model->setDateActeFormatee(ArrayHelper::get($data, "date_acte_formate"));
 
         return $model;
     }
@@ -84,12 +84,22 @@ class ModelDeserializer {
 
         $model = new BeneficiaireEffectif();
         $model->setDateGreffe(ArrayHelper::get($data, "date_greffe"));
+        $model->setType(ArrayHelper::get($data, "type"));
         $model->setNom(ArrayHelper::get($data, "nom"));
         $model->setNomUsage(ArrayHelper::get($data, "nom_usage"));
         $model->setPrenom(ArrayHelper::get($data, "prenom"));
         $model->setPseudonyme(ArrayHelper::get($data, "pseudonyme"));
-        $model->setDateNaissanceFormate(ArrayHelper::get($data, "date_de_naissance_formatee"));
         $model->setNationalite(ArrayHelper::get($data, "nationalite"));
+        $model->setDateNaissanceFormatee(ArrayHelper::get($data, "date_de_naissance_formatee"));
+        $model->setDateNaissanceCompleteFormatee(ArrayHelper::get($data, "date_de_naissance_complete_formatee"));
+        $model->setVilleNaissance(ArrayHelper::get($data, "ville_de_naissance"));
+        $model->setPaysNaissance(ArrayHelper::get($data, "pays_de_naissance"));
+        $model->setAdresseLigne1(ArrayHelper::get($data, "adresse_ligne_1"));
+        $model->setAdresseLigne2(ArrayHelper::get($data, "adresse_ligne_2"));
+        $model->setAdresseLigne3(ArrayHelper::get($data, "adresse_ligne_3"));
+        $model->setCodePostal(ArrayHelper::get($data, "code_postal"));
+        $model->setVille(ArrayHelper::get($data, "ville"));
+        $model->setPays(ArrayHelper::get($data, "pays"));
         $model->setPourcentageParts(ArrayHelper::get($data, "pourcentage_parts"));
         $model->setPourcentagePartsDirectes(ArrayHelper::get($data, "pourcentage_parts_directes"));
         $model->setPourcentagePartsIndirectes(ArrayHelper::get($data, "pourcentage_parts_indirectes"));
@@ -126,10 +136,11 @@ class ModelDeserializer {
 
         $model = new Compte();
         $model->setDateDepot(ArrayHelper::get($data, "date_depot"));
-        $model->setDateDepotFormate(ArrayHelper::get($data, "date_depot_formate"));
+        $model->setDateDepotFormatee(ArrayHelper::get($data, "date_depot_formate"));
         $model->setDateCloture(ArrayHelper::get($data, "date_cloture"));
         $model->setAnneeCloture(ArrayHelper::get($data, "annee_cloture"));
-        $model->setConfidentialite(ArrayHelper::get($data, "confidentialite"));
+        $model->setTypeComptes(ArrayHelper::get($data, "type_comptes"));
+        $model->setConfidentialite(ArrayHelper::get($data, "confdentialite"));
         $model->setConfidentialiteCompteResultat(ArrayHelper::get($data, "confidentialite_compte_de_resultat"));
         $model->setDisponible(ArrayHelper::get($data, "disponible"));
         $model->setNomFichierPdf(ArrayHelper::get($data, "nom_fichier_pdf"));
@@ -172,7 +183,7 @@ class ModelDeserializer {
 
         $model = new DepotActe();
         $model->setDateDepot(ArrayHelper::get($data, "date_depot"));
-        $model->setDateDepotFormate(ArrayHelper::get($data, "date_depot_formate"));
+        $model->setDateDepotFormatee(ArrayHelper::get($data, "date_depot_formate"));
         $model->setDisponible(ArrayHelper::get($data, "disponible"));
         $model->setNomFichierPdf(ArrayHelper::get($data, "nom_fichier_pdf"));
         $model->setToken(ArrayHelper::get($data, "token"));
@@ -330,18 +341,18 @@ class ModelDeserializer {
         $entreprise = static::deserializeEntreprise(ArrayHelper::get($data, "entreprise", []));
 
         $model = new Document();
-        $model->setType(ArrayHelper::get($data, "type"));
-        $model->setDateDepot(ArrayHelper::get($data, "date_depot"));
 
         foreach (ArrayHelper::get($data, "titres", []) as $current) {
             $model->addTitre(static::deserializeTitre($current));
         }
 
-        $model->setMentions(ArrayHelper::get($data, "mentions", []));
-        $model->setEntreprise($entreprise);
         $model->setSiren(ArrayHelper::get($data, "siren"));
         $model->setNumChrono(ArrayHelper::get($data, "num_chrono"));
+        $model->setDateDepot(ArrayHelper::get($data, "date_depot"));
         $model->setIdFichier(ArrayHelper::get($data, "id_fichier"));
+        $model->setType(ArrayHelper::get($data, "type"));
+        $model->setMentions(ArrayHelper::get($data, "mentions", []));
+        $model->setEntreprise($entreprise);
         $model->setToken(ArrayHelper::get($data, "token"));
 
         return $model;
@@ -365,15 +376,21 @@ class ModelDeserializer {
         $model = new Entreprise();
         $model->setSiren(ArrayHelper::get($data, "siren"));
         $model->setSirenFormate(ArrayHelper::get($data, "siren_formate"));
+        $model->setDiffusable(ArrayHelper::get($data, "diffusable"));
         $model->setNomEntreprise(ArrayHelper::get($data, "nom_entreprise"));
         $model->setPersonneMorale(ArrayHelper::get($data, "personne_morale"));
         $model->setDenomination(ArrayHelper::get($data, "denomination"));
+        $model->setSigle(ArrayHelper::get($data, "sigle"));
         $model->setNom(ArrayHelper::get($data, "nom"));
         $model->setPrenom(ArrayHelper::get($data, "prenom"));
         $model->setSexe(ArrayHelper::get($data, "sexe"));
+        $model->setSiege($siege);
+        $model->setRnm(ArrayHelper::get($data, "rnm"));
+        $model->setVilles(ArrayHelper::get($data, "villes", []));
         $model->setCodeNaf(ArrayHelper::get($data, "code_naf"));
         $model->setLibelleCodeNaf(ArrayHelper::get($data, "libelle_code_naf"));
         $model->setDomaineActivite(ArrayHelper::get($data, "domaine_activite"));
+        $model->setObjetSocial(ArrayHelper::get($data, "objet_social"));
 
         foreach (ArrayHelper::get($data, "conventions_collectives", []) as $current) {
             $model->addConventionCollective(static::deserializeConventionCollective($current));
@@ -383,40 +400,36 @@ class ModelDeserializer {
         $model->setDateCreationFormate(ArrayHelper::get($data, "date_creation_formate"));
         $model->setEntrepriseCessee(ArrayHelper::get($data, "entreprise_cessee"));
         $model->setDateCessation(ArrayHelper::get($data, "date_cessation"));
-        $model->setEntrepriseEmployeuse(ArrayHelper::get($data, "entreprise_employeuse"));
+        $model->setDateCessationFormatee(ArrayHelper::get($data, "date_cessation_formate"));
+        $model->setAssocieUnique(ArrayHelper::get($data, "associe_unique"));
         $model->setCategorieJuridique(ArrayHelper::get($data, "categorie_juridique"));
         $model->setFormeJuridique(ArrayHelper::get($data, "forme_juridique"));
+        $model->setEntrepriseEmployeuse(ArrayHelper::get($data, "entreprise_employeuse"));
         $model->setEffectif(ArrayHelper::get($data, "effectif"));
         $model->setEffectifMin(ArrayHelper::get($data, "effectif_min"));
         $model->setEffectifMax(ArrayHelper::get($data, "effectif_max"));
         $model->setTrancheEffectif(ArrayHelper::get($data, "tranche_effectif"));
         $model->setAnneeEffectif(ArrayHelper::get($data, "annee_effectif"));
-        $model->setDernierTraitement(ArrayHelper::get($data, "dernier_traitement"));
-        $model->setSiege($siege);
-        $model->setDiffusable(ArrayHelper::get($data, "diffusable"));
-        $model->setSigle(ArrayHelper::get($data, "sigle"));
-        $model->setObjetSocial(ArrayHelper::get($data, "objet_social"));
         $model->setCapital(ArrayHelper::get($data, "capital"));
         $model->setCapitalFormate(ArrayHelper::get($data, "capital_formate"));
         $model->setCapitalActuelVariable(ArrayHelper::get($data, "capital_actuel_si_variable"));
         $model->setDeviseCapital(ArrayHelper::get($data, "devise_capital"));
-        $model->setNumeroRcs(ArrayHelper::get($data, "numero_rcs"));
         $model->setDateClotureExercice(ArrayHelper::get($data, "date_cloture_exercice"));
         $model->setDateClotureExerciceExceptionnelle(ArrayHelper::get($data, "date_cloture_exercice_exceptionnelle"));
-        $model->setDateClotureExerciceExceptionnelleFormate(ArrayHelper::get($data, "date_cloture_exercice_exceptionnelle_formate"));
         $model->setProchaineDateClotureExercice(ArrayHelper::get($data, "prochaine_date_cloture_exercice"));
         $model->setProchaineDateClotureExerciceFormate(ArrayHelper::get($data, "prochaine_date_cloture_exercice_formate"));
         $model->setEconomieSocialeSolidaire(ArrayHelper::get($data, "economie_sociale_solidaire"));
         $model->setDureePersonneMorale(ArrayHelper::get($data, "duree_personne_morale"));
         $model->setDerniereMiseJourSirene(ArrayHelper::get($data, "derniere_mise_a_jour_sirene"));
         $model->setDerniereMiseJourRcs(ArrayHelper::get($data, "derniere_mise_a_jour_rcs"));
+        $model->setDernierTraitement(ArrayHelper::get($data, "dernier_traitement"));
         $model->setStatutRcs(ArrayHelper::get($data, "statut_rcs"));
         $model->setGreffe(ArrayHelper::get($data, "greffe"));
+        $model->setNumeroRcs(ArrayHelper::get($data, "numero_rcs"));
         $model->setDateImmatriculationRcs(ArrayHelper::get($data, "date_immatriculation_rcs"));
         $model->setDatePremiereImmatriculationRcs(ArrayHelper::get($data, "date_premiere_immatriculation_rcs"));
         $model->setDateRadiationRcs(ArrayHelper::get($data, "date_radiation_rcs"));
         $model->setNumeroTvaIntracommunautaire(ArrayHelper::get($data, "numero_tva_intracommunautaire"));
-        $model->setAssocieUnique(ArrayHelper::get($data, "associe_unique"));
 
         foreach (ArrayHelper::get($data, "etablissements", []) as $current) {
             $model->addEtablissement(static::deserializeEtablissement($current));
@@ -455,9 +468,6 @@ class ModelDeserializer {
         $model->setDerniersStatuts($derniersStatuts);
         $model->setExtraitImmatriculation($extraitImmatriculation);
 
-        // Recherche requests
-        $model->setMention(ArrayHelper::get($data, "mention"));
-        $model->setVilles(ArrayHelper::get($data, "villes", []));
         $model->setChiffreAffaires(ArrayHelper::get($data, "chiffre_affaires"));
         $model->setResultat(ArrayHelper::get($data, "resultat"));
         $model->setEffectifsFinances(ArrayHelper::get($data, "effectifs_finances"));
@@ -476,10 +486,12 @@ class ModelDeserializer {
         }
 
         $model->setNbDirigeantsTotal(ArrayHelper::get($data, "nb_dirigeants_total"));
+        $model->setNbBeneficiairesTotal(ArrayHelper::get($data, "nb_beneficiaires_total"));
         $model->setNbDocumentsAvecMentions(ArrayHelper::get($data, "nb_documents_avec_mentions"));
         $model->setNbDocumentsTotal(ArrayHelper::get($data, "nb_documents_total"));
         $model->setNbPublicationsAvecMentions(ArrayHelper::get($data, "nb_publications_avec_mentions"));
         $model->setNbPublicationsTotal(ArrayHelper::get($data, "nb_publications_total"));
+        $model->setMention(ArrayHelper::get($data, "mention"));
 
         return $model;
     }
@@ -500,21 +512,6 @@ class ModelDeserializer {
         $model->setSiret(ArrayHelper::get($data, "siret"));
         $model->setSiretFormate(ArrayHelper::get($data, "siret_formate"));
         $model->setNic(ArrayHelper::get($data, "nic"));
-        $model->setCodePostal(ArrayHelper::get($data, "code_postal"));
-        $model->setVille(ArrayHelper::get($data, "ville"));
-        $model->setLatitude(ArrayHelper::get($data, "latitude"));
-        $model->setLongitude(ArrayHelper::get($data, "longitude"));
-        $model->setEtablissementCesse(ArrayHelper::get($data, "etablissement_cesse"));
-        $model->setSiege(ArrayHelper::get($data, "siege"));
-        $model->setEtablissementEmployeur(ArrayHelper::get($data, "etablissement_employeur"));
-        $model->setEffectif(ArrayHelper::get($data, "effectif"));
-        $model->setEffectifMin(ArrayHelper::get($data, "effectif_min"));
-        $model->setEffectifMax(ArrayHelper::get($data, "effectif_max"));
-        $model->setTrancheEffectif(ArrayHelper::get($data, "tranche_effectif"));
-        $model->setAnneeEffectif(ArrayHelper::get($data, "annee_effectif"));
-        $model->setCodeNaf(ArrayHelper::get($data, "code_naf"));
-        $model->setLibelleCodeNaf(ArrayHelper::get($data, "libelle_code_naf"));
-        $model->setDateCreation(ArrayHelper::get($data, "date_de_creation"));
         $model->setNumeroVoie(ArrayHelper::get($data, "numero_voie"));
         $model->setIndiceRepetition(ArrayHelper::get($data, "indice_repetition"));
         $model->setTypeVoie(ArrayHelper::get($data, "type_voie"));
@@ -522,6 +519,24 @@ class ModelDeserializer {
         $model->setComplementAdresse(ArrayHelper::get($data, "complement_adresse"));
         $model->setAdresseLigne1(ArrayHelper::get($data, "adresse_ligne_1"));
         $model->setAdresseLigne2(ArrayHelper::get($data, "adresse_ligne_2"));
+        $model->setCodePostal(ArrayHelper::get($data, "code_postal"));
+        $model->setVille(ArrayHelper::get($data, "ville"));
+        $model->setPays(ArrayHelper::get($data, "pays"));
+        $model->setLatitude(ArrayHelper::get($data, "latitude"));
+        $model->setLongitude(ArrayHelper::get($data, "longitude"));
+        $model->setCodeNaf(ArrayHelper::get($data, "code_naf"));
+        $model->setLibelleCodeNaf(ArrayHelper::get($data, "libelle_code_naf"));
+        $model->setDateCreation(ArrayHelper::get($data, "date_de_creation"));
+        $model->setEtablissementEmployeur(ArrayHelper::get($data, "etablissement_employeur"));
+        $model->setEffectif(ArrayHelper::get($data, "effectif"));
+        $model->setEffectifMin(ArrayHelper::get($data, "effectif_min"));
+        $model->setEffectifMax(ArrayHelper::get($data, "effectif_max"));
+        $model->setTrancheEffectif(ArrayHelper::get($data, "tranche_effectif"));
+        $model->setAnneeEffectif(ArrayHelper::get($data, "annee_effectif"));
+        $model->setEtablissementCesse(ArrayHelper::get($data, "etablissement_cesse"));
+        $model->setDateCessation(ArrayHelper::get($data, "date_cessation"));
+        $model->setDomiciliation(ArrayHelper::get($data, "domiciliation"));
+        $model->setSiege(ArrayHelper::get($data, "siege"));
 
         return $model;
     }
@@ -607,24 +622,33 @@ class ModelDeserializer {
         $model->setNumeroParution(ArrayHelper::get($data, "numero_parution"));
         $model->setDate(ArrayHelper::get($data, "date"));
         $model->setNumeroAnnonce(ArrayHelper::get($data, "numero_annonce"));
+        $model->setAnnonceRectificative(ArrayHelper::get($data, "annonce_rectificative"));
         $model->setBodacc(ArrayHelper::get($data, "bodacc"));
+        $model->setSiren(ArrayHelper::get($data, "siren"));
+        $model->setContenu(ArrayHelper::get($data, "contenu"));
         $model->setType(ArrayHelper::get($data, "type"));
         $model->setRcs(ArrayHelper::get($data, "rcs"));
         $model->setNomEntreprise(ArrayHelper::get($data, "nom_entreprise"));
         $model->setPersonneMorale(ArrayHelper::get($data, "personne_morale"));
+        $model->setSigle(ArrayHelper::get($data, "sigle"));
         $model->setDenomination(ArrayHelper::get($data, "denomination"));
+        $model->setNomCommercial(ArrayHelper::get($data, "nom_commercial"));
+        $model->setFormeJuridique(ArrayHelper::get($data, "forme_juridique"));
         $model->setNom(ArrayHelper::get($data, "nom"));
         $model->setPrenom(ArrayHelper::get($data, "prenom"));
         $model->setAdministration(ArrayHelper::get($data, "administration"));
+        $model->setPseudonyme(ArrayHelper::get($data, "pseudonyme"));
+        $model->setNationalite(ArrayHelper::get($data, "nationnalite"));
         $model->setAdresse(ArrayHelper::get($data, "adresse"));
         $model->setCapital(ArrayHelper::get($data, "capital"));
+        $model->setDeviseCapital(ArrayHelper::get($data, "devise_capital"));
         $model->setActivite(ArrayHelper::get($data, "activite"));
         $model->setDateDebutActivite(ArrayHelper::get($data, "date_debut_activite"));
+        $model->setDescription(ArrayHelper::get($data, "description"));
 
         // Recherche requests
         $entreprise = static::deserializeEntreprise(ArrayHelper::get($data, "entreprise", []));
 
-        $model->setContenu(ArrayHelper::get($data, "contenu"));
         $model->setEntreprise($entreprise);
 
         return $model;
@@ -646,24 +670,26 @@ class ModelDeserializer {
         $model->setQualite(ArrayHelper::get($data, "qualite"));
         $model->setPersonneMorale(ArrayHelper::get($data, "personne_morale"));
         $model->setDatePrisePoste(ArrayHelper::get($data, "date_prise_de_poste"));
+        $model->setActuel(ArrayHelper::get($data, "actuel"));
+        $model->setMention(ArrayHelper::get($data, "mention"));
         $model->setNom(ArrayHelper::get($data, "nom"));
         $model->setPrenom(ArrayHelper::get($data, "prenom"));
+        $model->setDenomination(ArrayHelper::get($data, "denomination"));
+        $model->setSiren(ArrayHelper::get($data, "siren"));
         $model->setNomComplet(ArrayHelper::get($data, "nom_complet"));
         $model->setDateNaissance(ArrayHelper::get($data, "date_de_naissance"));
-        $model->setDateNaissanceFormate(ArrayHelper::get($data, "date_de_naissance_formate"));
+        $model->setDateNaissanceFormatee(ArrayHelper::get($data, "date_de_naissance_formate"));
         $model->setAge(ArrayHelper::get($data, "age"));
         $model->setNationalite(ArrayHelper::get($data, "nationalite"));
         $model->setVilleNaissance(ArrayHelper::get($data, "ville_de_naissance"));
         $model->setPaysNaissance(ArrayHelper::get($data, "pays_de_naissance"));
+        $model->setFormeJuridique(ArrayHelper::get($data, "forme_juridique"));
         $model->setAdresseLigne1(ArrayHelper::get($data, "adresse_ligne_1"));
         $model->setAdresseLigne2(ArrayHelper::get($data, "adresse_ligne_2"));
         $model->setAdresseLigne3(ArrayHelper::get($data, "adresse_ligne_3"));
         $model->setCodePostal(ArrayHelper::get($data, "code_postal"));
         $model->setVille(ArrayHelper::get($data, "ville"));
         $model->setPays(ArrayHelper::get($data, "pays"));
-
-        // Recherche requests
-        $model->setMention(ArrayHelper::get($data, "mention"));
 
         foreach (ArrayHelper::get($data, "entreprises", []) as $current) {
             $model->addEntreprise(static::deserializeEntreprise($current));
@@ -688,14 +714,14 @@ class ModelDeserializer {
 
         $model = new Statuts();
         $model->setDateDepot(ArrayHelper::get($data, "date_depot"));
-        $model->setDateDepotFormate(ArrayHelper::get($data, "date_depot_formate"));
+        $model->setDateDepotFormatee(ArrayHelper::get($data, "date_depot_formate"));
         $model->setDisponible(ArrayHelper::get($data, "disponible"));
         $model->setNomFichierPdf(ArrayHelper::get($data, "nom_fichier_pdf"));
         $model->setToken(ArrayHelper::get($data, "token"));
         $model->setType(ArrayHelper::get($data, "type"));
         $model->setDecision(ArrayHelper::get($data, "decision"));
         $model->setDateActe(ArrayHelper::get($data, "date_acte"));
-        $model->setDateActeFormate(ArrayHelper::get($data, "date_acte_formate"));
+        $model->setDateActeFormatee(ArrayHelper::get($data, "date_acte_formate"));
 
         return $model;
     }
@@ -713,8 +739,8 @@ class ModelDeserializer {
         }
 
         $model = new Titre();
-        $model->setType(ArrayHelper::get($data, "type"));
         $model->setDecision(ArrayHelper::get($data, "decision"));
+        $model->setType(ArrayHelper::get($data, "type"));
 
         return $model;
     }
