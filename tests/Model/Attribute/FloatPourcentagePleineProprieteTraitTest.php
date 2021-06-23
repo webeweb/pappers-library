@@ -12,15 +12,15 @@
 namespace WBW\Library\Pappers\Tests\Model\Attribute;
 
 use WBW\Library\Pappers\Tests\AbstractTestCase;
-use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestIntegerPourcentagePleineProprieteTrait;
+use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestFloatPourcentagePleineProprieteTrait;
 
 /**
- * Integer pourcentage pleine propriété trait test.
+ * Float pourcentage pleine propriété trait test.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Model\Attribute
  */
-class IntegerPourcentagePleineProprieteTraitTest extends AbstractTestCase {
+class FloatPourcentagePleineProprieteTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setPourcentagePleinePropriete() method().
@@ -29,9 +29,9 @@ class IntegerPourcentagePleineProprieteTraitTest extends AbstractTestCase {
      */
     public function testSetPourcentagePleinePropriete(): void {
 
-        $obj = new TestIntegerPourcentagePleineProprieteTrait();
+        $obj = new TestFloatPourcentagePleineProprieteTrait();
 
-        $obj->setPourcentagePleinePropriete(1);
-        $this->assertEquals(1, $obj->getPourcentagePleinePropriete());
+        $obj->setPourcentagePleinePropriete(0.1);
+        $this->assertEquals(0.1, $obj->getPourcentagePleinePropriete());
     }
 }

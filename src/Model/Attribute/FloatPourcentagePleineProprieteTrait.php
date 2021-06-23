@@ -12,36 +12,36 @@
 namespace WBW\Library\Pappers\Model\Attribute;
 
 /**
- * Integer pourcentage pleine propriété.
+ * Float pourcentage pleine propriété.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Model\Attribute
  */
-trait IntegerPourcentagePleineProprieteTrait {
+trait FloatPourcentagePleineProprieteTrait {
 
     /**
      * Pourcentage pleine propriété.
      *
-     * @var int|null
+     * @var float|null
      */
     private $pourcentagePleinePropriete;
 
     /**
      * Get the pourcentage pleine propriété.
      *
-     * @return int|null Returns the pourcentage pleine propriété.
+     * @return float|null Returns the pourcentage pleine propriété.
      */
-    public function getPourcentagePleinePropriete(): ?int {
+    public function getPourcentagePleinePropriete(): ?float {
         return $this->pourcentagePleinePropriete;
     }
 
     /**
      * Set the pourcentage pleine propriété.
      *
-     * @param int|null $pourcentagePleinePropriete The pourcentage pleine propriété.
+     * @param float|null $pourcentagePleinePropriete The pourcentage pleine propriété.
      * @return self Returns this instance.
      */
-    public function setPourcentagePleinePropriete(?int $pourcentagePleinePropriete): self {
+    public function setPourcentagePleinePropriete(?float $pourcentagePleinePropriete): self {
         $this->pourcentagePleinePropriete = $pourcentagePleinePropriete;
         return $this;
     }

@@ -12,36 +12,36 @@
 namespace WBW\Library\Pappers\Model\Attribute;
 
 /**
- * Integer pourcentage usufruit.
+ * Float pourcentage usufruit.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Model\Attribute
  */
-trait IntegerPourcentageUsufruitTrait {
+trait FloatPourcentageUsufruitTrait {
 
     /**
      * Pourcentage usufruit.
      *
-     * @var int|null
+     * @var float|null
      */
     private $pourcentageUsufruit;
 
     /**
      * Get the pourcentage usufruit.
      *
-     * @return int|null Returns the pourcentage usufruit.
+     * @return float|null Returns the pourcentage usufruit.
      */
-    public function getPourcentageUsufruit(): ?int {
+    public function getPourcentageUsufruit(): ?float {
         return $this->pourcentageUsufruit;
     }
 
     /**
      * Set the pourcentage usufruit.
      *
-     * @param int|null $pourcentageUsufruit The pourcentage usufruit.
+     * @param float|null $pourcentageUsufruit The pourcentage usufruit.
      * @return self Returns this instance.
      */
-    public function setPourcentageUsufruit(?int $pourcentageUsufruit): self {
+    public function setPourcentageUsufruit(?float $pourcentageUsufruit): self {
         $this->pourcentageUsufruit = $pourcentageUsufruit;
         return $this;
     }

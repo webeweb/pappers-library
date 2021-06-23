@@ -12,15 +12,15 @@
 namespace WBW\Library\Pappers\Tests\Model\Attribute;
 
 use WBW\Library\Pappers\Tests\AbstractTestCase;
-use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestIntegerPourcentageNueProprieteTrait;
+use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestFloatPourcentageNueProprieteTrait;
 
 /**
- * Integer pourcentage nue propriété trait test.
+ * Float pourcentage nue propriété trait test.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Model\Attribute
  */
-class IntegerPourcentageNueProprieteTraitTest extends AbstractTestCase {
+class FloatPourcentageNueProprieteTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setPourcentageNuePropriete() method().
@@ -29,9 +29,9 @@ class IntegerPourcentageNueProprieteTraitTest extends AbstractTestCase {
      */
     public function testSetPourcentageNuePropriete(): void {
 
-        $obj = new TestIntegerPourcentageNueProprieteTrait();
+        $obj = new TestFloatPourcentageNueProprieteTrait();
 
-        $obj->setPourcentageNuePropriete(1);
-        $this->assertEquals(1, $obj->getPourcentageNuePropriete());
+        $obj->setPourcentageNuePropriete(0.1);
+        $this->assertEquals(0.1, $obj->getPourcentageNuePropriete());
     }
 }

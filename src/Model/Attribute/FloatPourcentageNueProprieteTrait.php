@@ -12,36 +12,36 @@
 namespace WBW\Library\Pappers\Model\Attribute;
 
 /**
- * Integer pourcentage nue propriété.
+ * Float pourcentage nue propriété.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Model\Attribute
  */
-trait IntegerPourcentageNueProprieteTrait {
+trait FloatPourcentageNueProprieteTrait {
 
     /**
      * Pourcentage nue propriété.
      *
-     * @var int|null
+     * @var float|null
      */
     private $pourcentageNuePropriete;
 
     /**
      * Get the pourcentage nue propriété.
      *
-     * @return int|null Returns the pourcentage nue propriété.
+     * @return float|null Returns the pourcentage nue propriété.
      */
-    public function getPourcentageNuePropriete(): ?int {
+    public function getPourcentageNuePropriete(): ?float {
         return $this->pourcentageNuePropriete;
     }
 
     /**
      * Set the pourcentage nue propriété.
      *
-     * @param int|null $pourcentageNuePropriete The pourcentage nue propriété.
+     * @param float|null $pourcentageNuePropriete The pourcentage nue propriété.
      * @return self Returns this instance.
      */
-    public function setPourcentageNuePropriete(?int $pourcentageNuePropriete): self {
+    public function setPourcentageNuePropriete(?float $pourcentageNuePropriete): self {
         $this->pourcentageNuePropriete = $pourcentageNuePropriete;
         return $this;
     }

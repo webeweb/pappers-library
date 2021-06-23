@@ -12,15 +12,15 @@
 namespace WBW\Library\Pappers\Tests\Model\Attribute;
 
 use WBW\Library\Pappers\Tests\AbstractTestCase;
-use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestIntegerPourcentageUsufruitTrait;
+use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestFloatPourcentageUsufruitTrait;
 
 /**
- * Integer pourcentage usufruit trait test.
+ * Float pourcentage usufruit trait test.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Model\Attribute
  */
-class IntegerPourcentageUsufruitTraitTest extends AbstractTestCase {
+class FloatPourcentageUsufruitTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setPourcentageUsufruit() method().
@@ -29,9 +29,9 @@ class IntegerPourcentageUsufruitTraitTest extends AbstractTestCase {
      */
     public function testSetPourcentageUsufruit(): void {
 
-        $obj = new TestIntegerPourcentageUsufruitTrait();
+        $obj = new TestFloatPourcentageUsufruitTrait();
 
-        $obj->setPourcentageUsufruit(1);
-        $this->assertEquals(1, $obj->getPourcentageUsufruit());
+        $obj->setPourcentageUsufruit(0.1);
+        $this->assertEquals(0.1, $obj->getPourcentageUsufruit());
     }
 }

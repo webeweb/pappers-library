@@ -11,9 +11,9 @@
 
 namespace WBW\Library\Pappers\Model;
 
-use WBW\Library\Pappers\Model\Attribute\IntegerPourcentageNueProprieteTrait;
-use WBW\Library\Pappers\Model\Attribute\IntegerPourcentagePleineProprieteTrait;
-use WBW\Library\Pappers\Model\Attribute\IntegerPourcentageUsufruitTrait;
+use WBW\Library\Pappers\Model\Attribute\FloatPourcentageNueProprieteTrait;
+use WBW\Library\Pappers\Model\Attribute\FloatPourcentagePleineProprieteTrait;
+use WBW\Library\Pappers\Model\Attribute\FloatPourcentageUsufruitTrait;
 
 /**
  * Détails personne morale.
@@ -23,9 +23,9 @@ use WBW\Library\Pappers\Model\Attribute\IntegerPourcentageUsufruitTrait;
  */
 class DetailsPersonneMorale {
 
-    use IntegerPourcentageNueProprieteTrait;
-    use IntegerPourcentagePleineProprieteTrait;
-    use IntegerPourcentageUsufruitTrait;
+    use FloatPourcentageNueProprieteTrait;
+    use FloatPourcentagePleineProprieteTrait;
+    use FloatPourcentageUsufruitTrait;
 
     /**
      * Constructor.

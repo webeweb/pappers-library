@@ -11,15 +11,15 @@
 
 namespace WBW\Library\Pappers\Tests\Fixtures\Model\Attribute;
 
-use WBW\Library\Pappers\Model\Attribute\IntegerPourcentageNueProprieteTrait;
+use WBW\Library\Pappers\Model\Attribute\FloatPourcentagePleineProprieteTrait;
 
 /**
- * Test integer pourcentage nue propriété trait.
+ * Test float pourcentage pleine propriété trait.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute
  */
-class TestIntegerPourcentageNueProprieteTrait {
+class TestFloatPourcentagePleineProprieteTrait {
 
-    use IntegerPourcentageNueProprieteTrait;
+    use FloatPourcentagePleineProprieteTrait;
 }

@@ -11,15 +11,15 @@
 
 namespace WBW\Library\Pappers\Tests\Fixtures\Model\Attribute;
 
-use WBW\Library\Pappers\Model\Attribute\IntegerPourcentageUsufruitTrait;
+use WBW\Library\Pappers\Model\Attribute\FloatPourcentageUsufruitTrait;
 
 /**
- * Test integer pourcentage usufruit trait.
+ * Test float pourcentage usufruit trait.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute
  */
-class TestIntegerPourcentageUsufruitTrait {
+class TestFloatPourcentageUsufruitTrait {
 
-    use IntegerPourcentageUsufruitTrait;
+    use FloatPourcentageUsufruitTrait;
 }
