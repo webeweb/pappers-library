@@ -58,7 +58,7 @@ $ vendor/bin/phpunit
 ```
 
 > IMPORTANT NOTICE: To test the package with your API key, edit the
-> `tests/AbstractTestCase.php` file to find and replace "YOUR_API_TOKEN".
+> `tests/APIv2ProviderTest.php` file to find and replace "YOUR_API_TOKEN".
 
 ## License
 
