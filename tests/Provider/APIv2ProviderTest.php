@@ -98,7 +98,7 @@ class APIv2ProviderTest extends AbstractTestCase {
 
         // Set an Entreprise request mock.
         $request = new EntrepriseRequest();
-        $request->setSiret("44306184100047");
+        $request->setSiren("443061841");
 
         $obj = new APIv2Provider($this->apiToken);
 
@@ -187,7 +187,7 @@ class APIv2ProviderTest extends AbstractTestCase {
         $request->setRegion("11");
         $request->setCodePostal("75009");
         $request->setConventionCollective("1486");
-        $request->setCategorieJuridique("5499");
+        $request->setCategorieJuridique("5498");
         $request->setEntrepriseCessee(false);
         $request->setStatutRcs("inscrit");
 
@@ -218,7 +218,7 @@ class APIv2ProviderTest extends AbstractTestCase {
         $request->setRegion("11");
         $request->setCodePostal("75009");
         $request->setConventionCollective("1486");
-        $request->setCategorieJuridique("5499");
+        $request->setCategorieJuridique("5498");
         $request->setEntrepriseCessee(false);
         $request->setStatutRcs("inscrit");
 
