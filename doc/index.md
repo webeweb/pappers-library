@@ -90,7 +90,7 @@ Suggestions
 
 ```php
 // Create the API provider.
-$provider = new Apiv2Provider("YOUR_API_KEY");
+$provider = new Apiv2Provider();
 
 // Create a suggestions request.
 $request = new SuggestionsRequest();
