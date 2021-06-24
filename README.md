@@ -37,7 +37,8 @@ Composer documentation.
 
 ## Usage
 
-Read the [documentation](doc/index.md).
+Read the [documentation](doc/index.md). 
+You can also consult or execute sample scripts into dev folder.
 
 ## Testing
 
@@ -64,6 +65,9 @@ $ vendor/bin/phpunit
 
 `pappers-library` is released under the MIT License. See the bundled [LICENSE](LICENSE)
 file for details.
+
+Please note that the Pappers API is free for use, see their
+[API page](https://www.pappers.fr/api) for details.
 
 ## Donate
 
