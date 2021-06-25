@@ -40,7 +40,7 @@ foreach ($response->getResultats() as $current) {
     echo "Nom complet          : " . $current->getNomComplet() . "\n";
     echo "Forme juridique      : " . $current->getFormeJuridique() . "\n";
 
-    echo "Entreprises         :\n";
+    echo "Entreprises          :\n";
     foreach ($current->getEntreprises() as $e) {
         echo "\tSIREN                   : " . $e->getSiren() . "\n";
         echo "\tSIREN formaté           : " . $e->getSirenFormate() . "\n";

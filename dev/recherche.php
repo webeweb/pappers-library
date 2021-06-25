@@ -39,7 +39,7 @@ foreach ($response->getResultats() as $current) {
     echo "Nom                           : " . $current->getNom() . "\n";
     echo "Prénom                        : " . $current->getPrenom() . "\n";
     echo "Sexe                          : " . $current->getSexe() . "\n";
-    echo "Siège :\n";
+    echo "Siège                         :\n";
     echo "\tSIRET              : " . $current->getSiege()->getSiret() . "\n";
     echo "\tSIRET formaté      : " . $current->getSiege()->getSiretFormate() . "\n";
     echo "\tNIC                : " . $current->getSiege()->getNic() . "\n";

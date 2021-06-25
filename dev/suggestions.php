@@ -29,15 +29,15 @@ $response = $provider->suggestions($request);
 echo "Entreprises :\n";
 foreach ($response->getResultatsNomEntreprise() as $current) {
 
-    echo "SIREN                         : " . $current->getSiren() . "\n";
-    echo "SIREN formaté                 : " . $current->getSirenFormate() . "\n";
-    echo "Nom entreprise                : " . $current->getNomEntreprise() . "\n";
-    echo "Personne morale               : " . $current->getPersonneMorale() . "\n";
-    echo "Dénomination                  : " . $current->getDenomination() . "\n";
-    echo "Nom                           : " . $current->getNom() . "\n";
-    echo "Prénom                        : " . $current->getPrenom() . "\n";
-    echo "Sexe                          : " . $current->getSexe() . "\n";
-    echo "Siège :\n";
+    echo "SIREN                  : " . $current->getSiren() . "\n";
+    echo "SIREN formaté          : " . $current->getSirenFormate() . "\n";
+    echo "Nom entreprise         : " . $current->getNomEntreprise() . "\n";
+    echo "Personne morale        : " . $current->getPersonneMorale() . "\n";
+    echo "Dénomination           : " . $current->getDenomination() . "\n";
+    echo "Nom                    : " . $current->getNom() . "\n";
+    echo "Prénom                 : " . $current->getPrenom() . "\n";
+    echo "Sexe                   : " . $current->getSexe() . "\n";
+    echo "Siège                  :\n";
     echo "\tSIRET              : " . $current->getSiege()->getSiret() . "\n";
     echo "\tSIRET formaté      : " . $current->getSiege()->getSiretFormate() . "\n";
     echo "\tNIC                : " . $current->getSiege()->getNic() . "\n";
@@ -54,12 +54,12 @@ foreach ($response->getResultatsNomEntreprise() as $current) {
     echo "\tLatitude           : " . $current->getSiege()->getLatitude() . "\n";
     echo "\tLongitude          : " . $current->getSiege()->getLongitude() . "\n";
     echo "\tVilles             : " . implode(", ", $current->getVilles()) . "\n";
-    echo "Code NAF                      : " . $current->getCodeNaf() . "\n";
-    echo "Libellé code NAF              : " . $current->getLibelleCodeNaf() . "\n";
-    echo "Domaine activité              : " . $current->getDomaineActivite() . "\n";
-    echo "Objet social                  : " . $current->getObjetSocial() . "\n";
+    echo "Code NAF               : " . $current->getCodeNaf() . "\n";
+    echo "Libellé code NAF       : " . $current->getLibelleCodeNaf() . "\n";
+    echo "Domaine activité       : " . $current->getDomaineActivite() . "\n";
+    echo "Objet social           : " . $current->getObjetSocial() . "\n";
 
-    echo "Convention collective         :\n";
+    echo "Convention collective  :\n";
     foreach ($current->getConventionCollectives() as $c) {
 
         echo "\tNom       : " . $c->getNom() . "\n";
@@ -67,21 +67,21 @@ foreach ($response->getResultatsNomEntreprise() as $current) {
         echo "\tConfirmée : " . $c->getConfirmee() . "\n";
     }
 
-    echo "Date création                 : " . $current->getDateCreation() . "\n";
-    echo "Date création formatée        : " . $current->getDateCreationFormate() . "\n";
-    echo "Entreprise employeuse         : " . $current->getEntrepriseEmployeuse() . "\n";
-    echo "Entreprise cessée             : " . $current->getEntrepriseCessee() . "\n";
-    echo "Date cessation                : " . $current->getDateCessation() . "\n";
-    echo "Catégorie juridique           : " . $current->getCategorieJuridique() . "\n";
-    echo "Forme juridique               : " . $current->getFormeJuridique() . "\n";
-    echo "Tranche effectif              : " . $current->getTrancheEffectif() . "\n";
-    echo "Effectif                      : " . $current->getEffectif() . "\n";
-    echo "Effectif min.                 : " . $current->getEffectifMin() . "\n";
-    echo "Effectif max.                 : " . $current->getEffectifMax() . "\n";
-    echo "Année effectif                : " . $current->getAnneeEffectif() . "\n";
-    echo "Capital                       : " . $current->getCapital() . "\n";
-    echo "Chiffre affaires              : " . $current->getChiffreAffaires() . "\n";
-    echo "Résultat                      : " . $current->getResultat() . "\n";
-    echo "Effectifs finances            : " . $current->getEffectifsFinances() . "\n";
-    echo "Année finances                : " . $current->getAnneeFinances() . "\n";
+    echo "Date création          : " . $current->getDateCreation() . "\n";
+    echo "Date création formatée : " . $current->getDateCreationFormate() . "\n";
+    echo "Entreprise employeuse  : " . $current->getEntrepriseEmployeuse() . "\n";
+    echo "Entreprise cessée      : " . $current->getEntrepriseCessee() . "\n";
+    echo "Date cessation         : " . $current->getDateCessation() . "\n";
+    echo "Catégorie juridique    : " . $current->getCategorieJuridique() . "\n";
+    echo "Forme juridique        : " . $current->getFormeJuridique() . "\n";
+    echo "Tranche effectif       : " . $current->getTrancheEffectif() . "\n";
+    echo "Effectif               : " . $current->getEffectif() . "\n";
+    echo "Effectif min.          : " . $current->getEffectifMin() . "\n";
+    echo "Effectif max.          : " . $current->getEffectifMax() . "\n";
+    echo "Année effectif         : " . $current->getAnneeEffectif() . "\n";
+    echo "Capital                : " . $current->getCapital() . "\n";
+    echo "Chiffre affaires       : " . $current->getChiffreAffaires() . "\n";
+    echo "Résultat               : " . $current->getResultat() . "\n";
+    echo "Effectifs finances     : " . $current->getEffectifsFinances() . "\n";
+    echo "Année finances         : " . $current->getAnneeFinances() . "\n";
 }

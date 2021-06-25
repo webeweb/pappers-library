@@ -25,17 +25,17 @@ $request->setSiret("44306184100047");
 $response = $provider->entreprise($request);
 
 // Handle the response.
-echo "SIREN                                         : " . $response->getEntreprise()->getSiren() . "\n";
-echo "SIREN formaté                                 : " . $response->getEntreprise()->getSirenFormate() . "\n";
-echo "Diffusable                                    : " . $response->getEntreprise()->getDiffusable() . "\n";
-echo "Nom entreprise                                : " . $response->getEntreprise()->getNomEntreprise() . "\n";
-echo "Personne morale                               : " . $response->getEntreprise()->getPersonneMorale() . "\n";
-echo "Dénomination                                  : " . $response->getEntreprise()->getDenomination() . "\n";
-echo "Sigle                                         : " . $response->getEntreprise()->getSigle() . "\n";
-echo "Nom                                           : " . $response->getEntreprise()->getNom() . "\n";
-echo "Prénom                                        : " . $response->getEntreprise()->getPrenom() . "\n";
-echo "Sexe                                          : " . $response->getEntreprise()->getSexe() . "\n";
-echo "Siège :\n";
+echo "SIREN                                    : " . $response->getEntreprise()->getSiren() . "\n";
+echo "SIREN formaté                            : " . $response->getEntreprise()->getSirenFormate() . "\n";
+echo "Diffusable                               : " . $response->getEntreprise()->getDiffusable() . "\n";
+echo "Nom entreprise                           : " . $response->getEntreprise()->getNomEntreprise() . "\n";
+echo "Personne morale                          : " . $response->getEntreprise()->getPersonneMorale() . "\n";
+echo "Dénomination                             : " . $response->getEntreprise()->getDenomination() . "\n";
+echo "Sigle                                    : " . $response->getEntreprise()->getSigle() . "\n";
+echo "Nom                                      : " . $response->getEntreprise()->getNom() . "\n";
+echo "Prénom                                   : " . $response->getEntreprise()->getPrenom() . "\n";
+echo "Sexe                                     : " . $response->getEntreprise()->getSexe() . "\n";
+echo "Siège                                    :\n";
 echo "\tSIRET                   : " . $response->getEntreprise()->getSiege()->getSiret() . "\n";
 echo "\tSIRET formaté           : " . $response->getEntreprise()->getSiege()->getSiretFormate() . "\n";
 echo "\tNIC                     : " . $response->getEntreprise()->getSiege()->getNic() . "\n";
@@ -64,13 +64,13 @@ echo "\tEtablissement cessé     : " . $response->getEntreprise()->getSiege()->g
 echo "\tDate cessation          : " . $response->getEntreprise()->getSiege()->getDateCessation() . "\n";
 echo "\tDomiciliation           : " . $response->getEntreprise()->getSiege()->getDomiciliation() . "\n";
 echo "\tSiège                   : " . $response->getEntreprise()->getSiege()->getSiege() . "\n";
-echo "R.N.M.                                        : " . $response->getEntreprise()->getRnm() . "\n";
-echo "Code NAF                                      : " . $response->getEntreprise()->getCodeNaf() . "\n";
-echo "Libellé code NAF                              : " . $response->getEntreprise()->getLibelleCodeNaf() . "\n";
-echo "Domaine activité                              : " . $response->getEntreprise()->getDomaineActivite() . "\n";
-echo "Objet social                                  : " . $response->getEntreprise()->getObjetSocial() . "\n";
+echo "R.N.M.                                   : " . $response->getEntreprise()->getRnm() . "\n";
+echo "Code NAF                                 : " . $response->getEntreprise()->getCodeNaf() . "\n";
+echo "Libellé code NAF                         : " . $response->getEntreprise()->getLibelleCodeNaf() . "\n";
+echo "Domaine activité                         : " . $response->getEntreprise()->getDomaineActivite() . "\n";
+echo "Objet social                             : " . $response->getEntreprise()->getObjetSocial() . "\n";
 
-echo "Convention collective                         :\n";
+echo "Convention collective                    :\n";
 foreach ($response->getEntreprise()->getConventionCollectives() as $current) {
 
     echo "\tNom       : " . $current->getNom() . "\n";
@@ -78,42 +78,42 @@ foreach ($response->getEntreprise()->getConventionCollectives() as $current) {
     echo "\tConfirmée : " . $current->getConfirmee() . "\n";
 }
 
-echo "Date création                                 : " . $response->getEntreprise()->getDateCreation() . "\n";
-echo "Date création formatée                        : " . $response->getEntreprise()->getDateCreationFormate() . "\n";
-echo "Entreprise cessée                             : " . $response->getEntreprise()->getEntrepriseCessee() . "\n";
-echo "Date cessation                                : " . $response->getEntreprise()->getDateCessation() . "\n";
-echo "Date cessation formatée                       : " . $response->getEntreprise()->getDateCessationFormatee() . "\n";
-echo "Associé unique                                : " . $response->getEntreprise()->getAssocieUnique() . "\n";
-echo "Catégorie juridique                           : " . $response->getEntreprise()->getCategorieJuridique() . "\n";
-echo "Forme juridique                               : " . $response->getEntreprise()->getFormeJuridique() . "\n";
-echo "Entreprise employeuse                         : " . $response->getEntreprise()->getEntrepriseEmployeuse() . "\n";
-echo "Effectif                                      : " . $response->getEntreprise()->getEffectif() . "\n";
-echo "Effectif min.                                 : " . $response->getEntreprise()->getEffectifMin() . "\n";
-echo "Effectif max.                                 : " . $response->getEntreprise()->getEffectifMax() . "\n";
-echo "Tranche effectif                              : " . $response->getEntreprise()->getTrancheEffectif() . "\n";
-echo "Année effectif                                : " . $response->getEntreprise()->getAnneeEffectif() . "\n";
-echo "Capital                                       : " . $response->getEntreprise()->getCapital() . "\n";
-echo "Capital formaté                               : " . $response->getEntreprise()->getCapitalFormate() . "\n";
-echo "Capital actuel si variable                    : " . $response->getEntreprise()->getCapitalActuelVariable() . "\n";
-echo "Devise capital                                : " . $response->getEntreprise()->getDeviseCapital() . "\n";
-echo "Date clôture exercice                         : " . $response->getEntreprise()->getDateClotureExercice() . "\n";
-echo "Date clôture exercice exceptionnelle          : " . $response->getEntreprise()->getDateClotureExerciceExceptionnelle() . "\n";
-echo "Prochaine date clôture exercice               : " . $response->getEntreprise()->getProchaineDateClotureExercice() . "\n";
-echo "Prochaine date clôture exercice formatée      : " . $response->getEntreprise()->getProchaineDateClotureExerciceFormate() . "\n";
-echo "Economie sociale solidaire                    : " . $response->getEntreprise()->getEconomieSocialeSolidaire() . "\n";
-echo "Durée personne moral                          : " . $response->getEntreprise()->getDureePersonneMorale() . "\n";
-echo "Dernière mise à jour SIRENE                   : " . $response->getEntreprise()->getDerniereMiseJourSirene() . "\n";
-echo "Dernière mise à jour R.C.S.                   : " . $response->getEntreprise()->getDerniereMiseJourRcs() . "\n";
-echo "Dernier traitement                            : " . $response->getEntreprise()->getDernierTraitement() . "\n";
-echo "Statut R.C.S.                                 : " . $response->getEntreprise()->getStatutRcs() . "\n";
-echo "Greffe                                        : " . $response->getEntreprise()->getGreffe() . "\n";
-echo "Numéro R.C.S.                                 : " . $response->getEntreprise()->getNumeroRcs() . "\n";
-echo "Date immatriculation R.C.S.                   : " . $response->getEntreprise()->getDateImmatriculationRcs() . "\n";
-echo "Date première immatriculation R.C.S.          : " . $response->getEntreprise()->getDatePremiereImmatriculationRcs() . "\n";
-echo "Date radiation R.C.S.                         : " . $response->getEntreprise()->getDateRadiationRcs() . "\n";
-echo "Numéro T.V.A. intracommunautaire              : " . $response->getEntreprise()->getNumeroTvaIntracommunautaire() . "\n";
+echo "Date création                            : " . $response->getEntreprise()->getDateCreation() . "\n";
+echo "Date création formatée                   : " . $response->getEntreprise()->getDateCreationFormate() . "\n";
+echo "Entreprise cessée                        : " . $response->getEntreprise()->getEntrepriseCessee() . "\n";
+echo "Date cessation                           : " . $response->getEntreprise()->getDateCessation() . "\n";
+echo "Date cessation formatée                  : " . $response->getEntreprise()->getDateCessationFormatee() . "\n";
+echo "Associé unique                           : " . $response->getEntreprise()->getAssocieUnique() . "\n";
+echo "Catégorie juridique                      : " . $response->getEntreprise()->getCategorieJuridique() . "\n";
+echo "Forme juridique                          : " . $response->getEntreprise()->getFormeJuridique() . "\n";
+echo "Entreprise employeuse                    : " . $response->getEntreprise()->getEntrepriseEmployeuse() . "\n";
+echo "Effectif                                 : " . $response->getEntreprise()->getEffectif() . "\n";
+echo "Effectif min.                            : " . $response->getEntreprise()->getEffectifMin() . "\n";
+echo "Effectif max.                            : " . $response->getEntreprise()->getEffectifMax() . "\n";
+echo "Tranche effectif                         : " . $response->getEntreprise()->getTrancheEffectif() . "\n";
+echo "Année effectif                           : " . $response->getEntreprise()->getAnneeEffectif() . "\n";
+echo "Capital                                  : " . $response->getEntreprise()->getCapital() . "\n";
+echo "Capital formaté                          : " . $response->getEntreprise()->getCapitalFormate() . "\n";
+echo "Capital actuel si variable               : " . $response->getEntreprise()->getCapitalActuelVariable() . "\n";
+echo "Devise capital                           : " . $response->getEntreprise()->getDeviseCapital() . "\n";
+echo "Date clôture exercice                    : " . $response->getEntreprise()->getDateClotureExercice() . "\n";
+echo "Date clôture exercice exceptionnelle     : " . $response->getEntreprise()->getDateClotureExerciceExceptionnelle() . "\n";
+echo "Prochaine date clôture exercice          : " . $response->getEntreprise()->getProchaineDateClotureExercice() . "\n";
+echo "Prochaine date clôture exercice formatée : " . $response->getEntreprise()->getProchaineDateClotureExerciceFormate() . "\n";
+echo "Economie sociale solidaire               : " . $response->getEntreprise()->getEconomieSocialeSolidaire() . "\n";
+echo "Durée personne moral                     : " . $response->getEntreprise()->getDureePersonneMorale() . "\n";
+echo "Dernière mise à jour SIRENE              : " . $response->getEntreprise()->getDerniereMiseJourSirene() . "\n";
+echo "Dernière mise à jour R.C.S.              : " . $response->getEntreprise()->getDerniereMiseJourRcs() . "\n";
+echo "Dernier traitement                       : " . $response->getEntreprise()->getDernierTraitement() . "\n";
+echo "Statut R.C.S.                            : " . $response->getEntreprise()->getStatutRcs() . "\n";
+echo "Greffe                                   : " . $response->getEntreprise()->getGreffe() . "\n";
+echo "Numéro R.C.S.                            : " . $response->getEntreprise()->getNumeroRcs() . "\n";
+echo "Date immatriculation R.C.S.              : " . $response->getEntreprise()->getDateImmatriculationRcs() . "\n";
+echo "Date première immatriculation R.C.S.     : " . $response->getEntreprise()->getDatePremiereImmatriculationRcs() . "\n";
+echo "Date radiation R.C.S.                    : " . $response->getEntreprise()->getDateRadiationRcs() . "\n";
+echo "Numéro T.V.A. intracommunautaire         : " . $response->getEntreprise()->getNumeroTvaIntracommunautaire() . "\n";
 
-echo "Etablissements                                :\n";
+echo "Etablissements                           :\n";
 foreach ($response->getEntreprise()->getEtablissements() as $current) {
 
     echo "\tSIRET                   : " . $current->getSiret() . "\n";
@@ -146,7 +146,7 @@ foreach ($response->getEntreprise()->getEtablissements() as $current) {
     echo "\tSiège                   : " . $current->getSiege() . "\n";
 }
 
-echo "Finances                                      :\n";
+echo "Finances                                 :\n";
 foreach ($response->getEntreprise()->getFinances() as $current) {
 
     echo "\tAnnée                 : " . $current->getAnnee() . "\n";
@@ -157,7 +157,7 @@ foreach ($response->getEntreprise()->getFinances() as $current) {
     echo "\tEffectif              : " . $current->getEffectif() . "\n";
 }
 
-echo "Représentants                                 :\n";
+echo "Représentants                            :\n";
 foreach ($response->getEntreprise()->getRepresentants() as $current) {
 
     echo "\tQualité                 : " . $current->getQualite() . "\n";
@@ -180,7 +180,7 @@ foreach ($response->getEntreprise()->getRepresentants() as $current) {
     echo "\tPays                    : " . $current->getPays() . "\n";
 }
 
-echo "Bénéficiaires effectifs                       :\n";
+echo "Bénéficiaires effectifs                  :\n";
 foreach ($response->getEntreprise()->getBeneficiairesEffectifs() as $current) {
 
     echo "\tDate greffe                                          : " . $current->getDateGreffe() . "\n";
@@ -214,13 +214,13 @@ foreach ($response->getEntreprise()->getBeneficiairesEffectifs() as $current) {
     echo "\tDétails votes indirectes                             : [...]\n";
     echo "\tDétails société gestion                              : [...]\n";
     echo "\tDétention pouvoir A.G.                               : " . $current->getDetentionPouvoirDecisionAg() . "\n";
-    echo "\tDétention pouvoir nom membre conseil administartion  : " . $current->getDetentionPouvoirNomMembreConseilAdministration() . "\n";
+    echo "\tDétention pouvoir nom membre conseil administration  : " . $current->getDetentionPouvoirNomMembreConseilAdministration() . "\n";
     echo "\tDétention autres moyens contrôle                     : " . $current->getDetentionAutresMoyensControle() . "\n";
     echo "\tBénéficiaire représentant légal                      : " . $current->getBeneficiaireRepresentantLegal() . "\n";
     echo "\tReprésentant légal placement sans gestion délégation : " . $current->getRepresentantLegalPlacementSansGestionDelegation() . "\n";
 }
 
-echo "Dépôts actes                                  :\n";
+echo "Dépôts actes                             :\n";
 foreach ($response->getEntreprise()->getDepotsActes() as $current) {
 
     echo "\tDate dépôt         : " . $current->getDateDepot() . "\n";
@@ -231,7 +231,7 @@ foreach ($response->getEntreprise()->getDepotsActes() as $current) {
     echo "\tActes              : [...]\n";
 }
 
-echo "Comptes                                       :\n";
+echo "Comptes                                  :\n";
 foreach ($response->getEntreprise()->getComptes() as $current) {
 
     echo "\tDate dépôt                      : " . $current->getDateDepot() . "\n";
@@ -246,7 +246,7 @@ foreach ($response->getEntreprise()->getComptes() as $current) {
     echo "\tToken                           : " . $current->getToken() . "\n";
 }
 
-echo "Publications BODACC                           :\n";
+echo "Publications BODACC                      :\n";
 foreach ($response->getEntreprise()->getPublicationsBodacc() as $current) {
 
     echo "\tNuméro parution        : " . $current->getNumeroParution() . "\n";
@@ -275,7 +275,7 @@ foreach ($response->getEntreprise()->getPublicationsBodacc() as $current) {
     echo "\tDescription            : " . $current->getDescription() . "\n";
 }
 
-echo "Procédures collectives                        :\n";
+echo "Procédures collectives                   :\n";
 foreach ($response->getEntreprise()->getProceduresCollectives() as $current) {
 
     echo "\tType                : " . $current->getType() . "\n";
@@ -284,9 +284,9 @@ foreach ($response->getEntreprise()->getProceduresCollectives() as $current) {
     echo "\tPublications BODACC : [...]\n";
 }
 
-echo "Procédure collective existe                   : " . $response->getEntreprise()->getProcedureCollectiveExiste() . "\n";
-echo "Procédure collective en cours                 : " . $response->getEntreprise()->getProcedureCollectiveEnCours() . "\n";
-echo "Derniers statuts                              :\n";
+echo "Procédure collective existe              : " . $response->getEntreprise()->getProcedureCollectiveExiste() . "\n";
+echo "Procédure collective en cours            : " . $response->getEntreprise()->getProcedureCollectiveEnCours() . "\n";
+echo "Derniers statuts                         :\n";
 echo "\tDate dépôt          : " . $response->getEntreprise()->getDerniersStatuts()->getDateDepot() . "\n";
 echo "\tDate dépôt formatée : " . $response->getEntreprise()->getDerniersStatuts()->getDateDepotFormatee() . "\n";
 echo "\tDisponible          : " . $response->getEntreprise()->getDerniersStatuts()->getDisponible() . "\n";
