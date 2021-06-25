@@ -50,7 +50,7 @@ class JsonDeserializer {
      */
     protected static function deserializeActe(?array $data): ?Acte {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -71,7 +71,7 @@ class JsonDeserializer {
      */
     protected static function deserializeBeneficiaireEffectif(?array $data): ?BeneficiaireEffectif {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -130,7 +130,7 @@ class JsonDeserializer {
      */
     protected static function deserializeCompte(?array $data): ?Compte {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -157,7 +157,7 @@ class JsonDeserializer {
      */
     protected static function deserializeConventionCollective(?array $data): ?ConventionCollective {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -177,7 +177,7 @@ class JsonDeserializer {
      */
     protected static function deserializeDepotActe(?array $data): ?DepotActe {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -203,7 +203,7 @@ class JsonDeserializer {
      */
     protected static function deserializeDetailsDirects(?array $data): ?DetailsDirects {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -223,7 +223,7 @@ class JsonDeserializer {
      */
     protected static function deserializeDetailsIndirects(?array $data): ?DetailsIndirects {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -247,7 +247,7 @@ class JsonDeserializer {
      */
     protected static function deserializeDetailsIndivision(?array $data): ?DetailsIndivision {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -267,7 +267,7 @@ class JsonDeserializer {
      */
     protected static function deserializeDetailsPartsVocationTitulaire(?array $data): ?DetailsPartsVocationTitulaire {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -291,7 +291,7 @@ class JsonDeserializer {
      */
     protected static function deserializeDetailsPersonneMorale(?array $data): ?DetailsPersonneMorale {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -311,7 +311,7 @@ class JsonDeserializer {
      */
     protected static function deserializeDetailsSocieteGestion(?array $data): ?DetailsSocieteGestion {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -334,7 +334,7 @@ class JsonDeserializer {
      */
     public static function deserializeDocument(?array $data): ?Document {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -366,7 +366,7 @@ class JsonDeserializer {
      */
     public static function deserializeEntreprise(?array $data): ?Entreprise {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
         $siege                  = static::deserializeEtablissement(ArrayHelper::get($data, "siege", []));
@@ -504,7 +504,7 @@ class JsonDeserializer {
      */
     protected static function deserializeEtablissement(?array $data): ?Etablissement {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -549,7 +549,7 @@ class JsonDeserializer {
      */
     protected static function deserializeExtraitImmatriculation(?array $data): ?ExtraitImmatriculation {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -567,7 +567,7 @@ class JsonDeserializer {
      */
     protected static function deserializeFinance(?array $data): ?Finance {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -590,7 +590,7 @@ class JsonDeserializer {
      */
     protected static function deserializeProcedureCollective(?array $data): ?ProcedureCollective {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -614,7 +614,7 @@ class JsonDeserializer {
      */
     public static function deserializePublicationBodacc(?array $data): ?PublicationBodacc {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -662,7 +662,7 @@ class JsonDeserializer {
      */
     public static function deserializeRepresentant(?array $data): ?Representant {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -708,7 +708,7 @@ class JsonDeserializer {
      */
     protected static function deserializeStatuts(?array $data): ?Statuts {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -734,7 +734,7 @@ class JsonDeserializer {
      */
     protected static function deserializeTitre(?array $data): ?Titre {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
