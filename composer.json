@@ -1,7 +1,7 @@
 {
     "name": "webeweb/pappers-library",
     "type": "library",
-    "description": "",
+    "description": "Integrates Pappers API with your projects",
     "keywords": [
         "API",
         "library",
