@@ -11,7 +11,7 @@
 
 namespace WBW\Library\Pappers\Tests;
 
-use PHPUnit\Framework\TestCase as BaseTestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Abstract test case.
@@ -20,6 +20,6 @@ use PHPUnit\Framework\TestCase as BaseTestCase;
  * @package WBW\Library\Pappers\Tests
  * @abstract
  */
-abstract class AbstractTestCase extends BaseTestCase {
+abstract class AbstractTestCase extends TestCase {
 
 }
