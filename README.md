@@ -9,7 +9,7 @@ pappers-library
 [![License](https://img.shields.io/packagist/l/webeweb/pappers-library.svg?style=flat-square)](https://packagist.org/packages/webeweb/pappers-library)
 [![composer.lock](https://img.shields.io/badge/.lock-uncommited-important.svg?style=flat-square)](https://packagist.org/packages/webeweb/pappers-library)
 
-Integrates Pappers API with your projects.
+Integrate Pappers API with your projects.
 
 > IMPORTANT NOTICE: This package is still under development. Any changes will be
 > done without prior notice to consumers of this package. Of course this code
