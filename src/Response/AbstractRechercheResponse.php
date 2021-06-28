@@ -11,7 +11,7 @@
 
 namespace WBW\Library\Pappers\Response;
 
-use WBW\Library\Core\Model\Attribute\IntegerPageTrait;
+use WBW\Library\Traits\Integers\IntegerPageTrait;
 
 /**
  * Abstract recherche response.

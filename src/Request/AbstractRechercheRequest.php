@@ -11,14 +11,14 @@
 
 namespace WBW\Library\Pappers\Request;
 
-use WBW\Library\Core\Model\Attribute\IntegerPageTrait;
 use WBW\Library\Pappers\Model\Attribute\BooleanEntrepriseCesseeTrait;
 use WBW\Library\Pappers\Model\Attribute\StringCategorieJuridiqueTrait;
 use WBW\Library\Pappers\Model\Attribute\StringCodeNafTrait;
 use WBW\Library\Pappers\Model\Attribute\StringCodePostalTrait;
 use WBW\Library\Pappers\Model\Attribute\StringObjetSocialTrait;
-use WBW\Library\Pappers\Model\Attribute\StringQTrait;
 use WBW\Library\Pappers\Model\Attribute\StringStatutRcsTrait;
+use WBW\Library\Traits\Integers\IntegerPageTrait;
+use WBW\Library\Traits\Strings\StringQTrait;
 
 /**
  * Abstract recherche request.

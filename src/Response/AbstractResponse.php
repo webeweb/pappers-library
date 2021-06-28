@@ -11,7 +11,7 @@
 
 namespace WBW\Library\Pappers\Response;
 
-use WBW\Library\Core\Model\Attribute\StringRawResponseTrait;
+use WBW\Library\Traits\Strings\StringRawResponseTrait;
 
 /**
  * Abstract response.

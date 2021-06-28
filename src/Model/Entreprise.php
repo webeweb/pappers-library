@@ -29,7 +29,6 @@ use WBW\Library\Pappers\Model\Attribute\StringDeviseCapitalTrait;
 use WBW\Library\Pappers\Model\Attribute\StringEffectifTrait;
 use WBW\Library\Pappers\Model\Attribute\StringFormeJuridiqueTrait;
 use WBW\Library\Pappers\Model\Attribute\StringGreffeTrait;
-use WBW\Library\Pappers\Model\Attribute\StringMentionTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomEntrepriseTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringObjetSocialTrait;
@@ -38,6 +37,7 @@ use WBW\Library\Pappers\Model\Attribute\StringSigleTrait;
 use WBW\Library\Pappers\Model\Attribute\StringSirenTrait;
 use WBW\Library\Pappers\Model\Attribute\StringStatutRcsTrait;
 use WBW\Library\Pappers\Model\Attribute\StringTrancheEffectifTrait;
+use WBW\Library\Traits\Strings\StringMentionTrait;
 
 /**
  * Entreprise.

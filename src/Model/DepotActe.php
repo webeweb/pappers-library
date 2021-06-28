@@ -15,7 +15,7 @@ use WBW\Library\Pappers\Model\Attribute\BooleanDisponibleTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateDepotFormateeTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateDepotTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomFichierPdfTrait;
-use WBW\Library\Pappers\Model\Attribute\StringTokenTrait;
+use WBW\Library\Traits\Strings\StringTokenTrait;
 
 /**
  * Dépôt acte.

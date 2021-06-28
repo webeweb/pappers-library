@@ -11,8 +11,6 @@
 
 namespace WBW\Library\Pappers\Model;
 
-use WBW\Library\Core\Model\Attribute\StringDescriptionTrait;
-use WBW\Library\Core\Model\Attribute\StringTypeTrait;
 use WBW\Library\Pappers\Model\Attribute\BooleanPersonneMoraleTrait;
 use WBW\Library\Pappers\Model\Attribute\EntrepriseEntrepriseTrait;
 use WBW\Library\Pappers\Model\Attribute\IntegerCapitalTrait;
@@ -27,6 +25,8 @@ use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPseudonymeTrait;
 use WBW\Library\Pappers\Model\Attribute\StringSigleTrait;
 use WBW\Library\Pappers\Model\Attribute\StringSirenTrait;
+use WBW\Library\Traits\Strings\StringDescriptionTrait;
+use WBW\Library\Traits\Strings\StringTypeTrait;
 
 /**
  * Publication BODACC.

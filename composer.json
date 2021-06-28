@@ -1,7 +1,7 @@
 {
     "name": "webeweb/pappers-library",
     "type": "library",
-    "description": "Integrates Pappers API with your projects",
+    "description": "Integrate Pappers API with your projects",
     "keywords": [
         "API",
         "library",
@@ -21,7 +21,8 @@
         "ext-json": "*",
         "guzzlehttp/guzzle": "^6.0",
         "psr/log": "^1.0",
-        "webeweb/core-library": "^v6.10"
+        "webeweb/core-library": "^v6.10",
+        "webeweb/traits-library": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.0|^9.0"

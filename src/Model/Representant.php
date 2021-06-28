@@ -19,7 +19,6 @@ use WBW\Library\Pappers\Model\Attribute\StringCodePostalTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateNaissanceFormateeTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDenominationTrait;
 use WBW\Library\Pappers\Model\Attribute\StringFormeJuridiqueTrait;
-use WBW\Library\Pappers\Model\Attribute\StringMentionTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNationaliteTrait;
 use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringPaysNaissanceTrait;
@@ -28,6 +27,7 @@ use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
 use WBW\Library\Pappers\Model\Attribute\StringSirenTrait;
 use WBW\Library\Pappers\Model\Attribute\StringVilleNaissanceTrait;
 use WBW\Library\Pappers\Model\Attribute\StringVilleTrait;
+use WBW\Library\Traits\Strings\StringMentionTrait;
 
 /**
  * Représentant.

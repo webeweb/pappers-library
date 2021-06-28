@@ -11,12 +11,12 @@
 
 namespace WBW\Library\Pappers\Model;
 
-use WBW\Library\Core\Model\Attribute\StringTypeTrait;
 use WBW\Library\Pappers\Model\Attribute\ArrayMentionsTrait;
 use WBW\Library\Pappers\Model\Attribute\EntrepriseEntrepriseTrait;
 use WBW\Library\Pappers\Model\Attribute\StringDateDepotTrait;
 use WBW\Library\Pappers\Model\Attribute\StringSirenTrait;
-use WBW\Library\Pappers\Model\Attribute\StringTokenTrait;
+use WBW\Library\Traits\Strings\StringTokenTrait;
+use WBW\Library\Traits\Strings\StringTypeTrait;
 
 /**
  * Document.

@@ -11,7 +11,7 @@
 
 namespace WBW\Library\Pappers\Request;
 
-use WBW\Library\Pappers\Model\Attribute\StringQTrait;
+use WBW\Library\Traits\Strings\StringQTrait;
 
 /**
  * Suggestions request.
