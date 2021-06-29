@@ -23,19 +23,6 @@ use WBW\Library\Pappers\Tests\Fixtures\Response\TestRechercheResponse;
 class AbstractRechercheResponseTest extends AbstractTestCase {
 
     /**
-     * Tests the setTotal() method.
-     *
-     * @return void
-     */
-    public function testSetTotal(): void {
-
-        $obj = new TestRechercheResponse();
-
-        $obj->setTotal(1);
-        $this->assertEquals(1, $obj->getTotal());
-    }
-
-    /**
      * Tests the __construct() method.
      *
      * @return void

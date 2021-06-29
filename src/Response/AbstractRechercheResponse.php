@@ -12,6 +12,7 @@
 namespace WBW\Library\Pappers\Response;
 
 use WBW\Library\Traits\Integers\IntegerPageTrait;
+use WBW\Library\Traits\Integers\IntegerTotalTrait;
 
 /**
  * Abstract recherche response.
@@ -23,38 +24,12 @@ use WBW\Library\Traits\Integers\IntegerPageTrait;
 abstract class AbstractRechercheResponse extends AbstractResponse {
 
     use IntegerPageTrait;
-
-    /**
-     * Total.
-     *
-     * @var int|null
-     */
-    private $total;
+    use IntegerTotalTrait;
 
     /**
      * Constructor.
      */
     protected function __construct() {
         parent::__construct();
-    }
-
-    /**
-     * Get the total.
-     *
-     * @return int|null Returns the total.
-     */
-    public function getTotal(): ?int {
-        return $this->total;
-    }
-
-    /**
-     * Set the total.
-     *
-     * @param int|null $total The total.
-     * @return AbstractRechercheResponse Returns this recherche response.
-     */
-    public function setTotal(?int $total): AbstractRechercheResponse {
-        $this->total = $total;
-        return $this;
     }
 }
