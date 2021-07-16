@@ -11,7 +11,7 @@
 
 namespace WBW\Library\Pappers\Response;
 
-use WBW\Library\Traits\Strings\StringRawResponseTrait;
+use WBW\Library\Provider\Response\AbstractResponse as BaseResponse;
 
 /**
  * Abstract response.
@@ -20,9 +20,7 @@ use WBW\Library\Traits\Strings\StringRawResponseTrait;
  * @package WBW\Library\Pappers\Response
  * @abstract
  */
-abstract class AbstractResponse {
-
-    use StringRawResponseTrait;
+abstract class AbstractResponse extends BaseResponse {
 
     /**
      * Constructor.
