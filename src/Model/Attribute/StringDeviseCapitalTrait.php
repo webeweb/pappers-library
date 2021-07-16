@@ -12,7 +12,7 @@
 namespace WBW\Library\Pappers\Model\Attribute;
 
 /**
- * String devise captial trait.
+ * String devise capital trait.
  *
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\Pappers\Model\Attribute
@@ -20,25 +20,25 @@ namespace WBW\Library\Pappers\Model\Attribute;
 trait StringDeviseCapitalTrait {
 
     /**
-     * Devise captial.
+     * Devise capital.
      *
      * @var string|null
      */
     private $deviseCapital;
 
     /**
-     * Get the devise captial.
+     * Get the devise capital.
      *
-     * @return string|null Returns the devise captial.
+     * @return string|null Returns the devise capital.
      */
     public function getDeviseCapital(): ?string {
         return $this->deviseCapital;
     }
 
     /**
-     * Set the devise captial.
+     * Set the devise capital.
      *
-     * @param string|null $deviseCapital The devise captial.
+     * @param string|null $deviseCapital The devise capital.
      * @return self Returns this instance.
      */
     public function setDeviseCapital(?string $deviseCapital): self {
