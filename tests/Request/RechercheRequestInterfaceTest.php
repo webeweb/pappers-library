@@ -34,6 +34,10 @@ class RechercheRequestInterfaceTest extends AbstractTestCase {
         $this->assertEquals("entreprises", RechercheRequestInterface::BASE_ENTREPRISES);
         $this->assertEquals("publications", RechercheRequestInterface::BASE_PUBLICATIONS);
 
+        $this->assertEquals("csv", RechercheRequestInterface::EXPORT_CSV);
+        $this->assertEquals("json", RechercheRequestInterface::EXPORT_JSON);
+        $this->assertEquals("xlsx", RechercheRequestInterface::EXPORT_XLSX);
+
         $this->assertEquals("Création", RechercheRequestInterface::TYPE_PUBLICATION_CREATION);
         $this->assertEquals("Dépôt des comptes", RechercheRequestInterface::TYPE_PUBLICATION_DEPOT_COMPTES);
         $this->assertEquals("Immatriculation", RechercheRequestInterface::TYPE_PUBLICATION_IMMATRICULATION);

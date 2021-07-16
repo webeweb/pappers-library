@@ -36,6 +36,45 @@ class RechercheRequestTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the setCurseur() method.
+     *
+     * @return void
+     */
+    public function testSetCurseur(): void {
+
+        $obj = new RechercheRequest();
+
+        $obj->setCurseur("curseur");
+        $this->assertEquals("curseur", $obj->getCurseur());
+    }
+
+    /**
+     * Tests the setExport() method.
+     *
+     * @return void
+     */
+    public function testSetExport(): void {
+
+        $obj = new RechercheRequest();
+
+        $obj->setExport("export");
+        $this->assertEquals("export", $obj->getExport());
+    }
+
+    /**
+     * Tests the setParCurseur() method.
+     *
+     * @return void
+     */
+    public function testSetParCurseur(): void {
+
+        $obj = new RechercheRequest();
+
+        $obj->setParCurseur(1);
+        $this->assertEquals(1, $obj->getParCurseur());
+    }
+
+    /**
      * Tests the __construct() method.
      *
      * @return void
@@ -49,5 +88,8 @@ class RechercheRequestTest extends AbstractTestCase {
         $this->assertEquals(RechercheRequest::RESOURCES_PATH, $obj->getResourcePath());
 
         $this->assertNull($obj->getBases());
+        $this->assertNull($obj->getCurseur());
+        $this->assertNull($obj->getExport());
+        $this->assertNull($obj->getParCurseur());
     }
 }

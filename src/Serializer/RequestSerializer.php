@@ -157,6 +157,9 @@ class RequestSerializer {
         $result = static::serializeAbstractRechercheRequest($request);
 
         ArrayHelper::set($result, "bases", $request->getBases(), [null, RechercheRequest::BASE_ENTREPRISES]);
+        ArrayHelper::set($result, "curseur", $request->getCurseur(), [null]);
+        ArrayHelper::set($result, "par_curseur", $request->getParCurseur(), [null, 100]);
+        ArrayHelper::set($result, "export", $request->getExport(), [null]);
 
         return $result;
     }

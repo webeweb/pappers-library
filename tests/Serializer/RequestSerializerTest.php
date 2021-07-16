@@ -78,8 +78,8 @@ class RequestSerializerTest extends AbstractTestCase {
 
         // Set a Recherche dirigeants request mock.
         $arg = new RechercheDirigeantsRequest();
-        $arg->setParPage(1);
         $arg->setPage(2);
+        $arg->setParPage(1);
         $arg->setPrecision("precision");
         $arg->setQ("q");
         $arg->setCodeNaf("codeNaf");
@@ -116,8 +116,8 @@ class RequestSerializerTest extends AbstractTestCase {
         $res = RequestSerializer::serializeRechercheDirigeantsRequest($arg);
         $this->assertCount(34, $res);
 
-        $this->assertEquals(1, $res["par_page"]);
         $this->assertEquals(2, $res["page"]);
+        $this->assertEquals(1, $res["par_page"]);
         $this->assertEquals("precision", $res["precision"]);
         $this->assertEquals("q", $res["q"]);
         $this->assertEquals("codeNaf", $res["code_naf"]);
@@ -161,8 +161,8 @@ class RequestSerializerTest extends AbstractTestCase {
 
         // Set a Recherche documents request mock.
         $arg = new RechercheDocumentsRequest();
-        $arg->setParPage(1);
         $arg->setPage(2);
+        $arg->setParPage(1);
         $arg->setPrecision("precision");
         $arg->setQ("q");
         $arg->setCodeNaf("codeNaf");
@@ -199,8 +199,8 @@ class RequestSerializerTest extends AbstractTestCase {
         $res = RequestSerializer::serializeRechercheDocumentsRequest($arg);
         $this->assertCount(34, $res);
 
-        $this->assertEquals(1, $res["par_page"]);
         $this->assertEquals(2, $res["page"]);
+        $this->assertEquals(1, $res["par_page"]);
         $this->assertEquals("precision", $res["precision"]);
         $this->assertEquals("q", $res["q"]);
         $this->assertEquals("codeNaf", $res["code_naf"]);
@@ -244,8 +244,8 @@ class RequestSerializerTest extends AbstractTestCase {
 
         // Set a Recherche publications request mock.
         $arg = new RecherchePublicationsRequest();
-        $arg->setParPage(1);
         $arg->setPage(2);
+        $arg->setParPage(1);
         $arg->setPrecision("precision");
         $arg->setQ("q");
         $arg->setCodeNaf("codeNaf");
@@ -282,8 +282,8 @@ class RequestSerializerTest extends AbstractTestCase {
         $res = RequestSerializer::serializeRecherchePublicationsRequest($arg);
         $this->assertCount(34, $res);
 
-        $this->assertEquals(1, $res["par_page"]);
         $this->assertEquals(2, $res["page"]);
+        $this->assertEquals(1, $res["par_page"]);
         $this->assertEquals("precision", $res["precision"]);
         $this->assertEquals("q", $res["q"]);
         $this->assertEquals("codeNaf", $res["code_naf"]);
@@ -327,10 +327,13 @@ class RequestSerializerTest extends AbstractTestCase {
 
         // Set a Recherche request mock.
         $arg = new RechercheRequest();
-        $arg->setParPage(1);
         $arg->setPage(2);
+        $arg->setParPage(1);
+        $arg->setCurseur("*");
+        $arg->setParCurseur(1000);
         $arg->setBases("bases");
         $arg->setPrecision("precision");
+        $arg->setExport("export");
         $arg->setQ("q");
         $arg->setCodeNaf("codeNaf");
         $arg->setDepartement("departement");
@@ -364,12 +367,15 @@ class RequestSerializerTest extends AbstractTestCase {
         $arg->setDatePublicationMax("datePublicationMax");
 
         $res = RequestSerializer::serializeRechercheRequest($arg);
-        $this->assertCount(35, $res);
+        $this->assertCount(38, $res);
 
-        $this->assertEquals(1, $res["par_page"]);
         $this->assertEquals(2, $res["page"]);
+        $this->assertEquals(1, $res["par_page"]);
+        $this->assertEquals("*", $res["curseur"]);
+        $this->assertEquals(1000, $res["par_curseur"]);
         $this->assertEquals("bases", $res["bases"]);
         $this->assertEquals("precision", $res["precision"]);
+        $this->assertEquals("export", $res["export"]);
         $this->assertEquals("q", $res["q"]);
         $this->assertEquals("codeNaf", $res["code_naf"]);
         $this->assertEquals("departement", $res["departement"]);

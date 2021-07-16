@@ -50,6 +50,27 @@ interface RechercheRequestInterface {
     const BASE_PUBLICATIONS = "publications";
 
     /**
+     * Export "csv".
+     *
+     * @var string
+     */
+    const EXPORT_CSV = "csv";
+
+    /**
+     * Export "json".
+     *
+     * @var string
+     */
+    const EXPORT_JSON = "json";
+
+    /**
+     * Export "xlsx".
+     *
+     * @var string
+     */
+    const EXPORT_XLSX = "xlsx";
+
+    /**
      * Type publication "création".
      *
      * @var string
