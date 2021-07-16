@@ -111,6 +111,7 @@ class RequestSerializer {
         ArrayHelper::set($result, "siren", $request->getSiren(), [null]);
         ArrayHelper::set($result, "siret", $request->getSiret(), [null]);
         ArrayHelper::set($result, "format_publications_bodacc", $request->getFormatPublicationsBodacc(), [null, EntrepriseRequest::FORMAT_PUBLICATIONS_BODACC_OBJET]);
+        ArrayHelper::set($result, "marques", $request->getMarques(), [null]);
 
         return $result;
     }

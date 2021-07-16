@@ -40,12 +40,28 @@ class EntrepriseRequest extends AbstractRequest implements EntrepriseRequestInte
     private $formatPublicationsBodacc;
 
     /**
+     * Marques.
+     *
+     * @var bool|null
+     */
+    private $marques;
+
+    /**
      * Get the format publications BODACC.
      *
      * @return string|null Returns the format publications BODACC.
      */
     public function getFormatPublicationsBodacc(): ?string {
         return $this->formatPublicationsBodacc;
+    }
+
+    /**
+     * Get the marques.
+     *
+     * @return bool|null Returns the marques.
+     */
+    public function getMarques(): ?bool {
+        return $this->marques;
     }
 
     /**
@@ -63,6 +79,17 @@ class EntrepriseRequest extends AbstractRequest implements EntrepriseRequestInte
      */
     public function setFormatPublicationsBodacc(?string $formatPublicationsBodacc): EntrepriseRequest {
         $this->formatPublicationsBodacc = $formatPublicationsBodacc;
+        return $this;
+    }
+
+    /**
+     * Set the marques.
+     *
+     * @param bool|null $marques The marques.
+     * @return EntrepriseRequest Returns this entreprise request.
+     */
+    public function setMarques(?bool $marques): EntrepriseRequest {
+        $this->marques = $marques;
         return $this;
     }
 }

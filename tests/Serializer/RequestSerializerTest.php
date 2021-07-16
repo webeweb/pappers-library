@@ -58,13 +58,15 @@ class RequestSerializerTest extends AbstractTestCase {
         $arg->setSiren("siren");
         $arg->setSiret("siret");
         $arg->setFormatPublicationsBodacc("formatPublicationsBodacc");
+        $arg->setMarques(true);
 
         $res = RequestSerializer::serializeEntrepriseRequest($arg);
-        $this->assertCount(3, $res);
+        $this->assertCount(4, $res);
 
         $this->assertEquals("siren", $res["siren"]);
         $this->assertEquals("siret", $res["siret"]);
         $this->assertEquals("formatPublicationsBodacc", $res["format_publications_bodacc"]);
+        $this->assertTrue($res["marques"]);
     }
 
     /**

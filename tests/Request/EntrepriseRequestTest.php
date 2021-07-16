@@ -23,11 +23,36 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class EntrepriseRequestTest extends AbstractTestCase {
 
     /**
+     * Tests the setFormatPublicationsBodacc() method.
+     *
+     * @return void
+     */
+    public function testSetFormatPublicationsBodacc(): void {
+
+        $obj = new EntrepriseRequest();
+
+        $obj->setFormatPublicationsBodacc(EntrepriseRequest::FORMAT_PUBLICATIONS_BODACC_OBJET);
+        $this->assertEquals(EntrepriseRequest::FORMAT_PUBLICATIONS_BODACC_OBJET, $obj->getFormatPublicationsBodacc());
+    }
+
+    /**
+     * Tests the setMarques() method.
+     *
+     * @return void
+     */
+    public function testSetMarques(): void {
+
+        $obj = new EntrepriseRequest();
+
+        $obj->setMarques(true);
+        $this->assertTrue($obj->getMarques());
+    }
+
+    /**
      * Tests the __construct() method.
      *
      * @return void
      */
-
     public function test__construct(): void {
 
         $this->assertEquals("/entreprise", EntrepriseRequest::RESOURCES_PATH);
@@ -40,5 +65,6 @@ class EntrepriseRequestTest extends AbstractTestCase {
         $this->assertNull($obj->getSiret());
 
         $this->assertNull($obj->getFormatPublicationsBodacc());
+        $this->assertNull($obj->getMarques());
     }
 }
