@@ -11,7 +11,6 @@
 
 namespace WBW\Library\Pappers\Serializer;
 
-use WBW\Library\Core\Argument\Helper\ArrayHelper;
 use WBW\Library\Pappers\Model\Acte;
 use WBW\Library\Pappers\Model\BeneficiaireEffectif;
 use WBW\Library\Pappers\Model\Compte;
@@ -33,6 +32,7 @@ use WBW\Library\Pappers\Model\PublicationBodacc;
 use WBW\Library\Pappers\Model\Representant;
 use WBW\Library\Pappers\Model\Statuts;
 use WBW\Library\Pappers\Model\Titre;
+use WBW\Library\Types\Helper\ArrayHelper;
 
 /**
  * JSON deserializer.

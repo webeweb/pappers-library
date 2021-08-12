@@ -12,7 +12,6 @@
 namespace WBW\Library\Pappers\Tests\Provider;
 
 use Exception;
-use WBW\Library\Core\Exception\ApiException;
 use WBW\Library\Pappers\Provider\APIv2Provider;
 use WBW\Library\Pappers\Request\DocumentTelechargementRequest;
 use WBW\Library\Pappers\Request\EntrepriseRequest;
@@ -29,6 +28,7 @@ use WBW\Library\Pappers\Response\RecherchePublicationsResponse;
 use WBW\Library\Pappers\Response\RechercheResponse;
 use WBW\Library\Pappers\Response\SuggestionsResponse;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
+use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * API v2 provider test.

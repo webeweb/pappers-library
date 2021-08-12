@@ -13,7 +13,6 @@ namespace WBW\Library\Pappers\Tests\Provider;
 
 use Exception;
 use InvalidArgumentException;
-use WBW\Library\Core\Exception\ApiException;
 use WBW\Library\Pappers\Provider\APIv1Provider;
 use WBW\Library\Pappers\Request\DocumentTelechargementRequest;
 use WBW\Library\Pappers\Request\EntrepriseRequest;
@@ -22,6 +21,7 @@ use WBW\Library\Pappers\Response\DocumentTelechargementResponse;
 use WBW\Library\Pappers\Response\EntrepriseResponse;
 use WBW\Library\Pappers\Response\RechercheResponse;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
+use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * API v1 provider test.

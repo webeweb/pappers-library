@@ -11,8 +11,6 @@
 
 namespace WBW\Library\Pappers\Serializer;
 
-use WBW\Library\Core\Argument\Helper\ArrayHelper;
-use WBW\Library\Core\Argument\Helper\StringHelper;
 use WBW\Library\Pappers\Request\AbstractRechercheRequest;
 use WBW\Library\Pappers\Request\DocumentTelechargementRequest;
 use WBW\Library\Pappers\Request\EntrepriseRequest;
@@ -21,6 +19,8 @@ use WBW\Library\Pappers\Request\RechercheDocumentsRequest;
 use WBW\Library\Pappers\Request\RecherchePublicationsRequest;
 use WBW\Library\Pappers\Request\RechercheRequest;
 use WBW\Library\Pappers\Request\SuggestionsRequest;
+use WBW\Library\Types\Helper\ArrayHelper;
+use WBW\Library\Types\Helper\StringHelper;
 
 /**
  * Request serializer.

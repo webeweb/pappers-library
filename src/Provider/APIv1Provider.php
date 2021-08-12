@@ -13,7 +13,6 @@ namespace WBW\Library\Pappers\Provider;
 
 use GuzzleHttp\Exception\GuzzleException;
 use InvalidArgumentException;
-use WBW\Library\Core\Exception\ApiException;
 use WBW\Library\Pappers\Request\DocumentTelechargementRequest;
 use WBW\Library\Pappers\Request\EntrepriseRequest;
 use WBW\Library\Pappers\Request\RechercheRequest;
@@ -22,6 +21,7 @@ use WBW\Library\Pappers\Response\EntrepriseResponse;
 use WBW\Library\Pappers\Response\RechercheResponse;
 use WBW\Library\Pappers\Serializer\RequestSerializer;
 use WBW\Library\Pappers\Serializer\ResponseDeserializer;
+use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * API v1 provider.

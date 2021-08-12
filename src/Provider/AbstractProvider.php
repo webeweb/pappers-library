@@ -16,8 +16,8 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use InvalidArgumentException;
 use Psr\Log\LoggerInterface;
-use WBW\Library\Core\Exception\ApiException;
 use WBW\Library\Pappers\Request\AbstractRequest;
+use WBW\Library\Provider\Exception\ApiException;
 use WBW\Library\Provider\Provider\AbstractProvider as BaseProvider;
 
 /**
