@@ -4,6 +4,9 @@ DOCUMENTATION
 Entreprise
 
 ```php
+use WBW\Library\Pappers\Provider\APIv2Provider;
+use WBW\Library\Pappers\Request\EntrepriseRequest;
+
 // Create the API provider.
 $provider = new Apiv2Provider("YOUR_API_KEY");
 
@@ -22,6 +25,9 @@ $response = $provider->entreprise($request);
 Recherche
 
 ```php
+use WBW\Library\Pappers\Provider\APIv2Provider;
+use WBW\Library\Pappers\Request\RechercheRequest;
+
 // Create the API provider.
 $provider = new Apiv2Provider("YOUR_API_KEY");
 
@@ -40,6 +46,9 @@ $response = $provider->recherche($request);
 Recherche dirigeants
 
 ```php
+use WBW\Library\Pappers\Provider\APIv2Provider;
+use WBW\Library\Pappers\Request\RechercheDirigeantsRequest;
+
 // Create the API provider.
 $provider = new Apiv2Provider("YOUR_API_KEY");
 
@@ -58,6 +67,9 @@ $response = $provider->rechercheDirigeants($request);
 Recherche documents
 
 ```php
+use WBW\Library\Pappers\Provider\APIv2Provider;
+use WBW\Library\Pappers\Request\RechercheDocumentsRequest;
+
 // Create the API provider.
 $provider = new Apiv2Provider("YOUR_API_KEY");
 
@@ -83,6 +95,9 @@ $response = $provider->rechercheDocuments($request);
 Recherche publications
 
 ```php
+use WBW\Library\Pappers\Provider\APIv2Provider;
+use WBW\Library\Pappers\Request\RecherchePublicationsRequest;
+
 // Create the API provider.
 $provider = new Apiv2Provider("YOUR_API_KEY");
 
@@ -108,6 +123,9 @@ $response = $provider->recherchePublications($request);
 Suggestions
 
 ```php
+use WBW\Library\Pappers\Provider\APIv2Provider;
+use WBW\Library\Pappers\Request\SuggestionsRequest;
+
 // Create the API provider.
 $provider = new Apiv2Provider();
 
@@ -126,6 +144,9 @@ $response = $provider->suggestions($request);
 Documents téléchargement
 
 ```php
+use WBW\Library\Pappers\Provider\APIv2Provider;
+use WBW\Library\Pappers\Request\DocumentTelechargementRequest;
+
 // Create the API provider.
 $provider = new Apiv2Provider("YOUR_API_KEY");
 
