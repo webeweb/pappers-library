@@ -1,6 +1,23 @@
 DOCUMENTATION
 =============
 
+> IMPORTANT NOTICE: The API provider can be used with a debug flag and/or a
+> logger with the following code:
+
+```php
+use Psr\Log\LoggerInterface;
+use WBW\Library\Pappers\Provider\APIv2Provider;
+
+/** @var LoggerInterface $logger */
+// $logger = ...
+
+// Create the API provider.
+$provider = new APIv2Provider("YOUR_API_KEY", $logger);
+$provider->setDebug(true);
+```
+
+---
+
 Entreprise
 
 ```php
