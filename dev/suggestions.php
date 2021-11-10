@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-require_once(__DIR__ . "/../vendor/autoload.php");
+require_once __DIR__ . "/../vendor/autoload.php";
 
 use WBW\Library\Pappers\Provider\APIv2Provider;
 use WBW\Library\Pappers\Request\SuggestionsRequest;
@@ -25,63 +25,64 @@ $request->setQ("Google France");
 $response = $provider->suggestions($request);
 
 // Handle the response.
+$format = "%-30s: %s\n";
 
-echo "Entreprises :\n";
+echo sprintf($format, "Entreprises", "");
 foreach ($response->getResultatsNomEntreprise() as $current) {
 
-    echo "SIREN                  : " . $current->getSiren() . "\n";
-    echo "SIREN formaté          : " . $current->getSirenFormate() . "\n";
-    echo "Nom entreprise         : " . $current->getNomEntreprise() . "\n";
-    echo "Personne morale        : " . $current->getPersonneMorale() . "\n";
-    echo "Dénomination           : " . $current->getDenomination() . "\n";
-    echo "Nom                    : " . $current->getNom() . "\n";
-    echo "Prénom                 : " . $current->getPrenom() . "\n";
-    echo "Sexe                   : " . $current->getSexe() . "\n";
-    echo "Siège                  :\n";
-    echo "\tSIRET              : " . $current->getSiege()->getSiret() . "\n";
-    echo "\tSIRET formaté      : " . $current->getSiege()->getSiretFormate() . "\n";
-    echo "\tNIC                : " . $current->getSiege()->getNic() . "\n";
-    echo "\tNuméro voie        : " . $current->getSiege()->getNumeroVoie() . "\n";
-    echo "\tIndice répétition  : " . $current->getSiege()->getIndiceRepetition() . "\n";
-    echo "\tType voie          : " . $current->getSiege()->getTypeVoie() . "\n";
-    echo "\tLibellé voie       : " . $current->getSiege()->getLibelleVoie() . "\n";
-    echo "\tComplément adresse : " . $current->getSiege()->getComplementAdresse() . "\n";
-    echo "\tAdresse ligne 1    : " . $current->getSiege()->getAdresseLigne1() . "\n";
-    echo "\tAdresse ligne 2    : " . $current->getSiege()->getAdresseLigne2() . "\n";
-    echo "\tCode postal        : " . $current->getSiege()->getCodePostal() . "\n";
-    echo "\tVille              : " . $current->getSiege()->getVille() . "\n";
-    echo "\tPays               : " . $current->getSiege()->getPays() . "\n";
-    echo "\tLatitude           : " . $current->getSiege()->getLatitude() . "\n";
-    echo "\tLongitude          : " . $current->getSiege()->getLongitude() . "\n";
-    echo "\tVilles             : " . implode(", ", $current->getVilles()) . "\n";
-    echo "Code NAF               : " . $current->getCodeNaf() . "\n";
-    echo "Libellé code NAF       : " . $current->getLibelleCodeNaf() . "\n";
-    echo "Domaine activité       : " . $current->getDomaineActivite() . "\n";
-    echo "Objet social           : " . $current->getObjetSocial() . "\n";
+    echo sprintf($format, "SIREN", $current->getSiren());
+    echo sprintf($format, "SIREN formate", $current->getSirenFormate());
+    echo sprintf($format, "Nom entreprise", $current->getNomEntreprise());
+    echo sprintf($format, "Personne morale", $current->getPersonneMorale());
+    echo sprintf($format, "Denomination", $current->getDenomination());
+    echo sprintf($format, "Nom", $current->getNom());
+    echo sprintf($format, "Prenom", $current->getPrenom());
+    echo sprintf($format, "Sexe", $current->getSexe());
+    echo sprintf($format, "Siege", "");
+    echo sprintf($format, "    SIRET", $current->getSiege()->getSiret());
+    echo sprintf($format, "    SIRET formate", $current->getSiege()->getSiretFormate());
+    echo sprintf($format, "    NIC", $current->getSiege()->getNic());
+    echo sprintf($format, "    Numero voie", $current->getSiege()->getNumeroVoie());
+    echo sprintf($format, "    Indice repetition", $current->getSiege()->getIndiceRepetition());
+    echo sprintf($format, "    Type voie", $current->getSiege()->getTypeVoie());
+    echo sprintf($format, "    Libelle voie", $current->getSiege()->getLibelleVoie());
+    echo sprintf($format, "    Complement adresse", $current->getSiege()->getComplementAdresse());
+    echo sprintf($format, "    Adresse ligne 1", $current->getSiege()->getAdresseLigne1());
+    echo sprintf($format, "    Adresse ligne 2", $current->getSiege()->getAdresseLigne2());
+    echo sprintf($format, "    Code postal", $current->getSiege()->getCodePostal());
+    echo sprintf($format, "    Ville", $current->getSiege()->getVille());
+    echo sprintf($format, "    Pays", $current->getSiege()->getPays());
+    echo sprintf($format, "    Latitude", $current->getSiege()->getLatitude());
+    echo sprintf($format, "    Longitude", $current->getSiege()->getLongitude());
+    echo sprintf($format, "    Villes", implode(", ", $current->getVilles()));
+    echo sprintf($format, "Code NAF", $current->getCodeNaf());
+    echo sprintf($format, "Libelle code NAF", $current->getLibelleCodeNaf());
+    echo sprintf($format, "Domaine activite", $current->getDomaineActivite());
+    echo sprintf($format, "Objet social", $current->getObjetSocial());
 
-    echo "Convention collective  :\n";
+    echo sprintf($format, "Convention collective", "");
     foreach ($current->getConventionCollectives() as $c) {
 
-        echo "\tNom       : " . $c->getNom() . "\n";
-        echo "\tIDCC      : " . $c->getIdcc() . "\n";
-        echo "\tConfirmée : " . $c->getConfirmee() . "\n";
+        echo sprintf($format, "    Nom", $c->getNom());
+        echo sprintf($format, "    IDCC", $c->getIdcc());
+        echo sprintf($format, "    Confirmee", $c->getConfirmee());
     }
 
-    echo "Date création          : " . $current->getDateCreation() . "\n";
-    echo "Date création formatée : " . $current->getDateCreationFormate() . "\n";
-    echo "Entreprise employeuse  : " . $current->getEntrepriseEmployeuse() . "\n";
-    echo "Entreprise cessée      : " . $current->getEntrepriseCessee() . "\n";
-    echo "Date cessation         : " . $current->getDateCessation() . "\n";
-    echo "Catégorie juridique    : " . $current->getCategorieJuridique() . "\n";
-    echo "Forme juridique        : " . $current->getFormeJuridique() . "\n";
-    echo "Tranche effectif       : " . $current->getTrancheEffectif() . "\n";
-    echo "Effectif               : " . $current->getEffectif() . "\n";
-    echo "Effectif min.          : " . $current->getEffectifMin() . "\n";
-    echo "Effectif max.          : " . $current->getEffectifMax() . "\n";
-    echo "Année effectif         : " . $current->getAnneeEffectif() . "\n";
-    echo "Capital                : " . $current->getCapital() . "\n";
-    echo "Chiffre affaires       : " . $current->getChiffreAffaires() . "\n";
-    echo "Résultat               : " . $current->getResultat() . "\n";
-    echo "Effectifs finances     : " . $current->getEffectifsFinances() . "\n";
-    echo "Année finances         : " . $current->getAnneeFinances() . "\n";
+    echo sprintf($format, "Date creation", $current->getDateCreation());
+    echo sprintf($format, "Date creation formatee", $current->getDateCreationFormate());
+    echo sprintf($format, "Entreprise employeuse", $current->getEntrepriseEmployeuse());
+    echo sprintf($format, "Entreprise cessee", $current->getEntrepriseCessee());
+    echo sprintf($format, "Date cessation", $current->getDateCessation());
+    echo sprintf($format, "Categorie juridique", $current->getCategorieJuridique());
+    echo sprintf($format, "Forme juridique", $current->getFormeJuridique());
+    echo sprintf($format, "Tranche effectif", $current->getTrancheEffectif());
+    echo sprintf($format, "Effectif", $current->getEffectif());
+    echo sprintf($format, "Effectif min.", $current->getEffectifMin());
+    echo sprintf($format, "Effectif max.", $current->getEffectifMax());
+    echo sprintf($format, "Annee effectif", $current->getAnneeEffectif());
+    echo sprintf($format, "Capital", $current->getCapital());
+    echo sprintf($format, "Chiffre affaires", $current->getChiffreAffaires());
+    echo sprintf($format, "Resultat", $current->getResultat());
+    echo sprintf($format, "Effectifs finances", $current->getEffectifsFinances());
+    echo sprintf($format, "Annee finances", $current->getAnneeFinances());
 }

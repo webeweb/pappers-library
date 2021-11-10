@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-require_once(__DIR__ . "/../vendor/autoload.php");
+require_once __DIR__ . "/../vendor/autoload.php";
 
 use WBW\Library\Pappers\Provider\APIv2Provider;
 use WBW\Library\Pappers\Request\RechercheDocumentsRequest;
@@ -32,58 +32,60 @@ $request->setStatutRcs("inscrit");
 $response = $provider->rechercheDocuments($request);
 
 // Handle the response.
-echo "Page      : " . $response->getPage() . "\n";
-echo "Total     : " . $response->getTotal() . "\n";
+$format = "%-30s: %s\n";
 
-echo "Documents :\n";
+echo sprintf($format, "Page", $response->getPage());
+echo sprintf($format, "Total", $response->getTotal());
+
+echo sprintf($format, "Documents ", "");
 foreach ($response->getResultats() as $current) {
 
-    echo "Titres     :\n";
+    echo sprintf($format, "Titres", "");
     foreach ($current->getTitres() as $t) {
 
-        echo "\t Décision : " . $t->getDecision() . "\n";
-        echo "\t Type     : " . $t->getType() . "\n";
+        echo sprintf($format, "     Decision", $t->getDecision());
+        echo sprintf($format, "     Type", $t->getType());
     }
 
-    echo "SIREN      : " . $current->getSiren() . "\n";
-    echo "Num chrono : " . $current->getNumChrono() . "\n";
-    echo "Date dépôt : " . $current->getDateDepot() . "\n";
-    echo "Id fichier : " . $current->getIdFichier() . "\n";
-    echo "Type       : " . $current->getType() . "\n";
-    echo "Mentions   : " . implode(", ", $current->getMentions()) . "\n";
+    echo sprintf($format, "SIREN", $current->getSiren());
+    echo sprintf($format, "Num chrono", $current->getNumChrono());
+    echo sprintf($format, "Date depot", $current->getDateDepot());
+    echo sprintf($format, "Id fichier", $current->getIdFichier());
+    echo sprintf($format, "Type", $current->getType());
+    echo sprintf($format, "Mentions", implode(", ", $current->getMentions()));
 
-    echo "Entreprise :\n";
-    echo "\tSIREN                   : " . $current->getEntreprise()->getSiren() . "\n";
-    echo "\tSIREN formaté           : " . $current->getEntreprise()->getSirenFormate() . "\n";
-    echo "\tNom entreprise          : " . $current->getEntreprise()->getNomEntreprise() . "\n";
-    echo "\tPersonne morale         : " . $current->getEntreprise()->getPersonneMorale() . "\n";
-    echo "\tDénomination            : " . $current->getEntreprise()->getDenomination() . "\n";
-    echo "\tNom                     : " . $current->getEntreprise()->getNom() . "\n";
-    echo "\tPrénom                  : " . $current->getEntreprise()->getPrenom() . "\n";
-    echo "\tSexe                    : " . $current->getEntreprise()->getSexe() . "\n";
-    echo "\tSiège                   : [...]\n";
-    echo "\tVilles                  : " . implode(", ", $current->getEntreprise()->getVilles()) . "\n";
-    echo "\tCode NAF                : " . $current->getEntreprise()->getCodeNaf() . "\n";
-    echo "\tLibellé code NAF        : " . $current->getEntreprise()->getLibelleCodeNaf() . "\n";
-    echo "\tDomaine activité        : " . $current->getEntreprise()->getDomaineActivite() . "\n";
-    echo "\tConventions collectives : [...]\n";
-    echo "\tDate création           : " . $current->getEntreprise()->getDateCreation() . "\n";
-    echo "\tDate création formatée  : " . $current->getEntreprise()->getDateCreationFormate() . "\n";
-    echo "\tEntreprise employeuse   : " . $current->getEntreprise()->getEntrepriseEmployeuse() . "\n";
-    echo "\tEntreprise cessée       : " . $current->getEntreprise()->getEntrepriseCessee() . "\n";
-    echo "\tDate cessation          : " . $current->getEntreprise()->getDateCessation() . "\n";
-    echo "\tCatégorie juridique     : " . $current->getEntreprise()->getCategorieJuridique() . "\n";
-    echo "\tForme juridique         : " . $current->getEntreprise()->getFormeJuridique() . "\n";
-    echo "\tTranche effectif        : " . $current->getEntreprise()->getTrancheEffectif() . "\n";
-    echo "\tEffectif                : " . $current->getEntreprise()->getEffectif() . "\n";
-    echo "\tEffectif min.           : " . $current->getEntreprise()->getEffectifMin() . "\n";
-    echo "\tEffectif max.           : " . $current->getEntreprise()->getEffectifMax() . "\n";
-    echo "\tAnnée effectif          : " . $current->getEntreprise()->getAnneeEffectif() . "\n";
-    echo "\tCapital                 : " . $current->getEntreprise()->getCapital() . "\n";
-    echo "\tChiffre affaires        : " . $current->getEntreprise()->getChiffreAffaires() . "\n";
-    echo "\tRésultat                : " . $current->getEntreprise()->getResultat() . "\n";
-    echo "\tEffectifs finances      : " . $current->getEntreprise()->getEffectifsFinances() . "\n";
-    echo "\tAnnée finances          : " . $current->getEntreprise()->getAnneeFinances() . "\n";
+    echo sprintf($format, "Entreprise", "");
+    echo sprintf($format, "    SIREN", $current->getEntreprise()->getSiren());
+    echo sprintf($format, "    SIREN formate", $current->getEntreprise()->getSirenFormate());
+    echo sprintf($format, "    Nom entreprise", $current->getEntreprise()->getNomEntreprise());
+    echo sprintf($format, "    Personne morale", $current->getEntreprise()->getPersonneMorale());
+    echo sprintf($format, "    Denomination", $current->getEntreprise()->getDenomination());
+    echo sprintf($format, "    Nom", $current->getEntreprise()->getNom());
+    echo sprintf($format, "    Prenom", $current->getEntreprise()->getPrenom());
+    echo sprintf($format, "    Sexe", $current->getEntreprise()->getSexe());
+    echo sprintf($format, "    Siege", "[...]");
+    echo sprintf($format, "    Villes", implode(", ", $current->getEntreprise()->getVilles()));
+    echo sprintf($format, "    Code NAF", $current->getEntreprise()->getCodeNaf());
+    echo sprintf($format, "    Libelle code NAF", $current->getEntreprise()->getLibelleCodeNaf());
+    echo sprintf($format, "    Domaine activite", $current->getEntreprise()->getDomaineActivite());
+    echo sprintf($format,"    Conventions collectives", "[...]");
+    echo sprintf($format, "    Date creation", $current->getEntreprise()->getDateCreation());
+    echo sprintf($format, "    Date creation formatee", $current->getEntreprise()->getDateCreationFormate());
+    echo sprintf($format, "    Entreprise employeuse", $current->getEntreprise()->getEntrepriseEmployeuse());
+    echo sprintf($format, "    Entreprise cessee", $current->getEntreprise()->getEntrepriseCessee());
+    echo sprintf($format, "    Date cessation", $current->getEntreprise()->getDateCessation());
+    echo sprintf($format, "    Categorie juridique", $current->getEntreprise()->getCategorieJuridique());
+    echo sprintf($format, "    Forme juridique", $current->getEntreprise()->getFormeJuridique());
+    echo sprintf($format, "    Tranche effectif", $current->getEntreprise()->getTrancheEffectif());
+    echo sprintf($format, "    Effectif", $current->getEntreprise()->getEffectif());
+    echo sprintf($format, "    Effectif min.", $current->getEntreprise()->getEffectifMin());
+    echo sprintf($format, "    Effectif max.", $current->getEntreprise()->getEffectifMax());
+    echo sprintf($format, "    Annee effectif", $current->getEntreprise()->getAnneeEffectif());
+    echo sprintf($format, "    Capital", $current->getEntreprise()->getCapital());
+    echo sprintf($format, "    Chiffre affaires", $current->getEntreprise()->getChiffreAffaires());
+    echo sprintf($format, "    Resultat", $current->getEntreprise()->getResultat());
+    echo sprintf($format, "    Effectifs finances", $current->getEntreprise()->getEffectifsFinances());
+    echo sprintf($format, "    Annee finances", $current->getEntreprise()->getAnneeFinances());
 
-    echo "Token      : " . $current->getToken() . "\n";
+    echo sprintf($format, "Token", $current->getToken());
 }
