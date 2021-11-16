@@ -43,10 +43,11 @@ class ResponseDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeEntrepriseResponse(): void {
 
-        $arg = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeEntrepriseResponse.json");
+        // Set a JSON mock.
+        $json = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeEntrepriseResponse.json");
 
-        $res = ResponseDeserializer::deserializeEntrepriseResponse($arg);
-        $this->assertEquals($arg, $res->getRawResponse());
+        $res = ResponseDeserializer::deserializeEntrepriseResponse($json);
+        $this->assertEquals($json, $res->getRawResponse());
 
         // Entreprise
         $this->assertEquals("443061841", $res->getEntreprise()->getSiren());
@@ -322,10 +323,11 @@ class ResponseDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeEntrepriseResponseWithBadRawResponse(): void {
 
-        $arg = "";
+        // Set a JSON mock.
+        $json = "";
 
-        $res = ResponseDeserializer::deserializeEntrepriseResponse($arg);
-        $this->assertEquals($arg, $res->getRawResponse());
+        $res = ResponseDeserializer::deserializeEntrepriseResponse($json);
+        $this->assertEquals($json, $res->getRawResponse());
 
         $this->assertNull($res->getEntreprise());
     }
@@ -337,10 +339,11 @@ class ResponseDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeRechercheDirigeantsResponse(): void {
 
-        $arg = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeRechercheDirigeantsResponse.json");
+        // Set a JSON mock.
+        $json = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeRechercheDirigeantsResponse.json");
 
-        $res = ResponseDeserializer::deserializeRechercheDirigeantsResponse($arg);
-        $this->assertEquals($arg, $res->getRawResponse());
+        $res = ResponseDeserializer::deserializeRechercheDirigeantsResponse($json);
+        $this->assertEquals($json, $res->getRawResponse());
         $this->assertEquals(1, $res->getPage());
         $this->assertEquals(1, $res->getTotal());
 
@@ -422,10 +425,11 @@ class ResponseDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeRechercheDirigeantsResponseWithBadRawResponse(): void {
 
-        $arg = "";
+        // Set a JSON mock.
+        $json = "";
 
-        $res = ResponseDeserializer::deserializeRechercheDirigeantsResponse($arg);
-        $this->assertEquals($arg, $res->getRawResponse());
+        $res = ResponseDeserializer::deserializeRechercheDirigeantsResponse($json);
+        $this->assertEquals($json, $res->getRawResponse());
 
         $this->assertEquals([], $res->getResultats());
     }
@@ -437,10 +441,11 @@ class ResponseDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeRechercheDocumentsResponse(): void {
 
-        $arg = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeRechercheDocumentsResponse.json");
+        // Set a JSON mock.
+        $json = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeRechercheDocumentsResponse.json");
 
-        $res = ResponseDeserializer::deserializeRechercheDocumentsResponse($arg);
-        $this->assertEquals($arg, $res->getRawResponse());
+        $res = ResponseDeserializer::deserializeRechercheDocumentsResponse($json);
+        $this->assertEquals($json, $res->getRawResponse());
         $this->assertEquals(1, $res->getPage());
         $this->assertEquals(51, $res->getTotal());
 
@@ -526,10 +531,11 @@ class ResponseDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeRechercheDocumentsResponseWithBadRawResponse(): void {
 
-        $arg = "";
+        // Set a JSON mock.
+        $json = "";
 
-        $res = ResponseDeserializer::deserializeRechercheDocumentsResponse($arg);
-        $this->assertEquals($arg, $res->getRawResponse());
+        $res = ResponseDeserializer::deserializeRechercheDocumentsResponse($json);
+        $this->assertEquals($json, $res->getRawResponse());
 
         $this->assertEquals([], $res->getResultats());
     }
@@ -541,10 +547,11 @@ class ResponseDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeRecherchePublicationsResponse(): void {
 
-        $arg = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeRecherchePublicationsResponse.json");
+        // Set a JSON mock.
+        $json = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeRecherchePublicationsResponse.json");
 
-        $res = ResponseDeserializer::deserializeRecherchePublicationsResponse($arg);
-        $this->assertEquals($arg, $res->getRawResponse());
+        $res = ResponseDeserializer::deserializeRecherchePublicationsResponse($json);
+        $this->assertEquals($json, $res->getRawResponse());
         $this->assertEquals(1, $res->getPage());
         $this->assertEquals(29, $res->getTotal());
 
@@ -629,10 +636,11 @@ Commentaires : modification survenue sur le capital (diminution)", $res->getResu
      */
     public function testDeserializeRecherchePublicationsResponseWithBadRawResponse(): void {
 
-        $arg = "";
+        // Set a JSON mock.
+        $json = "";
 
-        $res = ResponseDeserializer::deserializeRecherchePublicationsResponse($arg);
-        $this->assertEquals($arg, $res->getRawResponse());
+        $res = ResponseDeserializer::deserializeRecherchePublicationsResponse($json);
+        $this->assertEquals($json, $res->getRawResponse());
 
         $this->assertEquals([], $res->getResultats());
     }
@@ -644,10 +652,11 @@ Commentaires : modification survenue sur le capital (diminution)", $res->getResu
      */
     public function testDeserializeRechercheResponse(): void {
 
-        $arg = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeRechercheResponse.json");
+        // Set a JSON mock.
+        $json = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeRechercheResponse.json");
 
-        $res = ResponseDeserializer::deserializeRechercheResponse($arg);
-        $this->assertEquals($arg, $res->getRawResponse());
+        $res = ResponseDeserializer::deserializeRechercheResponse($json);
+        $this->assertEquals($json, $res->getRawResponse());
         $this->assertEquals(1, $res->getPage());
         $this->assertEquals(3, $res->getTotal());
 
@@ -738,10 +747,11 @@ Commentaires : modification survenue sur le capital (diminution)", $res->getResu
      */
     public function testDeserializeRechercheResponseWithBadRawResponse(): void {
 
-        $arg = "";
+        // Set a JSON mock.
+        $json = "";
 
-        $res = ResponseDeserializer::deserializeRechercheResponse($arg);
-        $this->assertEquals($arg, $res->getRawResponse());
+        $res = ResponseDeserializer::deserializeRechercheResponse($json);
+        $this->assertEquals($json, $res->getRawResponse());
 
         $this->assertEquals([], $res->getResultats());
     }
@@ -812,10 +822,11 @@ Commentaires : modification survenue sur le capital (diminution)", $res->getResu
             $test->assertEquals(2019, $obj->getAnneeFinances());
         };
 
-        $arg = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeSuggestionsResponse.json");
+        // Set a JSON mock.
+        $json = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeSuggestionsResponse.json");
 
-        $res = ResponseDeserializer::deserializeSuggestionsResponse($arg);
-        $this->assertEquals($arg, $res->getRawResponse());
+        $res = ResponseDeserializer::deserializeSuggestionsResponse($json);
+        $this->assertEquals($json, $res->getRawResponse());
 
         // Suggestions > résultats nom entreprise
         $this->assertCount(1, $res->getResultatsNomEntreprise());
@@ -879,10 +890,11 @@ Commentaires : modification survenue sur le capital (diminution)", $res->getResu
      */
     public function testDeserializeSuggestionsResponseWithBadRawResponse(): void {
 
-        $arg = "";
+        // Set a JSON mock.
+        $json = "";
 
-        $res = ResponseDeserializer::deserializeSuggestionsResponse($arg);
-        $this->assertEquals($arg, $res->getRawResponse());
+        $res = ResponseDeserializer::deserializeSuggestionsResponse($json);
+        $this->assertEquals($json, $res->getRawResponse());
 
         $this->assertEquals([], $res->getResultatsNomEntreprise());
         $this->assertEquals([], $res->getResultatsDenomination());
