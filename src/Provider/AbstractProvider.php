@@ -51,6 +51,7 @@ abstract class AbstractProvider extends BaseProvider {
      */
     public function __construct(string $apiToken = null, LoggerInterface $logger = null) {
         parent::__construct($logger);
+
         $this->setApiToken($apiToken);
     }
 
