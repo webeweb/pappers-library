@@ -24,7 +24,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestArrayPublicationsBoda
 class ArrayPublicationsBodaccTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the addPublicationBodacc() method.
+     * Tests addPublicationBodacc()
      *
      * @return void
      */

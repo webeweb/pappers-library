@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class EtablissementTest extends AbstractTestCase {
 
     /**
-     * Tests the setComplementAdresse() method.
+     * Tests setComplementAdresse()
      *
      * @return void
      */
@@ -36,7 +36,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateCreation() method.
+     * Tests setDateCreation()
      *
      * @return void
      */
@@ -49,7 +49,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDomiciliation() method.
+     * Tests setDomiciliation()
      *
      * @return void
      */
@@ -62,7 +62,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setEtablissementCesse() method.
+     * Tests setEtablissementCesse()
      *
      * @return void
      */
@@ -75,7 +75,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setEtablissementEmployeur() method.
+     * Tests setEtablissementEmployeur()
      *
      * @return void
      */
@@ -88,7 +88,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setIndiceRepetition() method.
+     * Tests setIndiceRepetition()
      *
      * @return void
      */
@@ -101,7 +101,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setLatitude() method.
+     * Tests setLatitude()
      *
      * @return void
      */
@@ -114,7 +114,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setLibelleCodeNaf() method.
+     * Tests setLibelleCodeNaf()
      *
      * @return void
      */
@@ -127,7 +127,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setLibelleVoie() method.
+     * Tests setLibelleVoie()
      *
      * @return void
      */
@@ -140,7 +140,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setLongitude() method.
+     * Tests setLongitude()
      *
      * @return void
      */
@@ -153,7 +153,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setNumeroVoie() method.
+     * Tests setNumeroVoie()
      *
      * @return void
      */
@@ -166,7 +166,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setSiege() method.
+     * Tests setSiege()
      *
      * @return void
      */
@@ -179,7 +179,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setTypeVoie() method.
+     * Tests setTypeVoie()
      *
      * @return void
      */
@@ -192,7 +192,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the set() method.
+     * Tests set()
      *
      * @return void
      */

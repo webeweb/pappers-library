@@ -56,7 +56,7 @@ class APIv2ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the documentTelechargement() method.
+     * Tests documentTelechargement()
      *
      * @return void
      * @throws Exception Throws an exception if an error occurs.
@@ -89,7 +89,7 @@ class APIv2ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the entreprise() method.
+     * Tests entreprise()
      *
      * @return void
      * @throws Exception Throws an exception if an error occurs.
@@ -113,7 +113,7 @@ class APIv2ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the getEndpointVersion() method.
+     * Tests getEndpointVersion()
      *
      * @return void
      */
@@ -125,7 +125,7 @@ class APIv2ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the recherche() method.
+     * Tests recherche()
      *
      * @return void
      * @throws Exception Throws an exception if an error occurs.
@@ -149,7 +149,7 @@ class APIv2ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the rechercheDirigeants() method.
+     * Tests rechercheDirigeants()
      *
      * @return void
      * @throws Exception Throws an exception if an error occurs.
@@ -173,7 +173,7 @@ class APIv2ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the rechercheDocuments() method.
+     * Tests rechercheDocuments()
      *
      * @return void
      * @throws Exception Throws an exception if an error occurs.
@@ -204,7 +204,7 @@ class APIv2ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the recherchePublications() method.
+     * Tests recherchePublications()
      *
      * @return void
      * @throws Exception Throws an exception if an error occurs.
@@ -235,7 +235,7 @@ class APIv2ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the suggestions() method.
+     * Tests suggestions()
      *
      * @return void
      * @throws Exception Throws an exception if an error occurs.

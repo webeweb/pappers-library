@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class ConventionCollectiveTest extends AbstractTestCase {
 
     /**
-     * Tests the setConfirmee() method.
+     * Tests setConfirmee()
      *
      * @return void
      */
@@ -36,7 +36,7 @@ class ConventionCollectiveTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setIdcc() method.
+     * Tests setIdcc()
      *
      * @return void
      */
@@ -49,7 +49,7 @@ class ConventionCollectiveTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

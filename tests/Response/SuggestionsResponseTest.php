@@ -25,7 +25,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class SuggestionsResponseTest extends AbstractTestCase {
 
     /**
-     * Tests the addResultatDenomination() method.
+     * Tests addResultatDenomination()
      *
      * @return void
      */
@@ -41,7 +41,7 @@ class SuggestionsResponseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the addResultatNomComplet() method.
+     * Tests addResultatNomComplet()
      *
      * @return void
      */
@@ -57,7 +57,7 @@ class SuggestionsResponseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the addResultatNomEntreprise() method.
+     * Tests addResultatNomEntreprise()
      *
      * @return void
      */
@@ -73,7 +73,7 @@ class SuggestionsResponseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the addResultatRepresentant() method.
+     * Tests addResultatRepresentant()
      *
      * @return void
      */
@@ -89,7 +89,7 @@ class SuggestionsResponseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the addResultatSiren() method.
+     * Tests addResultatSiren()
      *
      * @return void
      */
@@ -105,7 +105,7 @@ class SuggestionsResponseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the addResultatSiret() method.
+     * Tests addResultatSiret()
      *
      * @return void
      */
@@ -121,7 +121,7 @@ class SuggestionsResponseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

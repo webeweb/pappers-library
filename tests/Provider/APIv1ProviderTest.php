@@ -49,7 +49,7 @@ class APIv1ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the documentTelechargement() method.
+     * Tests documentTelechargement()
      *
      * @return void
      * @throws Exception Throws an exception if an error occurs.
@@ -73,7 +73,7 @@ class APIv1ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the entreprise() method.
+     * Tests entreprise()
      *
      * @return void
      * @throws Exception Throws an exception if an error occurs.
@@ -97,7 +97,7 @@ class APIv1ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the entreprise() method.
+     * Tests entreprise()
      *
      * @return void
      * @throws Exception Throws an exception if an error occurs.
@@ -121,7 +121,7 @@ class APIv1ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the getEndpointVersion() method.
+     * Tests getEndpointVersion()
      *
      * @return void
      */
@@ -133,7 +133,7 @@ class APIv1ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the recherche() method.
+     * Tests recherche()
      *
      * @return void
      * @throws Exception Throws an exception if an error occurs.

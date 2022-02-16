@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Request\TestRechercheRequest;
 class AbstractRechercheRequestTest extends AbstractTestCase {
 
     /**
-     * Tests the setAgeDirigeantMax() method.
+     * Tests setAgeDirigeantMax()
      *
      * @return void
      */
@@ -36,7 +36,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setAgeDirigeantMin() method.
+     * Tests setAgeDirigeantMin()
      *
      * @return void
      */
@@ -49,7 +49,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCapitalMax() method.
+     * Tests setCapitalMax()
      *
      * @return void
      */
@@ -62,7 +62,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCapitalMin() method.
+     * Tests setCapitalMin()
      *
      * @return void
      */
@@ -75,7 +75,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setChiffreAffairesMax() method.
+     * Tests setChiffreAffairesMax()
      *
      * @return void
      */
@@ -88,7 +88,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setChiffreAffairesMin() method.
+     * Tests setChiffreAffairesMin()
      *
      * @return void
      */
@@ -101,7 +101,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setConventionCollective() method.
+     * Tests setConventionCollective()
      *
      * @return void
      */
@@ -114,7 +114,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateCreationMax() method.
+     * Tests setDateCreationMax()
      *
      * @return void
      */
@@ -127,7 +127,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateCreationMin() method.
+     * Tests setDateCreationMin()
      *
      * @return void
      */
@@ -140,7 +140,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateDepotDocumentMax() method.
+     * Tests setDateDepotDocumentMax()
      *
      * @return void
      */
@@ -153,7 +153,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateDepotDocumentMin() method.
+     * Tests setDateDepotDocumentMin()
      *
      * @return void
      */
@@ -166,7 +166,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateNaissanceDirigeantMax() method.
+     * Tests setDateNaissanceDirigeantMax()
      *
      * @return void
      */
@@ -179,7 +179,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateNaissanceDirigeantMin() method.
+     * Tests setDateNaissanceDirigeantMin()
      *
      * @return void
      */
@@ -192,7 +192,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDatePublicationMax() method.
+     * Tests setDatePublicationMax()
      *
      * @return void
      */
@@ -205,7 +205,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDatePublicationMin() method.
+     * Tests setDatePublicationMin()
      *
      * @return void
      */
@@ -218,7 +218,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateRadiationRcsMax() method.
+     * Tests setDateRadiationRcsMax()
      *
      * @return void
      */
@@ -231,7 +231,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the set() method.
+     * Tests set()
      *
      * @return void
      */
@@ -244,7 +244,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDepartement() method.
+     * Tests setDepartement()
      *
      * @return void
      */
@@ -257,7 +257,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setParPage() method.
+     * Tests setParPage()
      *
      * @return void
      */
@@ -270,7 +270,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPrecision() method.
+     * Tests setPrecision()
      *
      * @return void
      */
@@ -283,7 +283,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setRegion() method.
+     * Tests setRegion()
      *
      * @return void
      */
@@ -296,7 +296,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setResultatMax() method.
+     * Tests setResultatMax()
      *
      * @return void
      */
@@ -309,7 +309,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setResultatMin() method.
+     * Tests setResultatMin()
      *
      * @return void
      */
@@ -322,7 +322,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setTrancheEffectifMax() method.
+     * Tests setTrancheEffectifMax()
      *
      * @return void
      */
@@ -335,7 +335,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setTrancheEffectifMin() method.
+     * Tests setTrancheEffectifMin()
      *
      * @return void
      */
@@ -348,7 +348,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setTypePublication() method.
+     * Tests setTypePublication()
      *
      * @return void
      */
@@ -361,7 +361,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

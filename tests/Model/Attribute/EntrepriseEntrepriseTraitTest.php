@@ -24,7 +24,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestEntrepriseEntrepriseT
 class EntrepriseEntrepriseTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setEntreprise() method.
+     * Tests setEntreprise()
      *
      * @return void
      */

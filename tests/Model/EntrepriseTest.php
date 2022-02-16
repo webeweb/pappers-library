@@ -34,7 +34,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class EntrepriseTest extends AbstractTestCase {
 
     /**
-     * Tests the addBeneficiaireEffectif() method.
+     * Tests addBeneficiaireEffectif()
      *
      * @return void
      */
@@ -50,7 +50,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the addCompte() method.
+     * Tests addCompte()
      *
      * @return void
      */
@@ -66,7 +66,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the addConventionCollective() method.
+     * Tests addConventionCollective()
      *
      * @return void
      */
@@ -82,7 +82,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the addDepotActe() method.
+     * Tests addDepotActe()
      *
      * @return void
      */
@@ -98,7 +98,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the addDocument() method.
+     * Tests addDocument()
      *
      * @return void
      */
@@ -114,7 +114,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the set() method.
+     * Tests set()
      *
      * @return void
      */
@@ -130,7 +130,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the addFinance() method.
+     * Tests addFinance()
      *
      * @return void
      */
@@ -146,7 +146,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the set() method.
+     * Tests set()
      *
      * @return void
      */
@@ -162,7 +162,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the addRepresentant() method.
+     * Tests addRepresentant()
      *
      * @return void
      */
@@ -178,7 +178,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setAnneeFinances() method.
+     * Tests setAnneeFinances()
      *
      * @return void
      */
@@ -191,7 +191,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setAssocieUnique() method.
+     * Tests setAssocieUnique()
      *
      * @return void
      */
@@ -204,7 +204,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCapitalActuelVariable() method.
+     * Tests setCapitalActuelVariable()
      *
      * @return void
      */
@@ -217,7 +217,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCapitalFormate() method.
+     * Tests setCapitalFormate()
      *
      * @return void
      */
@@ -230,7 +230,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateCessationFormatee() method.
+     * Tests setDateCessationFormatee()
      *
      * @return void
      */
@@ -243,7 +243,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateClotureExceptionnelle() method.
+     * Tests setDateClotureExceptionnelle()
      *
      * @return void
      */
@@ -256,7 +256,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateClotureExerciceExceptionnelle() method.
+     * Tests setDateClotureExerciceExceptionnelle()
      *
      * @return void
      */
@@ -269,7 +269,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateClotureExerciceExceptionnelleFormate() method.
+     * Tests setDateClotureExerciceExceptionnelleFormate()
      *
      * @return void
      */
@@ -282,7 +282,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateCreation() method.
+     * Tests setDateCreation()
      *
      * @return void
      */
@@ -295,7 +295,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateCreationFormate() method.
+     * Tests setDateCreationFormate()
      *
      * @return void
      */
@@ -308,7 +308,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateImmatriculationRcs() method.
+     * Tests setDateImmatriculationRcs()
      *
      * @return void
      */
@@ -321,7 +321,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDatePremiereImmatriculationRcs() method.
+     * Tests setDatePremiereImmatriculationRcs()
      *
      * @return void
      */
@@ -334,7 +334,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateRadiationRcs() method.
+     * Tests setDateRadiationRcs()
      *
      * @return void
      */
@@ -347,7 +347,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDernierTraitement() method.
+     * Tests setDernierTraitement()
      *
      * @return void
      */
@@ -360,7 +360,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDerniereMiseJourRcs() method.
+     * Tests setDerniereMiseJourRcs()
      *
      * @return void
      */
@@ -373,7 +373,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDerniereMiseJourSirene() method.
+     * Tests setDerniereMiseJourSirene()
      *
      * @return void
      */
@@ -386,7 +386,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDerniersStatuts() method.
+     * Tests setDerniersStatuts()
      *
      * @return void
      */
@@ -402,7 +402,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDiffusable() method.
+     * Tests setDiffusable()
      *
      * @return void
      */
@@ -415,7 +415,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDomaineActivite() method.
+     * Tests setDomaineActivite()
      *
      * @return void
      */
@@ -428,7 +428,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDureePersonneMorale() method.
+     * Tests setDureePersonneMorale()
      *
      * @return void
      */
@@ -441,7 +441,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setEconomieSocialeSolidaire() method.
+     * Tests setEconomieSocialeSolidaire()
      *
      * @return void
      */
@@ -454,7 +454,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setEffectifsFinances() method.
+     * Tests setEffectifsFinances()
      *
      * @return void
      */
@@ -467,7 +467,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setEntrepriseEmployeuse() method.
+     * Tests setEntrepriseEmployeuse()
      *
      * @return void
      */
@@ -480,7 +480,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setExtraitImmatriculation() method.
+     * Tests setExtraitImmatriculation()
      *
      * @return void
      */
@@ -496,7 +496,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setLibelleCodeNaf() method.
+     * Tests setLibelleCodeNaf()
      *
      * @return void
      */
@@ -509,7 +509,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setNbBeneficiairesTotal() method.
+     * Tests setNbBeneficiairesTotal()
      *
      * @return void
      */
@@ -522,7 +522,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setNbDirigeantsTotal() method.
+     * Tests setNbDirigeantsTotal()
      *
      * @return void
      */
@@ -535,7 +535,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setNbDocumentsAvecMentions() method.
+     * Tests setNbDocumentsAvecMentions()
      *
      * @return void
      */
@@ -548,7 +548,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setNbDocumentsTotal() method.
+     * Tests setNbDocumentsTotal()
      *
      * @return void
      */
@@ -561,7 +561,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setNbPublicationsAvecMentions() method.
+     * Tests setNbPublicationsAvecMentions()
      *
      * @return void
      */
@@ -574,7 +574,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setNbPublicationsTotal() method.
+     * Tests setNbPublicationsTotal()
      *
      * @return void
      */
@@ -587,7 +587,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setNumeroRcs() method.
+     * Tests setNumeroRcs()
      *
      * @return void
      */
@@ -600,7 +600,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setNumeroTvaIntracommunautaire() method.
+     * Tests setNumeroTvaIntracommunautaire()
      *
      * @return void
      */
@@ -613,7 +613,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setProcedureCollectiveEnCours() method.
+     * Tests setProcedureCollectiveEnCours()
      *
      * @return void
      */
@@ -626,7 +626,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setProcedureCollectiveExiste() method.
+     * Tests setProcedureCollectiveExiste()
      *
      * @return void
      */
@@ -639,7 +639,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setProchaineDateClotureExercice() method.
+     * Tests setProchaineDateClotureExercice()
      *
      * @return void
      */
@@ -652,7 +652,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setProchaineDateClotureExerciceFormate() method.
+     * Tests setProchaineDateClotureExerciceFormate()
      *
      * @return void
      */
@@ -665,7 +665,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setRnm() method.
+     * Tests setRnm()
      *
      * @return void
      */
@@ -678,7 +678,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setSexe() method.
+     * Tests setSexe()
      *
      * @return void
      */
@@ -691,7 +691,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setSiege() method.
+     * Tests setSiege()
      *
      * @return void
      */
@@ -707,7 +707,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setSirenFormate() method.
+     * Tests setSirenFormate()
      *
      * @return void
      */
@@ -720,7 +720,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

@@ -24,7 +24,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class RepresentantTest extends AbstractTestCase {
 
     /**
-     * Tests the addEntreprise() method.
+     * Tests addEntreprise()
      *
      * @return void
      */
@@ -40,7 +40,7 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setActuel() method.
+     * Tests setActuel()
      *
      * @return void
      */
@@ -53,7 +53,7 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setAge() method.
+     * Tests setAge()
      *
      * @return void
      */
@@ -66,7 +66,7 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateNaissance() method.
+     * Tests setDateNaissance()
      *
      * @return void
      */
@@ -79,7 +79,7 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDatePrisePoste() method.
+     * Tests setDatePrisePoste()
      *
      * @return void
      */
@@ -92,7 +92,7 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setNbEntreprisesTotal() method.
+     * Tests setNbEntreprisesTotal()
      *
      * @return void
      */
@@ -105,7 +105,7 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setNomComplet() method.
+     * Tests setNomComplet()
      *
      * @return void
      */
@@ -118,7 +118,7 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setQualite() method.
+     * Tests setQualite()
      *
      * @return void
      */
@@ -131,7 +131,7 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

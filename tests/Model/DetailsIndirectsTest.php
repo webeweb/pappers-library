@@ -25,7 +25,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class DetailsIndirectsTest extends AbstractTestCase {
 
     /**
-     * Tests the setDetailsIndivision() method.
+     * Tests setDetailsIndivision()
      *
      * @return void
      */
@@ -41,7 +41,7 @@ class DetailsIndirectsTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDetailsPersonneMorale() method.
+     * Tests setDetailsPersonneMorale()
      *
      * @return void
      */
@@ -57,7 +57,7 @@ class DetailsIndirectsTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPourcentageIndivision() method.
+     * Tests setPourcentageIndivision()
      *
      * @return void
      */
@@ -70,7 +70,7 @@ class DetailsIndirectsTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPourcentagePersonneMorale() method.
+     * Tests setPourcentagePersonneMorale()
      *
      * @return void
      */
@@ -83,7 +83,7 @@ class DetailsIndirectsTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

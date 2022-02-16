@@ -24,7 +24,7 @@ use WBW\Library\Pappers\Response\RechercheResponse;
 class RechercheResponseTest extends TestCase {
 
     /**
-     * Tests the addResultat() method.
+     * Tests addResultat()
      *
      * @return void
      */
@@ -40,7 +40,7 @@ class RechercheResponseTest extends TestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class RechercheRequestTest extends AbstractTestCase {
 
     /**
-     * Tests the setBases() method.
+     * Tests setBases()
      *
      * @return void
      */
@@ -36,7 +36,7 @@ class RechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCurseur() method.
+     * Tests setCurseur()
      *
      * @return void
      */
@@ -49,7 +49,7 @@ class RechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setExport() method.
+     * Tests setExport()
      *
      * @return void
      */
@@ -62,7 +62,7 @@ class RechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setParCurseur() method.
+     * Tests setParCurseur()
      *
      * @return void
      */
@@ -75,7 +75,7 @@ class RechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

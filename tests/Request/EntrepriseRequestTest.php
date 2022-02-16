@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class EntrepriseRequestTest extends AbstractTestCase {
 
     /**
-     * Tests the setFormatPublicationsBodacc() method.
+     * Tests setFormatPublicationsBodacc()
      *
      * @return void
      */
@@ -36,7 +36,7 @@ class EntrepriseRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setMarques() method.
+     * Tests setMarques()
      *
      * @return void
      */
@@ -49,7 +49,7 @@ class EntrepriseRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

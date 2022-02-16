@@ -27,7 +27,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class BeneficiaireEffectifTest extends AbstractTestCase {
 
     /**
-     * Tests the setBeneficiaireRepresentantLegal() method.
+     * Tests setBeneficiaireRepresentantLegal()
      *
      * @return void
      */
@@ -40,7 +40,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateGreffe() method.
+     * Tests setDateGreffe()
      *
      * @return void
      */
@@ -53,7 +53,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateNaissanceCompleteFormatee() method.
+     * Tests setDateNaissanceCompleteFormatee()
      *
      * @return void
      */
@@ -66,7 +66,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDetailsPartsDirectes() method.
+     * Tests setDetailsPartsDirectes()
      *
      * @return void
      */
@@ -82,7 +82,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDetailsPartsIndirectes() method.
+     * Tests setDetailsPartsIndirectes()
      *
      * @return void
      */
@@ -98,7 +98,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDetailsPartsVocationTitulaire() method.
+     * Tests setDetailsPartsVocationTitulaire()
      *
      * @return void
      */
@@ -114,7 +114,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDetailsSocieteGestion() method.
+     * Tests setDetailsSocieteGestion()
      *
      * @return void
      */
@@ -130,7 +130,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDetailsVotesDirects() method.
+     * Tests setDetailsVotesDirects()
      *
      * @return void
      */
@@ -146,7 +146,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDetailsVotesIndirects() method.
+     * Tests setDetailsVotesIndirects()
      *
      * @return void
      */
@@ -162,7 +162,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDetentionAutresMoyensControle() method.
+     * Tests setDetentionAutresMoyensControle()
      *
      * @return void
      */
@@ -175,7 +175,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDetentionPouvoirDecisionAg() method.
+     * Tests setDetentionPouvoirDecisionAg()
      *
      * @return void
      */
@@ -188,7 +188,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDetentionPouvoirNomMembreConseilAdministration() method.
+     * Tests setDetentionPouvoirNomMembreConseilAdministration()
      *
      * @return void
      */
@@ -201,7 +201,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setNomUsage() method.
+     * Tests setNomUsage()
      *
      * @return void
      */
@@ -214,7 +214,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPourcentageParts() method.
+     * Tests setPourcentageParts()
      *
      * @return void
      */
@@ -227,7 +227,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPourcentagePartsDirectes() method.
+     * Tests setPourcentagePartsDirectes()
      *
      * @return void
      */
@@ -240,7 +240,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPourcentagePartsIndirectes() method.
+     * Tests setPourcentagePartsIndirectes()
      *
      * @return void
      */
@@ -253,7 +253,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPourcentagePartsVocationTitulaire() method.
+     * Tests setPourcentagePartsVocationTitulaire()
      *
      * @return void
      */
@@ -266,7 +266,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPourcentageVotes() method.
+     * Tests setPourcentageVotes()
      *
      * @return void
      */
@@ -279,7 +279,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPourcentageVotesDirects() method.
+     * Tests setPourcentageVotesDirects()
      *
      * @return void
      */
@@ -292,7 +292,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPourcentageVotesIndirects() method.
+     * Tests setPourcentageVotesIndirects()
      *
      * @return void
      */
@@ -305,7 +305,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setRepresentantLegalPlacementSansGestionDelegation() method.
+     * Tests setRepresentantLegalPlacementSansGestionDelegation()
      *
      * @return void
      */
@@ -318,7 +318,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */
