@@ -16,7 +16,7 @@ use WBW\Library\Pappers\Model\Attribute\IntegerEffectifMaxTrait;
 /**
  * Test integer effectif max trait.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute
  */
 class TestIntegerEffectifMaxTrait {

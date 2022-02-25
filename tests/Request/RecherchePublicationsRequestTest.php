@@ -17,7 +17,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 /**
  * Recherche publications request test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Request
  */
 class RecherchePublicationsRequestTest extends AbstractTestCase {

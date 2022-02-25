@@ -16,7 +16,7 @@ use WBW\Library\Traits\Strings\StringTokenTrait;
 /**
  * Extrait immatriculation.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Model
  */
 class ExtraitImmatriculation {

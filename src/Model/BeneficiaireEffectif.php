@@ -29,7 +29,7 @@ use WBW\Library\Traits\Strings\StringTypeTrait;
 /**
  * Bénéficiaire effectif.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers
  */
 class BeneficiaireEffectif {

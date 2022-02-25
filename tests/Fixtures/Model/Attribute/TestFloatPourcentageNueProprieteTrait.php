@@ -16,7 +16,7 @@ use WBW\Library\Pappers\Model\Attribute\FloatPourcentageNueProprieteTrait;
 /**
  * Test float pourcentage nue propriété trait.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute
  */
 class TestFloatPourcentageNueProprieteTrait {

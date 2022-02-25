@@ -16,7 +16,7 @@ use WBW\Library\Pappers\Model\PublicationBodaccInterface;
 /**
  * Recherche request interface.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Request
  */
 interface RechercheRequestInterface {

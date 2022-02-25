@@ -17,7 +17,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestIntegerResultatTrait;
 /**
  * Integer résultat trait test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Model\Attribute
  */
 class IntegerResultatTraitTest extends AbstractTestCase {

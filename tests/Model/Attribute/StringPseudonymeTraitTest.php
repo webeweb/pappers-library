@@ -17,7 +17,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestStringPseudonymeTrait
 /**
  * String pseudonyme trait test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Model\Attribute
  */
 class StringPseudonymeTraitTest extends AbstractTestCase {

@@ -16,7 +16,7 @@ use WBW\Library\Pappers\Model\Attribute\StringSigleTrait;
 /**
  * Test string sigle trait.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute
  */
 class TestStringSigleTrait {

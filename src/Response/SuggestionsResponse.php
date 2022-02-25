@@ -17,7 +17,7 @@ use WBW\Library\Pappers\Model\Representant;
 /**
  * Suggestions response.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Response
  */
 class SuggestionsResponse extends AbstractResponse {

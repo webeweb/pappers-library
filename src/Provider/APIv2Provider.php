@@ -34,7 +34,7 @@ use WBW\Library\Provider\Exception\ApiException;
 /**
  * API v2 provider.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Provider
  */
 class APIv2Provider extends AbstractProvider {

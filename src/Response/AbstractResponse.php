@@ -16,7 +16,7 @@ use WBW\Library\Provider\Response\AbstractResponse as BaseResponse;
 /**
  * Abstract response.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Response
  * @abstract
  */

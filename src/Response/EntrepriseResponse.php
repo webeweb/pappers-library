@@ -16,7 +16,7 @@ use WBW\Library\Pappers\Model\Attribute\EntrepriseEntrepriseTrait;
 /**
  * Entreprise response.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Response
  */
 class EntrepriseResponse extends AbstractResponse {

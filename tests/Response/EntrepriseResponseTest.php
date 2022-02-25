@@ -17,7 +17,7 @@ use WBW\Library\Pappers\Response\EntrepriseResponse;
 /**
  * Entreprise response test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Response
  */
 class EntrepriseResponseTest extends TestCase {

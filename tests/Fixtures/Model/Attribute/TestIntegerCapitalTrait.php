@@ -16,7 +16,7 @@ use WBW\Library\Pappers\Model\Attribute\IntegerCapitalTrait;
 /**
  * Test integer capital trait.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute
  */
 class TestIntegerCapitalTrait {

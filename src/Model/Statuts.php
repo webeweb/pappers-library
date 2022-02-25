@@ -24,7 +24,7 @@ use WBW\Library\Traits\Strings\StringTypeTrait;
 /**
  * Statuts.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Model
  */
 class Statuts {

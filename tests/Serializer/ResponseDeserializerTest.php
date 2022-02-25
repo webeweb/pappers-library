@@ -18,7 +18,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 /**
  * Response serializer test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Serializer
  */
 class ResponseDeserializerTest extends AbstractTestCase {

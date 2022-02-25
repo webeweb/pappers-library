@@ -14,7 +14,7 @@ namespace WBW\Library\Pappers\Model;
 /**
  * Procédure collective interface.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Model
  */
 interface ProcedureCollectiveInterface {

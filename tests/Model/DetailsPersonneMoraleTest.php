@@ -17,7 +17,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 /**
  * Détails personne morale test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Model
  */
 class DetailsPersonneMoraleTest extends AbstractTestCase {

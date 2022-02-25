@@ -17,7 +17,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestBooleanDisponibleTrai
 /**
  * Boolean disponible trait test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Model\Attribute
  */
 class BooleanDisponibleTraitTest extends AbstractTestCase {

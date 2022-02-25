@@ -16,7 +16,7 @@ use WBW\Library\Pappers\Model\PublicationBodacc;
 /**
  * Recherche publications response.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Response
  */
 class RecherchePublicationsResponse extends AbstractRechercheResponse {

@@ -18,7 +18,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestEntrepriseEntrepriseT
 /**
  * Entreprise entreprise trait test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Model\Attribute
  */
 class EntrepriseEntrepriseTraitTest extends AbstractTestCase {

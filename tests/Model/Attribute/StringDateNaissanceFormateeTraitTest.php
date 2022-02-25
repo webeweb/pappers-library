@@ -17,7 +17,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Model\Attribute\TestStringDateNaissanceFo
 /**
  * String date naissance formatée trait test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Model\Attribute
  */
 class StringDateNaissanceFormateeTraitTest extends AbstractTestCase {

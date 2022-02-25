@@ -16,7 +16,7 @@ use WBW\Library\Pappers\Response\AbstractRechercheResponse;
 /**
  * Test recherche response.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Fixtures\Response
  */
 class TestRechercheResponse extends AbstractRechercheResponse {

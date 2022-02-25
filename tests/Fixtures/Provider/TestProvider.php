@@ -16,7 +16,7 @@ use WBW\Library\Pappers\Provider\AbstractProvider;
 /**
  * Test provider.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Fixtures\Provider
  */
 class TestProvider extends AbstractProvider {

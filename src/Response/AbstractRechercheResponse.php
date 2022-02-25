@@ -17,7 +17,7 @@ use WBW\Library\Traits\Integers\IntegerTotalTrait;
 /**
  * Abstract recherche response.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Response
  * @abstract
  */

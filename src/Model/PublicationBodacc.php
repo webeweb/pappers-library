@@ -31,7 +31,7 @@ use WBW\Library\Traits\Strings\StringTypeTrait;
 /**
  * Publication BODACC.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Model
  */
 class PublicationBodacc implements PublicationBodaccInterface {

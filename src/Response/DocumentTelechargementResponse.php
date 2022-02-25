@@ -16,7 +16,7 @@ use Exception;
 /**
  * Document téléchargementResponse.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Response
  */
 class DocumentTelechargementResponse extends AbstractResponse {

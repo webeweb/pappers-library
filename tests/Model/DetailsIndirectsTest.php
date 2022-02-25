@@ -19,7 +19,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 /**
  * Détails indirects test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Model
  */
 class DetailsIndirectsTest extends AbstractTestCase {

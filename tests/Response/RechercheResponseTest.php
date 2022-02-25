@@ -18,7 +18,7 @@ use WBW\Library\Pappers\Response\RechercheResponse;
 /**
  * Recherche response test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Response
  */
 class RechercheResponseTest extends TestCase {

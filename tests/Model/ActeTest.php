@@ -17,7 +17,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 /**
  * Acte test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Model
  */
 class ActeTest extends AbstractTestCase {

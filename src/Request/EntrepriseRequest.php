@@ -17,7 +17,7 @@ use WBW\Library\Pappers\Model\Attribute\StringSiretTrait;
 /**
  * Entreprise request.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Request
  */
 class EntrepriseRequest extends AbstractRequest implements EntrepriseRequestInterface {

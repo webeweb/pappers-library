@@ -18,7 +18,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 /**
  * Recherche documents response test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Response
  */
 class RechercheDocumentsResponseTest extends AbstractTestCase {

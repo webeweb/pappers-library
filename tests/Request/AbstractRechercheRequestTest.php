@@ -17,7 +17,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Request\TestRechercheRequest;
 /**
  * Abstract recherche request test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Request
  */
 class AbstractRechercheRequestTest extends AbstractTestCase {

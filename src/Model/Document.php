@@ -21,7 +21,7 @@ use WBW\Library\Traits\Strings\StringTypeTrait;
 /**
  * Document.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Model
  */
 class Document implements DocumentInterface {

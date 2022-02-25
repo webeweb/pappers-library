@@ -14,7 +14,7 @@ namespace WBW\Library\Pappers\Model\Attribute;
 /**
  * Integer année effectif trait.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Model\Attribute
  */
 trait IntegerAnneeEffectifTrait {

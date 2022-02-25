@@ -16,7 +16,7 @@ use WBW\Library\Pappers\Model\PublicationBodacc;
 /**
  * Array publications BODACC trait.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Model\Attribute
  */
 trait ArrayPublicationsBodaccTrait {

@@ -16,7 +16,7 @@ use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne3Trait;
 /**
  * Test string adresse ligne 3 trait.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Tests\Fixtures\Model\Attribute
  */
 class TestStringAdresseLigne3Trait {

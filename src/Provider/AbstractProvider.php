@@ -23,7 +23,7 @@ use WBW\Library\Provider\Exception\ApiException;
 /**
  * Abstract provider.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Provider
  * @abstract
  */

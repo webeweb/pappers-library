@@ -16,7 +16,7 @@ use WBW\Library\Traits\Strings\StringTokenTrait;
 /**
  * Document téléchargement request.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Request
  */
 class DocumentTelechargementRequest extends AbstractRequest {

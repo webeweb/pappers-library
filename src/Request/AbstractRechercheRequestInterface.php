@@ -14,7 +14,7 @@ namespace WBW\Library\Pappers\Request;
 /**
  * Abstract recherche request interface.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Request
  */
 interface AbstractRechercheRequestInterface {
