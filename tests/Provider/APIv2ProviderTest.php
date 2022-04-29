@@ -52,7 +52,7 @@ class APIv2ProviderTest extends AbstractTestCase {
         parent::setUp();
 
         // Set an API token mock.
-        $this->apiToken = "YOUR_API_TOKEN";
+        $this->apiToken = static::getToken();
     }
 
     /**
