@@ -26,7 +26,7 @@ $request->setToken("SzQ0MzA2MTg0MQ");
 $response = $provider->documentTelechargement($request);
 
 // Set a filename.
-$filename = __DIR__ . "/../" . $request->getToken() . ".pdf";
+$filename = __DIR__ . "/../var/cache/" . $request->getToken() . ".pdf";
 
 // Handle the response.
 $response->saveAs($filename);

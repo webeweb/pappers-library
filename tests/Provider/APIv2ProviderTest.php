@@ -68,7 +68,7 @@ class APIv2ProviderTest extends AbstractTestCase {
         $request->setToken("SzQ0MzA2MTg0MQ");
 
         // Set a filename mock.
-        $filename = __DIR__ . "/../" . $request->getToken() . ".pdf";
+        $filename = __DIR__ . "/../../var/cache/" . $request->getToken() . ".pdf";
         if (true === file_exists($filename)) {
             unlink($filename);
         }

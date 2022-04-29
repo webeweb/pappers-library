@@ -2,5 +2,6 @@
 /.phpunit.result.cache
 /composer.lock
 
-/tests/*.pdf
+/var/cache/*
+!/var/cache/.gitkeep
 /.token
