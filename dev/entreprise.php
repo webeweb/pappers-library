@@ -13,9 +13,10 @@ require_once __DIR__ . "/../vendor/autoload.php";
 
 use WBW\Library\Pappers\Provider\APIv2Provider;
 use WBW\Library\Pappers\Request\EntrepriseRequest;
+use WBW\Library\Pappers\Tests\AbstractTestCase;
 
 // Create the provider.
-$provider = new APIv2Provider("YOUR_API_TOKEN");
+$provider = new APIv2Provider(AbstractTestCase::getToken());
 
 // Create the request.
 $request = new EntrepriseRequest();
