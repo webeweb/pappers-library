@@ -5,7 +5,6 @@ pappers-library
 [![Coverage Status](https://img.shields.io/coveralls/github/webeweb/pappers-library/master.svg?style=flat-square)](https://coveralls.io/github/webeweb/pappers-library?branch=master)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/quality/g/webeweb/pappers-library/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/webeweb/pappers-library/?branch=master)
 [![Latest Stable Version](https://img.shields.io/packagist/v/webeweb/pappers-library.svg?style=flat-square)](https://packagist.org/packages/webeweb/pappers-library)
-[![Latest Unstable Version](https://img.shields.io/packagist/vpre/webeweb/pappers-library.svg?style=flat-square)](https://packagist.org/packages/webeweb/pappers-library)
 [![License](https://img.shields.io/packagist/l/webeweb/pappers-library.svg?style=flat-square)](https://packagist.org/packages/webeweb/pappers-library)
 [![composer.lock](https://img.shields.io/badge/.lock-uncommited-important.svg?style=flat-square)](https://packagist.org/packages/webeweb/pappers-library)
 
