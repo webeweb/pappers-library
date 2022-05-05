@@ -31,7 +31,7 @@ class DocumentTelechargementRequest extends AbstractRequest {
     const RESOURCES_PATH = "/document/telechargement";
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCES_PATH;

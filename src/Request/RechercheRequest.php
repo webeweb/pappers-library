@@ -91,7 +91,7 @@ class RechercheRequest extends AbstractRechercheRequest implements RechercheRequ
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCES_PATH;

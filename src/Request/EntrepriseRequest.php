@@ -65,7 +65,7 @@ class EntrepriseRequest extends AbstractRequest implements EntrepriseRequestInte
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCES_PATH;

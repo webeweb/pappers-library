@@ -63,7 +63,7 @@ class SuggestionsRequest extends AbstractRequest implements SuggestionsRequestIn
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCES_PATH;

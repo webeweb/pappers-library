@@ -68,7 +68,7 @@ class APIv1Provider extends AbstractProvider {
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getEndpointVersion(): string {
         return "/v1";

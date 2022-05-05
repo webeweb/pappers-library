@@ -27,7 +27,7 @@ class RecherchePublicationsRequest extends AbstractRechercheRequest {
     const RESOURCES_PATH = "/recherche-publications";
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCES_PATH;

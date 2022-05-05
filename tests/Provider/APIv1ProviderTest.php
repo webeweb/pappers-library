@@ -39,7 +39,7 @@ class APIv1ProviderTest extends AbstractTestCase {
     private $apiToken;
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     protected function setUp(): void {
         parent::setUp();

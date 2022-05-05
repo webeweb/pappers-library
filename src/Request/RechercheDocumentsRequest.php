@@ -27,7 +27,7 @@ class RechercheDocumentsRequest extends AbstractRechercheRequest {
     const RESOURCES_PATH = "/recherche-documents";
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCES_PATH;

@@ -22,7 +22,7 @@ use WBW\Library\Pappers\Request\AbstractRechercheRequest;
 class TestRechercheRequest extends AbstractRechercheRequest {
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getResourcePath(): string {
         return "";
