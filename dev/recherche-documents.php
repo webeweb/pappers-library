@@ -69,7 +69,7 @@ foreach ($response->getResultats() as $current) {
     echo sprintf($format, "    Code NAF", $current->getEntreprise()->getCodeNaf());
     echo sprintf($format, "    Libelle code NAF", $current->getEntreprise()->getLibelleCodeNaf());
     echo sprintf($format, "    Domaine activite", $current->getEntreprise()->getDomaineActivite());
-    echo sprintf($format,"    Conventions collectives", "[...]");
+    echo sprintf($format, "    Conventions collectives", "[...]");
     echo sprintf($format, "    Date creation", $current->getEntreprise()->getDateCreation());
     echo sprintf($format, "    Date creation formatee", $current->getEntreprise()->getDateCreationFormate());
     echo sprintf($format, "    Entreprise employeuse", $current->getEntreprise()->getEntrepriseEmployeuse());
