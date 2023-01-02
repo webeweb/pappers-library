@@ -11,7 +11,6 @@
 
 namespace WBW\Library\Pappers\Tests\Provider;
 
-use Exception;
 use InvalidArgumentException;
 use Throwable;
 use WBW\Library\Pappers\Provider\APIv1Provider;
@@ -67,7 +66,7 @@ class APIv1ProviderTest extends AbstractTestCase {
 
             $res = $obj->documentTelechargement($request);
             $this->assertInstanceOf(DocumentTelechargementResponse::class, $res);
-        } catch (Exception $ex) {
+        } catch (Throwable $ex) {
 
             $this->assertInstanceOf(ApiException::class, $ex);
         }
@@ -91,7 +90,7 @@ class APIv1ProviderTest extends AbstractTestCase {
 
             $res = $obj->entreprise($request);
             $this->assertInstanceOf(EntrepriseResponse::class, $res);
-        } catch (Exception $ex) {
+        } catch (Throwable $ex) {
 
             $this->assertInstanceOf(ApiException::class, $ex);
         }
@@ -114,7 +113,7 @@ class APIv1ProviderTest extends AbstractTestCase {
         try {
 
             $obj->entreprise($request);
-        } catch (Exception $ex) {
+        } catch (Throwable $ex) {
 
             $this->assertInstanceOf(InvalidArgumentException::class, $ex);
             $this->assertEquals('The mandatory parameter "api_token" is missing', $ex->getMessage());
@@ -151,7 +150,7 @@ class APIv1ProviderTest extends AbstractTestCase {
 
             $res = $obj->recherche($request);
             $this->assertInstanceOf(RechercheResponse::class, $res);
-        } catch (Exception $ex) {
+        } catch (Throwable $ex) {
 
             $this->assertInstanceOf(ApiException::class, $ex);
         }

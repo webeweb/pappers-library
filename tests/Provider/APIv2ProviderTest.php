@@ -11,7 +11,6 @@
 
 namespace WBW\Library\Pappers\Tests\Provider;
 
-use Exception;
 use Throwable;
 use WBW\Library\Pappers\Provider\APIv2Provider;
 use WBW\Library\Pappers\Request\DocumentTelechargementRequest;
@@ -83,7 +82,7 @@ class APIv2ProviderTest extends AbstractTestCase {
 
             $res->saveAs($filename);
             $this->assertFileExists($filename);
-        } catch (Exception $ex) {
+        } catch (Throwable $ex) {
 
             $this->assertInstanceOf(ApiException::class, $ex);
         }
@@ -107,7 +106,7 @@ class APIv2ProviderTest extends AbstractTestCase {
 
             $res = $obj->entreprise($request);
             $this->assertInstanceOf(EntrepriseResponse::class, $res);
-        } catch (Exception $ex) {
+        } catch (Throwable $ex) {
 
             $this->assertInstanceOf(ApiException::class, $ex);
         }
