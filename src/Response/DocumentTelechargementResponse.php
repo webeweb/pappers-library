@@ -12,6 +12,7 @@
 namespace WBW\Library\Pappers\Response;
 
 use Exception;
+use Throwable;
 
 /**
  * Document téléchargementResponse.
@@ -33,7 +34,7 @@ class DocumentTelechargementResponse extends AbstractResponse {
      *
      * @param string $filename The filename.
      * @return int Returns the number of bytes written.
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function saveAs(string $filename): int {
 

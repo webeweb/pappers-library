@@ -13,6 +13,7 @@ namespace WBW\Library\Pappers\Tests\Provider;
 
 use Exception;
 use InvalidArgumentException;
+use Throwable;
 use WBW\Library\Pappers\Provider\APIv1Provider;
 use WBW\Library\Pappers\Request\DocumentTelechargementRequest;
 use WBW\Library\Pappers\Request\EntrepriseRequest;
@@ -52,7 +53,7 @@ class APIv1ProviderTest extends AbstractTestCase {
      * Tests documentTelechargement()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testDocumentTelechargement(): void {
 
@@ -76,7 +77,7 @@ class APIv1ProviderTest extends AbstractTestCase {
      * Tests entreprise()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testEntreprise(): void {
 
@@ -100,7 +101,7 @@ class APIv1ProviderTest extends AbstractTestCase {
      * Tests entreprise()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testEntrepriseWithoutApiToken(): void {
 
@@ -136,7 +137,7 @@ class APIv1ProviderTest extends AbstractTestCase {
      * Tests recherche()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testRecherche(): void {
 

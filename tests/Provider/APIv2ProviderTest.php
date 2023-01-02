@@ -12,6 +12,7 @@
 namespace WBW\Library\Pappers\Tests\Provider;
 
 use Exception;
+use Throwable;
 use WBW\Library\Pappers\Provider\APIv2Provider;
 use WBW\Library\Pappers\Request\DocumentTelechargementRequest;
 use WBW\Library\Pappers\Request\EntrepriseRequest;
@@ -59,7 +60,7 @@ class APIv2ProviderTest extends AbstractTestCase {
      * Tests documentTelechargement()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testDocumentTelechargement(): void {
 
@@ -92,7 +93,7 @@ class APIv2ProviderTest extends AbstractTestCase {
      * Tests entreprise()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testEntreprise(): void {
 
@@ -128,7 +129,7 @@ class APIv2ProviderTest extends AbstractTestCase {
      * Tests recherche()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testRecherche(): void {
 
@@ -142,7 +143,7 @@ class APIv2ProviderTest extends AbstractTestCase {
 
             $res = $obj->recherche($request);
             $this->assertInstanceOf(RechercheResponse::class, $res);
-        } catch (Exception $ex) {
+        } catch (Throwable $ex) {
 
             $this->assertInstanceOf(ApiException::class, $ex);
         }
@@ -152,7 +153,7 @@ class APIv2ProviderTest extends AbstractTestCase {
      * Tests rechercheDirigeants()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testRechercheDirigeants(): void {
 
@@ -166,7 +167,7 @@ class APIv2ProviderTest extends AbstractTestCase {
 
             $res = $obj->rechercheDirigeants($request);
             $this->assertInstanceOf(RechercheDirigeantsResponse::class, $res);
-        } catch (Exception $ex) {
+        } catch (Throwable $ex) {
 
             $this->assertInstanceOf(ApiException::class, $ex);
         }
@@ -176,7 +177,7 @@ class APIv2ProviderTest extends AbstractTestCase {
      * Tests rechercheDocuments()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testRechercheDocuments(): void {
 
@@ -197,7 +198,7 @@ class APIv2ProviderTest extends AbstractTestCase {
 
             $res = $obj->rechercheDocuments($request);
             $this->assertInstanceOf(RechercheDocumentsResponse::class, $res);
-        } catch (Exception $ex) {
+        } catch (Throwable $ex) {
 
             $this->assertInstanceOf(ApiException::class, $ex);
         }
@@ -207,7 +208,7 @@ class APIv2ProviderTest extends AbstractTestCase {
      * Tests recherchePublications()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testRecherchePublications(): void {
 
@@ -228,7 +229,7 @@ class APIv2ProviderTest extends AbstractTestCase {
 
             $res = $obj->recherchePublications($request);
             $this->assertInstanceOf(RecherchePublicationsResponse::class, $res);
-        } catch (Exception $ex) {
+        } catch (Throwable $ex) {
 
             $this->assertInstanceOf(ApiException::class, $ex);
         }
@@ -238,7 +239,7 @@ class APIv2ProviderTest extends AbstractTestCase {
      * Tests suggestions()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testSuggestions(): void {
 
