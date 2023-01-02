@@ -11,8 +11,7 @@
 
 namespace WBW\Library\Pappers\Response;
 
-use Exception;
-use Throwable;
+use RuntimeException;
 
 /**
  * Document téléchargementResponse.
@@ -34,13 +33,13 @@ class DocumentTelechargementResponse extends AbstractResponse {
      *
      * @param string $filename The filename.
      * @return int Returns the number of bytes written.
-     * @throws Throwable Throws an exception if an error occurs.
+     * @throws RuntimeException Throws a runtime exception if an error occurs.
      */
     public function saveAs(string $filename): int {
 
         $result = file_put_contents($filename, $this->getRawResponse());
         if (false === $result) {
-            throw new Exception("An I/O error occurs");
+            throw new RuntimeException("An I/O error occurs");
         }
 
         return $result;
