@@ -1,7 +1,7 @@
 pappers-library
 ===============
 
-[![Build Status](https://img.shields.io/github/workflow/status/webeweb/pappers-library/build?style=flat-square)](https://github.com/webeweb/pappers-library/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/webeweb/pappers-library/build.yml?style=flat-square)](https://github.com/webeweb/pappers-library/actions)
 [![Coverage Status](https://img.shields.io/coveralls/github/webeweb/pappers-library/master.svg?style=flat-square)](https://coveralls.io/github/webeweb/pappers-library?branch=master)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/quality/g/webeweb/pappers-library/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/webeweb/pappers-library/?branch=master)
 [![Latest Stable Version](https://img.shields.io/packagist/v/webeweb/pappers-library.svg?style=flat-square)](https://packagist.org/packages/webeweb/pappers-library)
