@@ -23,6 +23,7 @@ Entreprise
 ```php
 use WBW\Library\Pappers\Provider\APIv2Provider;
 use WBW\Library\Pappers\Request\EntrepriseRequest;
+use WBW\Library\Pappers\Response\EntrepriseResponse;
 
 // Create the API provider.
 $provider = new Apiv2Provider("YOUR_API_KEY");
@@ -32,8 +33,8 @@ $request = new EntrepriseRequest();
 $request->setSiret("44306184100047");
 // ...
 
-// Call the API and get the response.
-$response = $provider->entreprise($request);
+/** @var EntrepriseResponse $response */
+$response = $provider->sendRequest($request);
 
 // Handle the response.
 // ...
@@ -44,6 +45,7 @@ Recherche
 ```php
 use WBW\Library\Pappers\Provider\APIv2Provider;
 use WBW\Library\Pappers\Request\RechercheRequest;
+use WBW\Library\Pappers\Response\RechercheResponse;
 
 // Create the API provider.
 $provider = new Apiv2Provider("YOUR_API_KEY");
@@ -53,8 +55,8 @@ $request = new RechercheRequest();
 $request->setQ("Google France");
 // ...
 
-// Call the API and get the response.
-$response = $provider->recherche($request);
+/** @var RechercheResponse $response */
+$response = $provider->sendRequest($request);
 
 // Handle the response.
 // ...
@@ -65,6 +67,7 @@ Recherche dirigeants
 ```php
 use WBW\Library\Pappers\Provider\APIv2Provider;
 use WBW\Library\Pappers\Request\RechercheDirigeantsRequest;
+use WBW\Library\Pappers\Response\RechercheDirigeantsResponse;
 
 // Create the API provider.
 $provider = new Apiv2Provider("YOUR_API_KEY");
@@ -74,8 +77,8 @@ $request = new RechercheDirigeantsRequest();
 $request->setQ("Google France");
 // ...
 
-// Call the API and get the response.
-$response = $provider->rechercheDirigeants($request);
+/** @var RechercheDirigeantsResponse $response */
+$response = $provider->sendRequest($request);
 
 // Handle the response.
 // ...
@@ -86,6 +89,7 @@ Recherche documents
 ```php
 use WBW\Library\Pappers\Provider\APIv2Provider;
 use WBW\Library\Pappers\Request\RechercheDocumentsRequest;
+use WBW\Library\Pappers\Response\RechercheDocumentsResponse;
 
 // Create the API provider.
 $provider = new Apiv2Provider("YOUR_API_KEY");
@@ -102,8 +106,8 @@ $request->setEntrepriseCessee(false);
 $request->setStatutRcs("inscrit");
 // ...
 
-// Call the API and get the response.
-$response = $provider->rechercheDocuments($request);
+/** @var RechercheDocumentsResponse $response */
+$response = $provider->sendRequest($request);
 
 // Handle the response.
 // ...
@@ -114,6 +118,7 @@ Recherche publications
 ```php
 use WBW\Library\Pappers\Provider\APIv2Provider;
 use WBW\Library\Pappers\Request\RecherchePublicationsRequest;
+use WBW\Library\Pappers\Response\RecherchePublicationsResponse;
 
 // Create the API provider.
 $provider = new Apiv2Provider("YOUR_API_KEY");
@@ -130,8 +135,8 @@ $request->setEntrepriseCessee(false);
 $request->setStatutRcs("inscrit");
 // ...
 
-// Call the API and get the response.
-$response = $provider->recherchePublications($request);
+/** @var RecherchePublicationsResponse response */
+$response = $provider->sendRequest($request);
 
 // Handle the response.
 // ...
@@ -142,6 +147,7 @@ Suggestions
 ```php
 use WBW\Library\Pappers\Provider\APIv2Provider;
 use WBW\Library\Pappers\Request\SuggestionsRequest;
+use WBW\Library\Pappers\Response\SuggestionsResponse;
 
 // Create the API provider.
 $provider = new Apiv2Provider();
@@ -151,8 +157,8 @@ $request = new SuggestionsRequest();
 $request->setQ("Google France");
 // ...
 
-// Call the API and get the response.
-$response = $provider->suggestions($request);
+/** @var SuggestionsResponse $response */
+$response = $provider->sendRequest($request);
 
 // Handle the response.
 // ...
@@ -163,6 +169,7 @@ Documents téléchargement
 ```php
 use WBW\Library\Pappers\Provider\APIv2Provider;
 use WBW\Library\Pappers\Request\DocumentTelechargementRequest;
+use WBW\Library\Pappers\Response\DocumentTelechargementResponse;
 
 // Create the API provider.
 $provider = new Apiv2Provider("YOUR_API_KEY");
@@ -172,8 +179,8 @@ $request = new DocumentTelechargementRequest();
 $request->setToken("SzQ0MzA2MTg0MQ");
 // ...
 
-// Call the API and get the response.
-$response = $provider->documentTelechargement($request);
+/** @var DocumentTelechargementResponse $response */
+$response = $provider->sendRequest($request);
 
 // Handle the response.
 // ...
