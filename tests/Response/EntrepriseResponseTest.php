@@ -12,6 +12,7 @@
 namespace WBW\Library\Pappers\Tests\Response;
 
 use PHPUnit\Framework\TestCase;
+use WBW\Library\Pappers\Response\AbstractResponse;
 use WBW\Library\Pappers\Response\EntrepriseResponse;
 
 /**
@@ -30,6 +31,8 @@ class EntrepriseResponseTest extends TestCase {
     public function test__construct(): void {
 
         $obj = new EntrepriseResponse();
+
+        $this->assertInstanceOf(AbstractResponse::class, $obj);
 
         $this->assertNull($obj->getEntreprise());
     }

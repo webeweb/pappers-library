@@ -13,6 +13,7 @@ namespace WBW\Library\Pappers\Tests\Response;
 
 use PHPUnit\Framework\TestCase;
 use WBW\Library\Pappers\Model\Entreprise;
+use WBW\Library\Pappers\Response\AbstractResponse;
 use WBW\Library\Pappers\Response\RechercheResponse;
 
 /**
@@ -47,6 +48,8 @@ class RechercheResponseTest extends TestCase {
     public function test__construct(): void {
 
         $obj = new RechercheResponse();
+
+        $this->assertInstanceOf(AbstractResponse::class, $obj);
 
         $this->assertEquals([], $obj->getResultats());
     }

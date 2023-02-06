@@ -12,6 +12,7 @@
 namespace WBW\Library\Pappers\Tests\Response;
 
 use WBW\Library\Pappers\Model\PublicationBodacc;
+use WBW\Library\Pappers\Response\AbstractResponse;
 use WBW\Library\Pappers\Response\RecherchePublicationsResponse;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
 
@@ -47,6 +48,8 @@ class RecherchePublicationsResponseTest extends AbstractTestCase {
     public function test__construct(): void {
 
         $obj = new RecherchePublicationsResponse();
+
+        $this->assertInstanceOf(AbstractResponse::class, $obj);
 
         $this->assertEquals([], $obj->getResultats());
     }

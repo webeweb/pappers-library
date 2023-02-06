@@ -12,6 +12,7 @@
 namespace WBW\Library\Pappers\Tests\Response;
 
 use WBW\Library\Pappers\Model\Representant;
+use WBW\Library\Pappers\Response\AbstractResponse;
 use WBW\Library\Pappers\Response\RechercheDirigeantsResponse;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
 
@@ -47,6 +48,8 @@ class RechercheDirigeantsResponseTest extends AbstractTestCase {
     public function test__construct(): void {
 
         $obj = new RechercheDirigeantsResponse();
+
+        $this->assertInstanceOf(AbstractResponse::class, $obj);
 
         $this->assertEquals([], $obj->getResultats());
     }

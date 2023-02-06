@@ -13,6 +13,7 @@ namespace WBW\Library\Pappers\Tests\Response;
 
 use WBW\Library\Pappers\Model\Entreprise;
 use WBW\Library\Pappers\Model\Representant;
+use WBW\Library\Pappers\Response\AbstractResponse;
 use WBW\Library\Pappers\Response\SuggestionsResponse;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
 
@@ -128,6 +129,8 @@ class SuggestionsResponseTest extends AbstractTestCase {
     public function test__construct(): void {
 
         $obj = new SuggestionsResponse();
+
+        $this->assertInstanceOf(AbstractResponse::class, $obj);
 
         $this->assertEquals([], $obj->getResultatsDenomination());
         $this->assertEquals([], $obj->getResultatsNomComplet());
