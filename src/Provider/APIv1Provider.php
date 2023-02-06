@@ -13,14 +13,12 @@ namespace WBW\Library\Pappers\Provider;
 
 use GuzzleHttp\Exception\GuzzleException;
 use InvalidArgumentException;
+use RuntimeException;
+use WBW\Library\Pappers\Request\AbstractRequest;
 use WBW\Library\Pappers\Request\DocumentTelechargementRequest;
 use WBW\Library\Pappers\Request\EntrepriseRequest;
 use WBW\Library\Pappers\Request\RechercheRequest;
-use WBW\Library\Pappers\Response\DocumentTelechargementResponse;
-use WBW\Library\Pappers\Response\EntrepriseResponse;
-use WBW\Library\Pappers\Response\RechercheResponse;
-use WBW\Library\Pappers\Serializer\RequestSerializer;
-use WBW\Library\Pappers\Serializer\ResponseDeserializer;
+use WBW\Library\Pappers\Response\AbstractResponse;
 use WBW\Library\Provider\Exception\ApiException;
 
 /**
@@ -32,42 +30,6 @@ use WBW\Library\Provider\Exception\ApiException;
 class APIv1Provider extends AbstractProvider {
 
     /**
-     * Document téléchargement.
-     *
-     * @param DocumentTelechargementRequest $request The entreprise request.
-     * @return DocumentTelechargementResponse Returns the entreprise response.
-     * @throws InvalidArgumentException Throws an invalid argument exception if a parameter is missing.
-     * @throws GuzzleException Throws a Guzzle exception if an error occurs.
-     * @throws ApiException Throws an API exception if an error occurs.
-     */
-    public function documentTelechargement(DocumentTelechargementRequest $request): DocumentTelechargementResponse {
-
-        $queryData = RequestSerializer::serializeDocumentTelechargementRequest($request);
-
-        $rawResponse = $this->callApi($request, $queryData);
-
-        return ResponseDeserializer::deserializeDocumentTelechargementResponse($rawResponse);
-    }
-
-    /**
-     * Entreprise.
-     *
-     * @param EntrepriseRequest $request The entreprise request.
-     * @return EntrepriseResponse Returns the entreprise response.
-     * @throws InvalidArgumentException Throws an invalid argument exception if a parameter is missing.
-     * @throws GuzzleException Throws a Guzzle exception if an error occurs.
-     * @throws ApiException Throws an API exception if an error occurs.
-     */
-    public function entreprise(EntrepriseRequest $request): EntrepriseResponse {
-
-        $queryData = RequestSerializer::serializeEntrepriseRequest($request);
-
-        $rawResponse = $this->callApi($request, $queryData);
-
-        return ResponseDeserializer::deserializeEntrepriseResponse($rawResponse);
-    }
-
-    /**
      * {@inheritdoc}
      */
     public function getEndpointVersion(): string {
@@ -75,20 +37,26 @@ class APIv1Provider extends AbstractProvider {
     }
 
     /**
-     * Recherche.
+     * Sends a request.
      *
-     * @param RechercheRequest $request The recherche request.
-     * @return RechercheResponse Returns the recherche response.
+     * @param AbstractRequest $request The request.
+     * @return AbstractResponse Returns the response.
      * @throws InvalidArgumentException Throws an invalid argument exception if a parameter is missing.
      * @throws GuzzleException Throws a Guzzle exception if an error occurs.
      * @throws ApiException Throws an API exception if an error occurs.
      */
-    public function recherche(RechercheRequest $request): RechercheResponse {
+    public function sendRequest(AbstractRequest $request): AbstractResponse {
 
-        $queryData = RequestSerializer::serializeRechercheRequest($request);
+        if (false === ($request instanceof DocumentTelechargementRequest) &&
+            false === ($request instanceof EntrepriseRequest) &&
+            false === ($request instanceof RechercheRequest)) {
 
+            throw new RuntimeException("");
+        }
+
+        $queryData   = $request->serializeRequest();
         $rawResponse = $this->callApi($request, $queryData);
 
-        return ResponseDeserializer::deserializeRechercheResponse($rawResponse);
+        return $request->deserializeResponse($rawResponse);
     }
 }

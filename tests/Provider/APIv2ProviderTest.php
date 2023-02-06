@@ -77,7 +77,7 @@ class APIv2ProviderTest extends AbstractTestCase {
 
         try {
 
-            $res = $obj->documentTelechargement($request);
+            $res = $obj->sendRequest($request);
             $this->assertInstanceOf(DocumentTelechargementResponse::class, $res);
 
             $res->saveAs($filename);
@@ -104,7 +104,7 @@ class APIv2ProviderTest extends AbstractTestCase {
 
         try {
 
-            $res = $obj->entreprise($request);
+            $res = $obj->sendRequest($request);
             $this->assertInstanceOf(EntrepriseResponse::class, $res);
         } catch (Throwable $ex) {
 
@@ -140,7 +140,7 @@ class APIv2ProviderTest extends AbstractTestCase {
 
         try {
 
-            $res = $obj->recherche($request);
+            $res = $obj->sendRequest($request);
             $this->assertInstanceOf(RechercheResponse::class, $res);
         } catch (Throwable $ex) {
 
@@ -164,7 +164,7 @@ class APIv2ProviderTest extends AbstractTestCase {
 
         try {
 
-            $res = $obj->rechercheDirigeants($request);
+            $res = $obj->sendRequest($request);
             $this->assertInstanceOf(RechercheDirigeantsResponse::class, $res);
         } catch (Throwable $ex) {
 
@@ -195,7 +195,7 @@ class APIv2ProviderTest extends AbstractTestCase {
 
         try {
 
-            $res = $obj->rechercheDocuments($request);
+            $res = $obj->sendRequest($request);
             $this->assertInstanceOf(RechercheDocumentsResponse::class, $res);
         } catch (Throwable $ex) {
 
@@ -226,7 +226,7 @@ class APIv2ProviderTest extends AbstractTestCase {
 
         try {
 
-            $res = $obj->recherchePublications($request);
+            $res = $obj->sendRequest($request);
             $this->assertInstanceOf(RecherchePublicationsResponse::class, $res);
         } catch (Throwable $ex) {
 
@@ -248,7 +248,7 @@ class APIv2ProviderTest extends AbstractTestCase {
 
         $obj = new APIv2Provider();
 
-        $res = $obj->suggestions($request);
+        $res = $obj->sendRequest($request);
         $this->assertInstanceOf(SuggestionsResponse::class, $res);
     }
 }
