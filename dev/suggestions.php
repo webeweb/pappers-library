@@ -13,6 +13,7 @@ require_once __DIR__ . "/../vendor/autoload.php";
 
 use WBW\Library\Pappers\Provider\APIv2Provider;
 use WBW\Library\Pappers\Request\SuggestionsRequest;
+use WBW\Library\Pappers\Response\SuggestionsResponse;
 
 // Create the provider.
 $provider = new APIv2Provider();
@@ -21,8 +22,8 @@ $provider = new APIv2Provider();
 $request = new SuggestionsRequest();
 $request->setQ("Google France");
 
-// Call the API and get the response.
-$response = $provider->suggestions($request);
+/** @var SuggestionsResponse $response */
+$response = $provider->sendRequest($request);
 
 // Handle the response.
 $format = "%-30s: %s\n";

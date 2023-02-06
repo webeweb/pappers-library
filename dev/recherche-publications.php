@@ -13,6 +13,7 @@ require_once __DIR__ . "/../vendor/autoload.php";
 
 use WBW\Library\Pappers\Provider\APIv2Provider;
 use WBW\Library\Pappers\Request\RecherchePublicationsRequest;
+use WBW\Library\Pappers\Response\RecherchePublicationsResponse;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
 
 // Create the provider.
@@ -29,8 +30,8 @@ $request->setCategorieJuridique("5498");
 $request->setEntrepriseCessee(false);
 $request->setStatutRcs("inscrit");
 
-// Call the API and get the response.
-$response = $provider->recherchePublications($request);
+/** @var RecherchePublicationsResponse $response */
+$response = $provider->sendRequest($request);
 
 // Handle the response.
 $format = "%-30s: %s\n";

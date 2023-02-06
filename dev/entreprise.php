@@ -13,6 +13,7 @@ require_once __DIR__ . "/../vendor/autoload.php";
 
 use WBW\Library\Pappers\Provider\APIv2Provider;
 use WBW\Library\Pappers\Request\EntrepriseRequest;
+use WBW\Library\Pappers\Response\EntrepriseResponse;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
 
 // Create the provider.
@@ -22,8 +23,8 @@ $provider = new APIv2Provider(AbstractTestCase::getToken());
 $request = new EntrepriseRequest();
 $request->setSiret("44306184100047");
 
-// Call the API and get the response.
-$response = $provider->entreprise($request);
+/** @var EntrepriseResponse $response */
+$response = $provider->sendRequest($request);
 
 // Handle the response.
 $format = "%-30s: %s\n";
