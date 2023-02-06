@@ -14,7 +14,7 @@ namespace WBW\Library\Pappers\Response;
 use RuntimeException;
 
 /**
- * Document téléchargementResponse.
+ * Document téléchargement response.
  *
  * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\Pappers\Response
