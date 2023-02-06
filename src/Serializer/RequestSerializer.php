@@ -12,13 +12,17 @@
 namespace WBW\Library\Pappers\Serializer;
 
 use WBW\Library\Pappers\Request\AbstractRechercheRequest;
+use WBW\Library\Pappers\Request\AbstractRechercheRequestInterface;
 use WBW\Library\Pappers\Request\DocumentTelechargementRequest;
 use WBW\Library\Pappers\Request\EntrepriseRequest;
+use WBW\Library\Pappers\Request\EntrepriseRequestInterface;
 use WBW\Library\Pappers\Request\RechercheDirigeantsRequest;
 use WBW\Library\Pappers\Request\RechercheDocumentsRequest;
 use WBW\Library\Pappers\Request\RecherchePublicationsRequest;
 use WBW\Library\Pappers\Request\RechercheRequest;
+use WBW\Library\Pappers\Request\RechercheRequestInterface;
 use WBW\Library\Pappers\Request\SuggestionsRequest;
+use WBW\Library\Pappers\Request\SuggestionsRequestInterface;
 use WBW\Library\Types\Helper\ArrayHelper;
 use WBW\Library\Types\Helper\StringHelper;
 
@@ -42,7 +46,7 @@ class RequestSerializer {
 
         ArrayHelper::set($result, "par_page", $request->getParPage(), [null, 20]);
         ArrayHelper::set($result, "page", $request->getPage(), [null, 1]);
-        ArrayHelper::set($result, "precision", $request->getPrecision(), [null, AbstractRechercheRequest::PRECISION_STANDARD]);
+        ArrayHelper::set($result, "precision", $request->getPrecision(), [null, AbstractRechercheRequestInterface::PRECISION_STANDARD]);
         ArrayHelper::set($result, "q", $request->getQ(), [null]);
         ArrayHelper::set($result, "code_naf", $request->getCodeNaf(), [null]);
         ArrayHelper::set($result, "departement", $request->getDepartement(), [null]);
@@ -110,7 +114,7 @@ class RequestSerializer {
 
         ArrayHelper::set($result, "siren", $request->getSiren(), [null]);
         ArrayHelper::set($result, "siret", $request->getSiret(), [null]);
-        ArrayHelper::set($result, "format_publications_bodacc", $request->getFormatPublicationsBodacc(), [null, EntrepriseRequest::FORMAT_PUBLICATIONS_BODACC_OBJET]);
+        ArrayHelper::set($result, "format_publications_bodacc", $request->getFormatPublicationsBodacc(), [null, EntrepriseRequestInterface::FORMAT_PUBLICATIONS_BODACC_OBJET]);
         ArrayHelper::set($result, "marques", $request->getMarques(), [null]);
 
         return $result;
@@ -156,7 +160,7 @@ class RequestSerializer {
 
         $result = static::serializeAbstractRechercheRequest($request);
 
-        ArrayHelper::set($result, "bases", $request->getBases(), [null, RechercheRequest::BASE_ENTREPRISES]);
+        ArrayHelper::set($result, "bases", $request->getBases(), [null, RechercheRequestInterface::BASE_ENTREPRISES]);
         ArrayHelper::set($result, "curseur", $request->getCurseur(), [null]);
         ArrayHelper::set($result, "par_curseur", $request->getParCurseur(), [null, 100]);
         ArrayHelper::set($result, "export", $request->getExport(), [null]);
@@ -176,7 +180,7 @@ class RequestSerializer {
 
         ArrayHelper::set($result, "q", $request->getQ(), [null]);
         ArrayHelper::set($result, "longueur", $request->getLongueur(), [null, 10]);
-        ArrayHelper::set($result, "cibles", $request->getCibles(), [null, SuggestionsRequest::CIBLE_NOM_ENTREPRISE]);
+        ArrayHelper::set($result, "cibles", $request->getCibles(), [null, SuggestionsRequestInterface::CIBLE_NOM_ENTREPRISE]);
 
         return $result;
     }
