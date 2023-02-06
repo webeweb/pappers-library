@@ -11,6 +11,8 @@
 
 namespace WBW\Library\Pappers\Request;
 
+use WBW\Library\Pappers\Response\AbstractResponse;
+
 /**
  * Abstract request.
  *
@@ -28,9 +30,24 @@ abstract class AbstractRequest {
     }
 
     /**
+     * Deserializes a response.
+     *
+     * @param string $rawResponse The raw response.
+     * @return AbstractResponse Returns the deserialized response.
+     */
+    abstract public function deserializeResponse(string $rawResponse): AbstractResponse;
+
+    /**
      * Get the resource path.
      *
      * @return string Returns the resource path.
      */
     abstract public function getResourcePath(): string;
+
+    /**
+     * Serializes the request.
+     *
+     * @return array Returns the serialized request.
+     */
+    abstract public function serializeRequest(): array;
 }

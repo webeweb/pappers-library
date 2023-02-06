@@ -11,7 +11,9 @@
 
 namespace WBW\Library\Pappers\Tests\Fixtures\Request;
 
+use RuntimeException;
 use WBW\Library\Pappers\Request\AbstractRechercheRequest;
+use WBW\Library\Pappers\Response\AbstractResponse;
 
 /**
  * Test recherche request.
@@ -24,7 +26,21 @@ class TestRechercheRequest extends AbstractRechercheRequest {
     /**
      * {@inheritdoc}
      */
+    public function deserializeResponse(string $rawResponse): AbstractResponse {
+        throw new RuntimeException();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function getResourcePath(): string {
         return "";
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function serializeRequest(): array {
+        return [];
     }
 }
