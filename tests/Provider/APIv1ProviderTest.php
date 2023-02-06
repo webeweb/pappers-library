@@ -17,6 +17,7 @@ use WBW\Library\Pappers\Provider\APIv1Provider;
 use WBW\Library\Pappers\Request\DocumentTelechargementRequest;
 use WBW\Library\Pappers\Request\EntrepriseRequest;
 use WBW\Library\Pappers\Request\RechercheRequest;
+use WBW\Library\Pappers\Request\SuggestionsRequest;
 use WBW\Library\Pappers\Response\DocumentTelechargementResponse;
 use WBW\Library\Pappers\Response\EntrepriseResponse;
 use WBW\Library\Pappers\Response\RechercheResponse;
@@ -153,6 +154,30 @@ class APIv1ProviderTest extends AbstractTestCase {
         } catch (Throwable $ex) {
 
             $this->assertInstanceOf(ApiException::class, $ex);
+        }
+    }
+
+    /**
+     * Tests suggestions()
+     *
+     * @return void
+     * @throws Throwable Throws an exception if an error occurs.
+     */
+    public function testSuggestions(): void {
+
+        // Set a Suggestions request mock.
+        $request = new SuggestionsRequest();
+        $request->setQ("Google France");
+
+        $obj = new APIv1Provider($this->apiToken);
+
+        try {
+
+            $obj->sendRequest($request);
+        } catch (Throwable $ex) {
+
+            $this->assertInstanceOf(InvalidArgumentException::class, $ex);
+            $this->assertEquals('The request "WBW\\Library\\Pappers\\Request\\SuggestionsRequest" is not supported', $ex->getMessage());
         }
     }
 }

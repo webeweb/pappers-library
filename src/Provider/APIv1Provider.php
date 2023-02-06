@@ -13,7 +13,6 @@ namespace WBW\Library\Pappers\Provider;
 
 use GuzzleHttp\Exception\GuzzleException;
 use InvalidArgumentException;
-use RuntimeException;
 use WBW\Library\Pappers\Request\AbstractRequest;
 use WBW\Library\Pappers\Request\DocumentTelechargementRequest;
 use WBW\Library\Pappers\Request\EntrepriseRequest;
@@ -51,7 +50,7 @@ class APIv1Provider extends AbstractProvider {
             false === ($request instanceof EntrepriseRequest) &&
             false === ($request instanceof RechercheRequest)) {
 
-            throw new RuntimeException("");
+            throw new InvalidArgumentException(sprintf('The request "%s" is not supported', get_class($request)));
         }
 
         $queryData   = $request->serializeRequest();
