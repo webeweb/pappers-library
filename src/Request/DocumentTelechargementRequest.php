@@ -11,6 +11,8 @@
 
 namespace WBW\Library\Pappers\Request;
 
+use WBW\Library\Pappers\Response\AbstractResponse;
+use WBW\Library\Pappers\Serializer\ResponseDeserializer;
 use WBW\Library\Traits\Strings\StringTokenTrait;
 
 /**
@@ -29,6 +31,13 @@ class DocumentTelechargementRequest extends AbstractRequest {
      * @var string
      */
     const RESOURCES_PATH = "/document/telechargement";
+
+    /**
+     * {@inheritdoc}
+     */
+    public function deserializeResponse(string $rawResponse): AbstractResponse {
+        return ResponseDeserializer::deserializeDocumentTelechargementResponse($rawResponse);
+    }
 
     /**
      * {@inheritdoc}

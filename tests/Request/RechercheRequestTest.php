@@ -11,7 +11,10 @@
 
 namespace WBW\Library\Pappers\Tests\Request;
 
+use WBW\Library\Pappers\Request\AbstractRequest;
 use WBW\Library\Pappers\Request\RechercheRequest;
+use WBW\Library\Pappers\Request\RechercheRequestInterface;
+use WBW\Library\Pappers\Response\RechercheResponse;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
 
 /**
@@ -21,6 +24,19 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
  * @package WBW\Library\Pappers\Tests\Request
  */
 class RechercheRequestTest extends AbstractTestCase {
+
+    /**
+     * Tests deserializeResponse()
+     *
+     * @return void
+     */
+    public function testDeserializeResponse(): void {
+
+        $obj = new RechercheRequest();
+
+        $res = $obj->deserializeResponse("");
+        $this->assertInstanceOf(RechercheResponse::class, $res);
+    }
 
     /**
      * Tests setBases()
@@ -84,6 +100,9 @@ class RechercheRequestTest extends AbstractTestCase {
         $this->assertEquals("/recherche", RechercheRequest::RESOURCES_PATH);
 
         $obj = new RechercheRequest();
+
+        $this->assertInstanceOf(AbstractRequest::class, $obj);
+        $this->assertInstanceOf(RechercheRequestInterface::class, $obj);
 
         $this->assertEquals(RechercheRequest::RESOURCES_PATH, $obj->getResourcePath());
 

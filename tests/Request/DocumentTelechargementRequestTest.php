@@ -11,7 +11,9 @@
 
 namespace WBW\Library\Pappers\Tests\Request;
 
+use WBW\Library\Pappers\Request\AbstractRequest;
 use WBW\Library\Pappers\Request\DocumentTelechargementRequest;
+use WBW\Library\Pappers\Response\DocumentTelechargementResponse;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
 
 /**
@@ -21,6 +23,19 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
  * @package WBW\Library\Pappers\Tests\Request
  */
 class DocumentTelechargementRequestTest extends AbstractTestCase {
+
+    /**
+     * Tests deserializeResponse()
+     *
+     * @return void
+     */
+    public function testDeserializeResponse(): void {
+
+        $obj = new DocumentTelechargementRequest();
+
+        $res = $obj->deserializeResponse("");
+        $this->assertInstanceOf(DocumentTelechargementResponse::class, $res);
+    }
 
     /**
      * Tests __construct()
@@ -33,6 +48,8 @@ class DocumentTelechargementRequestTest extends AbstractTestCase {
         $this->assertEquals("/document/telechargement", DocumentTelechargementRequest::RESOURCES_PATH);
 
         $obj = new DocumentTelechargementRequest();
+
+        $this->assertInstanceOf(AbstractRequest::class, $obj);
 
         $this->assertNull($obj->getToken());
 

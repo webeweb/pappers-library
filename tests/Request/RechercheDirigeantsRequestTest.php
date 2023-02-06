@@ -11,7 +11,9 @@
 
 namespace WBW\Library\Pappers\Tests\Request;
 
+use WBW\Library\Pappers\Request\AbstractRequest;
 use WBW\Library\Pappers\Request\RechercheDirigeantsRequest;
+use WBW\Library\Pappers\Response\RechercheDirigeantsResponse;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
 
 /**
@@ -21,6 +23,19 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
  * @package WBW\Library\Pappers\Tests\Request
  */
 class RechercheDirigeantsRequestTest extends AbstractTestCase {
+
+    /**
+     * Tests deserializeResponse()
+     *
+     * @return void
+     */
+    public function testDeserializeResponse(): void {
+
+        $obj = new RechercheDirigeantsRequest();
+
+        $res = $obj->deserializeResponse("");
+        $this->assertInstanceOf(RechercheDirigeantsResponse::class, $res);
+    }
 
     /**
      * Tests __construct()
@@ -33,6 +48,8 @@ class RechercheDirigeantsRequestTest extends AbstractTestCase {
         $this->assertEquals("/recherche-dirigeants", RechercheDirigeantsRequest::RESOURCES_PATH);
 
         $obj = new RechercheDirigeantsRequest();
+
+        $this->assertInstanceOf(AbstractRequest::class, $obj);
 
         $this->assertEquals(RechercheDirigeantsRequest::RESOURCES_PATH, $obj->getResourcePath());
     }

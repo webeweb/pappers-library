@@ -11,7 +11,10 @@
 
 namespace WBW\Library\Pappers\Tests\Request;
 
+use WBW\Library\Pappers\Request\AbstractRequest;
 use WBW\Library\Pappers\Request\SuggestionsRequest;
+use WBW\Library\Pappers\Request\SuggestionsRequestInterface;
+use WBW\Library\Pappers\Response\SuggestionsResponse;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
 
 /**
@@ -21,6 +24,19 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
  * @package WBW\Library\Pappers\Tests\Request
  */
 class SuggestionsRequestTest extends AbstractTestCase {
+
+    /**
+     * Tests deserializeResponse()
+     *
+     * @return void
+     */
+    public function testDeserializeResponse(): void {
+
+        $obj = new SuggestionsRequest();
+
+        $res = $obj->deserializeResponse("");
+        $this->assertInstanceOf(SuggestionsResponse::class, $res);
+    }
 
     /**
      * Tests setCibles()
@@ -59,6 +75,9 @@ class SuggestionsRequestTest extends AbstractTestCase {
         $this->assertEquals("/suggestions", SuggestionsRequest::RESOURCES_PATH);
 
         $obj = new SuggestionsRequest();
+
+        $this->assertInstanceOf(AbstractRequest::class, $obj);
+        $this->assertInstanceOf(SuggestionsRequestInterface::class, $obj);
 
         $this->assertNull($obj->getQ());
 

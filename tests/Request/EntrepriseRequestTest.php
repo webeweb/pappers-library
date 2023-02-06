@@ -11,7 +11,10 @@
 
 namespace WBW\Library\Pappers\Tests\Request;
 
+use WBW\Library\Pappers\Request\AbstractRequest;
 use WBW\Library\Pappers\Request\EntrepriseRequest;
+use WBW\Library\Pappers\Request\EntrepriseRequestInterface;
+use WBW\Library\Pappers\Response\EntrepriseResponse;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
 
 /**
@@ -21,6 +24,19 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
  * @package WBW\Library\Pappers\Tests\Request
  */
 class EntrepriseRequestTest extends AbstractTestCase {
+
+    /**
+     * Tests deserializeResponse()
+     *
+     * @return void
+     */
+    public function testDeserializeResponse(): void {
+
+        $obj = new EntrepriseRequest();
+
+        $res = $obj->deserializeResponse("");
+        $this->assertInstanceOf(EntrepriseResponse::class, $res);
+    }
 
     /**
      * Tests setFormatPublicationsBodacc()
@@ -58,6 +74,9 @@ class EntrepriseRequestTest extends AbstractTestCase {
         $this->assertEquals("/entreprise", EntrepriseRequest::RESOURCES_PATH);
 
         $obj = new EntrepriseRequest();
+
+        $this->assertInstanceOf(AbstractRequest::class, $obj);
+        $this->assertInstanceOf(EntrepriseRequestInterface::class, $obj);
 
         $this->assertEquals(EntrepriseRequest::RESOURCES_PATH, $obj->getResourcePath());
 

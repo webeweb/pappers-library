@@ -11,6 +11,8 @@
 
 namespace WBW\Library\Pappers\Request;
 
+use WBW\Library\Pappers\Response\AbstractResponse;
+use WBW\Library\Pappers\Serializer\ResponseDeserializer;
 use WBW\Library\Traits\Strings\StringQTrait;
 
 /**
@@ -43,6 +45,13 @@ class SuggestionsRequest extends AbstractRequest implements SuggestionsRequestIn
      * @var int|null
      */
     private $longueur;
+
+    /**
+     * {@inheritdoc}
+     */
+    public function deserializeResponse(string $rawResponse): AbstractResponse {
+        return ResponseDeserializer::deserializeSuggestionsResponse($rawResponse);
+    }
 
     /**
      * Get the cibles.

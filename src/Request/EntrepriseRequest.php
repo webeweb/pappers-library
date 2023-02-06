@@ -13,6 +13,8 @@ namespace WBW\Library\Pappers\Request;
 
 use WBW\Library\Pappers\Model\Attribute\StringSirenTrait;
 use WBW\Library\Pappers\Model\Attribute\StringSiretTrait;
+use WBW\Library\Pappers\Response\AbstractResponse;
+use WBW\Library\Pappers\Serializer\ResponseDeserializer;
 
 /**
  * Entreprise request.
@@ -45,6 +47,13 @@ class EntrepriseRequest extends AbstractRequest implements EntrepriseRequestInte
      * @var bool|null
      */
     private $marques;
+
+    /**
+     * {@inheritdoc}
+     */
+    public function deserializeResponse(string $rawResponse): AbstractResponse {
+        return ResponseDeserializer::deserializeEntrepriseResponse($rawResponse);
+    }
 
     /**
      * Get the format publications BODACC.

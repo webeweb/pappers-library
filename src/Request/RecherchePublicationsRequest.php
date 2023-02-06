@@ -11,6 +11,9 @@
 
 namespace WBW\Library\Pappers\Request;
 
+use WBW\Library\Pappers\Response\AbstractResponse;
+use WBW\Library\Pappers\Serializer\ResponseDeserializer;
+
 /**
  * Recherche publications request.
  *
@@ -25,6 +28,13 @@ class RecherchePublicationsRequest extends AbstractRechercheRequest {
      * @var string
      */
     const RESOURCES_PATH = "/recherche-publications";
+
+    /**
+     * {@inheritdoc}
+     */
+    public function deserializeResponse(string $rawResponse): AbstractResponse {
+        return ResponseDeserializer::deserializeRecherchePublicationsResponse($rawResponse);
+    }
 
     /**
      * {@inheritdoc}

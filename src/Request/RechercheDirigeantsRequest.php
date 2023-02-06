@@ -11,6 +11,9 @@
 
 namespace WBW\Library\Pappers\Request;
 
+use WBW\Library\Pappers\Response\AbstractResponse;
+use WBW\Library\Pappers\Serializer\ResponseDeserializer;
+
 /**
  * Recherche dirigeants request.
  *
@@ -25,6 +28,13 @@ class RechercheDirigeantsRequest extends AbstractRechercheRequest {
      * @var string
      */
     const RESOURCES_PATH = "/recherche-dirigeants";
+
+    /**
+     * {@inheritdoc}
+     */
+    public function deserializeResponse(string $rawResponse): AbstractResponse {
+        return ResponseDeserializer::deserializeRechercheDirigeantsResponse($rawResponse);
+    }
 
     /**
      * {@inheritdoc}

@@ -11,6 +11,9 @@
 
 namespace WBW\Library\Pappers\Request;
 
+use WBW\Library\Pappers\Response\AbstractResponse;
+use WBW\Library\Pappers\Serializer\ResponseDeserializer;
+
 /**
  * Recherche request.
  *
@@ -53,6 +56,13 @@ class RechercheRequest extends AbstractRechercheRequest implements RechercheRequ
      * @var int|null
      */
     private $parCurseur;
+
+    /**
+     * {@inheritdoc}
+     */
+    public function deserializeResponse(string $rawResponse): AbstractResponse {
+        return ResponseDeserializer::deserializeRechercheResponse($rawResponse);
+    }
 
     /**
      * Get the bases.
