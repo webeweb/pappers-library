@@ -39,6 +39,22 @@ class SuggestionsRequestTest extends AbstractTestCase {
     }
 
     /**
+     * Tests serializeRequest()
+     *
+     * @return void
+     */
+    public function testSerializeRequest(): void {
+
+        $obj = new SuggestionsRequest();
+        $obj->setQ("q");
+
+        $res = $obj->serializeRequest();
+        $this->assertIsArray($res);
+
+        $this->assertEquals("q", $res["q"]);
+    }
+
+    /**
      * Tests setCibles()
      *
      * @return void

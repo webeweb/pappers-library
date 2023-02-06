@@ -38,6 +38,22 @@ class DocumentTelechargementRequestTest extends AbstractTestCase {
     }
 
     /**
+     * Tests serializeRequest()
+     *
+     * @return void
+     */
+    public function testSerializeRequest(): void {
+
+        $obj = new DocumentTelechargementRequest();
+        $obj->setToken("token");
+
+        $res = $obj->serializeRequest();
+        $this->assertIsArray($res);
+
+        $this->assertEquals("token", $res["token"]);
+    }
+
+    /**
      * Tests __construct()
      *
      * @return void

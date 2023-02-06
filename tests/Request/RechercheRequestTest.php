@@ -39,6 +39,22 @@ class RechercheRequestTest extends AbstractTestCase {
     }
 
     /**
+     * Tests serializeRequest()
+     *
+     * @return void
+     */
+    public function testSerializeRequest(): void {
+
+        $obj = new RechercheRequest();
+        $obj->setBases("bases");
+
+        $res = $obj->serializeRequest();
+        $this->assertIsArray($res);
+
+        $this->assertEquals("bases", $res["bases"]);
+    }
+
+    /**
      * Tests setBases()
      *
      * @return void

@@ -14,6 +14,7 @@ namespace WBW\Library\Pappers\Request;
 use WBW\Library\Pappers\Model\Attribute\StringSirenTrait;
 use WBW\Library\Pappers\Model\Attribute\StringSiretTrait;
 use WBW\Library\Pappers\Response\AbstractResponse;
+use WBW\Library\Pappers\Serializer\RequestSerializer;
 use WBW\Library\Pappers\Serializer\ResponseDeserializer;
 
 /**
@@ -78,6 +79,13 @@ class EntrepriseRequest extends AbstractRequest implements EntrepriseRequestInte
      */
     public function getResourcePath(): string {
         return self::RESOURCES_PATH;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function serializeRequest(): array {
+        return RequestSerializer::serializeEntrepriseRequest($this);
     }
 
     /**

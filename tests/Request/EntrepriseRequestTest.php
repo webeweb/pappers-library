@@ -39,6 +39,22 @@ class EntrepriseRequestTest extends AbstractTestCase {
     }
 
     /**
+     * Tests serializeRequest()
+     *
+     * @return void
+     */
+    public function testSerializeRequest(): void {
+
+        $obj = new EntrepriseRequest();
+        $obj->setSiren("siren");
+
+        $res = $obj->serializeRequest();
+        $this->assertIsArray($res);
+
+        $this->assertEquals("siren", $res["siren"]);
+    }
+
+    /**
      * Tests setFormatPublicationsBodacc()
      *
      * @return void

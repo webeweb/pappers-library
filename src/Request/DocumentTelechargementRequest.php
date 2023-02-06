@@ -12,6 +12,7 @@
 namespace WBW\Library\Pappers\Request;
 
 use WBW\Library\Pappers\Response\AbstractResponse;
+use WBW\Library\Pappers\Serializer\RequestSerializer;
 use WBW\Library\Pappers\Serializer\ResponseDeserializer;
 use WBW\Library\Traits\Strings\StringTokenTrait;
 
@@ -44,5 +45,12 @@ class DocumentTelechargementRequest extends AbstractRequest {
      */
     public function getResourcePath(): string {
         return self::RESOURCES_PATH;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function serializeRequest(): array {
+        return RequestSerializer::serializeDocumentTelechargementRequest($this);
     }
 }
