@@ -11,7 +11,7 @@
 
 namespace WBW\Library\Pappers\Model;
 
-use WBW\Library\Pappers\Model\Attribute\ArrayPublicationsBodaccTrait;
+use WBW\Library\Pappers\Traits\Arrays\ArrayPublicationsBodaccTrait;
 use WBW\Library\Traits\Strings\StringTypeTrait;
 
 /**

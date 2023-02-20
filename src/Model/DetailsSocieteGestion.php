@@ -11,12 +11,12 @@
 
 namespace WBW\Library\Pappers\Model;
 
-use WBW\Library\Pappers\Model\Attribute\StringAdresseTrait;
-use WBW\Library\Pappers\Model\Attribute\StringCodePostalTrait;
-use WBW\Library\Pappers\Model\Attribute\StringGreffeTrait;
-use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
-use WBW\Library\Pappers\Model\Attribute\StringSirenTrait;
-use WBW\Library\Pappers\Model\Attribute\StringVilleTrait;
+use WBW\Library\Pappers\Traits\Strings\StringAdresseTrait;
+use WBW\Library\Pappers\Traits\Strings\StringCodePostalTrait;
+use WBW\Library\Pappers\Traits\Strings\StringGreffeTrait;
+use WBW\Library\Pappers\Traits\Strings\StringNomTrait;
+use WBW\Library\Pappers\Traits\Strings\StringSirenTrait;
+use WBW\Library\Pappers\Traits\Strings\StringVilleTrait;
 
 /**
  * Détails société gestion.

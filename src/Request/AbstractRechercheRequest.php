@@ -11,12 +11,12 @@
 
 namespace WBW\Library\Pappers\Request;
 
-use WBW\Library\Pappers\Model\Attribute\BooleanEntrepriseCesseeTrait;
-use WBW\Library\Pappers\Model\Attribute\StringCategorieJuridiqueTrait;
-use WBW\Library\Pappers\Model\Attribute\StringCodeNafTrait;
-use WBW\Library\Pappers\Model\Attribute\StringCodePostalTrait;
-use WBW\Library\Pappers\Model\Attribute\StringObjetSocialTrait;
-use WBW\Library\Pappers\Model\Attribute\StringStatutRcsTrait;
+use WBW\Library\Pappers\Traits\Booleans\BooleanEntrepriseCesseeTrait;
+use WBW\Library\Pappers\Traits\Strings\StringCategorieJuridiqueTrait;
+use WBW\Library\Pappers\Traits\Strings\StringCodeNafTrait;
+use WBW\Library\Pappers\Traits\Strings\StringCodePostalTrait;
+use WBW\Library\Pappers\Traits\Strings\StringObjetSocialTrait;
+use WBW\Library\Pappers\Traits\Strings\StringStatutRcsTrait;
 use WBW\Library\Traits\Integers\IntegerPageTrait;
 use WBW\Library\Traits\Strings\StringQTrait;
 

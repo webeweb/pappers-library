@@ -11,21 +11,21 @@
 
 namespace WBW\Library\Pappers\Model;
 
-use WBW\Library\Pappers\Model\Attribute\IntegerAnneeEffectifTrait;
-use WBW\Library\Pappers\Model\Attribute\IntegerEffectifMaxTrait;
-use WBW\Library\Pappers\Model\Attribute\IntegerEffectifMinTrait;
-use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne1Trait;
-use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne2Trait;
-use WBW\Library\Pappers\Model\Attribute\StringCodeNafTrait;
-use WBW\Library\Pappers\Model\Attribute\StringCodePostalTrait;
-use WBW\Library\Pappers\Model\Attribute\StringDateCessationTrait;
-use WBW\Library\Pappers\Model\Attribute\StringEffectifTrait;
-use WBW\Library\Pappers\Model\Attribute\StringNicTrait;
-use WBW\Library\Pappers\Model\Attribute\StringPaysTrait;
-use WBW\Library\Pappers\Model\Attribute\StringSiretFormateTrait;
-use WBW\Library\Pappers\Model\Attribute\StringSiretTrait;
-use WBW\Library\Pappers\Model\Attribute\StringTrancheEffectifTrait;
-use WBW\Library\Pappers\Model\Attribute\StringVilleTrait;
+use WBW\Library\Pappers\Traits\Integers\IntegerAnneeEffectifTrait;
+use WBW\Library\Pappers\Traits\Integers\IntegerEffectifMaxTrait;
+use WBW\Library\Pappers\Traits\Integers\IntegerEffectifMinTrait;
+use WBW\Library\Pappers\Traits\Strings\StringAdresseLigne1Trait;
+use WBW\Library\Pappers\Traits\Strings\StringAdresseLigne2Trait;
+use WBW\Library\Pappers\Traits\Strings\StringCodeNafTrait;
+use WBW\Library\Pappers\Traits\Strings\StringCodePostalTrait;
+use WBW\Library\Pappers\Traits\Strings\StringDateCessationTrait;
+use WBW\Library\Pappers\Traits\Strings\StringEffectifTrait;
+use WBW\Library\Pappers\Traits\Strings\StringNicTrait;
+use WBW\Library\Pappers\Traits\Strings\StringPaysTrait;
+use WBW\Library\Pappers\Traits\Strings\StringSiretFormateTrait;
+use WBW\Library\Pappers\Traits\Strings\StringSiretTrait;
+use WBW\Library\Pappers\Traits\Strings\StringTrancheEffectifTrait;
+use WBW\Library\Pappers\Traits\Strings\StringVilleTrait;
 
 /**
  * Etablissement.

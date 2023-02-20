@@ -11,9 +11,9 @@
 
 namespace WBW\Library\Pappers\Model;
 
-use WBW\Library\Pappers\Model\Attribute\StringDateActeFormateeTrait;
-use WBW\Library\Pappers\Model\Attribute\StringDateActeTrait;
-use WBW\Library\Pappers\Model\Attribute\StringDecisionTrait;
+use WBW\Library\Pappers\Traits\Strings\StringDateActeFormateeTrait;
+use WBW\Library\Pappers\Traits\Strings\StringDateActeTrait;
+use WBW\Library\Pappers\Traits\Strings\StringDecisionTrait;
 use WBW\Library\Traits\Strings\StringTypeTrait;
 
 /**

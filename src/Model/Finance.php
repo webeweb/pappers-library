@@ -11,9 +11,9 @@
 
 namespace WBW\Library\Pappers\Model;
 
-use WBW\Library\Pappers\Model\Attribute\IntegerChiffreAffairesTrait;
-use WBW\Library\Pappers\Model\Attribute\IntegerResultatTrait;
-use WBW\Library\Pappers\Model\Attribute\StringDateClotureExerciceTrait;
+use WBW\Library\Pappers\Traits\Integers\IntegerChiffreAffairesTrait;
+use WBW\Library\Pappers\Traits\Integers\IntegerResultatTrait;
+use WBW\Library\Pappers\Traits\Strings\StringDateClotureExerciceTrait;
 
 /**
  * Finance.

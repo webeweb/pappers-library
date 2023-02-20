@@ -11,9 +11,9 @@
 
 namespace WBW\Library\Pappers\Model;
 
-use WBW\Library\Pappers\Model\Attribute\FloatPourcentageNueProprieteTrait;
-use WBW\Library\Pappers\Model\Attribute\FloatPourcentagePleineProprieteTrait;
-use WBW\Library\Pappers\Model\Attribute\FloatPourcentageUsufruitTrait;
+use WBW\Library\Pappers\Traits\Floats\FloatPourcentageNueProprieteTrait;
+use WBW\Library\Pappers\Traits\Floats\FloatPourcentagePleineProprieteTrait;
+use WBW\Library\Pappers\Traits\Floats\FloatPourcentageUsufruitTrait;
 
 /**
  * Détails personne morale.

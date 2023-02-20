@@ -11,7 +11,7 @@
 
 namespace WBW\Library\Pappers\Model;
 
-use WBW\Library\Pappers\Model\Attribute\StringDecisionTrait;
+use WBW\Library\Pappers\Traits\Strings\StringDecisionTrait;
 use WBW\Library\Traits\Strings\StringTypeTrait;
 
 /**

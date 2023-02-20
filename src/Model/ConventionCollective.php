@@ -11,7 +11,7 @@
 
 namespace WBW\Library\Pappers\Model;
 
-use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
+use WBW\Library\Pappers\Traits\Strings\StringNomTrait;
 
 /**
  * Convention collective.

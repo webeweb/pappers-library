@@ -11,20 +11,20 @@
 
 namespace WBW\Library\Pappers\Model;
 
-use WBW\Library\Pappers\Model\Attribute\BooleanPersonneMoraleTrait;
-use WBW\Library\Pappers\Model\Attribute\EntrepriseEntrepriseTrait;
-use WBW\Library\Pappers\Model\Attribute\IntegerCapitalTrait;
-use WBW\Library\Pappers\Model\Attribute\StringAdresseTrait;
-use WBW\Library\Pappers\Model\Attribute\StringDenominationTrait;
-use WBW\Library\Pappers\Model\Attribute\StringDeviseCapitalTrait;
-use WBW\Library\Pappers\Model\Attribute\StringFormeJuridiqueTrait;
-use WBW\Library\Pappers\Model\Attribute\StringNationaliteTrait;
-use WBW\Library\Pappers\Model\Attribute\StringNomEntrepriseTrait;
-use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
-use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
-use WBW\Library\Pappers\Model\Attribute\StringPseudonymeTrait;
-use WBW\Library\Pappers\Model\Attribute\StringSigleTrait;
-use WBW\Library\Pappers\Model\Attribute\StringSirenTrait;
+use WBW\Library\Pappers\Traits\Booleans\BooleanPersonneMoraleTrait;
+use WBW\Library\Pappers\Traits\Integers\IntegerCapitalTrait;
+use WBW\Library\Pappers\Traits\Objects\EntrepriseEntrepriseTrait;
+use WBW\Library\Pappers\Traits\Strings\StringAdresseTrait;
+use WBW\Library\Pappers\Traits\Strings\StringDenominationTrait;
+use WBW\Library\Pappers\Traits\Strings\StringDeviseCapitalTrait;
+use WBW\Library\Pappers\Traits\Strings\StringFormeJuridiqueTrait;
+use WBW\Library\Pappers\Traits\Strings\StringNationaliteTrait;
+use WBW\Library\Pappers\Traits\Strings\StringNomEntrepriseTrait;
+use WBW\Library\Pappers\Traits\Strings\StringNomTrait;
+use WBW\Library\Pappers\Traits\Strings\StringPrenomTrait;
+use WBW\Library\Pappers\Traits\Strings\StringPseudonymeTrait;
+use WBW\Library\Pappers\Traits\Strings\StringSigleTrait;
+use WBW\Library\Pappers\Traits\Strings\StringSirenTrait;
 use WBW\Library\Traits\Strings\StringDescriptionTrait;
 use WBW\Library\Traits\Strings\StringTypeTrait;
 

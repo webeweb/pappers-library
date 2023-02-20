@@ -11,22 +11,22 @@
 
 namespace WBW\Library\Pappers\Model;
 
-use WBW\Library\Pappers\Model\Attribute\BooleanPersonneMoraleTrait;
-use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne1Trait;
-use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne2Trait;
-use WBW\Library\Pappers\Model\Attribute\StringAdresseLigne3Trait;
-use WBW\Library\Pappers\Model\Attribute\StringCodePostalTrait;
-use WBW\Library\Pappers\Model\Attribute\StringDateNaissanceFormateeTrait;
-use WBW\Library\Pappers\Model\Attribute\StringDenominationTrait;
-use WBW\Library\Pappers\Model\Attribute\StringFormeJuridiqueTrait;
-use WBW\Library\Pappers\Model\Attribute\StringNationaliteTrait;
-use WBW\Library\Pappers\Model\Attribute\StringNomTrait;
-use WBW\Library\Pappers\Model\Attribute\StringPaysNaissanceTrait;
-use WBW\Library\Pappers\Model\Attribute\StringPaysTrait;
-use WBW\Library\Pappers\Model\Attribute\StringPrenomTrait;
-use WBW\Library\Pappers\Model\Attribute\StringSirenTrait;
-use WBW\Library\Pappers\Model\Attribute\StringVilleNaissanceTrait;
-use WBW\Library\Pappers\Model\Attribute\StringVilleTrait;
+use WBW\Library\Pappers\Traits\Booleans\BooleanPersonneMoraleTrait;
+use WBW\Library\Pappers\Traits\Strings\StringAdresseLigne1Trait;
+use WBW\Library\Pappers\Traits\Strings\StringAdresseLigne2Trait;
+use WBW\Library\Pappers\Traits\Strings\StringAdresseLigne3Trait;
+use WBW\Library\Pappers\Traits\Strings\StringCodePostalTrait;
+use WBW\Library\Pappers\Traits\Strings\StringDateNaissanceFormateeTrait;
+use WBW\Library\Pappers\Traits\Strings\StringDenominationTrait;
+use WBW\Library\Pappers\Traits\Strings\StringFormeJuridiqueTrait;
+use WBW\Library\Pappers\Traits\Strings\StringNationaliteTrait;
+use WBW\Library\Pappers\Traits\Strings\StringNomTrait;
+use WBW\Library\Pappers\Traits\Strings\StringPaysNaissanceTrait;
+use WBW\Library\Pappers\Traits\Strings\StringPaysTrait;
+use WBW\Library\Pappers\Traits\Strings\StringPrenomTrait;
+use WBW\Library\Pappers\Traits\Strings\StringSirenTrait;
+use WBW\Library\Pappers\Traits\Strings\StringVilleNaissanceTrait;
+use WBW\Library\Pappers\Traits\Strings\StringVilleTrait;
 use WBW\Library\Traits\Strings\StringMentionTrait;
 
 /**

@@ -11,10 +11,10 @@
 
 namespace WBW\Library\Pappers\Model;
 
-use WBW\Library\Pappers\Model\Attribute\BooleanDisponibleTrait;
-use WBW\Library\Pappers\Model\Attribute\StringDateDepotFormateeTrait;
-use WBW\Library\Pappers\Model\Attribute\StringDateDepotTrait;
-use WBW\Library\Pappers\Model\Attribute\StringNomFichierPdfTrait;
+use WBW\Library\Pappers\Traits\Booleans\BooleanDisponibleTrait;
+use WBW\Library\Pappers\Traits\Strings\StringDateDepotFormateeTrait;
+use WBW\Library\Pappers\Traits\Strings\StringDateDepotTrait;
+use WBW\Library\Pappers\Traits\Strings\StringNomFichierPdfTrait;
 use WBW\Library\Traits\Strings\StringTokenTrait;
 
 /**
