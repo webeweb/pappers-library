@@ -56,7 +56,7 @@ abstract class AbstractProvider extends BaseProvider {
     }
 
     /**
-     * Build the configuration.
+     * Builds the configuration.
      *
      * @return array Returns the configuration.
      */
@@ -74,7 +74,7 @@ abstract class AbstractProvider extends BaseProvider {
     }
 
     /**
-     * Call the API.
+     * Calls the API.
      *
      * @param AbstractRequest $request The request.
      * @param array $queryData The query data.
@@ -87,7 +87,7 @@ abstract class AbstractProvider extends BaseProvider {
     protected function callApi(AbstractRequest $request, array $queryData, bool $apiToken = true): string {
 
         if (true === $apiToken && null === $this->getApiToken()) {
-            throw new InvalidArgumentException('The mandatory parameter "api_token" is missing');
+            throw $this->newMandatoryParameterException("api_token");
         }
 
         $query = true === $apiToken ? ["api_token" => $this->getApiToken()] : [];
@@ -95,11 +95,10 @@ abstract class AbstractProvider extends BaseProvider {
         try {
 
             $config = $this->buildConfiguration();
-
             $client = new Client($config);
 
             $method  = "GET";
-            $uri     = substr($request->getResourcePath(), 1);
+            $uri     = substr($this->buildResourcePath($request), 1);
             $options = [
                 "query" => array_merge($query, $queryData),
             ];
