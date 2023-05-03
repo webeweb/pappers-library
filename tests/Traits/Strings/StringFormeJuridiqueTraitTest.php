@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringFormeJuridiqueTr
 class StringFormeJuridiqueTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setFormeJuridique() method().
+     * Test the setFormeJuridique() method().
      *
      * @return void
      */

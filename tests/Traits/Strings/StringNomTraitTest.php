@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringNomTrait;
 class StringNomTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setNom() method().
+     * Test the setNom() method().
      *
      * @return void
      */

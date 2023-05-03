@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringCategorieJuridiq
 class StringCategorieJuridiqueTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setCategorieJuridique() method().
+     * Test the setCategorieJuridique() method().
      *
      * @return void
      */

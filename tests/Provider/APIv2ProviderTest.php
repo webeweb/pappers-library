@@ -56,7 +56,7 @@ class APIv2ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests documentTelechargement()
+     * Test documentTelechargement()
      *
      * @return void
      * @throws Throwable Throws an exception if an error occurs.
@@ -89,7 +89,7 @@ class APIv2ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests entreprise()
+     * Test entreprise()
      *
      * @return void
      * @throws Throwable Throws an exception if an error occurs.
@@ -113,7 +113,7 @@ class APIv2ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests getEndpointVersion()
+     * Test getEndpointVersion()
      *
      * @return void
      */
@@ -125,7 +125,7 @@ class APIv2ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests recherche()
+     * Test recherche()
      *
      * @return void
      * @throws Throwable Throws an exception if an error occurs.
@@ -149,7 +149,7 @@ class APIv2ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests rechercheDirigeants()
+     * Test rechercheDirigeants()
      *
      * @return void
      * @throws Throwable Throws an exception if an error occurs.
@@ -173,7 +173,7 @@ class APIv2ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests rechercheDocuments()
+     * Test rechercheDocuments()
      *
      * @return void
      * @throws Throwable Throws an exception if an error occurs.
@@ -204,7 +204,7 @@ class APIv2ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests recherchePublications()
+     * Test recherchePublications()
      *
      * @return void
      * @throws Throwable Throws an exception if an error occurs.
@@ -235,7 +235,7 @@ class APIv2ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests suggestions()
+     * Test suggestions()
      *
      * @return void
      * @throws Throwable Throws an exception if an error occurs.

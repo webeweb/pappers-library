@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class DocumentInterfaceTest extends AbstractTestCase {
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

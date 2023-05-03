@@ -24,7 +24,7 @@ use WBW\Library\Pappers\Response\EntrepriseResponse;
 class EntrepriseResponseTest extends TestCase {
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringPrenomTrait;
 class StringPrenomTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setPrenom() method().
+     * Test the setPrenom() method().
      *
      * @return void
      */

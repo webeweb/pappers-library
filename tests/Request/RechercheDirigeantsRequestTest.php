@@ -25,7 +25,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class RechercheDirigeantsRequestTest extends AbstractTestCase {
 
     /**
-     * Tests deserializeResponse()
+     * Test deserializeResponse()
      *
      * @return void
      */
@@ -38,7 +38,7 @@ class RechercheDirigeantsRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests serializeRequest()
+     * Test serializeRequest()
      *
      * @return void
      */
@@ -54,19 +54,19 @@ class RechercheDirigeantsRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */
 
     public function test__construct(): void {
 
-        $this->assertEquals("/recherche-dirigeants", RechercheDirigeantsRequest::RESOURCES_PATH);
+        $this->assertEquals("/recherche-dirigeants", RechercheDirigeantsRequest::RESOURCE_PATH);
 
         $obj = new RechercheDirigeantsRequest();
 
         $this->assertInstanceOf(AbstractRequest::class, $obj);
 
-        $this->assertEquals(RechercheDirigeantsRequest::RESOURCES_PATH, $obj->getResourcePath());
+        $this->assertEquals(RechercheDirigeantsRequest::RESOURCE_PATH, $obj->getResourcePath());
     }
 }

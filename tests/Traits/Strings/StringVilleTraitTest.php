@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringVilleTrait;
 class StringVilleTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setVille() method().
+     * Test the setVille() method().
      *
      * @return void
      */

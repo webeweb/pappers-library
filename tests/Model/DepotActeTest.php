@@ -24,7 +24,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class DepotActeTest extends AbstractTestCase {
 
     /**
-     * Tests addActe()
+     * Test addActe()
      *
      * @return void
      */
@@ -40,7 +40,7 @@ class DepotActeTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

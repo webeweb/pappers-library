@@ -24,7 +24,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class DocumentTest extends AbstractTestCase {
 
     /**
-     * Tests addTitre()
+     * Test addTitre()
      *
      * @return void
      */
@@ -40,7 +40,7 @@ class DocumentTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setIdFichier()
+     * Test setIdFichier()
      *
      * @return void
      */
@@ -53,7 +53,7 @@ class DocumentTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNumChrono()
+     * Test setNumChrono()
      *
      * @return void
      */
@@ -66,7 +66,7 @@ class DocumentTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

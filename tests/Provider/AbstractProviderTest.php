@@ -24,7 +24,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Provider\TestProvider;
 class AbstractProviderTest extends AbstractTestCase {
 
     /**
-     * Tests setApiToken()
+     * Test setApiToken()
      *
      * @retunr void
      */
@@ -37,7 +37,7 @@ class AbstractProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

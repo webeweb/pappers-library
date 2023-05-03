@@ -24,7 +24,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class RepresentantTest extends AbstractTestCase {
 
     /**
-     * Tests addEntreprise()
+     * Test addEntreprise()
      *
      * @return void
      */
@@ -40,7 +40,7 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setActuel()
+     * Test setActuel()
      *
      * @return void
      */
@@ -53,7 +53,7 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setAge()
+     * Test setAge()
      *
      * @return void
      */
@@ -66,7 +66,7 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateNaissance()
+     * Test setDateNaissance()
      *
      * @return void
      */
@@ -79,7 +79,7 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDatePrisePoste()
+     * Test setDatePrisePoste()
      *
      * @return void
      */
@@ -92,7 +92,7 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNbEntreprisesTotal()
+     * Test setNbEntreprisesTotal()
      *
      * @return void
      */
@@ -105,7 +105,7 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNomComplet()
+     * Test setNomComplet()
      *
      * @return void
      */
@@ -118,7 +118,7 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setQualite()
+     * Test setQualite()
      *
      * @return void
      */
@@ -131,7 +131,7 @@ class RepresentantTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

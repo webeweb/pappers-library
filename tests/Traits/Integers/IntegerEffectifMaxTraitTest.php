@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Integers\TestIntegerEffectifMaxTra
 class IntegerEffectifMaxTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setEffectifMax() method().
+     * Test the setEffectifMax() method().
      *
      * @return void
      */

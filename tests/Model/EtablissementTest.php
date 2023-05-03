@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class EtablissementTest extends AbstractTestCase {
 
     /**
-     * Tests setComplementAdresse()
+     * Test setComplementAdresse()
      *
      * @return void
      */
@@ -36,7 +36,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateCreation()
+     * Test setDateCreation()
      *
      * @return void
      */
@@ -49,7 +49,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDomiciliation()
+     * Test setDomiciliation()
      *
      * @return void
      */
@@ -62,7 +62,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setEtablissementCesse()
+     * Test setEtablissementCesse()
      *
      * @return void
      */
@@ -75,7 +75,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setEtablissementEmployeur()
+     * Test setEtablissementEmployeur()
      *
      * @return void
      */
@@ -88,7 +88,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setIndiceRepetition()
+     * Test setIndiceRepetition()
      *
      * @return void
      */
@@ -101,7 +101,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLatitude()
+     * Test setLatitude()
      *
      * @return void
      */
@@ -114,7 +114,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLibelleCodeNaf()
+     * Test setLibelleCodeNaf()
      *
      * @return void
      */
@@ -127,7 +127,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLibelleVoie()
+     * Test setLibelleVoie()
      *
      * @return void
      */
@@ -140,7 +140,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLongitude()
+     * Test setLongitude()
      *
      * @return void
      */
@@ -153,7 +153,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNumeroVoie()
+     * Test setNumeroVoie()
      *
      * @return void
      */
@@ -166,7 +166,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setSiege()
+     * Test setSiege()
      *
      * @return void
      */
@@ -179,7 +179,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setTypeVoie()
+     * Test setTypeVoie()
      *
      * @return void
      */
@@ -192,7 +192,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests set()
+     * Test set()
      *
      * @return void
      */

@@ -25,7 +25,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class DocumentTelechargementRequestTest extends AbstractTestCase {
 
     /**
-     * Tests deserializeResponse()
+     * Test deserializeResponse()
      *
      * @return void
      */
@@ -38,7 +38,7 @@ class DocumentTelechargementRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests serializeRequest()
+     * Test serializeRequest()
      *
      * @return void
      */
@@ -54,14 +54,14 @@ class DocumentTelechargementRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */
 
     public function test__construct(): void {
 
-        $this->assertEquals("/document/telechargement", DocumentTelechargementRequest::RESOURCES_PATH);
+        $this->assertEquals("/document/telechargement", DocumentTelechargementRequest::RESOURCE_PATH);
 
         $obj = new DocumentTelechargementRequest();
 
@@ -69,6 +69,6 @@ class DocumentTelechargementRequestTest extends AbstractTestCase {
 
         $this->assertNull($obj->getToken());
 
-        $this->assertEquals(DocumentTelechargementRequest::RESOURCES_PATH, $obj->getResourcePath());
+        $this->assertEquals(DocumentTelechargementRequest::RESOURCE_PATH, $obj->getResourcePath());
     }
 }

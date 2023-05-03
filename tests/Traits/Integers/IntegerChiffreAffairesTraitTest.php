@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Integers\TestIntegerChiffreAffaire
 class IntegerChiffreAffairesTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setChiffreAffaires() method().
+     * Test the setChiffreAffaires() method().
      *
      * @return void
      */

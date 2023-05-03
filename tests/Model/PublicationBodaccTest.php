@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class PublicationBodaccTest extends AbstractTestCase {
 
     /**
-     * Tests setActivite()
+     * Test setActivite()
      *
      * @return void
      */
@@ -36,7 +36,7 @@ class PublicationBodaccTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setAdministration()
+     * Test setAdministration()
      *
      * @return void
      */
@@ -49,7 +49,7 @@ class PublicationBodaccTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setAnnonceRectificative()
+     * Test setAnnonceRectificative()
      *
      * @return void
      */
@@ -62,7 +62,7 @@ class PublicationBodaccTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setBodacc()
+     * Test setBodacc()
      *
      * @return void
      */
@@ -75,7 +75,7 @@ class PublicationBodaccTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setContenu()
+     * Test setContenu()
      *
      * @return void
      */
@@ -88,7 +88,7 @@ class PublicationBodaccTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDate()
+     * Test setDate()
      *
      * @return void
      */
@@ -101,7 +101,7 @@ class PublicationBodaccTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateDebutActivite()
+     * Test setDateDebutActivite()
      *
      * @return void
      */
@@ -114,7 +114,7 @@ class PublicationBodaccTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNomCommercial()
+     * Test setNomCommercial()
      *
      * @return void
      */
@@ -127,7 +127,7 @@ class PublicationBodaccTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNumeroAnnonce()
+     * Test setNumeroAnnonce()
      *
      * @return void
      */
@@ -140,7 +140,7 @@ class PublicationBodaccTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNumeroParution()
+     * Test setNumeroParution()
      *
      * @return void
      */
@@ -153,7 +153,7 @@ class PublicationBodaccTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setRcs()
+     * Test setRcs()
      *
      * @return void
      */
@@ -166,7 +166,7 @@ class PublicationBodaccTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

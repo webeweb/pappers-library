@@ -24,11 +24,11 @@ use WBW\Library\Pappers\Serializer\ResponseDeserializer;
 class RechercheRequest extends AbstractRechercheRequest implements RechercheRequestInterface {
 
     /**
-     * Resources path.
+     * Resource path.
      *
      * @var string
      */
-    const RESOURCES_PATH = "/recherche";
+    const RESOURCE_PATH = "/recherche";
 
     /**
      * Bases.
@@ -105,7 +105,7 @@ class RechercheRequest extends AbstractRechercheRequest implements RechercheRequ
      * {@inheritdoc}
      */
     public function getResourcePath(): string {
-        return self::RESOURCES_PATH;
+        return self::RESOURCE_PATH;
     }
 
     /**

@@ -34,7 +34,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class EntrepriseTest extends AbstractTestCase {
 
     /**
-     * Tests addBeneficiaireEffectif()
+     * Test addBeneficiaireEffectif()
      *
      * @return void
      */
@@ -50,7 +50,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests addCompte()
+     * Test addCompte()
      *
      * @return void
      */
@@ -66,7 +66,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests addConventionCollective()
+     * Test addConventionCollective()
      *
      * @return void
      */
@@ -82,7 +82,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests addDepotActe()
+     * Test addDepotActe()
      *
      * @return void
      */
@@ -98,7 +98,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests addDocument()
+     * Test addDocument()
      *
      * @return void
      */
@@ -114,7 +114,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests set()
+     * Test set()
      *
      * @return void
      */
@@ -130,7 +130,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests addFinance()
+     * Test addFinance()
      *
      * @return void
      */
@@ -146,7 +146,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests set()
+     * Test set()
      *
      * @return void
      */
@@ -162,7 +162,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests addRepresentant()
+     * Test addRepresentant()
      *
      * @return void
      */
@@ -178,7 +178,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setAnneeFinances()
+     * Test setAnneeFinances()
      *
      * @return void
      */
@@ -191,7 +191,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setAssocieUnique()
+     * Test setAssocieUnique()
      *
      * @return void
      */
@@ -204,7 +204,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setCapitalActuelVariable()
+     * Test setCapitalActuelVariable()
      *
      * @return void
      */
@@ -217,7 +217,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setCapitalFormate()
+     * Test setCapitalFormate()
      *
      * @return void
      */
@@ -230,7 +230,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateCessationFormatee()
+     * Test setDateCessationFormatee()
      *
      * @return void
      */
@@ -243,7 +243,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateClotureExceptionnelle()
+     * Test setDateClotureExceptionnelle()
      *
      * @return void
      */
@@ -256,7 +256,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateClotureExerciceExceptionnelle()
+     * Test setDateClotureExerciceExceptionnelle()
      *
      * @return void
      */
@@ -269,7 +269,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateClotureExerciceExceptionnelleFormate()
+     * Test setDateClotureExerciceExceptionnelleFormate()
      *
      * @return void
      */
@@ -282,7 +282,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateCreation()
+     * Test setDateCreation()
      *
      * @return void
      */
@@ -295,7 +295,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateCreationFormate()
+     * Test setDateCreationFormate()
      *
      * @return void
      */
@@ -308,7 +308,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateImmatriculationRcs()
+     * Test setDateImmatriculationRcs()
      *
      * @return void
      */
@@ -321,7 +321,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDatePremiereImmatriculationRcs()
+     * Test setDatePremiereImmatriculationRcs()
      *
      * @return void
      */
@@ -334,7 +334,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateRadiationRcs()
+     * Test setDateRadiationRcs()
      *
      * @return void
      */
@@ -347,7 +347,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDernierTraitement()
+     * Test setDernierTraitement()
      *
      * @return void
      */
@@ -360,7 +360,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDerniereMiseJourRcs()
+     * Test setDerniereMiseJourRcs()
      *
      * @return void
      */
@@ -373,7 +373,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDerniereMiseJourSirene()
+     * Test setDerniereMiseJourSirene()
      *
      * @return void
      */
@@ -386,7 +386,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDerniersStatuts()
+     * Test setDerniersStatuts()
      *
      * @return void
      */
@@ -402,7 +402,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDiffusable()
+     * Test setDiffusable()
      *
      * @return void
      */
@@ -415,7 +415,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDomaineActivite()
+     * Test setDomaineActivite()
      *
      * @return void
      */
@@ -428,7 +428,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDureePersonneMorale()
+     * Test setDureePersonneMorale()
      *
      * @return void
      */
@@ -441,7 +441,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setEconomieSocialeSolidaire()
+     * Test setEconomieSocialeSolidaire()
      *
      * @return void
      */
@@ -454,7 +454,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setEffectifsFinances()
+     * Test setEffectifsFinances()
      *
      * @return void
      */
@@ -467,7 +467,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setEntrepriseEmployeuse()
+     * Test setEntrepriseEmployeuse()
      *
      * @return void
      */
@@ -480,7 +480,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setExtraitImmatriculation()
+     * Test setExtraitImmatriculation()
      *
      * @return void
      */
@@ -496,7 +496,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLibelleCodeNaf()
+     * Test setLibelleCodeNaf()
      *
      * @return void
      */
@@ -509,7 +509,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNbBeneficiairesTotal()
+     * Test setNbBeneficiairesTotal()
      *
      * @return void
      */
@@ -522,7 +522,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNbDirigeantsTotal()
+     * Test setNbDirigeantsTotal()
      *
      * @return void
      */
@@ -535,7 +535,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNbDocumentsAvecMentions()
+     * Test setNbDocumentsAvecMentions()
      *
      * @return void
      */
@@ -548,7 +548,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNbDocumentsTotal()
+     * Test setNbDocumentsTotal()
      *
      * @return void
      */
@@ -561,7 +561,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNbPublicationsAvecMentions()
+     * Test setNbPublicationsAvecMentions()
      *
      * @return void
      */
@@ -574,7 +574,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNbPublicationsTotal()
+     * Test setNbPublicationsTotal()
      *
      * @return void
      */
@@ -587,7 +587,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNumeroRcs()
+     * Test setNumeroRcs()
      *
      * @return void
      */
@@ -600,7 +600,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNumeroTvaIntracommunautaire()
+     * Test setNumeroTvaIntracommunautaire()
      *
      * @return void
      */
@@ -613,7 +613,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setProcedureCollectiveEnCours()
+     * Test setProcedureCollectiveEnCours()
      *
      * @return void
      */
@@ -626,7 +626,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setProcedureCollectiveExiste()
+     * Test setProcedureCollectiveExiste()
      *
      * @return void
      */
@@ -639,7 +639,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setProchaineDateClotureExercice()
+     * Test setProchaineDateClotureExercice()
      *
      * @return void
      */
@@ -652,7 +652,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setProchaineDateClotureExerciceFormate()
+     * Test setProchaineDateClotureExerciceFormate()
      *
      * @return void
      */
@@ -665,7 +665,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setRnm()
+     * Test setRnm()
      *
      * @return void
      */
@@ -678,7 +678,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setSexe()
+     * Test setSexe()
      *
      * @return void
      */
@@ -691,7 +691,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setSiege()
+     * Test setSiege()
      *
      * @return void
      */
@@ -707,7 +707,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setSirenFormate()
+     * Test setSirenFormate()
      *
      * @return void
      */
@@ -720,7 +720,7 @@ class EntrepriseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

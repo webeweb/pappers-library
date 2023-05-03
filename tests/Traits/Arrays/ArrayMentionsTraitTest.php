@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Arrays\TestArrayMentionsTrait;
 class ArrayMentionsTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setMentions() method().
+     * Test the setMentions() method().
      *
      * @return void
      */

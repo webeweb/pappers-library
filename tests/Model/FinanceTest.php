@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class FinanceTest extends AbstractTestCase {
 
     /**
-     * Tests setAnnee()
+     * Test setAnnee()
      *
      * @return void
      */
@@ -36,7 +36,7 @@ class FinanceTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDureeExercice()
+     * Test setDureeExercice()
      *
      * @return void
      */
@@ -49,7 +49,7 @@ class FinanceTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setEffectif()
+     * Test setEffectif()
      *
      * @return void
      */
@@ -62,7 +62,7 @@ class FinanceTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

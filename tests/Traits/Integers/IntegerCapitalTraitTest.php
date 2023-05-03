@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Integers\TestIntegerCapitalTrait;
 class IntegerCapitalTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setCapital() method().
+     * Test the setCapital() method().
      *
      * @return void
      */

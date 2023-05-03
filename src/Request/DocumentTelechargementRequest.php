@@ -27,11 +27,11 @@ class DocumentTelechargementRequest extends AbstractRequest {
     use StringTokenTrait;
 
     /**
-     * Resources path.
+     * Resource path.
      *
      * @var string
      */
-    const RESOURCES_PATH = "/document/telechargement";
+    const RESOURCE_PATH = "/document/telechargement";
 
     /**
      * {@inheritdoc}
@@ -44,7 +44,7 @@ class DocumentTelechargementRequest extends AbstractRequest {
      * {@inheritdoc}
      */
     public function getResourcePath(): string {
-        return self::RESOURCES_PATH;
+        return self::RESOURCE_PATH;
     }
 
     /**

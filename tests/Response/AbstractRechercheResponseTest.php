@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Response\TestRechercheResponse;
 class AbstractRechercheResponseTest extends AbstractTestCase {
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringNationaliteTrait
 class StringNationaliteTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setNationalite() method().
+     * Test the setNationalite() method().
      *
      * @return void
      */

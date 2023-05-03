@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Floats\TestFloatPourcentagePleineP
 class FloatPourcentagePleineProprieteTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setPourcentagePleinePropriete() method().
+     * Test the setPourcentagePleinePropriete() method().
      *
      * @return void
      */

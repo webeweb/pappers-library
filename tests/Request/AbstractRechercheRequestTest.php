@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Request\TestRechercheRequest;
 class AbstractRechercheRequestTest extends AbstractTestCase {
 
     /**
-     * Tests setAgeDirigeantMax()
+     * Test setAgeDirigeantMax()
      *
      * @return void
      */
@@ -36,7 +36,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setAgeDirigeantMin()
+     * Test setAgeDirigeantMin()
      *
      * @return void
      */
@@ -49,7 +49,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setCapitalMax()
+     * Test setCapitalMax()
      *
      * @return void
      */
@@ -62,7 +62,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setCapitalMin()
+     * Test setCapitalMin()
      *
      * @return void
      */
@@ -75,7 +75,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setChiffreAffairesMax()
+     * Test setChiffreAffairesMax()
      *
      * @return void
      */
@@ -88,7 +88,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setChiffreAffairesMin()
+     * Test setChiffreAffairesMin()
      *
      * @return void
      */
@@ -101,7 +101,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setConventionCollective()
+     * Test setConventionCollective()
      *
      * @return void
      */
@@ -114,7 +114,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateCreationMax()
+     * Test setDateCreationMax()
      *
      * @return void
      */
@@ -127,7 +127,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateCreationMin()
+     * Test setDateCreationMin()
      *
      * @return void
      */
@@ -140,7 +140,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateDepotDocumentMax()
+     * Test setDateDepotDocumentMax()
      *
      * @return void
      */
@@ -153,7 +153,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateDepotDocumentMin()
+     * Test setDateDepotDocumentMin()
      *
      * @return void
      */
@@ -166,7 +166,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateNaissanceDirigeantMax()
+     * Test setDateNaissanceDirigeantMax()
      *
      * @return void
      */
@@ -179,7 +179,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateNaissanceDirigeantMin()
+     * Test setDateNaissanceDirigeantMin()
      *
      * @return void
      */
@@ -192,7 +192,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDatePublicationMax()
+     * Test setDatePublicationMax()
      *
      * @return void
      */
@@ -205,7 +205,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDatePublicationMin()
+     * Test setDatePublicationMin()
      *
      * @return void
      */
@@ -218,7 +218,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateRadiationRcsMax()
+     * Test setDateRadiationRcsMax()
      *
      * @return void
      */
@@ -231,7 +231,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests set()
+     * Test set()
      *
      * @return void
      */
@@ -244,7 +244,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDepartement()
+     * Test setDepartement()
      *
      * @return void
      */
@@ -257,7 +257,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setParPage()
+     * Test setParPage()
      *
      * @return void
      */
@@ -270,7 +270,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setPrecision()
+     * Test setPrecision()
      *
      * @return void
      */
@@ -283,7 +283,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setRegion()
+     * Test setRegion()
      *
      * @return void
      */
@@ -296,7 +296,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setResultatMax()
+     * Test setResultatMax()
      *
      * @return void
      */
@@ -309,7 +309,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setResultatMin()
+     * Test setResultatMin()
      *
      * @return void
      */
@@ -322,7 +322,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setTrancheEffectifMax()
+     * Test setTrancheEffectifMax()
      *
      * @return void
      */
@@ -335,7 +335,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setTrancheEffectifMin()
+     * Test setTrancheEffectifMin()
      *
      * @return void
      */
@@ -348,7 +348,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setTypePublication()
+     * Test setTypePublication()
      *
      * @return void
      */
@@ -361,7 +361,7 @@ class AbstractRechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

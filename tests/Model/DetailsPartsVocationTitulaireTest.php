@@ -25,7 +25,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class DetailsPartsVocationTitulaireTest extends AbstractTestCase {
 
     /**
-     * Tests setDetailsDirectes()
+     * Test setDetailsDirectes()
      *
      * @return void
      */
@@ -41,7 +41,7 @@ class DetailsPartsVocationTitulaireTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDetailsIndirectes()
+     * Test setDetailsIndirectes()
      *
      * @return void
      */
@@ -57,7 +57,7 @@ class DetailsPartsVocationTitulaireTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setPourcentageDirectes()
+     * Test setPourcentageDirectes()
      *
      * @return void
      */
@@ -70,7 +70,7 @@ class DetailsPartsVocationTitulaireTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setPourcentageIndirectes()
+     * Test setPourcentageIndirectes()
      *
      * @return void
      */
@@ -83,7 +83,7 @@ class DetailsPartsVocationTitulaireTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

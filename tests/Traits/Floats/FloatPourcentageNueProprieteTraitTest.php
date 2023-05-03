@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Floats\TestFloatPourcentageNueProp
 class FloatPourcentageNueProprieteTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setPourcentageNuePropriete() method().
+     * Test the setPourcentageNuePropriete() method().
      *
      * @return void
      */

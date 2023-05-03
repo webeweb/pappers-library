@@ -43,7 +43,7 @@ use WBW\Library\Types\Helper\ArrayHelper;
 class JsonDeserializer {
 
     /**
-     * Deserializes an acte.
+     * Deserialize an acte.
      *
      * @param array|null $data The data.
      * @return Acte|null Returns the acte.
@@ -64,7 +64,7 @@ class JsonDeserializer {
     }
 
     /**
-     * Deserializes a bénéficiaire effectif.
+     * Deserialize a bénéficiaire effectif.
      *
      * @param array|null $data The data.
      * @return BeneficiaireEffectif|null Returns the bénéficiaire effectif.
@@ -123,7 +123,7 @@ class JsonDeserializer {
     }
 
     /**
-     * Deserializes a compte.
+     * Deserialize a compte.
      *
      * @param array|null $data The data.
      * @return Compte|null Returns the compte.
@@ -150,7 +150,7 @@ class JsonDeserializer {
     }
 
     /**
-     * Deserializes a convention collective.
+     * Deserialize a convention collective.
      *
      * @param array|null $data The data.
      * @return ConventionCollective|null Returns the convention collective.
@@ -170,7 +170,7 @@ class JsonDeserializer {
     }
 
     /**
-     * Deserializes a dépôt acte.
+     * Deserialize a dépôt acte.
      *
      * @param array|null $data The data.
      * @return DepotActe|null Returns the dépôt acte.
@@ -196,7 +196,7 @@ class JsonDeserializer {
     }
 
     /**
-     * Deserializes a détails directs.
+     * Deserialize a détails directs.
      *
      * @param array|null $data The data.
      * @return DetailsDirects|null Returns the détails directs.
@@ -216,7 +216,7 @@ class JsonDeserializer {
     }
 
     /**
-     * Deserializes a détails indirects.
+     * Deserialize a détails indirects.
      *
      * @param array|null $data The data.
      * @return DetailsIndirects|null Returns this détails indirects.
@@ -240,7 +240,7 @@ class JsonDeserializer {
     }
 
     /**
-     * Deserializes a détails indivision.
+     * Deserialize a détails indivision.
      *
      * @param array|null $data The data.
      * @return DetailsIndivision|null Returns the détails indivision.
@@ -260,7 +260,7 @@ class JsonDeserializer {
     }
 
     /**
-     * Deserializes a détails parts vocation titulaire.
+     * Deserialize a détails parts vocation titulaire.
      *
      * @param array|null $data The data.
      * @return DetailsPartsVocationTitulaire|null Returns the détails parts vocation titulaire.
@@ -284,7 +284,7 @@ class JsonDeserializer {
     }
 
     /**
-     * Deserializes a détails personne morale.
+     * Deserialize a détails personne morale.
      *
      * @param array|null $data The data.
      * @return DetailsPersonneMorale|null Returns the détails personne morale.
@@ -304,7 +304,7 @@ class JsonDeserializer {
     }
 
     /**
-     * Deserializes a détails société gestion.
+     * Deserialize a détails société gestion.
      *
      * @param array|null $data The data.
      * @return DetailsSocieteGestion|null Returns the détails société gestion.
@@ -327,7 +327,7 @@ class JsonDeserializer {
     }
 
     /**
-     * Deserializes a document.
+     * Deserialize a document.
      *
      * @param array|null $data The data.
      * @return Document|null Returns the document.
@@ -359,7 +359,7 @@ class JsonDeserializer {
     }
 
     /**
-     * Deserializes an entreprise.
+     * Deserialize an entreprise.
      *
      * @param array|null $data The data.
      * @return Entreprise|null Returns the entreprise.
@@ -542,7 +542,7 @@ class JsonDeserializer {
     }
 
     /**
-     * Deserializes an extrait immatriculation.
+     * Deserialize an extrait immatriculation.
      *
      * @param array|null $data The data.
      * @return ExtraitImmatriculation|null Returns the extrait immatriculation.
@@ -583,7 +583,7 @@ class JsonDeserializer {
     }
 
     /**
-     * Deserializes a procédure collective.
+     * Deserialize a procédure collective.
      *
      * @param array|null $data The data.
      * @return ProcedureCollective|null Returns the procédure collective.
@@ -607,7 +607,7 @@ class JsonDeserializer {
     }
 
     /**
-     * Deserializes a publication BODACC.
+     * Deserialize a publication BODACC.
      *
      * @param array|null $data The data.
      * @return PublicationBodacc|null Returns the publication BODACC.
@@ -655,7 +655,7 @@ class JsonDeserializer {
     }
 
     /**
-     * Deserializes a représentant.
+     * Deserialize a représentant.
      *
      * @param array|null $data The data.
      * @return Representant|null Returns the représentant.
@@ -701,7 +701,7 @@ class JsonDeserializer {
     }
 
     /**
-     * Deserializes a statuts.
+     * Deserialize a statuts.
      *
      * @param array|null $data The data.
      * @return Statuts|null Returns the statuts.
@@ -727,7 +727,7 @@ class JsonDeserializer {
     }
 
     /**
-     * Deserializes a titre.
+     * Deserialize a titre.
      *
      * @param array|null $data The data.
      * @return Titre|null Returns the convention collective.

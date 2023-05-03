@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringDenominationTrai
 class StringDenominationTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setDenomination() method().
+     * Test the setDenomination() method().
      *
      * @return void
      */

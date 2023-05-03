@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Booleans\TestBooleanEntrepriseCess
 class BooleanEntrepriseCesseeTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setEntrepriseCessee() method().
+     * Test the setEntrepriseCessee() method().
      *
      * @return void
      */

@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Integers\TestIntegerAnneeEffectifT
 class IntegerAnneeEffectifTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setAnneeEffectif() method().
+     * Test the setAnneeEffectif() method().
      *
      * @return void
      */

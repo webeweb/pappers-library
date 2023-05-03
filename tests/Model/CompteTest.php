@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class CompteTest extends AbstractTestCase {
 
     /**
-     * Tests setAnneeCloture()
+     * Test setAnneeCloture()
      *
      * @return void
      */
@@ -36,7 +36,7 @@ class CompteTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setConfidentialite()
+     * Test setConfidentialite()
      *
      * @return void
      */
@@ -49,7 +49,7 @@ class CompteTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setConfidentialiteCompteResultat()
+     * Test setConfidentialiteCompteResultat()
      *
      * @return void
      */
@@ -62,7 +62,7 @@ class CompteTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateCloture()
+     * Test setDateCloture()
      *
      * @return void
      */
@@ -75,7 +75,7 @@ class CompteTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setTypeComptes()
+     * Test setTypeComptes()
      *
      * @return void
      */
@@ -88,7 +88,7 @@ class CompteTest extends AbstractTestCase {
     }
 
     /**
-     * Tests set()
+     * Test set()
      *
      * @return void
      */

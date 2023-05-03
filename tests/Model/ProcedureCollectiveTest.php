@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class ProcedureCollectiveTest extends AbstractTestCase {
 
     /**
-     * Tests setDateDebut()
+     * Test setDateDebut()
      *
      * @return void
      */
@@ -36,7 +36,7 @@ class ProcedureCollectiveTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateFin()
+     * Test setDateFin()
      *
      * @return void
      */
@@ -49,7 +49,7 @@ class ProcedureCollectiveTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

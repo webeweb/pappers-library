@@ -25,7 +25,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class RecherchePublicationsResponseTest extends AbstractTestCase {
 
     /**
-     * Tests addResultat()
+     * Test addResultat()
      *
      * @return void
      */
@@ -41,7 +41,7 @@ class RecherchePublicationsResponseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

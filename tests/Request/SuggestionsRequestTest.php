@@ -26,7 +26,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class SuggestionsRequestTest extends AbstractTestCase {
 
     /**
-     * Tests deserializeResponse()
+     * Test deserializeResponse()
      *
      * @return void
      */
@@ -39,7 +39,7 @@ class SuggestionsRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests serializeRequest()
+     * Test serializeRequest()
      *
      * @return void
      */
@@ -55,7 +55,7 @@ class SuggestionsRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setCibles()
+     * Test setCibles()
      *
      * @return void
      */
@@ -68,7 +68,7 @@ class SuggestionsRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLongueur()
+     * Test setLongueur()
      *
      * @return void
      */
@@ -81,14 +81,14 @@ class SuggestionsRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */
 
     public function test__construct(): void {
 
-        $this->assertEquals("/suggestions", SuggestionsRequest::RESOURCES_PATH);
+        $this->assertEquals("/suggestions", SuggestionsRequest::RESOURCE_PATH);
 
         $obj = new SuggestionsRequest();
 
@@ -97,7 +97,7 @@ class SuggestionsRequestTest extends AbstractTestCase {
 
         $this->assertNull($obj->getQ());
 
-        $this->assertEquals(SuggestionsRequest::RESOURCES_PATH, $obj->getResourcePath());
+        $this->assertEquals(SuggestionsRequest::RESOURCE_PATH, $obj->getResourcePath());
 
         $this->assertNull($obj->getCibles());
         $this->assertNull($obj->getLongueur());

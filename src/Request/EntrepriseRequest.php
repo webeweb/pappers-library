@@ -29,11 +29,11 @@ class EntrepriseRequest extends AbstractRequest implements EntrepriseRequestInte
     use StringSiretTrait;
 
     /**
-     * Resources path.
+     * Resource path.
      *
      * @var string
      */
-    const RESOURCES_PATH = "/entreprise";
+    const RESOURCE_PATH = "/entreprise";
 
     /**
      * Format publications BODACC.
@@ -78,7 +78,7 @@ class EntrepriseRequest extends AbstractRequest implements EntrepriseRequestInte
      * {@inheritdoc}
      */
     public function getResourcePath(): string {
-        return self::RESOURCES_PATH;
+        return self::RESOURCE_PATH;
     }
 
     /**

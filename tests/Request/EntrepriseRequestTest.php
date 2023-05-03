@@ -26,7 +26,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class EntrepriseRequestTest extends AbstractTestCase {
 
     /**
-     * Tests deserializeResponse()
+     * Test deserializeResponse()
      *
      * @return void
      */
@@ -39,7 +39,7 @@ class EntrepriseRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests serializeRequest()
+     * Test serializeRequest()
      *
      * @return void
      */
@@ -55,7 +55,7 @@ class EntrepriseRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setFormatPublicationsBodacc()
+     * Test setFormatPublicationsBodacc()
      *
      * @return void
      */
@@ -68,7 +68,7 @@ class EntrepriseRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setMarques()
+     * Test setMarques()
      *
      * @return void
      */
@@ -81,20 +81,20 @@ class EntrepriseRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */
     public function test__construct(): void {
 
-        $this->assertEquals("/entreprise", EntrepriseRequest::RESOURCES_PATH);
+        $this->assertEquals("/entreprise", EntrepriseRequest::RESOURCE_PATH);
 
         $obj = new EntrepriseRequest();
 
         $this->assertInstanceOf(AbstractRequest::class, $obj);
         $this->assertInstanceOf(EntrepriseRequestInterface::class, $obj);
 
-        $this->assertEquals(EntrepriseRequest::RESOURCES_PATH, $obj->getResourcePath());
+        $this->assertEquals(EntrepriseRequest::RESOURCE_PATH, $obj->getResourcePath());
 
         $this->assertNull($obj->getSiren());
         $this->assertNull($obj->getSiret());

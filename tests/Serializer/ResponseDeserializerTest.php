@@ -24,7 +24,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class ResponseDeserializerTest extends AbstractTestCase {
 
     /**
-     * Tests deserializeDocumentTelechargementResponse()
+     * Test deserializeDocumentTelechargementResponse()
      *
      * @return void
      */
@@ -37,7 +37,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests deserializeEntrepriseResponse()
+     * Test deserializeEntrepriseResponse()
      *
      * @return void
      */
@@ -317,7 +317,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests deserializeEntrepriseResponse()
+     * Test deserializeEntrepriseResponse()
      *
      * @return void
      */
@@ -333,7 +333,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests deserializeRechercheDirigeantsResponse()
+     * Test deserializeRechercheDirigeantsResponse()
      *
      * @return void
      */
@@ -419,7 +419,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests deserializeRechercheDirigeantsResponse()
+     * Test deserializeRechercheDirigeantsResponse()
      *
      * @return void
      */
@@ -435,7 +435,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests deserializeRechercheDocumentsResponse()
+     * Test deserializeRechercheDocumentsResponse()
      *
      * @return void
      */
@@ -525,7 +525,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests deserializeRechercheDocumentsResponse()
+     * Test deserializeRechercheDocumentsResponse()
      *
      * @return void
      */
@@ -541,7 +541,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests deserializeRecherchePublicationsResponse()
+     * Test deserializeRecherchePublicationsResponse()
      *
      * @return void
      */
@@ -630,7 +630,7 @@ Commentaires : modification survenue sur le capital (diminution)", $res->getResu
     }
 
     /**
-     * Tests deserializeRecherchePublicationsResponse()
+     * Test deserializeRecherchePublicationsResponse()
      *
      * @return void
      */
@@ -646,7 +646,7 @@ Commentaires : modification survenue sur le capital (diminution)", $res->getResu
     }
 
     /**
-     * Tests deserializeRechercheResponse()
+     * Test deserializeRechercheResponse()
      *
      * @return void
      */
@@ -741,7 +741,7 @@ Commentaires : modification survenue sur le capital (diminution)", $res->getResu
     }
 
     /**
-     * Tests deserializeRechercheResponse()
+     * Test deserializeRechercheResponse()
      *
      * @return void
      */
@@ -757,7 +757,7 @@ Commentaires : modification survenue sur le capital (diminution)", $res->getResu
     }
 
     /**
-     * Tests deserializeSuggestionsResponse()
+     * Test deserializeSuggestionsResponse()
      *
      * @return void
      */
@@ -884,7 +884,7 @@ Commentaires : modification survenue sur le capital (diminution)", $res->getResu
     }
 
     /**
-     * Tests deserializeSuggestionsResponse()
+     * Test deserializeSuggestionsResponse()
      *
      * @return void
      */

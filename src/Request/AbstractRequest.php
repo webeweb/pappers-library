@@ -31,7 +31,7 @@ abstract class AbstractRequest extends BaseRequest {
     }
 
     /**
-     * Deserializes a response.
+     * Deserialize a response.
      *
      * @param string $rawResponse The raw response.
      * @return AbstractResponse Returns the deserialized response.
@@ -39,7 +39,7 @@ abstract class AbstractRequest extends BaseRequest {
     abstract public function deserializeResponse(string $rawResponse): AbstractResponse;
 
     /**
-     * Serializes the request.
+     * Serialize the request.
      *
      * @return array Returns the serialized request.
      */

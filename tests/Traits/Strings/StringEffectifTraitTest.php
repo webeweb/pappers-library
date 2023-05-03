@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringEffectifTrait;
 class StringEffectifTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setEffectif() method().
+     * Test the setEffectif() method().
      *
      * @return void
      */

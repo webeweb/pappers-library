@@ -27,7 +27,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class BeneficiaireEffectifTest extends AbstractTestCase {
 
     /**
-     * Tests setBeneficiaireRepresentantLegal()
+     * Test setBeneficiaireRepresentantLegal()
      *
      * @return void
      */
@@ -40,7 +40,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateGreffe()
+     * Test setDateGreffe()
      *
      * @return void
      */
@@ -53,7 +53,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateNaissanceCompleteFormatee()
+     * Test setDateNaissanceCompleteFormatee()
      *
      * @return void
      */
@@ -66,7 +66,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDetailsPartsDirectes()
+     * Test setDetailsPartsDirectes()
      *
      * @return void
      */
@@ -82,7 +82,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDetailsPartsIndirectes()
+     * Test setDetailsPartsIndirectes()
      *
      * @return void
      */
@@ -98,7 +98,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDetailsPartsVocationTitulaire()
+     * Test setDetailsPartsVocationTitulaire()
      *
      * @return void
      */
@@ -114,7 +114,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDetailsSocieteGestion()
+     * Test setDetailsSocieteGestion()
      *
      * @return void
      */
@@ -130,7 +130,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDetailsVotesDirects()
+     * Test setDetailsVotesDirects()
      *
      * @return void
      */
@@ -146,7 +146,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDetailsVotesIndirects()
+     * Test setDetailsVotesIndirects()
      *
      * @return void
      */
@@ -162,7 +162,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDetentionAutresMoyensControle()
+     * Test setDetentionAutresMoyensControle()
      *
      * @return void
      */
@@ -175,7 +175,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDetentionPouvoirDecisionAg()
+     * Test setDetentionPouvoirDecisionAg()
      *
      * @return void
      */
@@ -188,7 +188,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDetentionPouvoirNomMembreConseilAdministration()
+     * Test setDetentionPouvoirNomMembreConseilAdministration()
      *
      * @return void
      */
@@ -201,7 +201,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNomUsage()
+     * Test setNomUsage()
      *
      * @return void
      */
@@ -214,7 +214,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setPourcentageParts()
+     * Test setPourcentageParts()
      *
      * @return void
      */
@@ -227,7 +227,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setPourcentagePartsDirectes()
+     * Test setPourcentagePartsDirectes()
      *
      * @return void
      */
@@ -240,7 +240,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setPourcentagePartsIndirectes()
+     * Test setPourcentagePartsIndirectes()
      *
      * @return void
      */
@@ -253,7 +253,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setPourcentagePartsVocationTitulaire()
+     * Test setPourcentagePartsVocationTitulaire()
      *
      * @return void
      */
@@ -266,7 +266,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setPourcentageVotes()
+     * Test setPourcentageVotes()
      *
      * @return void
      */
@@ -279,7 +279,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setPourcentageVotesDirects()
+     * Test setPourcentageVotesDirects()
      *
      * @return void
      */
@@ -292,7 +292,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setPourcentageVotesIndirects()
+     * Test setPourcentageVotesIndirects()
      *
      * @return void
      */
@@ -305,7 +305,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setRepresentantLegalPlacementSansGestionDelegation()
+     * Test setRepresentantLegalPlacementSansGestionDelegation()
      *
      * @return void
      */
@@ -318,7 +318,7 @@ class BeneficiaireEffectifTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

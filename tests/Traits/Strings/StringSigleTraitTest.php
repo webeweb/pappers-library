@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringSigleTrait;
 class StringSigleTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setSigle() method().
+     * Test the setSigle() method().
      *
      * @return void
      */

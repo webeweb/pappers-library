@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Booleans\TestBooleanDisponibleTrai
 class BooleanDisponibleTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setDisponible() method().
+     * Test the setDisponible() method().
      *
      * @return void
      */

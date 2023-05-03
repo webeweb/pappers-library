@@ -24,7 +24,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Objects\TestEntrepriseEntrepriseTr
 class EntrepriseEntrepriseTraitTest extends AbstractTestCase {
 
     /**
-     * Tests setEntreprise()
+     * Test setEntreprise()
      *
      * @return void
      */

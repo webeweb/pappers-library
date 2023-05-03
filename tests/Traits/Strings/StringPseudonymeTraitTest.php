@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringPseudonymeTrait;
 class StringPseudonymeTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setPseudonyme() method().
+     * Test the setPseudonyme() method().
      *
      * @return void
      */

@@ -25,7 +25,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class RechercheDocumentsRequestTest extends AbstractTestCase {
 
     /**
-     * Tests deserializeResponse()
+     * Test deserializeResponse()
      *
      * @return void
      */
@@ -38,7 +38,7 @@ class RechercheDocumentsRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests serializeRequest()
+     * Test serializeRequest()
      *
      * @return void
      */
@@ -54,19 +54,19 @@ class RechercheDocumentsRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */
 
     public function test__construct(): void {
 
-        $this->assertEquals("/recherche-documents", RechercheDocumentsRequest::RESOURCES_PATH);
+        $this->assertEquals("/recherche-documents", RechercheDocumentsRequest::RESOURCE_PATH);
 
         $obj = new RechercheDocumentsRequest();
 
         $this->assertInstanceOf(AbstractRequest::class, $obj);
 
-        $this->assertEquals(RechercheDocumentsRequest::RESOURCES_PATH, $obj->getResourcePath());
+        $this->assertEquals(RechercheDocumentsRequest::RESOURCE_PATH, $obj->getResourcePath());
     }
 }

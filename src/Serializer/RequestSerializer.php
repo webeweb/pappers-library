@@ -88,7 +88,7 @@ class RequestSerializer {
     }
 
     /**
-     * Serializes a document téléchargement request.
+     * Serialize a document téléchargement request.
      *
      * @param DocumentTelechargementRequest $request The request.
      * @return array Returns the serialized request.
@@ -103,7 +103,7 @@ class RequestSerializer {
     }
 
     /**
-     * Serializes an entreprise request.
+     * Serialize an entreprise request.
      *
      * @param EntrepriseRequest $request The request.
      * @return array Returns the serialized request.
@@ -121,7 +121,7 @@ class RequestSerializer {
     }
 
     /**
-     * Serializes a recherche dirigeants request.
+     * Serialize a recherche dirigeants request.
      *
      * @param RechercheDirigeantsRequest $request The request.
      * @return array Returns the serialized request.
@@ -131,7 +131,7 @@ class RequestSerializer {
     }
 
     /**
-     * Serializes a recherche documents request.
+     * Serialize a recherche documents request.
      *
      * @param RechercheDocumentsRequest $request The request.
      * @return array Returns the serialized request.
@@ -141,7 +141,7 @@ class RequestSerializer {
     }
 
     /**
-     * Serializes a recherche publications request.
+     * Serialize a recherche publications request.
      *
      * @param RecherchePublicationsRequest $request The request.
      * @return array Returns the serialized request.
@@ -151,7 +151,7 @@ class RequestSerializer {
     }
 
     /**
-     * Serializes a recherche request.
+     * Serialize a recherche request.
      *
      * @param RechercheRequest $request The request.
      * @return array Returns the serialized request.
@@ -169,7 +169,7 @@ class RequestSerializer {
     }
 
     /**
-     * Serializes a suggestions request.
+     * Serialize a suggestions request.
      *
      * @param SuggestionsRequest $request The request.
      * @return array Returns the serialized request.

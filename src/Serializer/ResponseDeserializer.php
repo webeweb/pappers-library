@@ -31,7 +31,7 @@ use WBW\Library\Types\Helper\ArrayHelper;
 class ResponseDeserializer {
 
     /**
-     * Deserializes an abstract recherche response.
+     * Deserialize an abstract recherche response.
      *
      * @param string $rawResponse The raw response.
      * @param AbstractRechercheResponse $model The response.
@@ -56,7 +56,7 @@ class ResponseDeserializer {
     }
 
     /**
-     * Deserializes an abstract response.
+     * Deserialize an abstract response.
      *
      * @param string $rawResponse The raw response.
      * @param AbstractResponse $model The response.
@@ -70,7 +70,7 @@ class ResponseDeserializer {
     }
 
     /**
-     * Deserializes a document téléchargement response.
+     * Deserialize a document téléchargement response.
      *
      * @param string $rawResponse The raw response.
      * @return DocumentTelechargementResponse Returns the document téléchargement response.
@@ -84,7 +84,7 @@ class ResponseDeserializer {
     }
 
     /**
-     * Deserializes an entreprise response.
+     * Deserialize an entreprise response.
      *
      * @param string $rawResponse The raw response.
      * @return EntrepriseResponse Returns the entreprise response.
@@ -104,7 +104,7 @@ class ResponseDeserializer {
     }
 
     /**
-     * Deserializes a recherche dirigeants response.
+     * Deserialize a recherche dirigeants response.
      *
      * @param string $rawResponse The raw response.
      * @return RechercheDirigeantsResponse Returns the recherche dirigeants response.
@@ -126,7 +126,7 @@ class ResponseDeserializer {
     }
 
     /**
-     * Deserializes a recherche documents response.
+     * Deserialize a recherche documents response.
      *
      * @param string $rawResponse The raw response.
      * @return RechercheDocumentsResponse Returns the recherche documents response.
@@ -148,7 +148,7 @@ class ResponseDeserializer {
     }
 
     /**
-     * Deserializes a recherche publications response.
+     * Deserialize a recherche publications response.
      *
      * @param string $rawResponse The raw response.
      * @return RecherchePublicationsResponse Returns the recherche publications response.
@@ -170,7 +170,7 @@ class ResponseDeserializer {
     }
 
     /**
-     * Deserializes a recherche response.
+     * Deserialize a recherche response.
      *
      * @param string $rawResponse The raw response.
      * @return RechercheResponse Returns the recherche response.
@@ -197,7 +197,7 @@ class ResponseDeserializer {
     }
 
     /**
-     * Deserializes a suggestions response.
+     * Deserialize a suggestions response.
      *
      * @param string $rawResponse The raw response.
      * @return SuggestionsResponse Returns the suggestions response.

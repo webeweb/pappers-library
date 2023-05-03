@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringTrancheEffectifT
 class StringTrancheEffectifTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setTrancheEffectif() method().
+     * Test the setTrancheEffectif() method().
      *
      * @return void
      */

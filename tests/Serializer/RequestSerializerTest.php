@@ -30,7 +30,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class RequestSerializerTest extends AbstractTestCase {
 
     /**
-     * Tests serializeDocumentTelechargementRequest()
+     * Test serializeDocumentTelechargementRequest()
      *
      * @return void
      */
@@ -47,7 +47,7 @@ class RequestSerializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests serializeEntrepriseRequest()
+     * Test serializeEntrepriseRequest()
      *
      * @return void
      */
@@ -70,7 +70,7 @@ class RequestSerializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests serializeRechercheDirigeantsRequest()
+     * Test serializeRechercheDirigeantsRequest()
      *
      * @return void
      */
@@ -153,7 +153,7 @@ class RequestSerializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests serializeRechercheDocumentsRequest()
+     * Test serializeRechercheDocumentsRequest()
      *
      * @return void
      */
@@ -236,7 +236,7 @@ class RequestSerializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests serializeRecherchePublicationsRequest()
+     * Test serializeRecherchePublicationsRequest()
      *
      * @return void
      */
@@ -319,7 +319,7 @@ class RequestSerializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests serializeRechercheRequest()
+     * Test serializeRechercheRequest()
      *
      * @return void
      */
@@ -410,7 +410,7 @@ class RequestSerializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests serializeSuggestionsRequest()
+     * Test serializeSuggestionsRequest()
      *
      * @return void
      */

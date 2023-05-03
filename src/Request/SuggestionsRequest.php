@@ -27,11 +27,11 @@ class SuggestionsRequest extends AbstractRequest implements SuggestionsRequestIn
     use StringQTrait;
 
     /**
-     * Resources path.
+     * Resource path.
      *
      * @var string
      */
-    const RESOURCES_PATH = "/suggestions";
+    const RESOURCE_PATH = "/suggestions";
 
     /**
      * Cibles.
@@ -76,7 +76,7 @@ class SuggestionsRequest extends AbstractRequest implements SuggestionsRequestIn
      * {@inheritdoc}
      */
     public function getResourcePath(): string {
-        return self::RESOURCES_PATH;
+        return self::RESOURCE_PATH;
     }
 
     /**

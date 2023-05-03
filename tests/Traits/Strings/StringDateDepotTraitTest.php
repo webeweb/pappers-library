@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringDateDepotTrait;
 class StringDateDepotTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setDateDepot() method().
+     * Test the setDateDepot() method().
      *
      * @return void
      */

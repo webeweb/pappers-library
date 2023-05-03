@@ -26,7 +26,7 @@ use WBW\Library\Pappers\Tests\AbstractTestCase;
 class RechercheRequestTest extends AbstractTestCase {
 
     /**
-     * Tests deserializeResponse()
+     * Test deserializeResponse()
      *
      * @return void
      */
@@ -39,7 +39,7 @@ class RechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests serializeRequest()
+     * Test serializeRequest()
      *
      * @return void
      */
@@ -55,7 +55,7 @@ class RechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setBases()
+     * Test setBases()
      *
      * @return void
      */
@@ -68,7 +68,7 @@ class RechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setCurseur()
+     * Test setCurseur()
      *
      * @return void
      */
@@ -81,7 +81,7 @@ class RechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setExport()
+     * Test setExport()
      *
      * @return void
      */
@@ -94,7 +94,7 @@ class RechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setParCurseur()
+     * Test setParCurseur()
      *
      * @return void
      */
@@ -107,20 +107,20 @@ class RechercheRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */
     public function test__construct(): void {
 
-        $this->assertEquals("/recherche", RechercheRequest::RESOURCES_PATH);
+        $this->assertEquals("/recherche", RechercheRequest::RESOURCE_PATH);
 
         $obj = new RechercheRequest();
 
         $this->assertInstanceOf(AbstractRequest::class, $obj);
         $this->assertInstanceOf(RechercheRequestInterface::class, $obj);
 
-        $this->assertEquals(RechercheRequest::RESOURCES_PATH, $obj->getResourcePath());
+        $this->assertEquals(RechercheRequest::RESOURCE_PATH, $obj->getResourcePath());
 
         $this->assertNull($obj->getBases());
         $this->assertNull($obj->getCurseur());

@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringDateClotureExerc
 class StringDateClotureExerciceTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setDateClotureExercice() method().
+     * Test the setDateClotureExercice() method().
      *
      * @return void
      */

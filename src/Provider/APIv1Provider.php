@@ -36,7 +36,7 @@ class APIv1Provider extends AbstractProvider {
     }
 
     /**
-     * Sends a request.
+     * Send a request.
      *
      * @param AbstractRequest $request The request.
      * @return AbstractResponse Returns the response.

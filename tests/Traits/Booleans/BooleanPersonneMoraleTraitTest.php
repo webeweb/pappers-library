@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Booleans\TestBooleanPersonneMorale
 class BooleanPersonneMoraleTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setPersonneMorale() method().
+     * Test the setPersonneMorale() method().
      *
      * @return void
      */
