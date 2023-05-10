@@ -30,6 +30,7 @@ use WBW\Library\Pappers\Model\ExtraitImmatriculation;
 use WBW\Library\Pappers\Model\Finance;
 use WBW\Library\Pappers\Model\ProcedureCollective;
 use WBW\Library\Pappers\Model\PublicationBodacc;
+use WBW\Library\Pappers\Model\RepertoireNationalMetiers;
 use WBW\Library\Pappers\Model\Representant;
 use WBW\Library\Pappers\Model\Statuts;
 use WBW\Library\Pappers\Model\Titre;
@@ -47,7 +48,7 @@ class JsonDeserializer {
      * Deserialize an acte.
      *
      * @param array|null $data The data.
-     * @return Acte|null Returns the acte.
+     * @return Acte|null Returns the model.
      */
     protected static function deserializeActe(?array $data): ?Acte {
 
@@ -68,7 +69,7 @@ class JsonDeserializer {
      * Deserialize a bénéficiaire effectif.
      *
      * @param array|null $data The data.
-     * @return BeneficiaireEffectif|null Returns the bénéficiaire effectif.
+     * @return BeneficiaireEffectif|null Returns the model.
      */
     protected static function deserializeBeneficiaireEffectif(?array $data): ?BeneficiaireEffectif {
 
@@ -127,7 +128,7 @@ class JsonDeserializer {
      * Deserialize a compte.
      *
      * @param array|null $data The data.
-     * @return Compte|null Returns the compte.
+     * @return Compte|null Returns the model.
      */
     protected static function deserializeCompte(?array $data): ?Compte {
 
@@ -154,7 +155,7 @@ class JsonDeserializer {
      * Deserialize a convention collective.
      *
      * @param array|null $data The data.
-     * @return ConventionCollective|null Returns the convention collective.
+     * @return ConventionCollective|null Returns the model.
      */
     protected static function deserializeConventionCollective(?array $data): ?ConventionCollective {
 
@@ -174,7 +175,7 @@ class JsonDeserializer {
      * Deserialize a dépôt acte.
      *
      * @param array|null $data The data.
-     * @return DepotActe|null Returns the dépôt acte.
+     * @return DepotActe|null Returns the model.
      */
     protected static function deserializeDepotActe(?array $data): ?DepotActe {
 
@@ -200,7 +201,7 @@ class JsonDeserializer {
      * Deserialize a détails directs.
      *
      * @param array|null $data The data.
-     * @return DetailsDirects|null Returns the détails directs.
+     * @return DetailsDirects|null Returns the model.
      */
     protected static function deserializeDetailsDirects(?array $data): ?DetailsDirects {
 
@@ -244,7 +245,7 @@ class JsonDeserializer {
      * Deserialize a détails indivision.
      *
      * @param array|null $data The data.
-     * @return DetailsIndivision|null Returns the détails indivision.
+     * @return DetailsIndivision|null Returns the model.
      */
     protected static function deserializeDetailsIndivision(?array $data): ?DetailsIndivision {
 
@@ -264,7 +265,7 @@ class JsonDeserializer {
      * Deserialize a détails parts vocation titulaire.
      *
      * @param array|null $data The data.
-     * @return DetailsPartsVocationTitulaire|null Returns the détails parts vocation titulaire.
+     * @return DetailsPartsVocationTitulaire|null Returns the model.
      */
     protected static function deserializeDetailsPartsVocationTitulaire(?array $data): ?DetailsPartsVocationTitulaire {
 
@@ -288,7 +289,7 @@ class JsonDeserializer {
      * Deserialize a détails personne morale.
      *
      * @param array|null $data The data.
-     * @return DetailsPersonneMorale|null Returns the détails personne morale.
+     * @return DetailsPersonneMorale|null Returns the model.
      */
     protected static function deserializeDetailsPersonneMorale(?array $data): ?DetailsPersonneMorale {
 
@@ -308,7 +309,7 @@ class JsonDeserializer {
      * Deserialize a détails société gestion.
      *
      * @param array|null $data The data.
-     * @return DetailsSocieteGestion|null Returns the détails société gestion.
+     * @return DetailsSocieteGestion|null Returns the model.
      */
     protected static function deserializeDetailsSocieteGestion(?array $data): ?DetailsSocieteGestion {
 
@@ -331,7 +332,7 @@ class JsonDeserializer {
      * Deserialize a document.
      *
      * @param array|null $data The data.
-     * @return Document|null Returns the document.
+     * @return Document|null Returns the model.
      */
     public static function deserializeDocument(?array $data): ?Document {
 
@@ -363,7 +364,7 @@ class JsonDeserializer {
      * Deserialize a domiciliation.
      *
      * @param array|null $data The data.
-     * @return Domiciliation|null Returns the acte.
+     * @return Domiciliation|null Returns the model.
      */
     protected static function deserializeDomiciliation(?array $data): ?Domiciliation {
 
@@ -382,7 +383,7 @@ class JsonDeserializer {
      * Deserialize an entreprise.
      *
      * @param array|null $data The data.
-     * @return Entreprise|null Returns the entreprise.
+     * @return Entreprise|null Returns the model.
      */
     public static function deserializeEntreprise(?array $data): ?Entreprise {
 
@@ -392,6 +393,7 @@ class JsonDeserializer {
         $siege                  = static::deserializeEtablissement(ArrayHelper::get($data, "siege", []));
         $derniersStatuts        = static::deserializeStatuts(ArrayHelper::get($data, "derniers_statuts", []));
         $extraitImmatriculation = static::deserializeExtraitImmatriculation(ArrayHelper::get($data, "extrait_immatriculation", []));
+        $rnm                    = static::deserializeRepertoireNationalMetiers(ArrayHelper::get($data, "rnm", []));
 
         $model = new Entreprise();
         $model->setSiren(ArrayHelper::get($data, "siren"));
@@ -405,7 +407,7 @@ class JsonDeserializer {
         $model->setPrenom(ArrayHelper::get($data, "prenom"));
         $model->setSexe(ArrayHelper::get($data, "sexe"));
         $model->setSiege($siege);
-        $model->setRnm(ArrayHelper::get($data, "rnm"));
+        $model->setRnm($rnm);
         $model->setVilles(ArrayHelper::get($data, "villes", []));
         $model->setCodeNaf(ArrayHelper::get($data, "code_naf"));
         $model->setLibelleCodeNaf(ArrayHelper::get($data, "libelle_code_naf"));
@@ -520,7 +522,7 @@ class JsonDeserializer {
      * Deserialize an établissement.
      *
      * @param array|null $data The data.
-     * @return Etablissement|null Returns the établissement.
+     * @return Etablissement|null Returns the model.
      */
     protected static function deserializeEtablissement(?array $data): ?Etablissement {
 
@@ -567,7 +569,7 @@ class JsonDeserializer {
      * Deserialize an extrait immatriculation.
      *
      * @param array|null $data The data.
-     * @return ExtraitImmatriculation|null Returns the extrait immatriculation.
+     * @return ExtraitImmatriculation|null Returns the model.
      */
     protected static function deserializeExtraitImmatriculation(?array $data): ?ExtraitImmatriculation {
 
@@ -585,7 +587,7 @@ class JsonDeserializer {
      * Deserialize a finance.
      *
      * @param array|null $data The data.
-     * @return Finance|null Returns the finance.
+     * @return Finance|null Returns the model.
      */
     protected static function deserializeFinance(?array $data): ?Finance {
 
@@ -608,7 +610,7 @@ class JsonDeserializer {
      * Deserialize a procédure collective.
      *
      * @param array|null $data The data.
-     * @return ProcedureCollective|null Returns the procédure collective.
+     * @return ProcedureCollective|null Returns the model.
      */
     protected static function deserializeProcedureCollective(?array $data): ?ProcedureCollective {
 
@@ -632,7 +634,7 @@ class JsonDeserializer {
      * Deserialize a publication BODACC.
      *
      * @param array|null $data The data.
-     * @return PublicationBodacc|null Returns the publication BODACC.
+     * @return PublicationBodacc|null Returns the model.
      */
     public static function deserializePublicationBodacc(?array $data): ?PublicationBodacc {
 
@@ -677,10 +679,34 @@ class JsonDeserializer {
     }
 
     /**
+     * Deserialize a répertoire national des métiers.
+     *
+     * @param array|null $data The data.
+     * @return RepertoireNationalMetiers|null Returns the model.
+     */
+    protected static function deserializeRepertoireNationalMetiers(?array $data): ?RepertoireNationalMetiers {
+
+        if (null === $data || 0 === count($data)) {
+            return null;
+        }
+
+        $model = new RepertoireNationalMetiers();
+        $model->setDateImmatriculation(ArrayHelper::get($data, "date_immatriculation"));
+        $model->setDateRadiation(ArrayHelper::get($data, "date_radiation"));
+        $model->setDateDebutActivite(ArrayHelper::get($data, "date_debut_activite"));
+        $model->setDateCessationActivite(ArrayHelper::get($data, "date_cessation_activite"));
+        $model->setChambreMetiers(ArrayHelper::get($data, "chambre_des_metiers"));
+        $model->setQualification(ArrayHelper::get($data, "qualification"));
+        $model->setDerniereMiseJour(ArrayHelper::get($data, "derniere_mise_a_jour"));
+
+        return $model;
+    }
+
+    /**
      * Deserialize a représentant.
      *
      * @param array|null $data The data.
-     * @return Representant|null Returns the représentant.
+     * @return Representant|null Returns the model.
      */
     public static function deserializeRepresentant(?array $data): ?Representant {
 
@@ -726,7 +752,7 @@ class JsonDeserializer {
      * Deserialize a statuts.
      *
      * @param array|null $data The data.
-     * @return Statuts|null Returns the statuts.
+     * @return Statuts|null Returns the model.
      */
     protected static function deserializeStatuts(?array $data): ?Statuts {
 
@@ -752,7 +778,7 @@ class JsonDeserializer {
      * Deserialize a titre.
      *
      * @param array|null $data The data.
-     * @return Titre|null Returns the convention collective.
+     * @return Titre|null Returns the model.
      */
     protected static function deserializeTitre(?array $data): ?Titre {
 

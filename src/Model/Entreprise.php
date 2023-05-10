@@ -400,7 +400,7 @@ class Entreprise {
     /**
      * R.N.M.
      *
-     * @var string|null
+     * @var RepertoireNationalMetiers|null
      */
     protected $rnm;
 
@@ -965,9 +965,9 @@ class Entreprise {
     /**
      * Get the R.N.M.
      *
-     * @return string|null Returns the R.N.M.
+     * @return RepertoireNationalMetiers|null Returns the R.N.M.
      */
-    public function getRnm(): ?string {
+    public function getRnm(): ?RepertoireNationalMetiers {
         return $this->rnm;
     }
 
@@ -1516,10 +1516,10 @@ class Entreprise {
     /**
      * Set the R.N.M.
      *
-     * @param string|null $rnm The R.N.M.
+     * @param RepertoireNationalMetiers|null $rnm The R.N.M.
      * @return Entreprise Returns this entreprise.
      */
-    public function setRnm(?string $rnm): Entreprise {
+    public function setRnm(?RepertoireNationalMetiers $rnm): Entreprise {
         $this->rnm = $rnm;
         return $this;
     }

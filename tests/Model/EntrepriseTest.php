@@ -21,6 +21,7 @@ use WBW\Library\Pappers\Model\Etablissement;
 use WBW\Library\Pappers\Model\ExtraitImmatriculation;
 use WBW\Library\Pappers\Model\Finance;
 use WBW\Library\Pappers\Model\ProcedureCollective;
+use WBW\Library\Pappers\Model\RepertoireNationalMetiers;
 use WBW\Library\Pappers\Model\Representant;
 use WBW\Library\Pappers\Model\Statuts;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
@@ -671,10 +672,13 @@ class EntrepriseTest extends AbstractTestCase {
      */
     public function testSetRnm(): void {
 
+        // Set a Répertoire national des métiers mock.
+        $rnm = new RepertoireNationalMetiers();
+
         $obj = new Entreprise();
 
-        $obj->setRnm("rnm");
-        $this->assertEquals("rnm", $obj->getRnm());
+        $obj->setRnm($rnm);
+        $this->assertSame($rnm, $obj->getRnm());
     }
 
     /**
