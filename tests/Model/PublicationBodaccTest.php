@@ -101,19 +101,6 @@ class PublicationBodaccTest extends AbstractTestCase {
     }
 
     /**
-     * Test setDateDebutActivite()
-     *
-     * @return void
-     */
-    public function testSetDateDebutActivite(): void {
-
-        $obj = new PublicationBodacc();
-
-        $obj->setDateDebutActivite("dateDebutActivite");
-        $this->assertEquals("dateDebutActivite", $obj->getDateDebutActivite());
-    }
-
-    /**
      * Test setNomCommercial()
      *
      * @return void

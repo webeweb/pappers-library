@@ -15,6 +15,7 @@ use WBW\Library\Pappers\Traits\Booleans\BooleanPersonneMoraleTrait;
 use WBW\Library\Pappers\Traits\Integers\IntegerCapitalTrait;
 use WBW\Library\Pappers\Traits\Objects\EntrepriseEntrepriseTrait;
 use WBW\Library\Pappers\Traits\Strings\StringAdresseTrait;
+use WBW\Library\Pappers\Traits\Strings\StringDateDebutActiviteTrait;
 use WBW\Library\Pappers\Traits\Strings\StringDenominationTrait;
 use WBW\Library\Pappers\Traits\Strings\StringDeviseCapitalTrait;
 use WBW\Library\Pappers\Traits\Strings\StringFormeJuridiqueTrait;
@@ -40,6 +41,7 @@ class PublicationBodacc implements PublicationBodaccInterface {
     use EntrepriseEntrepriseTrait;
     use IntegerCapitalTrait;
     use StringAdresseTrait;
+    use StringDateDebutActiviteTrait;
     use StringDenominationTrait;
     use StringDescriptionTrait;
     use StringDeviseCapitalTrait;
@@ -94,13 +96,6 @@ class PublicationBodacc implements PublicationBodaccInterface {
      * @var string|null
      */
     protected $date;
-
-    /**
-     * Date début activité.
-     *
-     * @var string|null
-     */
-    protected $dateDebutActivite;
 
     /**
      * Nom commercial.
@@ -189,15 +184,6 @@ class PublicationBodacc implements PublicationBodaccInterface {
      */
     public function getDate(): ?string {
         return $this->date;
-    }
-
-    /**
-     * Get the date début activité.
-     *
-     * @return string|null Returns the date début activité.
-     */
-    public function getDateDebutActivite(): ?string {
-        return $this->dateDebutActivite;
     }
 
     /**
@@ -299,17 +285,6 @@ class PublicationBodacc implements PublicationBodaccInterface {
      */
     public function setDate(?string $date): PublicationBodacc {
         $this->date = $date;
-        return $this;
-    }
-
-    /**
-     * Set the date début activité.
-     *
-     * @param string|null $dateDebutActivite The date début activité.
-     * @return PublicationBodacc Returns this publication BODACC.
-     */
-    public function setDateDebutActivite(?string $dateDebutActivite): PublicationBodacc {
-        $this->dateDebutActivite = $dateDebutActivite;
         return $this;
     }
 
