@@ -30,14 +30,14 @@ class ProcedureCollective implements ProcedureCollectiveInterface {
      *
      * @var string|null
      */
-    private $dateDebut;
+    protected $dateDebut;
 
     /**
      * Date fin.
      *
      * @var string|null
      */
-    private $dateFin;
+    protected $dateFin;
 
     /**
      * Constructor.

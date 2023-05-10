@@ -36,7 +36,7 @@ class DepotActe {
      *
      * @var Acte[]
      */
-    private $actes;
+    protected $actes;
 
     /**
      * Constructor.

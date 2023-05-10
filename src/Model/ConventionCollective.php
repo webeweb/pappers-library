@@ -28,14 +28,14 @@ class ConventionCollective {
      *
      * @var bool|null
      */
-    private $confirmee;
+    protected $confirmee;
 
     /**
      * IDCC.
      *
      * @var int|null
      */
-    private $idcc;
+    protected $idcc;
 
     /**
      * Constructor.

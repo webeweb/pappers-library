@@ -54,147 +54,147 @@ class BeneficiaireEffectif {
      *
      * @var bool|null
      */
-    private $beneficiaireRepresentantLegal;
+    protected $beneficiaireRepresentantLegal;
 
     /**
      * Date greffe.
      *
      * @var string|null
      */
-    private $dateGreffe;
+    protected $dateGreffe;
 
     /**
      * Date naissance complète formatée.
      *
      * @var string|null
      */
-    private $dateNaissanceCompleteFormatee;
+    protected $dateNaissanceCompleteFormatee;
 
     /**
      * Détails parts directes.
      *
      * @var DetailsDirects|null
      */
-    private $detailsPartsDirectes;
+    protected $detailsPartsDirectes;
 
     /**
      * Détails parts indirectes.
      *
      * @var DetailsIndirects|null
      */
-    private $detailsPartsIndirectes;
+    protected $detailsPartsIndirectes;
 
     /**
      * Détails parts vocation titulaire.
      *
      * @var DetailsPartsVocationTitulaire|null
      */
-    private $detailsPartsVocationTitulaire;
+    protected $detailsPartsVocationTitulaire;
 
     /**
      * Détails société gestion.
      *
      * @var DetailsSocieteGestion|null
      */
-    private $detailsSocieteGestion;
+    protected $detailsSocieteGestion;
 
     /**
      * Détails votes directs.
      *
      * @var DetailsDirects|null
      */
-    private $detailsVotesDirects;
+    protected $detailsVotesDirects;
 
     /**
      * Détails votes indirects.
      *
      * @var DetailsIndirects|null
      */
-    private $detailsVotesIndirects;
+    protected $detailsVotesIndirects;
 
     /**
      * Détention autres moyens contrôle.
      *
      * @var bool|null
      */
-    private $detentionAutresMoyensControle;
+    protected $detentionAutresMoyensControle;
 
     /**
      * Détention pouvoir décision AG.
      *
      * @var bool|null
      */
-    private $detentionPouvoirDecisionAg;
+    protected $detentionPouvoirDecisionAg;
 
     /**
      * Détention pouvoir nom membre conseil administration.
      *
      * @var bool|null
      */
-    private $detentionPouvoirNomMembreConseilAdministration;
+    protected $detentionPouvoirNomMembreConseilAdministration;
 
     /**
      * Nom usage.
      *
      * @var string|null
      */
-    private $nomUsage;
+    protected $nomUsage;
 
     /**
      * Pourcentages parts.
      *
      * @var float|null
      */
-    private $pourcentageParts;
+    protected $pourcentageParts;
 
     /**
      * Pourcentages parts directes.
      *
      * @var float|null
      */
-    private $pourcentagePartsDirectes;
+    protected $pourcentagePartsDirectes;
 
     /**
      * Pourcentages parts indirectes.
      *
      * @var float|null
      */
-    private $pourcentagePartsIndirectes;
+    protected $pourcentagePartsIndirectes;
 
     /**
      * Pourcentages parts vocation titulaire.
      *
      * @var float|null
      */
-    private $pourcentagePartsVocationTitulaire;
+    protected $pourcentagePartsVocationTitulaire;
 
     /**
      * Pourcentage votes.
      *
      * @var float|null
      */
-    private $pourcentageVotes;
+    protected $pourcentageVotes;
 
     /**
      * Pourcentage votes directs.
      *
      * @var float|null
      */
-    private $pourcentageVotesDirects;
+    protected $pourcentageVotesDirects;
 
     /**
      * Pourcentage votes indirects.
      *
      * @var float|null
      */
-    private $pourcentageVotesIndirects;
+    protected $pourcentageVotesIndirects;
 
     /**
      * Représentant légal placement sans gestion délégation.
      *
      * @var bool|null
      */
-    private $representantLegalPlacementSansGestionDelegation;
+    protected $representantLegalPlacementSansGestionDelegation;
 
     /**
      * Constructor.

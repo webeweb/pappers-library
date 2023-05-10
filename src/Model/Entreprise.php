@@ -80,357 +80,357 @@ class Entreprise {
      *
      * @var string|null
      */
-    private $anneeFinances;
+    protected $anneeFinances;
 
     /**
      * Associé unique.
      *
      * @var bool|null
      */
-    private $associeUnique;
+    protected $associeUnique;
 
     /**
      * Bénéficiaires effectifs.
      *
      * @var BeneficiaireEffectif[]
      */
-    private $beneficiairesEffectifs;
+    protected $beneficiairesEffectifs;
 
     /**
      * Capital actuel variable.
      *
      * @var int|null
      */
-    private $capitalActuelVariable;
+    protected $capitalActuelVariable;
 
     /**
      * Capital formaté.
      *
      * @var string|null
      */
-    private $capitalFormate;
+    protected $capitalFormate;
 
     /**
      * Comptes.
      *
      * @var Compte[]
      */
-    private $comptes;
+    protected $comptes;
 
     /**
      * Conventions collectives.
      *
      * @var ConventionCollective[]
      */
-    private $conventionCollectives;
+    protected $conventionCollectives;
 
     /**
      * Date cessation formatée.
      *
      * @var string|null
      */
-    private $dateCessationFormatee;
+    protected $dateCessationFormatee;
 
     /**
      * Date clôture exceptionnelle.
      *
      * @var string|null
      */
-    private $dateClotureExceptionnelle;
+    protected $dateClotureExceptionnelle;
 
     /**
      * Date clôture exercice exceptionnelle.
      *
      * @var string|null
      */
-    private $dateClotureExerciceExceptionnelle;
+    protected $dateClotureExerciceExceptionnelle;
 
     /**
      * Date clôture exercice exceptionnelle formaté.
      *
      * @var string|null
      */
-    private $dateClotureExerciceExceptionnelleFormate;
+    protected $dateClotureExerciceExceptionnelleFormate;
 
     /**
      * Date création.
      *
      * @var string|null
      */
-    private $dateCreation;
+    protected $dateCreation;
 
     /**
      * Date création formaté.
      *
      * @var string|null
      */
-    private $dateCreationFormate;
+    protected $dateCreationFormate;
 
     /**
      * Date immatriculation R.C.S.
      *
      * @var string|null
      */
-    private $dateImmatriculationRcs;
+    protected $dateImmatriculationRcs;
 
     /**
      * Date première immatriculation R.C.S.
      *
      * @var string|null
      */
-    private $datePremiereImmatriculationRcs;
+    protected $datePremiereImmatriculationRcs;
 
     /**
      * Date radiation R.C.S.
      *
      * @var string|null
      */
-    private $dateRadiationRcs;
+    protected $dateRadiationRcs;
 
     /**
      * Dépôts actes.
      *
      * @var DepotActe[]
      */
-    private $depotsActes;
+    protected $depotsActes;
 
     /**
      * Dernier traitement.
      *
      * @var string|null
      */
-    private $dernierTraitement;
+    protected $dernierTraitement;
 
     /**
      * Dernière mise jour R.C.S.
      *
      * @var string|null
      */
-    private $derniereMiseJourRcs;
+    protected $derniereMiseJourRcs;
 
     /**
      * Dernière mise jour SIRENE.
      *
      * @var string|null
      */
-    private $derniereMiseJourSirene;
+    protected $derniereMiseJourSirene;
 
     /**
      * Derniers statuts.
      *
      * @var Statuts|null
      */
-    private $derniersStatuts;
+    protected $derniersStatuts;
 
     /**
      * Diffusable.
      *
      * @var bool|null
      */
-    private $diffusable;
+    protected $diffusable;
 
     /**
      * Documents.
      *
      * @var Document[]
      */
-    private $documents;
+    protected $documents;
 
     /**
      * Domaine activité.
      *
      * @var string|null
      */
-    private $domaineActivite;
+    protected $domaineActivite;
 
     /**
      * Durée personne morale.
      *
      * @var string|null
      */
-    private $dureePersonneMorale;
+    protected $dureePersonneMorale;
 
     /**
      * Economie sociale solidaire.
      *
      * @var bool|null
      */
-    private $economieSocialeSolidaire;
+    protected $economieSocialeSolidaire;
 
     /**
      * Effectifs finances.
      *
      * @var int|null
      */
-    private $effectifsFinances;
+    protected $effectifsFinances;
 
     /**
      * Entreprise employeuse.
      *
      * @var bool|null
      */
-    private $entrepriseEmployeuse;
+    protected $entrepriseEmployeuse;
 
     /**
      * Etablissements.
      *
      * @var Etablissement[]
      */
-    private $etablissements;
+    protected $etablissements;
 
     /**
      * Extrait immatriculation.
      *
      * @var ExtraitImmatriculation|null
      */
-    private $extraitImmatriculation;
+    protected $extraitImmatriculation;
 
     /**
      * Finances.
      *
      * @var Finance[]
      */
-    private $finances;
+    protected $finances;
 
     /**
      * Libellé code NAF.
      *
      * @var string|null
      */
-    private $libelleCodeNaf;
+    protected $libelleCodeNaf;
 
     /**
      * Nb bénéficiaires total.
      *
      * @var int|null
      */
-    private $nbBeneficiairesTotal;
+    protected $nbBeneficiairesTotal;
 
     /**
      * Nb dirigeants total.
      *
      * @var int|null
      */
-    private $nbDirigeantsTotal;
+    protected $nbDirigeantsTotal;
 
     /**
      * Nb documents avec mentions.
      *
      * @var int|null
      */
-    private $nbDocumentsAvecMentions;
+    protected $nbDocumentsAvecMentions;
 
     /**
      * Nb documents total.
      *
      * @var int|null
      */
-    private $nbDocumentsTotal;
+    protected $nbDocumentsTotal;
 
     /**
      * Nb publications avec mentions.
      *
      * @var int|null
      */
-    private $nbPublicationsAvecMentions;
+    protected $nbPublicationsAvecMentions;
 
     /**
      * Nb publications total.
      *
      * @var int|null
      */
-    private $nbPublicationsTotal;
+    protected $nbPublicationsTotal;
 
     /**
      * Numéro R.C.S.
      *
      * @var string|null
      */
-    private $numeroRcs;
+    protected $numeroRcs;
 
     /**
      * Numéro T.V.A. intracommunautaire.
      *
      * @var string|null
      */
-    private $numeroTvaIntracommunautaire;
+    protected $numeroTvaIntracommunautaire;
 
     /**
      * Procédure collective en cours.
      *
      * @var bool|null
      */
-    private $procedureCollectiveEnCours;
+    protected $procedureCollectiveEnCours;
 
     /**
      * Procédure collective existe.
      *
      * @var bool|null
      */
-    private $procedureCollectiveExiste;
+    protected $procedureCollectiveExiste;
 
     /**
      * Procédures collectives.
      *
      * @var ProcedureCollective[]
      */
-    private $proceduresCollectives;
+    protected $proceduresCollectives;
 
     /**
      * Prochaine date clôture exercice.
      *
      * @var string|null
      */
-    private $prochaineDateClotureExercice;
+    protected $prochaineDateClotureExercice;
 
     /**
      * Prochaine date clôture exercice formaté.
      *
      * @var string|null
      */
-    private $prochaineDateClotureExerciceFormate;
+    protected $prochaineDateClotureExerciceFormate;
 
     /**
      * Représentants.
      *
      * @var Representant[]
      */
-    private $representants;
+    protected $representants;
 
     /**
      * R.N.M.
      *
      * @var string|null
      */
-    private $rnm;
+    protected $rnm;
 
     /**
      * Sexe.
      *
      * @var string|null
      */
-    private $sexe;
+    protected $sexe;
 
     /**
      * Siege.
      *
      * @var Etablissement|null
      */
-    private $siege;
+    protected $siege;
 
     /**
      * SIREN formaté.
      *
      * @var string|null
      */
-    private $sirenFormate;
+    protected $sirenFormate;
 
     /**
      * Villes.
      *
      * @var string[]
      */
-    private $villes;
+    protected $villes;
 
     /**
      * Constructor.

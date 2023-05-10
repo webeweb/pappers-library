@@ -38,21 +38,21 @@ class Document implements DocumentInterface {
      *
      * @var int|null
      */
-    private $idFichier;
+    protected $idFichier;
 
     /**
      * Num. chrono.
      *
      * @var string|null
      */
-    private $numChrono;
+    protected $numChrono;
 
     /**
      * Titres.
      *
      * @var Titre[]
      */
-    private $titres;
+    protected $titres;
 
     /**
      * Constructor.

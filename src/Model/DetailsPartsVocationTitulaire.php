@@ -24,28 +24,28 @@ class DetailsPartsVocationTitulaire {
      *
      * @var DetailsDirects|null
      */
-    private $detailsDirectes;
+    protected $detailsDirectes;
 
     /**
      * Détails indirectes
      *
      * @var DetailsIndirects|null
      */
-    private $detailsIndirectes;
+    protected $detailsIndirectes;
 
     /**
      * Pourcentage directes.
      *
      * @var int|null
      */
-    private $pourcentageDirectes;
+    protected $pourcentageDirectes;
 
     /**
      * Pourcentage indirectes.
      *
      * @var int|null
      */
-    private $pourcentageIndirectes;
+    protected $pourcentageIndirectes;
 
     /**
      * Constructor.

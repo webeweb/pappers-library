@@ -24,28 +24,28 @@ class DetailsIndirects {
      *
      * @var DetailsIndivision|null
      */
-    private $detailsIndivision;
+    protected $detailsIndivision;
 
     /**
      * Détails personne morale.
      *
      * @var DetailsPersonneMorale|null
      */
-    private $detailsPersonneMorale;
+    protected $detailsPersonneMorale;
 
     /**
      * Pourcentage indivision.
      *
      * @var int|null
      */
-    private $pourcentageIndivision;
+    protected $pourcentageIndivision;
 
     /**
      * Pourcentage personne morale.
      *
      * @var int|null
      */
-    private $pourcentagePersonneMorale;
+    protected $pourcentagePersonneMorale;
 
     /**
      * Constructor.

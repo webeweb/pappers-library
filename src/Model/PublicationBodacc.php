@@ -58,77 +58,77 @@ class PublicationBodacc implements PublicationBodaccInterface {
      *
      * @var string|null
      */
-    private $activite;
+    protected $activite;
 
     /**
      * Administration.
      *
      * @var string|null
      */
-    private $administration;
+    protected $administration;
 
     /**
      * Annonce rectificative.
      *
      * @var bool|null
      */
-    private $annonceRectificative;
+    protected $annonceRectificative;
 
     /**
      * BODACC.
      *
      * @var string|null
      */
-    private $bodacc;
+    protected $bodacc;
 
     /**
      * Contenu.
      *
      * @var string|null
      */
-    private $contenu;
+    protected $contenu;
 
     /**
      * Date.
      *
      * @var string|null
      */
-    private $date;
+    protected $date;
 
     /**
      * Date début activité.
      *
      * @var string|null
      */
-    private $dateDebutActivite;
+    protected $dateDebutActivite;
 
     /**
      * Nom commercial.
      *
      * @var string|null
      */
-    private $nomCommercial;
+    protected $nomCommercial;
 
     /**
      * Numéro annonce.
      *
      * @var string|null
      */
-    private $numeroAnnonce;
+    protected $numeroAnnonce;
 
     /**
      * Numéro parution.
      *
      * @var string|null
      */
-    private $numeroParution;
+    protected $numeroParution;
 
     /**
      * R.C.S.
      *
      * @var string|null
      */
-    private $rcs;
+    protected $rcs;
 
     /**
      * Constructor.

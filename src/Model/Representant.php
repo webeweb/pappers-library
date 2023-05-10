@@ -63,56 +63,56 @@ class Representant {
      *
      * @var bool|null
      */
-    private $actuel;
+    protected $actuel;
 
     /**
      * Age.
      *
      * @var int|null
      */
-    private $age;
+    protected $age;
 
     /**
      * Date naissance.
      *
      * @var string|null
      */
-    private $dateNaissance;
+    protected $dateNaissance;
 
     /**
      * Date prise poste.
      *
      * @var string|null
      */
-    private $datePrisePoste;
+    protected $datePrisePoste;
 
     /**
      * Entreprises
      *
      * @var Entreprise[]
      */
-    private $entreprises;
+    protected $entreprises;
 
     /**
      * Nb entreprises total.
      *
      * @var int|null
      */
-    private $nbEntreprisesTotal;
+    protected $nbEntreprisesTotal;
 
     /**
      * Nom complet.
      *
      * @var string|null
      */
-    private $nomComplet;
+    protected $nomComplet;
 
     /**
      * Qualité.
      *
      * @var string|null
      */
-    private $qualite;
+    protected $qualite;
 
     /**
      * Constructor.

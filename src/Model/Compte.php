@@ -36,35 +36,35 @@ class Compte {
      *
      * @var int|null
      */
-    private $anneeCloture;
+    protected $anneeCloture;
 
     /**
      * Confidentialité.
      *
      * @var bool|null
      */
-    private $confidentialite;
+    protected $confidentialite;
 
     /**
      * Confidentialité compte résultat.
      *
      * @var bool|null
      */
-    private $confidentialiteCompteResultat;
+    protected $confidentialiteCompteResultat;
 
     /**
      * Date clôture.
      *
      * @var string|null
      */
-    private $dateCloture;
+    protected $dateCloture;
 
     /**
      * Type comptes.
      *
      * @var string|null
      */
-    private $typeComptes;
+    protected $typeComptes;
 
     /**
      * Constructor.

@@ -32,21 +32,21 @@ class Finance {
      *
      * @var int|null
      */
-    private $annee;
+    protected $annee;
 
     /**
      * Durée exercice.
      *
      * @var int|null
      */
-    private $dureeExercice;
+    protected $dureeExercice;
 
     /**
      * Effectif.
      *
      * @var int|null
      */
-    private $effectif;
+    protected $effectif;
 
     /**
      * Constructor.

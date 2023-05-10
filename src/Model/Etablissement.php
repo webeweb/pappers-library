@@ -56,91 +56,91 @@ class Etablissement {
      *
      * @var string|null
      */
-    private $complementAdresse;
+    protected $complementAdresse;
 
     /**
      * Date création.
      *
      * @var string|null
      */
-    private $dateCreation;
+    protected $dateCreation;
 
     /**
      * Domiciliation.
      *
      * @var Domiciliation|null
      */
-    private $domiciliation;
+    protected $domiciliation;
 
     /**
      * Etablissement cessé.
      *
      * @var bool|null
      */
-    private $etablissementCesse;
+    protected $etablissementCesse;
 
     /**
      * Etablissment employeur.
      *
      * @var bool|null
      */
-    private $etablissementEmployeur;
+    protected $etablissementEmployeur;
 
     /**
      * Indice répétition.
      *
      * @var string|null
      */
-    private $indiceRepetition;
+    protected $indiceRepetition;
 
     /**
      * Latitude.
      *
      * @var float|null
      */
-    private $latitude;
+    protected $latitude;
 
     /**
      * Libellé code NAF.
      *
      * @var string|null
      */
-    private $libelleCodeNaf;
+    protected $libelleCodeNaf;
 
     /**
      * Libellé voie.
      *
      * @var string|null
      */
-    private $libelleVoie;
+    protected $libelleVoie;
 
     /**
      * Longitude.
      *
      * @var float|null
      */
-    private $longitude;
+    protected $longitude;
 
     /**
      * Numéro voie.
      *
      * @var int|null
      */
-    private $numeroVoie;
+    protected $numeroVoie;
 
     /**
      * Siège.
      *
      * @var bool|null
      */
-    private $siege;
+    protected $siege;
 
     /**
      * Type voie.
      *
      * @var string|null
      */
-    private $typeVoie;
+    protected $typeVoie;
 
     /**
      * Constructor.
