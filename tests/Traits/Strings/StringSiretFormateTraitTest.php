@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringSiretFormateTrai
 class StringSiretFormateTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setSiretFormate() method().
+     * Test setSiretFormate() method().
      *
      * @return void
      */

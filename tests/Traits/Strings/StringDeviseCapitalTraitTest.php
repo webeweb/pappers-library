@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringDeviseCapitalTra
 class StringDeviseCapitalTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setDeviseCapital() method().
+     * Test setDeviseCapital() method().
      *
      * @return void
      */

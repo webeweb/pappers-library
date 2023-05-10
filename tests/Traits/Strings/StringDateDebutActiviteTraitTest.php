@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringDateDebutActivit
 class StringDateDebutActiviteTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setDateDepotFormate() method().
+     * Test setDateDepotFormate() method().
      *
      * @return void
      */

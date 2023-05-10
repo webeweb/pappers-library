@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringGreffeTrait;
 class StringGreffeTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setGreffe() method().
+     * Test setGreffe() method().
      *
      * @return void
      */

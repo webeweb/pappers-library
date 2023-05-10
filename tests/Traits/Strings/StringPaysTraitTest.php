@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringPaysTrait;
 class StringPaysTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setPays() method().
+     * Test setPays() method().
      *
      * @return void
      */

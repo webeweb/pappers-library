@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringDateActeTrait;
 class StringDateActeTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setDateActe() method().
+     * Test setDateActe() method().
      *
      * @return void
      */

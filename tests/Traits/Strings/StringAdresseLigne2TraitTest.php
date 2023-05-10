@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringAdresseLigne2Tra
 class StringAdresseLigne2TraitTest extends AbstractTestCase {
 
     /**
-     * Test the setAdresseLigne2() method().
+     * Test setAdresseLigne2() method().
      *
      * @return void
      */

@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringDateCessationTra
 class StringDateCessationTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setDateCessation() method().
+     * Test setDateCessation() method().
      *
      * @return void
      */

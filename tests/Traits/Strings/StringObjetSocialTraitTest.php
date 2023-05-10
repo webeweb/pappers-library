@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringObjetSocialTrait
 class StringObjetSocialTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setObjetSocial() method().
+     * Test setObjetSocial() method().
      *
      * @return void
      */

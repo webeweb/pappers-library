@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringDateNaissanceFor
 class StringDateNaissanceFormateeTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setDateNaissanceFormatee() method().
+     * Test setDateNaissanceFormatee() method().
      *
      * @return void
      */

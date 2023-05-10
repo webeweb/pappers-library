@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringSirenTrait;
 class StringSirenTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setSiren() method().
+     * Test setSiren() method().
      *
      * @return void
      */

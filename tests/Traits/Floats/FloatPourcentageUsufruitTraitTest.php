@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Floats\TestFloatPourcentageUsufrui
 class FloatPourcentageUsufruitTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setPourcentageUsufruit() method().
+     * Test setPourcentageUsufruit() method().
      *
      * @return void
      */

@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringNomEntrepriseTra
 class StringNomEntrepriseTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setNomEntreprise() method().
+     * Test setNomEntreprise() method().
      *
      * @return void
      */

@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringNomFichierPdfTra
 class StringNomFichierPdfTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setNomFichierPdf() method().
+     * Test setNomFichierPdf() method().
      *
      * @return void
      */

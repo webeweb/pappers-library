@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Integers\TestIntegerEffectifMinTra
 class IntegerEffectifMinTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setEffectifMin() method().
+     * Test setEffectifMin() method().
      *
      * @return void
      */

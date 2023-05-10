@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringPaysNaissanceTra
 class StringPaysNaissanceTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setPaysNaissance() method().
+     * Test setPaysNaissance() method().
      *
      * @return void
      */

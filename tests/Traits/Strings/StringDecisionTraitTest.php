@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringDecisionTrait;
 class StringDecisionTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setDecision() method().
+     * Test setDecision() method().
      *
      * @return void
      */

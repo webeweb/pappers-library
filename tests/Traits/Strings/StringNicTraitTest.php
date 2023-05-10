@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringNicTrait;
 class StringNicTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setNic() method().
+     * Test setNic() method().
      *
      * @return void
      */

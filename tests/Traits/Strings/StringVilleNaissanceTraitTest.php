@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringVilleNaissanceTr
 class StringVilleNaissanceTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setVilleNaissance() method().
+     * Test setVilleNaissance() method().
      *
      * @return void
      */

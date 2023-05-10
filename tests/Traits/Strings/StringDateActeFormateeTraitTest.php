@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringDateActeFormatee
 class StringDateActeFormateeTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setDateActeFormate() method().
+     * Test setDateActeFormate() method().
      *
      * @return void
      */

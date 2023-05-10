@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Integers\TestIntegerResultatTrait;
 class IntegerResultatTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setResultat() method().
+     * Test setResultat() method().
      *
      * @return void
      */

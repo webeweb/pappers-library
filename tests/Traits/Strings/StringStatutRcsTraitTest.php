@@ -23,7 +23,7 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringStatutRcsTrait;
 class StringStatutRcsTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setStatutRcs() method().
+     * Test setStatutRcs() method().
      *
      * @return void
      */
