@@ -24,7 +24,7 @@ trait IntegerEffectifMaxTrait {
      *
      * @var int|null
      */
-    private $effectifMax;
+    protected $effectifMax;
 
     /**
      * Get the effectif max.

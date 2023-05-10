@@ -24,7 +24,7 @@ trait StringDateNaissanceFormateeTrait {
      *
      * @var string|null
      */
-    private $dateNaissanceFormatee;
+    protected $dateNaissanceFormatee;
 
     /**
      * Get the date naissance formatée.

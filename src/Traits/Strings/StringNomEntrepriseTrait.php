@@ -24,7 +24,7 @@ trait StringNomEntrepriseTrait {
      *
      * @var string|null
      */
-    private $nomEntreprise;
+    protected $nomEntreprise;
 
     /**
      * Get the nom entreprise.

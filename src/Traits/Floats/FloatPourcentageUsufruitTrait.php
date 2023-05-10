@@ -24,7 +24,7 @@ trait FloatPourcentageUsufruitTrait {
      *
      * @var float|null
      */
-    private $pourcentageUsufruit;
+    protected $pourcentageUsufruit;
 
     /**
      * Get the pourcentage usufruit.

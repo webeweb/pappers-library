@@ -24,7 +24,7 @@ trait IntegerChiffreAffairesTrait {
      *
      * @var int|null
      */
-    private $ChiffreAffaires;
+    protected $ChiffreAffaires;
 
     /**
      * Get the chiffre affaires.

@@ -24,7 +24,7 @@ trait StringNomFichierPdfTrait {
      *
      * @var string|null
      */
-    private $nomFichierPdf;
+    protected $nomFichierPdf;
 
     /**
      * Get the nom fichier PDF.

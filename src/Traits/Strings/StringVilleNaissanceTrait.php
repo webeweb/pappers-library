@@ -24,7 +24,7 @@ trait StringVilleNaissanceTrait {
      *
      * @var string|null
      */
-    private $villeNaissance;
+    protected $villeNaissance;
 
     /**
      * Get the ville naissance.

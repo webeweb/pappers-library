@@ -24,7 +24,7 @@ trait StringPaysNaissanceTrait {
      *
      * @var string|null
      */
-    private $paysNaissance;
+    protected $paysNaissance;
 
     /**
      * Get the pays naissance.

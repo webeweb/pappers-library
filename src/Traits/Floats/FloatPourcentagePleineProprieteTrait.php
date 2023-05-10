@@ -24,7 +24,7 @@ trait FloatPourcentagePleineProprieteTrait {
      *
      * @var float|null
      */
-    private $pourcentagePleinePropriete;
+    protected $pourcentagePleinePropriete;
 
     /**
      * Get the pourcentage pleine propriété.

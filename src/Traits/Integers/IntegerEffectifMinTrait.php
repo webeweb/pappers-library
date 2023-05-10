@@ -24,7 +24,7 @@ trait IntegerEffectifMinTrait {
      *
      * @var int|null
      */
-    private $effectifMin;
+    protected $effectifMin;
 
     /**
      * Get the effectif min.

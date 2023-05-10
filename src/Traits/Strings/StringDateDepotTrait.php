@@ -24,7 +24,7 @@ trait StringDateDepotTrait {
      *
      * @var string|null
      */
-    private $dateDepot;
+    protected $dateDepot;
 
     /**
      * Get the date dépôt.

@@ -24,7 +24,7 @@ trait StringSigleTrait {
      *
      * @var string|null
      */
-    private $sigle;
+    protected $sigle;
 
     /**
      * Get the sigle.

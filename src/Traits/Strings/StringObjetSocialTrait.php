@@ -24,7 +24,7 @@ trait StringObjetSocialTrait {
      *
      * @var string|null
      */
-    private $objetSocial;
+    protected $objetSocial;
 
     /**
      * Get the objet social.

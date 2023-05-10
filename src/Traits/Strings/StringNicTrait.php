@@ -24,7 +24,7 @@ trait StringNicTrait {
      *
      * @var string|null
      */
-    private $nic;
+    protected $nic;
 
     /**
      * Get the NIC.

@@ -24,7 +24,7 @@ trait IntegerCapitalTrait {
      *
      * @var int|null
      */
-    private $capital;
+    protected $capital;
 
     /**
      * Get the capital.

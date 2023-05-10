@@ -26,7 +26,7 @@ trait EntrepriseEntrepriseTrait {
      *
      * @var Entreprise|null
      */
-    private $entreprise;
+    protected $entreprise;
 
     /**
      * Get the entreprise.

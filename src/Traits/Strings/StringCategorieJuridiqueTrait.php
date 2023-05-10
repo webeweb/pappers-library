@@ -24,7 +24,7 @@ trait StringCategorieJuridiqueTrait {
      *
      * @var string|null
      */
-    private $categorieJuridique;
+    protected $categorieJuridique;
 
     /**
      * Get the catégorie juridique.

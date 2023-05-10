@@ -24,7 +24,7 @@ trait StringDateCessationTrait {
      *
      * @var string|null
      */
-    private $dateCessation;
+    protected $dateCessation;
 
     /**
      * Get the date cessation.

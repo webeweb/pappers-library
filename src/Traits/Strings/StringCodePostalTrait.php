@@ -24,7 +24,7 @@ trait StringCodePostalTrait {
      *
      * @var string|null
      */
-    private $codePostal;
+    protected $codePostal;
 
     /**
      * Get the code postal.

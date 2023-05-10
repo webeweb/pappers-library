@@ -24,7 +24,7 @@ trait StringSiretTrait {
      *
      * @var string|null
      */
-    private $siret;
+    protected $siret;
 
     /**
      * Get the SIRET.

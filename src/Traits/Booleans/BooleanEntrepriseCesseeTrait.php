@@ -24,7 +24,7 @@ trait BooleanEntrepriseCesseeTrait {
      *
      * @var bool|null
      */
-    private $entrepriseCessee;
+    protected $entrepriseCessee;
 
     /**
      * Get the personne morale.

@@ -24,7 +24,7 @@ trait StringDenominationTrait {
      *
      * @var string|null
      */
-    private $denomination;
+    protected $denomination;
 
     /**
      * Get the denomination.

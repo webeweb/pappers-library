@@ -24,7 +24,7 @@ trait BooleanDisponibleTrait {
      *
      * @var bool|null
      */
-    private $disponible;
+    protected $disponible;
 
     /**
      * Get the disponible.

@@ -24,7 +24,7 @@ trait StringDeviseCapitalTrait {
      *
      * @var string|null
      */
-    private $deviseCapital;
+    protected $deviseCapital;
 
     /**
      * Get the devise capital.

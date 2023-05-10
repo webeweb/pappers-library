@@ -24,7 +24,7 @@ trait StringCodeNafTrait {
      *
      * @var string|null
      */
-    private $codeNaf;
+    protected $codeNaf;
 
     /**
      * Get the code NAF.

@@ -24,7 +24,7 @@ trait StringPseudonymeTrait {
      *
      * @var string|null
      */
-    private $pseudonyme;
+    protected $pseudonyme;
 
     /**
      * Get the pseudonyme.

@@ -26,7 +26,7 @@ trait ArrayPublicationsBodaccTrait {
      *
      * @var PublicationBodacc[]
      */
-    private $publicationsBodacc;
+    protected $publicationsBodacc;
 
     /**
      * Add a publication BODACC.

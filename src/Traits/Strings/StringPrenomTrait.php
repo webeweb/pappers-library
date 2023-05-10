@@ -24,7 +24,7 @@ trait StringPrenomTrait {
      *
      * @var string|null
      */
-    private $prenom;
+    protected $prenom;
 
     /**
      * Get the prénom.

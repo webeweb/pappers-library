@@ -24,7 +24,7 @@ trait StringPaysTrait {
      *
      * @var string|null
      */
-    private $pays;
+    protected $pays;
 
     /**
      * Get the pays.

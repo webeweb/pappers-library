@@ -24,7 +24,7 @@ trait StringFormeJuridiqueTrait {
      *
      * @var string|null
      */
-    private $formeJuridique;
+    protected $formeJuridique;
 
     /**
      * Get the forme juridique.

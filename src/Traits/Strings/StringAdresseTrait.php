@@ -24,7 +24,7 @@ trait StringAdresseTrait {
      *
      * @var string|null
      */
-    private $adresse;
+    protected $adresse;
 
     /**
      * Get the adresse.

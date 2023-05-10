@@ -24,7 +24,7 @@ trait IntegerResultatTrait {
      *
      * @var int|null
      */
-    private $resultat;
+    protected $resultat;
 
     /**
      * Get the résultat.

@@ -24,7 +24,7 @@ trait StringDecisionTrait {
      *
      * @var string|null
      */
-    private $decision;
+    protected $decision;
 
     /**
      * Get the décision.

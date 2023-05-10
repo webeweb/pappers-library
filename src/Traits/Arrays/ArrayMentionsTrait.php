@@ -24,7 +24,7 @@ trait ArrayMentionsTrait {
      *
      * @var string[]|null
      */
-    private $mentions;
+    protected $mentions;
 
     /**
      * Get the mentions.

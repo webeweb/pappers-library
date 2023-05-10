@@ -24,7 +24,7 @@ trait StringVilleTrait {
      *
      * @var string|null
      */
-    private $ville;
+    protected $ville;
 
     /**
      * Get the ville.

@@ -24,7 +24,7 @@ trait StringSirenTrait {
      *
      * @var string|null
      */
-    private $siren;
+    protected $siren;
 
     /**
      * Get the SIREN.

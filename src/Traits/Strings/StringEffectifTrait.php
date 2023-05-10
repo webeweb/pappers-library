@@ -24,7 +24,7 @@ trait StringEffectifTrait {
      *
      * @var string|null
      */
-    private $effectif;
+    protected $effectif;
 
     /**
      * Get the effectif.

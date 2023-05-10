@@ -24,7 +24,7 @@ trait StringAdresseLigne2Trait {
      *
      * @var string|null
      */
-    private $adresseLigne2;
+    protected $adresseLigne2;
 
     /**
      * Get the adresse ligne 2.

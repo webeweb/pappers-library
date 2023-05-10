@@ -24,7 +24,7 @@ trait StringDateDepotFormateeTrait {
      *
      * @var string|null
      */
-    private $dateDepotFormatee;
+    protected $dateDepotFormatee;
 
     /**
      * Get the date dépôt formatée.

@@ -24,7 +24,7 @@ trait StringTrancheEffectifTrait {
      *
      * @var string|null
      */
-    private $trancheEffectif;
+    protected $trancheEffectif;
 
     /**
      * Get the tranche effectif.

@@ -24,7 +24,7 @@ trait StringSiretFormateTrait {
      *
      * @var string|null
      */
-    private $siretFormate;
+    protected $siretFormate;
 
     /**
      * Get the SIRET formaté.

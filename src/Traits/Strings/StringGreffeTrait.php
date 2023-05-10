@@ -24,7 +24,7 @@ trait StringGreffeTrait {
      *
      * @var string|null
      */
-    private $greffe;
+    protected $greffe;
 
     /**
      * Get the greffe.

@@ -24,7 +24,7 @@ trait StringDateClotureExerciceTrait {
      *
      * @var string|null
      */
-    private $dateClotureExercice;
+    protected $dateClotureExercice;
 
     /**
      * Get the date clôture exercice.

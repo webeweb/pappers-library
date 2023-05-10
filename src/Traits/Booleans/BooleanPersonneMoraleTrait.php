@@ -24,7 +24,7 @@ trait BooleanPersonneMoraleTrait {
      *
      * @var bool|null
      */
-    private $personneMorale;
+    protected $personneMorale;
 
     /**
      * Get the personne morale.

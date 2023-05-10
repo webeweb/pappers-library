@@ -24,7 +24,7 @@ trait IntegerAnneeEffectifTrait {
      *
      * @var int|null
      */
-    private $anneeEffectif;
+    protected $anneeEffectif;
 
     /**
      * Get the année effectif.

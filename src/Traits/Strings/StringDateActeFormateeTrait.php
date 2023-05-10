@@ -24,7 +24,7 @@ trait StringDateActeFormateeTrait {
      *
      * @var string|null
      */
-    private $dateActeFormatee;
+    protected $dateActeFormatee;
 
     /**
      * Get the date acte formatée.

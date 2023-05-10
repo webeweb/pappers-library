@@ -24,7 +24,7 @@ trait StringNationaliteTrait {
      *
      * @var string|null
      */
-    private $nationalite;
+    protected $nationalite;
 
     /**
      * Get the nationalité.

@@ -24,7 +24,7 @@ trait StringStatutRcsTrait {
      *
      * @var string|null
      */
-    private $statutRcs;
+    protected $statutRcs;
 
     /**
      * Get the statut R.C.S.
