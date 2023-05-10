@@ -11,6 +11,7 @@
 
 namespace WBW\Library\Pappers\Tests\Model;
 
+use WBW\Library\Pappers\Model\Domiciliation;
 use WBW\Library\Pappers\Model\Etablissement;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
 
@@ -55,10 +56,13 @@ class EtablissementTest extends AbstractTestCase {
      */
     public function testSetDomiciliation(): void {
 
+        // Set a Domiciliation mock.
+        $domiciliation = new Domiciliation();
+
         $obj = new Etablissement();
 
-        $obj->setDomiciliation("domiciliation");
-        $this->assertEquals("domiciliation", $obj->getDomiciliation());
+        $obj->setDomiciliation($domiciliation);
+        $this->assertSame($domiciliation, $obj->getDomiciliation());
     }
 
     /**

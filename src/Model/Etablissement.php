@@ -68,7 +68,7 @@ class Etablissement {
     /**
      * Domiciliation.
      *
-     * @var string|null
+     * @var Domiciliation|null
      */
     private $domiciliation;
 
@@ -170,9 +170,9 @@ class Etablissement {
     /**
      * Get the domiciliation.
      *
-     * @return string|null Returns the domiciliation.
+     * @return Domiciliation|null Returns the domiciliation.
      */
-    public function getDomiciliation(): ?string {
+    public function getDomiciliation(): ?Domiciliation {
         return $this->domiciliation;
     }
 
@@ -291,10 +291,10 @@ class Etablissement {
     /**
      * Set the domiciliation.
      *
-     * @param string|null $domiciliation The domiciliation.
+     * @param Domiciliation |null $domiciliation The domiciliation.
      * @return Etablissement Returns this établissement.
      */
-    public function setDomiciliation(?string $domiciliation): Etablissement {
+    public function setDomiciliation(?Domiciliation $domiciliation): Etablissement {
         $this->domiciliation = $domiciliation;
         return $this;
     }

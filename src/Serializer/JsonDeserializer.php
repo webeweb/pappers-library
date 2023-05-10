@@ -23,6 +23,7 @@ use WBW\Library\Pappers\Model\DetailsPartsVocationTitulaire;
 use WBW\Library\Pappers\Model\DetailsPersonneMorale;
 use WBW\Library\Pappers\Model\DetailsSocieteGestion;
 use WBW\Library\Pappers\Model\Document;
+use WBW\Library\Pappers\Model\Domiciliation;
 use WBW\Library\Pappers\Model\Entreprise;
 use WBW\Library\Pappers\Model\Etablissement;
 use WBW\Library\Pappers\Model\ExtraitImmatriculation;
@@ -359,6 +360,25 @@ class JsonDeserializer {
     }
 
     /**
+     * Deserialize a domiciliation.
+     *
+     * @param array|null $data The data.
+     * @return Domiciliation|null Returns the acte.
+     */
+    protected static function deserializeDomiciliation(?array $data): ?Domiciliation {
+
+        if (null === $data || 0 === count($data)) {
+            return null;
+        }
+
+        $model = new Domiciliation();
+        $model->setNom(ArrayHelper::get($data, "nom"));
+        $model->setSiren(ArrayHelper::get($data, "siren"));
+
+        return $model;
+    }
+
+    /**
      * Deserialize an entreprise.
      *
      * @param array|null $data The data.
@@ -508,6 +528,8 @@ class JsonDeserializer {
             return null;
         }
 
+        $domiciliation = static::deserializeDomiciliation(ArrayHelper::get($data, "domiciliation", []));
+
         $model = new Etablissement();
         $model->setSiret(ArrayHelper::get($data, "siret"));
         $model->setSiretFormate(ArrayHelper::get($data, "siret_formate"));
@@ -535,7 +557,7 @@ class JsonDeserializer {
         $model->setAnneeEffectif(ArrayHelper::get($data, "annee_effectif"));
         $model->setEtablissementCesse(ArrayHelper::get($data, "etablissement_cesse"));
         $model->setDateCessation(ArrayHelper::get($data, "date_cessation"));
-        $model->setDomiciliation(ArrayHelper::get($data, "domiciliation"));
+        $model->setDomiciliation($domiciliation);
         $model->setSiege(ArrayHelper::get($data, "siege"));
 
         return $model;
