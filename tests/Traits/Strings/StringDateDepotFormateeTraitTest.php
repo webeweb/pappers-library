@@ -23,11 +23,11 @@ use WBW\Library\Pappers\Tests\Fixtures\Traits\Strings\TestStringDateDepotFormate
 class StringDateDepotFormateeTraitTest extends AbstractTestCase {
 
     /**
-     * Test the setDateDepotFormate() method().
+     * Test the setDateDepotFormatee() method().
      *
      * @return void
      */
-    public function testSetDateDepotFormate(): void {
+    public function testSetDateDepotFormatee(): void {
 
         $obj = new TestStringDateDepotFormateeTrait();
 
