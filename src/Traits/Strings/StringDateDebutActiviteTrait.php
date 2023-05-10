@@ -1,0 +1,48 @@
+<?php
+
+/*
+ * This file is part of the pappers-library package.
+ *
+ * (c) 2023 WEBEWEB
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace WBW\Library\Pappers\Traits\Strings;
+
+/**
+ * String date début activité trait.
+ *
+ * @author webeweb <https://github.com/webeweb>
+ * @package WBW\Library\Pappers\Traits\Strings
+ */
+trait StringDateDebutActiviteTrait {
+
+    /**
+     * Date début activité.
+     *
+     * @var string|null
+     */
+    protected $dateDebutActivite;
+
+    /**
+     * Get the date début activité.
+     *
+     * @return string|null Returns the date début activité.
+     */
+    public function getDateDebutActivite(): ?string {
+        return $this->dateDebutActivite;
+    }
+
+    /**
+     * Set the date début activité.
+     *
+     * @param string|null $dateDebutActivite The date début activité.
+     * @return self Returns this instance.
+     */
+    public function setDateDebutActivite(?string $dateDebutActivite): self {
+        $this->dateDebutActivite = $dateDebutActivite;
+        return $this;
+    }
+}
