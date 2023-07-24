@@ -24,21 +24,21 @@ use WBW\Library\Pappers\Response\AbstractResponse;
 class TestRechercheRequest extends AbstractRechercheRequest {
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function deserializeResponse(string $rawResponse): AbstractResponse {
         throw new RuntimeException();
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getResourcePath(): string {
         return "";
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function serializeRequest(): array {
         return [];

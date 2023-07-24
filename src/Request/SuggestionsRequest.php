@@ -48,7 +48,7 @@ class SuggestionsRequest extends AbstractRequest implements SuggestionsRequestIn
     private $longueur;
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function deserializeResponse(string $rawResponse): AbstractResponse {
         return ResponseDeserializer::deserializeSuggestionsResponse($rawResponse);
@@ -73,14 +73,14 @@ class SuggestionsRequest extends AbstractRequest implements SuggestionsRequestIn
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCE_PATH;
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function serializeRequest(): array {
         return RequestSerializer::serializeSuggestionsRequest($this);

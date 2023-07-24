@@ -50,7 +50,7 @@ class EntrepriseRequest extends AbstractRequest implements EntrepriseRequestInte
     private $marques;
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function deserializeResponse(string $rawResponse): AbstractResponse {
         return ResponseDeserializer::deserializeEntrepriseResponse($rawResponse);
@@ -75,14 +75,14 @@ class EntrepriseRequest extends AbstractRequest implements EntrepriseRequestInte
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCE_PATH;
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function serializeRequest(): array {
         return RequestSerializer::serializeEntrepriseRequest($this);

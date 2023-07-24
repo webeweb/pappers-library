@@ -31,21 +31,21 @@ class RecherchePublicationsRequest extends AbstractRechercheRequest {
     const RESOURCE_PATH = "/recherche-publications";
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function deserializeResponse(string $rawResponse): AbstractResponse {
         return ResponseDeserializer::deserializeRecherchePublicationsResponse($rawResponse);
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCE_PATH;
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function serializeRequest(): array {
         return RequestSerializer::serializeRecherchePublicationsRequest($this);

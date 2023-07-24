@@ -59,7 +59,7 @@ class RechercheRequest extends AbstractRechercheRequest implements RechercheRequ
     private $parCurseur;
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function deserializeResponse(string $rawResponse): AbstractResponse {
         return ResponseDeserializer::deserializeRechercheResponse($rawResponse);
@@ -102,14 +102,14 @@ class RechercheRequest extends AbstractRechercheRequest implements RechercheRequ
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCE_PATH;
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function serializeRequest(): array {
         return RequestSerializer::serializeRechercheRequest($this);

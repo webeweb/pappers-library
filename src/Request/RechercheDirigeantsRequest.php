@@ -31,21 +31,21 @@ class RechercheDirigeantsRequest extends AbstractRechercheRequest {
     const RESOURCE_PATH = "/recherche-dirigeants";
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function deserializeResponse(string $rawResponse): AbstractResponse {
         return ResponseDeserializer::deserializeRechercheDirigeantsResponse($rawResponse);
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCE_PATH;
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function serializeRequest(): array {
         return RequestSerializer::serializeRechercheDirigeantsRequest($this);

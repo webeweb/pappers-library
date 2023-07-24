@@ -34,21 +34,21 @@ class DocumentTelechargementRequest extends AbstractRequest {
     const RESOURCE_PATH = "/document/telechargement";
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function deserializeResponse(string $rawResponse): AbstractResponse {
         return ResponseDeserializer::deserializeDocumentTelechargementResponse($rawResponse);
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCE_PATH;
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function serializeRequest(): array {
         return RequestSerializer::serializeDocumentTelechargementRequest($this);
