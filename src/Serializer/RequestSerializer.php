@@ -38,7 +38,7 @@ class RequestSerializer {
      * Serialize an abstract recherche request.
      *
      * @param AbstractRechercheRequest $request The request.
-     * @return array Returns the serialized request.
+     * @return array<string,mixed> Returns the serialized request.
      */
     protected static function serializeAbstractRechercheRequest(AbstractRechercheRequest $request): array {
 
@@ -91,7 +91,7 @@ class RequestSerializer {
      * Serialize a document téléchargement request.
      *
      * @param DocumentTelechargementRequest $request The request.
-     * @return array Returns the serialized request.
+     * @return array<string,mixed> Returns the serialized request.
      */
     public static function serializeDocumentTelechargementRequest(DocumentTelechargementRequest $request): array {
 
@@ -106,7 +106,7 @@ class RequestSerializer {
      * Serialize an entreprise request.
      *
      * @param EntrepriseRequest $request The request.
-     * @return array Returns the serialized request.
+     * @return array<string,mixed> Returns the serialized request.
      */
     public static function serializeEntrepriseRequest(EntrepriseRequest $request): array {
 
@@ -124,7 +124,7 @@ class RequestSerializer {
      * Serialize a recherche dirigeants request.
      *
      * @param RechercheDirigeantsRequest $request The request.
-     * @return array Returns the serialized request.
+     * @return array<string,mixed> Returns the serialized request.
      */
     public static function serializeRechercheDirigeantsRequest(RechercheDirigeantsRequest $request): array {
         return static::serializeAbstractRechercheRequest($request);
@@ -134,7 +134,7 @@ class RequestSerializer {
      * Serialize a recherche documents request.
      *
      * @param RechercheDocumentsRequest $request The request.
-     * @return array Returns the serialized request.
+     * @return array<string,mixed> Returns the serialized request.
      */
     public static function serializeRechercheDocumentsRequest(RechercheDocumentsRequest $request): array {
         return static::serializeAbstractRechercheRequest($request);
@@ -144,7 +144,7 @@ class RequestSerializer {
      * Serialize a recherche publications request.
      *
      * @param RecherchePublicationsRequest $request The request.
-     * @return array Returns the serialized request.
+     * @return array<string,mixed> Returns the serialized request.
      */
     public static function serializeRecherchePublicationsRequest(RecherchePublicationsRequest $request): array {
         return static::serializeAbstractRechercheRequest($request);
@@ -154,7 +154,7 @@ class RequestSerializer {
      * Serialize a recherche request.
      *
      * @param RechercheRequest $request The request.
-     * @return array Returns the serialized request.
+     * @return array<string,mixed> Returns the serialized request.
      */
     public static function serializeRechercheRequest(RechercheRequest $request): array {
 
@@ -172,7 +172,7 @@ class RequestSerializer {
      * Serialize a suggestions request.
      *
      * @param SuggestionsRequest $request The request.
-     * @return array Returns the serialized request.
+     * @return array<string,mixed> Returns the serialized request.
      */
     public static function serializeSuggestionsRequest(SuggestionsRequest $request): array {
 
