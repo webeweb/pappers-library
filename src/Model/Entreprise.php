@@ -1043,7 +1043,7 @@ class Entreprise {
     /**
      * Set the capital actuel variable.
      *
-     * @param mixed $capitalActuelVariable The capital actuel variable.
+     * @param int|null $capitalActuelVariable The capital actuel variable.
      * @return Entreprise Returns this entreprise.
      */
     public function setCapitalActuelVariable(?int $capitalActuelVariable): Entreprise {
