@@ -437,8 +437,8 @@ class EntrepriseTest extends AbstractTestCase {
 
         $obj = new Entreprise();
 
-        $obj->setDureePersonneMorale(1);
-        $this->assertEquals(1, $obj->getDureePersonneMorale());
+        $obj->setDureePersonneMorale("dureePersonneMorale");
+        $this->assertEquals("dureePersonneMorale", $obj->getDureePersonneMorale());
     }
 
     /**
