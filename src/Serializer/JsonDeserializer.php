@@ -47,7 +47,7 @@ class JsonDeserializer {
     /**
      * Deserialize an acte.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return Acte|null Returns the model.
      */
     protected static function deserializeActe(?array $data): ?Acte {
@@ -68,7 +68,7 @@ class JsonDeserializer {
     /**
      * Deserialize a bénéficiaire effectif.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return BeneficiaireEffectif|null Returns the model.
      */
     protected static function deserializeBeneficiaireEffectif(?array $data): ?BeneficiaireEffectif {
@@ -127,7 +127,7 @@ class JsonDeserializer {
     /**
      * Deserialize a compte.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return Compte|null Returns the model.
      */
     protected static function deserializeCompte(?array $data): ?Compte {
@@ -154,7 +154,7 @@ class JsonDeserializer {
     /**
      * Deserialize a convention collective.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return ConventionCollective|null Returns the model.
      */
     protected static function deserializeConventionCollective(?array $data): ?ConventionCollective {
@@ -174,7 +174,7 @@ class JsonDeserializer {
     /**
      * Deserialize a dépôt acte.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return DepotActe|null Returns the model.
      */
     protected static function deserializeDepotActe(?array $data): ?DepotActe {
@@ -200,7 +200,7 @@ class JsonDeserializer {
     /**
      * Deserialize a détails directs.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return DetailsDirects|null Returns the model.
      */
     protected static function deserializeDetailsDirects(?array $data): ?DetailsDirects {
@@ -220,7 +220,7 @@ class JsonDeserializer {
     /**
      * Deserialize a détails indirects.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return DetailsIndirects|null Returns this détails indirects.
      */
     protected static function deserializeDetailsIndirects(?array $data): ?DetailsIndirects {
@@ -244,7 +244,7 @@ class JsonDeserializer {
     /**
      * Deserialize a détails indivision.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return DetailsIndivision|null Returns the model.
      */
     protected static function deserializeDetailsIndivision(?array $data): ?DetailsIndivision {
@@ -264,7 +264,7 @@ class JsonDeserializer {
     /**
      * Deserialize a détails parts vocation titulaire.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return DetailsPartsVocationTitulaire|null Returns the model.
      */
     protected static function deserializeDetailsPartsVocationTitulaire(?array $data): ?DetailsPartsVocationTitulaire {
@@ -288,7 +288,7 @@ class JsonDeserializer {
     /**
      * Deserialize a détails personne morale.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return DetailsPersonneMorale|null Returns the model.
      */
     protected static function deserializeDetailsPersonneMorale(?array $data): ?DetailsPersonneMorale {
@@ -308,7 +308,7 @@ class JsonDeserializer {
     /**
      * Deserialize a détails société gestion.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return DetailsSocieteGestion|null Returns the model.
      */
     protected static function deserializeDetailsSocieteGestion(?array $data): ?DetailsSocieteGestion {
@@ -331,7 +331,7 @@ class JsonDeserializer {
     /**
      * Deserialize a document.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return Document|null Returns the model.
      */
     public static function deserializeDocument(?array $data): ?Document {
@@ -363,7 +363,7 @@ class JsonDeserializer {
     /**
      * Deserialize a domiciliation.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return Domiciliation|null Returns the model.
      */
     protected static function deserializeDomiciliation(?array $data): ?Domiciliation {
@@ -382,7 +382,7 @@ class JsonDeserializer {
     /**
      * Deserialize an entreprise.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return Entreprise|null Returns the model.
      */
     public static function deserializeEntreprise(?array $data): ?Entreprise {
@@ -521,7 +521,7 @@ class JsonDeserializer {
     /**
      * Deserialize an établissement.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return Etablissement|null Returns the model.
      */
     protected static function deserializeEtablissement(?array $data): ?Etablissement {
@@ -568,7 +568,7 @@ class JsonDeserializer {
     /**
      * Deserialize an extrait immatriculation.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return ExtraitImmatriculation|null Returns the model.
      */
     protected static function deserializeExtraitImmatriculation(?array $data): ?ExtraitImmatriculation {
@@ -586,7 +586,7 @@ class JsonDeserializer {
     /**
      * Deserialize a finance.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return Finance|null Returns the model.
      */
     protected static function deserializeFinance(?array $data): ?Finance {
@@ -609,7 +609,7 @@ class JsonDeserializer {
     /**
      * Deserialize a procédure collective.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return ProcedureCollective|null Returns the model.
      */
     protected static function deserializeProcedureCollective(?array $data): ?ProcedureCollective {
@@ -633,7 +633,7 @@ class JsonDeserializer {
     /**
      * Deserialize a publication BODACC.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return PublicationBodacc|null Returns the model.
      */
     public static function deserializePublicationBodacc(?array $data): ?PublicationBodacc {
@@ -681,7 +681,7 @@ class JsonDeserializer {
     /**
      * Deserialize a répertoire national des métiers.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return RepertoireNationalMetiers|null Returns the model.
      */
     protected static function deserializeRepertoireNationalMetiers(?array $data): ?RepertoireNationalMetiers {
@@ -705,7 +705,7 @@ class JsonDeserializer {
     /**
      * Deserialize a représentant.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return Representant|null Returns the model.
      */
     public static function deserializeRepresentant(?array $data): ?Representant {
@@ -751,7 +751,7 @@ class JsonDeserializer {
     /**
      * Deserialize a statuts.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return Statuts|null Returns the model.
      */
     protected static function deserializeStatuts(?array $data): ?Statuts {
@@ -777,7 +777,7 @@ class JsonDeserializer {
     /**
      * Deserialize a titre.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return Titre|null Returns the model.
      */
     protected static function deserializeTitre(?array $data): ?Titre {
