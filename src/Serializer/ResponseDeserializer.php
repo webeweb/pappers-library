@@ -35,7 +35,7 @@ class ResponseDeserializer {
      *
      * @param string $rawResponse The raw response.
      * @param AbstractRechercheResponse $model The response.
-     * @return array|null Returns the decoded response.
+     * @return array<string,mixed>|null Returns the decoded response.
      */
     protected static function deserializeAbstractRechercheResponse(string $rawResponse, AbstractRechercheResponse $model): ?array {
 
@@ -60,7 +60,7 @@ class ResponseDeserializer {
      *
      * @param string $rawResponse The raw response.
      * @param AbstractResponse $model The response.
-     * @return array|null Returns the decoded response.
+     * @return array<string,mixed>|null Returns the decoded response.
      */
     protected static function deserializeAbstractResponse(string $rawResponse, AbstractResponse $model): ?array {
 
