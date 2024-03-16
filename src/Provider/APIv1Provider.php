@@ -11,7 +11,6 @@
 
 namespace WBW\Library\Pappers\Provider;
 
-use GuzzleHttp\Exception\GuzzleException;
 use InvalidArgumentException;
 use WBW\Library\Pappers\Request\AbstractRequest;
 use WBW\Library\Pappers\Request\DocumentTelechargementRequest;
@@ -41,7 +40,6 @@ class APIv1Provider extends AbstractProvider {
      * @param AbstractRequest $request The request.
      * @return AbstractResponse Returns the response.
      * @throws InvalidArgumentException Throws an invalid argument exception if a parameter is missing.
-     * @throws GuzzleException Throws a Guzzle exception if an error occurs.
      * @throws ApiException Throws an API exception if an error occurs.
      */
     public function sendRequest(AbstractRequest $request): AbstractResponse {
