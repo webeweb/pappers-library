@@ -24,12 +24,12 @@ interface EntrepriseRequestInterface {
      *
      * @var string
      */
-    const FORMAT_PUBLICATIONS_BODACC_OBJET = "objet";
+    public const FORMAT_PUBLICATIONS_BODACC_OBJET = "objet";
 
     /**
      * Format publications BODACC "texte".
      *
      * @var string
      */
-    const FORMAT_PUBLICATIONS_BODACC_TEXTE = "texte";
+    public const FORMAT_PUBLICATIONS_BODACC_TEXTE = "texte";
 }

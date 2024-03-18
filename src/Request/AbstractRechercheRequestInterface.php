@@ -24,40 +24,40 @@ interface AbstractRechercheRequestInterface {
      *
      * @var string
      */
-    const PRECISION_APPROXIMATIVE = "approximative";
+    public const PRECISION_APPROXIMATIVE = "approximative";
 
     /**
      * Précision "exacte".
      *
      * @var string
      */
-    const PRECISION_EXACTE = "exacte";
+    public const PRECISION_EXACTE = "exacte";
 
     /**
      * Précision "standard".
      *
      * @var string
      */
-    const PRECISION_STANDARD = "standard";
+    public const PRECISION_STANDARD = "standard";
 
     /**
      * Statut R.C.S. "inscrit".
      *
      * @var string
      */
-    const STATUT_RCS_INSCRIT = "inscrit";
+    public const STATUT_RCS_INSCRIT = "inscrit";
 
     /**
      * Statut R.C.S. "non inscrit".
      *
      * @var string
      */
-    const STATUT_RCS_NON_INSCRIT = "non inscrit";
+    public const STATUT_RCS_NON_INSCRIT = "non inscrit";
 
     /**
      * Statut R.C.S. "radie".
      *
      * @var string
      */
-    const STATUT_RCS_RADIE = "radie";
+    public const STATUT_RCS_RADIE = "radie";
 }

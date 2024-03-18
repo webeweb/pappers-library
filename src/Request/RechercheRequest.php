@@ -28,7 +28,7 @@ class RechercheRequest extends AbstractRechercheRequest implements RechercheRequ
      *
      * @var string
      */
-    const RESOURCE_PATH = "/recherche";
+    public const RESOURCE_PATH = "/recherche";
 
     /**
      * Bases.

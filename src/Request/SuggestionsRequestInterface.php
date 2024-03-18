@@ -24,40 +24,40 @@ interface SuggestionsRequestInterface {
      *
      * @var string
      */
-    const CIBLE_DENOMINATION = "denomination";
+    public const CIBLE_DENOMINATION = "denomination";
 
     /**
      * Cible "com complet".
      *
      * @var string
      */
-    const CIBLE_NOM_COMPLET = "nom_complet";
+    public const CIBLE_NOM_COMPLET = "nom_complet";
 
     /**
      * Cible "nom entreprise".
      *
      * @var string
      */
-    const CIBLE_NOM_ENTREPRISE = "nom_entreprise";
+    public const CIBLE_NOM_ENTREPRISE = "nom_entreprise";
 
     /**
      * Cible "représentant".
      *
      * @var string
      */
-    const CIBLE_REPRESENTANT = "representant";
+    public const CIBLE_REPRESENTANT = "representant";
 
     /**
      * Cible "SIREN".
      *
      * @var string
      */
-    const CIBLE_SIREN = "siren";
+    public const CIBLE_SIREN = "siren";
 
     /**
      * Cible "SIRET".
      *
      * @var string
      */
-    const CIBLE_SIRET = "siret";
+    public const CIBLE_SIRET = "siret";
 }

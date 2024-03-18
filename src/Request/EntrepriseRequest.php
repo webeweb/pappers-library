@@ -33,7 +33,7 @@ class EntrepriseRequest extends AbstractRequest implements EntrepriseRequestInte
      *
      * @var string
      */
-    const RESOURCE_PATH = "/entreprise";
+    public const RESOURCE_PATH = "/entreprise";
 
     /**
      * Format publications BODACC.

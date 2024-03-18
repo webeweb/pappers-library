@@ -24,12 +24,12 @@ interface DocumentInterface {
      *
      * @var string
      */
-    const TYPE_ACTE = "acte";
+    public const TYPE_ACTE = "acte";
 
     /**
      * Type "comptes".
      *
      * @var string
      */
-    const TYPE_COMPTES = "comptes";
+    public const TYPE_COMPTES = "comptes";
 }

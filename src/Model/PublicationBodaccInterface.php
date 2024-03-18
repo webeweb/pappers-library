@@ -24,47 +24,47 @@ interface PublicationBodaccInterface {
      *
      * @var string
      */
-    const TYPE_CREATION = "Création";
+    public const TYPE_CREATION = "Création";
 
     /**
      * Type "dépôt des comptes".
      *
      * @var string
      */
-    const TYPE_DEPOT_COMPTES = "Dépôt des comptes";
+    public const TYPE_DEPOT_COMPTES = "Dépôt des comptes";
 
     /**
      * Type "immatriculation".
      *
      * @var string
      */
-    const TYPE_IMMATRICULATION = "Immatriculation";
+    public const TYPE_IMMATRICULATION = "Immatriculation";
 
     /**
      * Type "modification".
      *
      * @var string
      */
-    const TYPE_MODIFICATION = "Modification";
+    public const TYPE_MODIFICATION = "Modification";
 
     /**
      * Type "procédure collective".
      *
      * @var string
      */
-    const TYPE_PROCEDURE_COLLECTIVE = "Procédure collective";
+    public const TYPE_PROCEDURE_COLLECTIVE = "Procédure collective";
 
     /**
      * Type "radiation".
      *
      * @var string
      */
-    const TYPE_RADIATION = "Radiation";
+    public const TYPE_RADIATION = "Radiation";
 
     /**
      * Type "vente".
      *
      * @var string
      */
-    const TYPE_VENTE = "Vente";
+    public const TYPE_VENTE = "Vente";
 }

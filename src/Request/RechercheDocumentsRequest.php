@@ -28,7 +28,7 @@ class RechercheDocumentsRequest extends AbstractRechercheRequest {
      *
      * @var string
      */
-    const RESOURCE_PATH = "/recherche-documents";
+    public const RESOURCE_PATH = "/recherche-documents";
 
     /**
      * {@inheritDoc}

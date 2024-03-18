@@ -24,12 +24,12 @@ interface ProcedureCollectiveInterface {
      *
      * @var string
      */
-    const TYPE_LIQUIDATION_JUDICIAIRE = "Liquidation judiciaire ou Procédure de sauvegarde";
+    public const TYPE_LIQUIDATION_JUDICIAIRE = "Liquidation judiciaire ou Procédure de sauvegarde";
 
     /**
      * Type "redressement judiciaire".
      *
      * @var string
      */
-    const TYPE_REDRESSEMENT_JUDICIAIRE = "Redressement judiciaire";
+    public const TYPE_REDRESSEMENT_JUDICIAIRE = "Redressement judiciaire";
 }

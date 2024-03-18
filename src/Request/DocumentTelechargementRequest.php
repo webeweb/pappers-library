@@ -31,7 +31,7 @@ class DocumentTelechargementRequest extends AbstractRequest {
      *
      * @var string
      */
-    const RESOURCE_PATH = "/document/telechargement";
+    public const RESOURCE_PATH = "/document/telechargement";
 
     /**
      * {@inheritDoc}

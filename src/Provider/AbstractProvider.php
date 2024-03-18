@@ -33,7 +33,7 @@ abstract class AbstractProvider extends BaseProvider {
      *
      * @var string
      */
-    const ENDPOINT_PATH = "https://api.pappers.fr";
+    public const ENDPOINT_PATH = "https://api.pappers.fr";
 
     /**
      * API token.

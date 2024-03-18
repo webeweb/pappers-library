@@ -28,7 +28,7 @@ class RechercheDirigeantsRequest extends AbstractRechercheRequest {
      *
      * @var string
      */
-    const RESOURCE_PATH = "/recherche-dirigeants";
+    public const RESOURCE_PATH = "/recherche-dirigeants";
 
     /**
      * {@inheritDoc}

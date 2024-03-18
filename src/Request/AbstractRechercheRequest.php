@@ -43,7 +43,7 @@ abstract class AbstractRechercheRequest extends AbstractRequest implements Abstr
      *
      * @var string
      */
-    const DATE_FORMAT = "d-m-Y";
+    public const DATE_FORMAT = "d-m-Y";
 
     /**
      * Age dirigeant max.

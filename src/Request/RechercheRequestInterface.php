@@ -26,96 +26,96 @@ interface RechercheRequestInterface {
      *
      * @var string
      */
-    const BASE_DIRIGEANTS = "dirigeants";
+    public const BASE_DIRIGEANTS = "dirigeants";
 
     /**
      * Base "documents".
      *
      * @var string
      */
-    const BASE_DOCUMENTS = "documents";
+    public const BASE_DOCUMENTS = "documents";
 
     /**
      * Base "entreprises".
      *
      * @var string
      */
-    const BASE_ENTREPRISES = "entreprises";
+    public const BASE_ENTREPRISES = "entreprises";
 
     /**
      * Base "publications".
      *
      * @var string
      */
-    const BASE_PUBLICATIONS = "publications";
+    public const BASE_PUBLICATIONS = "publications";
 
     /**
      * Export "csv".
      *
      * @var string
      */
-    const EXPORT_CSV = "csv";
+    public const EXPORT_CSV = "csv";
 
     /**
      * Export "json".
      *
      * @var string
      */
-    const EXPORT_JSON = "json";
+    public const EXPORT_JSON = "json";
 
     /**
      * Export "xlsx".
      *
      * @var string
      */
-    const EXPORT_XLSX = "xlsx";
+    public const EXPORT_XLSX = "xlsx";
 
     /**
      * Type publication "création".
      *
      * @var string
      */
-    const TYPE_PUBLICATION_CREATION = PublicationBodaccInterface::TYPE_CREATION;
+    public const TYPE_PUBLICATION_CREATION = PublicationBodaccInterface::TYPE_CREATION;
 
     /**
      * Type publication "dépôt des comptes".
      *
      * @var string
      */
-    const TYPE_PUBLICATION_DEPOT_COMPTES = PublicationBodaccInterface::TYPE_DEPOT_COMPTES;
+    public const TYPE_PUBLICATION_DEPOT_COMPTES = PublicationBodaccInterface::TYPE_DEPOT_COMPTES;
 
     /**
      * Type publication "immatriculation".
      *
      * @var string
      */
-    const TYPE_PUBLICATION_IMMATRICULATION = PublicationBodaccInterface::TYPE_IMMATRICULATION;
+    public const TYPE_PUBLICATION_IMMATRICULATION = PublicationBodaccInterface::TYPE_IMMATRICULATION;
 
     /**
      * Type publication "modification".
      *
      * @var string
      */
-    const TYPE_PUBLICATION_MODIFICATION = PublicationBodaccInterface::TYPE_MODIFICATION;
+    public const TYPE_PUBLICATION_MODIFICATION = PublicationBodaccInterface::TYPE_MODIFICATION;
 
     /**
      * Type publication "procédure collective".
      *
      * @var string
      */
-    const TYPE_PUBLICATION_PROCEDURE_COLLECTIVE = PublicationBodaccInterface::TYPE_PROCEDURE_COLLECTIVE;
+    public const TYPE_PUBLICATION_PROCEDURE_COLLECTIVE = PublicationBodaccInterface::TYPE_PROCEDURE_COLLECTIVE;
 
     /**
      * Type publication "radiation".
      *
      * @var string
      */
-    const TYPE_PUBLICATION_RADIATION = PublicationBodaccInterface::TYPE_RADIATION;
+    public const TYPE_PUBLICATION_RADIATION = PublicationBodaccInterface::TYPE_RADIATION;
 
     /**
      * Type publication "vente".
      *
      * @var string
      */
-    const TYPE_PUBLICATION_VENTE = PublicationBodaccInterface::TYPE_VENTE;
+    public const TYPE_PUBLICATION_VENTE = PublicationBodaccInterface::TYPE_VENTE;
 }

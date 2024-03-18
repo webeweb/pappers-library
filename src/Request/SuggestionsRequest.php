@@ -31,7 +31,7 @@ class SuggestionsRequest extends AbstractRequest implements SuggestionsRequestIn
      *
      * @var string
      */
-    const RESOURCE_PATH = "/suggestions";
+    public const RESOURCE_PATH = "/suggestions";
 
     /**
      * Cibles.
