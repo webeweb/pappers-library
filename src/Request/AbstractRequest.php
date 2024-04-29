@@ -11,8 +11,8 @@
 
 namespace WBW\Library\Pappers\Request;
 
+use WBW\Library\Common\Provider\AbstractRequest as BaseRequest;
 use WBW\Library\Pappers\Response\AbstractResponse;
-use WBW\Library\Provider\Request\AbstractRequest as BaseRequest;
 
 /**
  * Abstract request.

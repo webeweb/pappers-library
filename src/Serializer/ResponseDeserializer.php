@@ -11,6 +11,7 @@
 
 namespace WBW\Library\Pappers\Serializer;
 
+use WBW\Library\Common\Helper\ArrayHelper;
 use WBW\Library\Pappers\Response\AbstractRechercheResponse;
 use WBW\Library\Pappers\Response\AbstractResponse;
 use WBW\Library\Pappers\Response\DocumentTelechargementResponse;
@@ -20,7 +21,6 @@ use WBW\Library\Pappers\Response\RechercheDocumentsResponse;
 use WBW\Library\Pappers\Response\RecherchePublicationsResponse;
 use WBW\Library\Pappers\Response\RechercheResponse;
 use WBW\Library\Pappers\Response\SuggestionsResponse;
-use WBW\Library\Types\Helper\ArrayHelper;
 
 /**
  * Response deserializer.

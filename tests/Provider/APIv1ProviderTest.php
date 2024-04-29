@@ -15,6 +15,7 @@ namespace WBW\Library\Pappers\Tests\Provider;
 
 use InvalidArgumentException;
 use Throwable;
+use WBW\Library\Common\Provider\ProviderException;
 use WBW\Library\Pappers\Provider\APIv1Provider;
 use WBW\Library\Pappers\Request\DocumentTelechargementRequest;
 use WBW\Library\Pappers\Request\EntrepriseRequest;
@@ -24,7 +25,6 @@ use WBW\Library\Pappers\Response\DocumentTelechargementResponse;
 use WBW\Library\Pappers\Response\EntrepriseResponse;
 use WBW\Library\Pappers\Response\RechercheResponse;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
-use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * API v1 provider test.
@@ -71,7 +71,7 @@ class APIv1ProviderTest extends AbstractTestCase {
             $this->assertInstanceOf(DocumentTelechargementResponse::class, $res);
         } catch (Throwable $ex) {
 
-            $this->assertInstanceOf(ApiException::class, $ex);
+            $this->assertInstanceOf(ProviderException::class, $ex);
         }
     }
 
@@ -95,7 +95,7 @@ class APIv1ProviderTest extends AbstractTestCase {
             $this->assertInstanceOf(EntrepriseResponse::class, $res);
         } catch (Throwable $ex) {
 
-            $this->assertInstanceOf(ApiException::class, $ex);
+            $this->assertInstanceOf(ProviderException::class, $ex);
         }
     }
 
@@ -155,7 +155,7 @@ class APIv1ProviderTest extends AbstractTestCase {
             $this->assertInstanceOf(RechercheResponse::class, $res);
         } catch (Throwable $ex) {
 
-            $this->assertInstanceOf(ApiException::class, $ex);
+            $this->assertInstanceOf(ProviderException::class, $ex);
         }
     }
 

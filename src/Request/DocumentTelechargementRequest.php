@@ -11,10 +11,10 @@
 
 namespace WBW\Library\Pappers\Request;
 
+use WBW\Library\Common\Traits\Strings\StringTokenTrait;
 use WBW\Library\Pappers\Response\AbstractResponse;
 use WBW\Library\Pappers\Serializer\RequestSerializer;
 use WBW\Library\Pappers\Serializer\ResponseDeserializer;
-use WBW\Library\Traits\Strings\StringTokenTrait;
 
 /**
  * Document téléchargement request.

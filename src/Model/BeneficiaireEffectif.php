@@ -11,6 +11,7 @@
 
 namespace WBW\Library\Pappers\Model;
 
+use WBW\Library\Common\Traits\Strings\StringTypeTrait;
 use WBW\Library\Pappers\Traits\Strings\StringAdresseLigne1Trait;
 use WBW\Library\Pappers\Traits\Strings\StringAdresseLigne2Trait;
 use WBW\Library\Pappers\Traits\Strings\StringAdresseLigne3Trait;
@@ -24,7 +25,6 @@ use WBW\Library\Pappers\Traits\Strings\StringPrenomTrait;
 use WBW\Library\Pappers\Traits\Strings\StringPseudonymeTrait;
 use WBW\Library\Pappers\Traits\Strings\StringVilleNaissanceTrait;
 use WBW\Library\Pappers\Traits\Strings\StringVilleTrait;
-use WBW\Library\Traits\Strings\StringTypeTrait;
 
 /**
  * Bénéficiaire effectif.

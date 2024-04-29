@@ -15,9 +15,9 @@ use GuzzleHttp\Client;
 use InvalidArgumentException;
 use Psr\Log\LoggerInterface;
 use Throwable;
+use WBW\Library\Common\Provider\AbstractProvider as BaseProvider;
+use WBW\Library\Common\Provider\ProviderException;
 use WBW\Library\Pappers\Request\AbstractRequest;
-use WBW\Library\Provider\AbstractProvider as BaseProvider;
-use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * Abstract provider.
@@ -80,7 +80,7 @@ abstract class AbstractProvider extends BaseProvider {
      * @param bool $apiToken API token ?
      * @return string Returns the raw response.
      * @throws InvalidArgumentException Throws an invalid argument exception if a parameter is missing.
-     * @throws ApiException Throws an API exception if an error occurs.
+     * @throws ProviderException Throws a provider exception if an error occurs.
      */
     protected function callApi(AbstractRequest $request, array $queryData, bool $apiToken = true): string {
 
@@ -108,7 +108,7 @@ abstract class AbstractProvider extends BaseProvider {
             return $response->getBody()->getContents();
         } catch (Throwable $ex) {
 
-            throw new ApiException("Call Pappers API failed", 500, $ex);
+            throw new ProviderException("Call Pappers API failed", 500, $ex);
         }
     }
 

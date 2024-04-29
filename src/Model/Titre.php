@@ -11,8 +11,8 @@
 
 namespace WBW\Library\Pappers\Model;
 
+use WBW\Library\Common\Traits\Strings\StringTypeTrait;
 use WBW\Library\Pappers\Traits\Strings\StringDecisionTrait;
-use WBW\Library\Traits\Strings\StringTypeTrait;
 
 /**
  * Titre.

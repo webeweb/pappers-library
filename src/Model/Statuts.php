@@ -11,6 +11,8 @@
 
 namespace WBW\Library\Pappers\Model;
 
+use WBW\Library\Common\Traits\Strings\StringTokenTrait;
+use WBW\Library\Common\Traits\Strings\StringTypeTrait;
 use WBW\Library\Pappers\Traits\Booleans\BooleanDisponibleTrait;
 use WBW\Library\Pappers\Traits\Strings\StringDateActeFormateeTrait;
 use WBW\Library\Pappers\Traits\Strings\StringDateActeTrait;
@@ -18,8 +20,6 @@ use WBW\Library\Pappers\Traits\Strings\StringDateDepotFormateeTrait;
 use WBW\Library\Pappers\Traits\Strings\StringDateDepotTrait;
 use WBW\Library\Pappers\Traits\Strings\StringDecisionTrait;
 use WBW\Library\Pappers\Traits\Strings\StringNomFichierPdfTrait;
-use WBW\Library\Traits\Strings\StringTokenTrait;
-use WBW\Library\Traits\Strings\StringTypeTrait;
 
 /**
  * Statuts.

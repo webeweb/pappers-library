@@ -11,8 +11,8 @@
 
 namespace WBW\Library\Pappers\Response;
 
-use WBW\Library\Traits\Integers\IntegerPageTrait;
-use WBW\Library\Traits\Integers\IntegerTotalTrait;
+use WBW\Library\Common\Traits\Integers\IntegerPageTrait;
+use WBW\Library\Common\Traits\Integers\IntegerTotalTrait;
 
 /**
  * Abstract recherche response.

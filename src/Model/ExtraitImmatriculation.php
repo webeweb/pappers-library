@@ -11,7 +11,7 @@
 
 namespace WBW\Library\Pappers\Model;
 
-use WBW\Library\Traits\Strings\StringTokenTrait;
+use WBW\Library\Common\Traits\Strings\StringTokenTrait;
 
 /**
  * Extrait immatriculation.

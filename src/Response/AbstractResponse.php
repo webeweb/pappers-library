@@ -11,7 +11,7 @@
 
 namespace WBW\Library\Pappers\Response;
 
-use WBW\Library\Provider\Response\AbstractResponse as BaseResponse;
+use WBW\Library\Common\Provider\AbstractResponse as BaseResponse;
 
 /**
  * Abstract response.

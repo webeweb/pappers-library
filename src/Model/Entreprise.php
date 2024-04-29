@@ -11,6 +11,7 @@
 
 namespace WBW\Library\Pappers\Model;
 
+use WBW\Library\Common\Traits\Strings\StringMentionTrait;
 use WBW\Library\Pappers\Traits\Arrays\ArrayPublicationsBodaccTrait;
 use WBW\Library\Pappers\Traits\Booleans\BooleanEntrepriseCesseeTrait;
 use WBW\Library\Pappers\Traits\Booleans\BooleanPersonneMoraleTrait;
@@ -37,7 +38,6 @@ use WBW\Library\Pappers\Traits\Strings\StringSigleTrait;
 use WBW\Library\Pappers\Traits\Strings\StringSirenTrait;
 use WBW\Library\Pappers\Traits\Strings\StringStatutRcsTrait;
 use WBW\Library\Pappers\Traits\Strings\StringTrancheEffectifTrait;
-use WBW\Library\Traits\Strings\StringMentionTrait;
 
 /**
  * Entreprise.

@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace WBW\Library\Pappers\Tests\Provider;
 
 use Throwable;
+use WBW\Library\Common\Provider\ProviderException;
 use WBW\Library\Pappers\Provider\APIv2Provider;
 use WBW\Library\Pappers\Request\DocumentTelechargementRequest;
 use WBW\Library\Pappers\Request\EntrepriseRequest;
@@ -30,7 +31,6 @@ use WBW\Library\Pappers\Response\RecherchePublicationsResponse;
 use WBW\Library\Pappers\Response\RechercheResponse;
 use WBW\Library\Pappers\Response\SuggestionsResponse;
 use WBW\Library\Pappers\Tests\AbstractTestCase;
-use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * API v2 provider test.
@@ -86,7 +86,7 @@ class APIv2ProviderTest extends AbstractTestCase {
             $this->assertFileExists($filename);
         } catch (Throwable $ex) {
 
-            $this->assertInstanceOf(ApiException::class, $ex);
+            $this->assertInstanceOf(ProviderException::class, $ex);
         }
     }
 
@@ -110,7 +110,7 @@ class APIv2ProviderTest extends AbstractTestCase {
             $this->assertInstanceOf(EntrepriseResponse::class, $res);
         } catch (Throwable $ex) {
 
-            $this->assertInstanceOf(ApiException::class, $ex);
+            $this->assertInstanceOf(ProviderException::class, $ex);
         }
     }
 
@@ -146,7 +146,7 @@ class APIv2ProviderTest extends AbstractTestCase {
             $this->assertInstanceOf(RechercheResponse::class, $res);
         } catch (Throwable $ex) {
 
-            $this->assertInstanceOf(ApiException::class, $ex);
+            $this->assertInstanceOf(ProviderException::class, $ex);
         }
     }
 
@@ -170,7 +170,7 @@ class APIv2ProviderTest extends AbstractTestCase {
             $this->assertInstanceOf(RechercheDirigeantsResponse::class, $res);
         } catch (Throwable $ex) {
 
-            $this->assertInstanceOf(ApiException::class, $ex);
+            $this->assertInstanceOf(ProviderException::class, $ex);
         }
     }
 
@@ -201,7 +201,7 @@ class APIv2ProviderTest extends AbstractTestCase {
             $this->assertInstanceOf(RechercheDocumentsResponse::class, $res);
         } catch (Throwable $ex) {
 
-            $this->assertInstanceOf(ApiException::class, $ex);
+            $this->assertInstanceOf(ProviderException::class, $ex);
         }
     }
 
@@ -232,7 +232,7 @@ class APIv2ProviderTest extends AbstractTestCase {
             $this->assertInstanceOf(RecherchePublicationsResponse::class, $res);
         } catch (Throwable $ex) {
 
-            $this->assertInstanceOf(ApiException::class, $ex);
+            $this->assertInstanceOf(ProviderException::class, $ex);
         }
     }
 

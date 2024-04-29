@@ -12,12 +12,12 @@
 namespace WBW\Library\Pappers\Provider;
 
 use InvalidArgumentException;
+use WBW\Library\Common\Provider\ProviderException;
 use WBW\Library\Pappers\Request\AbstractRequest;
 use WBW\Library\Pappers\Request\DocumentTelechargementRequest;
 use WBW\Library\Pappers\Request\EntrepriseRequest;
 use WBW\Library\Pappers\Request\RechercheRequest;
 use WBW\Library\Pappers\Response\AbstractResponse;
-use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * API v1 provider.
@@ -40,7 +40,7 @@ class APIv1Provider extends AbstractProvider {
      * @param AbstractRequest $request The request.
      * @return AbstractResponse Returns the response.
      * @throws InvalidArgumentException Throws an invalid argument exception if a parameter is missing.
-     * @throws ApiException Throws an API exception if an error occurs.
+     * @throws ProviderException Throws a provider exception if an error occurs.
      */
     public function sendRequest(AbstractRequest $request): AbstractResponse {
 
