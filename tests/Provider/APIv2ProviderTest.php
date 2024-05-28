@@ -85,7 +85,6 @@ class APIv2ProviderTest extends AbstractTestCase {
             $res->saveAs($filename);
             $this->assertFileExists($filename);
         } catch (Throwable $ex) {
-
             $this->assertInstanceOf(ProviderException::class, $ex);
         }
     }
@@ -109,7 +108,6 @@ class APIv2ProviderTest extends AbstractTestCase {
             $res = $obj->sendRequest($request);
             $this->assertInstanceOf(EntrepriseResponse::class, $res);
         } catch (Throwable $ex) {
-
             $this->assertInstanceOf(ProviderException::class, $ex);
         }
     }
@@ -145,7 +143,6 @@ class APIv2ProviderTest extends AbstractTestCase {
             $res = $obj->sendRequest($request);
             $this->assertInstanceOf(RechercheResponse::class, $res);
         } catch (Throwable $ex) {
-
             $this->assertInstanceOf(ProviderException::class, $ex);
         }
     }
@@ -169,7 +166,6 @@ class APIv2ProviderTest extends AbstractTestCase {
             $res = $obj->sendRequest($request);
             $this->assertInstanceOf(RechercheDirigeantsResponse::class, $res);
         } catch (Throwable $ex) {
-
             $this->assertInstanceOf(ProviderException::class, $ex);
         }
     }
@@ -200,7 +196,6 @@ class APIv2ProviderTest extends AbstractTestCase {
             $res = $obj->sendRequest($request);
             $this->assertInstanceOf(RechercheDocumentsResponse::class, $res);
         } catch (Throwable $ex) {
-
             $this->assertInstanceOf(ProviderException::class, $ex);
         }
     }
@@ -231,7 +226,6 @@ class APIv2ProviderTest extends AbstractTestCase {
             $res = $obj->sendRequest($request);
             $this->assertInstanceOf(RecherchePublicationsResponse::class, $res);
         } catch (Throwable $ex) {
-
             $this->assertInstanceOf(ProviderException::class, $ex);
         }
     }

@@ -70,7 +70,6 @@ class APIv1ProviderTest extends AbstractTestCase {
             $res = $obj->sendRequest($request);
             $this->assertInstanceOf(DocumentTelechargementResponse::class, $res);
         } catch (Throwable $ex) {
-
             $this->assertInstanceOf(ProviderException::class, $ex);
         }
     }
@@ -94,7 +93,6 @@ class APIv1ProviderTest extends AbstractTestCase {
             $res = $obj->sendRequest($request);
             $this->assertInstanceOf(EntrepriseResponse::class, $res);
         } catch (Throwable $ex) {
-
             $this->assertInstanceOf(ProviderException::class, $ex);
         }
     }
@@ -114,7 +112,6 @@ class APIv1ProviderTest extends AbstractTestCase {
         $obj = new APIv1Provider();
 
         try {
-
             $obj->sendRequest($request);
         } catch (Throwable $ex) {
 
@@ -154,7 +151,6 @@ class APIv1ProviderTest extends AbstractTestCase {
             $res = $obj->sendRequest($request);
             $this->assertInstanceOf(RechercheResponse::class, $res);
         } catch (Throwable $ex) {
-
             $this->assertInstanceOf(ProviderException::class, $ex);
         }
     }
@@ -174,7 +170,6 @@ class APIv1ProviderTest extends AbstractTestCase {
         $obj = new APIv1Provider($this->apiToken);
 
         try {
-
             $obj->sendRequest($request);
         } catch (Throwable $ex) {
 
